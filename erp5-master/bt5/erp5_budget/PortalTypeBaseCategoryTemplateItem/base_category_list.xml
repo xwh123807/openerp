@@ -1,0 +1,28 @@
+<base_category_list>
+ <portal_type id="Budget">
+  <item>budget_type</item>
+  <item>group</item>
+  <item>specialise</item>
+ </portal_type>
+ <portal_type id="Budget Line">
+  <item>budget_line_type</item>
+ </portal_type>
+ <portal_type id="Budget Model Module">
+  <item>business_application</item>
+ </portal_type>
+ <portal_type id="Budget Module">
+  <item>business_application</item>
+ </portal_type>
+ <portal_type id="Budget Transaction">
+  <item>group</item>
+ </portal_type>
+ <portal_type id="Budget Transaction Module">
+  <item>business_application</item>
+ </portal_type>
+ <portal_type id="Budget Transfer Line">
+  <item>group</item>
+ </portal_type>
+ <portal_type id="Node Budget Variation">
+  <item>aggregate</item>
+ </portal_type>
+</base_category_list>

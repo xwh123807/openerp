@@ -1,0 +1,103 @@
+<dtml-comment>
+Copyright (c) 2002 Nexedi SARL and Contributors. All Rights Reserved.
+                    Jean-Paul Smets <jp@nexedi.com>
+
+WARNING: This program as such is intended to be used by professional
+programmers who take the whole responsability of assessing all potential
+consequences resulting from its eventual inadequacies and bugs
+
+This program as such is not intended to be used by end users. End
+users who are looking for a ready-to-use solution with commercial
+garantees and support are strongly adviced to contract a Free Software
+Service Company
+
+This program is Free Software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+</dtml-comment>
+
+<dtml-var manage_page_header>
+<dtml-var manage_tabs>
+
+<h3>Queued Activities</h3>
+
+<dtml-let show_cancel_and_invoke_links="not isCancelAndInvokeLinksHidden()">
+<dtml-if show_cancel_and_invoke_links>
+  <p>Warning: Invoking or canceling activities will invoke/cancel all activities with both the same path and the same method_id.</p>
+  <p>Warning: Invoking an activity will <b>not</b> run any dependency check.</p>
+</dtml-if>
+
+<table cellspacing="0" cellpadding="2" border="1">
+  <tr>
+    <dtml-if show_cancel_and_invoke_links>
+      <th align="left" valign="top"></th>
+    </dtml-if>
+    <th align="left" valign="top">Uid</th>
+    <th align="left" valign="top">Object</th>
+    <th align="left" valign="top">Method Id</th>
+    <th align="left" valign="top">Activity Kw</th>
+    <th align="left" valign="top">Arguments</th>
+    <th align="left" valign="top">Named Parameters</th>
+    <th align="left" valign="top">Processing Node</th>
+    <th align="left" valign="top">Retry</th>
+    <th align="left" valign="top">Processing</th>
+    <th align="left" valign="top">Call Traceback</th>
+  </tr>
+  <dtml-in expr="getMessageList()">
+    <dtml-let path="'/'.join(object_path)">
+      <tr>
+        <dtml-if show_cancel_and_invoke_links>
+          <td align="left" valign="top">
+            <a href="manageCancel?object_path=&dtml-path;&amp;method_id=&dtml-method_id;">Cancel</a>
+            <a href="manageInvoke?object_path=&dtml-path;&amp;method_id=&dtml-method_id;">Invoke</a>
+          </td>
+        </dtml-if>
+        <td align="left" valign="top"><dtml-var uid>
+          <dtml-var expr="{'SQLDict':'(dict)','SQLQueue':'(queue)','SQLJoblib':'(Joblib)'}[activity]">
+        </td>
+        <td align="left" valign="top"><a href="<dtml-var expr="REQUEST.physicalPathToURL(path)">"><dtml-var path></a></td>
+        <td align="left" valign="top"><dtml-var method_id></td>
+        <td align="left" valign="top">
+          <dtml-if activity_kw><dtml-var expr="_.repr(activity_kw)[1:-1]" html_quote>
+          <dtml-else>&nbsp;
+          </dtml-if>
+        </td>
+        <td align="left" valign="top">
+          <dtml-if args><dtml-var expr="_.repr(_.list(args))[1:-1]" html_quote>
+          <dtml-else>&nbsp;
+          </dtml-if>
+        </td>
+        <td align="left" valign="top">
+          <dtml-if kw><dtml-var expr="_.repr(kw)[1:-1]" html_quote>
+          <dtml-else>&nbsp;
+          </dtml-if>
+        </td>
+        <td align="left" valign="top"><dtml-var processing_node></td>
+        <td align="left" valign="top"><dtml-var retry></td>
+        <td align="left" valign="top">
+          <dtml-if expr="processing is not None">
+             <dtml-var processing>
+          </dtml-if>
+        </td>
+        <td align="left" valign="top">
+          <dtml-if expr="call_traceback is not None">
+            <pre><dtml-var call_traceback></pre>
+          </dtml-if>
+        </td>
+      </tr>
+    </dtml-let>
+  </dtml-in>
+</table>
+</dtml-let>
+
+<dtml-var manage_page_footer>

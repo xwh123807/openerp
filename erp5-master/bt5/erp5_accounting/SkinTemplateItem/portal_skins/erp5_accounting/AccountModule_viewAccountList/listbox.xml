@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<ZopeData>
+  <record id="1" aka="AAAAAAAAAAE=">
+    <pickle>
+      <global name="ProxyField" module="Products.ERP5Form.ProxyField"/>
+    </pickle>
+    <pickle>
+      <dictionary>
+        <item>
+            <key> <string>delegated_list</string> </key>
+            <value>
+              <list>
+                <string>all_columns</string>
+                <string>columns</string>
+                <string>count_method</string>
+                <string>domain_root_list</string>
+                <string>domain_tree</string>
+                <string>editable_columns</string>
+                <string>list_method</string>
+                <string>portal_types</string>
+                <string>report_root_list</string>
+                <string>report_tree</string>
+                <string>search_columns</string>
+                <string>selection_name</string>
+                <string>stat_columns</string>
+                <string>stat_method</string>
+                <string>title</string>
+                <string>url_columns</string>
+              </list>
+            </value>
+        </item>
+        <item>
+            <key> <string>id</string> </key>
+            <value> <string>listbox</string> </value>
+        </item>
+        <item>
+            <key> <string>message_values</string> </key>
+            <value>
+              <dictionary>
+                <item>
+                    <key> <string>external_validator_failed</string> </key>
+                    <value> <string>The input failed the external validator.</string> </value>
+                </item>
+              </dictionary>
+            </value>
+        </item>
+        <item>
+            <key> <string>overrides</string> </key>
+            <value>
+              <dictionary>
+                <item>
+                    <key> <string>field_id</string> </key>
+                    <value> <string></string> </value>
+                </item>
+                <item>
+                    <key> <string>form_id</string> </key>
+                    <value> <string></string> </value>
+                </item>
+                <item>
+                    <key> <string>target</string> </key>
+                    <value> <string></string> </value>
+                </item>
+              </dictionary>
+            </value>
+        </item>
+        <item>
+            <key> <string>tales</string> </key>
+            <value>
+              <dictionary>
+                <item>
+                    <key> <string>field_id</string> </key>
+                    <value> <string></string> </value>
+                </item>
+                <item>
+                    <key> <string>form_id</string> </key>
+                    <value> <string></string> </value>
+                </item>
+                <item>
+                    <key> <string>target</string> </key>
+                    <value> <string></string> </value>
+                </item>
+              </dictionary>
+            </value>
+        </item>
+        <item>
+            <key> <string>values</string> </key>
+            <value>
+              <dictionary>
+                <item>
+                    <key> <string>all_columns</string> </key>
+                    <value>
+                      <list>
+                        <tuple>
+                          <string>gap_title</string>
+                          <string>GAP</string>
+                        </tuple>
+                        <tuple>
+                          <string>account_type_translated_title</string>
+                          <string>Account Type</string>
+                        </tuple>
+                        <tuple>
+                          <string>default_destination_title</string>
+                          <string>Mirror</string>
+                        </tuple>
+                        <tuple>
+                          <string>AccountModule_getAccountingTransactionCount</string>
+                          <string>Count</string>
+                        </tuple>
+                        <tuple>
+                          <string>debit</string>
+                          <string>Debit</string>
+                        </tuple>
+                        <tuple>
+                          <string>credit</string>
+                          <string>Credit</string>
+                        </tuple>
+                        <tuple>
+                          <string>debit_balance</string>
+                          <string>Debit Balance</string>
+                        </tuple>
+                        <tuple>
+                          <string>credit_balance</string>
+                          <string>Credit Balance</string>
+                        </tuple>
+                        <tuple>
+                          <string>AccountModule_getBalance</string>
+                          <string>Balance</string>
+                        </tuple>
+                        <tuple>
+                          <string>AccountModule_getNormalBalance</string>
+                          <string>Normal Balance</string>
+                        </tuple>
+                        <tuple>
+                          <string>reference</string>
+                          <string>Reference</string>
+                        </tuple>
+                        <tuple>
+                          <string>creation_date</string>
+                          <string>Creation Date</string>
+                        </tuple>
+                        <tuple>
+                          <string>modification_date</string>
+                          <string>Modification Date</string>
+                        </tuple>
+                        <tuple>
+                          <string>financial_section_translated_title</string>
+                          <string>Financial Section</string>
+                        </tuple>
+                        <tuple>
+                          <string>owner_title</string>
+                          <string>Owner</string>
+                        </tuple>
+                      </list>
+                    </value>
+                </item>
+                <item>
+                    <key> <string>columns</string> </key>
+                    <value>
+                      <list>
+                        <tuple>
+                          <string>preferred_gap_id</string>
+                          <string>GAP Number</string>
+                        </tuple>
+                        <tuple>
+                          <string>translated_title</string>
+                          <string>Account Name</string>
+                        </tuple>
+                        <tuple>
+                          <string>translated_validation_state_title</string>
+                          <string>State</string>
+                        </tuple>
+                      </list>
+                    </value>
+                </item>
+                <item>
+                    <key> <string>count_method</string> </key>
+                    <value> <string></string> </value>
+                </item>
+                <item>
+                    <key> <string>domain_root_list</string> </key>
+                    <value>
+                      <list>
+                        <tuple>
+                          <string>gap</string>
+                          <string>GAP</string>
+                        </tuple>
+                        <tuple>
+                          <string>account_type</string>
+                          <string>Account Type</string>
+                        </tuple>
+                        <tuple>
+                          <string>financial_section</string>
+                          <string>Financial Section</string>
+                        </tuple>
+                      </list>
+                    </value>
+                </item>
+                <item>
+                    <key> <string>domain_tree</string> </key>
+                    <value> <int>1</int> </value>
+                </item>
+                <item>
+                    <key> <string>editable_columns</string> </key>
+                    <value>
+                      <list>
+                        <tuple>
+                          <string>debit</string>
+                          <string>debit</string>
+                        </tuple>
+                        <tuple>
+                          <string>credit</string>
+                          <string>credit</string>
+                        </tuple>
+                        <tuple>
+                          <string>debit_balance</string>
+                          <string>debit_balance</string>
+                        </tuple>
+                        <tuple>
+                          <string>credit_balance</string>
+                          <string>credit_balance</string>
+                        </tuple>
+                      </list>
+                    </value>
+                </item>
+                <item>
+                    <key> <string>field_id</string> </key>
+                    <value> <string>my_list_mode_listbox</string> </value>
+                </item>
+                <item>
+                    <key> <string>form_id</string> </key>
+                    <value> <string>Base_viewFieldLibrary</string> </value>
+                </item>
+                <item>
+                    <key> <string>list_method</string> </key>
+                    <value>
+                      <persistent> <string encoding="base64">AAAAAAAAAAI=</string> </persistent>
+                    </value>
+                </item>
+                <item>
+                    <key> <string>portal_types</string> </key>
+                    <value>
+                      <list>
+                        <tuple>
+                          <string>Account</string>
+                          <string>Account</string>
+                        </tuple>
+                      </list>
+                    </value>
+                </item>
+                <item>
+                    <key> <string>report_root_list</string> </key>
+                    <value>
+                      <list>
+                        <tuple>
+                          <string>gap</string>
+                          <string>GAP</string>
+                        </tuple>
+                        <tuple>
+                          <string>account_type</string>
+                          <string>Account Type</string>
+                        </tuple>
+                        <tuple>
+                          <string>financial_section</string>
+                          <string>Financial Section</string>
+                        </tuple>
+                      </list>
+                    </value>
+                </item>
+                <item>
+                    <key> <string>report_tree</string> </key>
+                    <value> <int>1</int> </value>
+                </item>
+                <item>
+                    <key> <string>search_columns</string> </key>
+                    <value>
+                      <list>
+                        <tuple>
+                          <string>gap_title</string>
+                          <string>GAP</string>
+                        </tuple>
+                        <tuple>
+                          <string>preferred_gap_id</string>
+                          <string>preferred_gap_id</string>
+                        </tuple>
+                        <tuple>
+                          <string>translated_title</string>
+                          <string>Account Name</string>
+                        </tuple>
+                        <tuple>
+                          <string>translated_validation_state_title</string>
+                          <string>State</string>
+                        </tuple>
+                        <tuple>
+                          <string>reference</string>
+                          <string>Reference</string>
+                        </tuple>
+                        <tuple>
+                          <string>creation_date</string>
+                          <string>Creation Date</string>
+                        </tuple>
+                        <tuple>
+                          <string>modification_date</string>
+                          <string>Modification Date</string>
+                        </tuple>
+                        <tuple>
+                          <string>owner_title</string>
+                          <string>Owner</string>
+                        </tuple>
+                      </list>
+                    </value>
+                </item>
+                <item>
+                    <key> <string>selection_name</string> </key>
+                    <value> <string>account_module_selection</string> </value>
+                </item>
+                <item>
+                    <key> <string>stat_columns</string> </key>
+                    <value>
+                      <list>
+                        <tuple>
+                          <string>AccountModule_getAccountingTransactionCount</string>
+                          <string>AccountModule_statAccountingTransactionCount</string>
+                        </tuple>
+                        <tuple>
+                          <string>debit</string>
+                          <string>AccountModule_statTotalSourceDebit</string>
+                        </tuple>
+                        <tuple>
+                          <string>credit</string>
+                          <string>AccountModule_statTotalSourceCredit</string>
+                        </tuple>
+                        <tuple>
+                          <string>AccountModule_getBalance</string>
+                          <string>AccountModule_statBalance</string>
+                        </tuple>
+                        <tuple>
+                          <string>AccountModule_getNormalBalance</string>
+                          <string>AccountModule_statBalance</string>
+                        </tuple>
+                      </list>
+                    </value>
+                </item>
+                <item>
+                    <key> <string>stat_method</string> </key>
+                    <value>
+                      <persistent> <string encoding="base64">AAAAAAAAAAM=</string> </persistent>
+                    </value>
+                </item>
+                <item>
+                    <key> <string>target</string> </key>
+                    <value> <string>Click to edit the target</string> </value>
+                </item>
+                <item>
+                    <key> <string>title</string> </key>
+                    <value> <string>Accounts</string> </value>
+                </item>
+                <item>
+                    <key> <string>url_columns</string> </key>
+                    <value>
+                      <list>
+                        <tuple>
+                          <string>default_destination_title</string>
+                          <string>AccountModule_getMirrorAccountUrl</string>
+                        </tuple>
+                        <tuple>
+                          <string>AccountModule_getAccountingTransactionCount</string>
+                          <string>AccountModule_getTransactionListUrl</string>
+                        </tuple>
+                        <tuple>
+                          <string>debit</string>
+                          <string>AccountModule_getTransactionListUrl</string>
+                        </tuple>
+                        <tuple>
+                          <string>credit</string>
+                          <string>AccountModule_getTransactionListUrl</string>
+                        </tuple>
+                      </list>
+                    </value>
+                </item>
+              </dictionary>
+            </value>
+        </item>
+      </dictionary>
+    </pickle>
+  </record>
+  <record id="2" aka="AAAAAAAAAAI=">
+    <pickle>
+      <global name="Method" module="Products.Formulator.MethodField"/>
+    </pickle>
+    <pickle>
+      <dictionary>
+        <item>
+            <key> <string>method_name</string> </key>
+            <value> <string>AccountModule_getAccountList</string> </value>
+        </item>
+      </dictionary>
+    </pickle>
+  </record>
+  <record id="3" aka="AAAAAAAAAAM=">
+    <pickle>
+      <global name="Method" module="Products.Formulator.MethodField"/>
+    </pickle>
+    <pickle>
+      <dictionary>
+        <item>
+            <key> <string>method_name</string> </key>
+            <value> <string>portal_catalog</string> </value>
+        </item>
+      </dictionary>
+    </pickle>
+  </record>
+</ZopeData>

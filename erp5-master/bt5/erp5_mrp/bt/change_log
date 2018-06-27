@@ -1,0 +1,146 @@
+2011-12-8 yusei
+* Revert previous change on ProductionDelivery_copyOrderProperties. It was mistake.
+
+2011-12-7 yusei
+* Add ProductionOrderLine property sheet to Production Order Line portal type. It had to be added, but it did not.
+
+2011-08-30 tatuya
+* Fix the issue that the Stock tab in Production Order or Production Packing List returns all the inventories when the Deliveries do not have a resource.
+
+2011-08-30 tatuya
+* Fix to show quantity unit title in the listbox of the Stock tab.
+
+2011-07-01 yusei
+* Set proper title to interaction workflows.
+
+2011-06-22 yusei
+* Fix a bug. Quantity unit field on production order line must always be displayed.
+
+2011-06-22 yusei
+* Fix material consumption tab. Sort result as user can easily understand.
+
+2011-06-22 yusei
+* Fix bug on production order material consumption tab.
+
+2011-06-15 yusei
+* production order movement may not have specialise category value.
+
+2011-06-07 yusei
+* Stop displaying non-dated production order in planning box. It is useless.
+
+2011-06-02 arnaud.fontaine
+* Fix quantity unit conversion on ProductionOrder_viewMaterialConsumption.
+
+2011-06-01 arnaud.fontaine
+* Fix ProductionOrder_viewMaterialConsumption and display materials even when not in the inventory.
+
+2011-05-23 tatuya
+* Fix the issue that the Stock view on Production Order does not show anything.
+
+2011-04-14 yusei
+* Remove old unnecessary tales expression from relation string fields.
+
+2010-11-05 yusei
+* Modify variation category list in the field library and stop showing base category name.
+
+2010-10-09 yusei
+* Fix a typo in production_order_workflow/scripts/Order_buildPackingList.
+
+2010-05-24 kazuhiko
+* Improve activity dependencies for Delivery_updateAppliedRule, eg. delivery.activate(tag='(path)_updateAppliedRule', after_tag='(path)_expand').Delivery_updateAppliedRule(activate_kw={'tag':'(path)_expand'})
+
+2010-03-02 yusei
+* Remove short title.
+
+2009-10-16 yusei
+* Update for the changes of new portal types of portal types.
+
+2008-09-16 Kazuhiko
+* revise production_packing_list_builder and production_report_builder using new API.
+* use  delivery_causality_workflow instead of invoice_causality_workflow in Production Packing List and Production Report.
+
+2008-07-18 luke
+* bugfix release 1.0rc2 - delete all production_order_* selections from system after updating
+
+2008-07-10 luke
+* production planning using planning box
+
+2008-07-07 luke
+* added material and service consumption views
+
+2008-07-01 luke
+* added support for automatic numeration using int_index
+* restricted specialise (transformation) on order line to be chosen only for those defined by resource, made them automatic set in some cases
+
+2008-06-27 luke
+* updated production packing list workflow to be consistent with current packing list workflow
+* reference on deliveries - orders, packing lists and reports are now automatically set
+
+2008-06-26 luke
+* updated production order workflow to be consistent with current order workflow
+* continued proxification of forms
+
+2008-06-24 luke
+* updated portal types' definitions
+* proxified, cleaned up and made forms more consistent
+
+2008-06-03 vincentd
+* Add all rights to manager in :
+production_order_workflow  :  Confirmed, Cancelled
+production_packing_list_causality_workflow  :  Building, Solving
+production_packing_list_workflow  :  Delivered, Cancelled
+
+2008-01-16 kazuhiko
+* enable acquire_local_roles on Supply Link, Supply Node and Supply Chain Module.
+
+2007-11-14 kazuhiko
+* check if simulation state is draft or not before calling 'calculate' workflow method otherwise causality state can remain calculating.
+
+2007-09-25 yo
+* Set module group on portal types.
+
+2006-05-15 Alex
+* Update maintainers.
+
+2006-02-06 Kevin
+* Update license and copyright metadata.
+
+2005-12-09 Seb
+* Updated the Order_appliedToRelatedMovement script in production_order_workflow
+
+2005-12-08 yo
+* Fix the LEFT JOIN syntax in ProductionOrder_zSelectMovement.
+* Add ProductionDelivery_getSupplyLinkList by seb.
+
+2005-12-06 Seb
+* Again update on after more testing production_order_workflow in order to add tags and priority
+
+2005-12-01 Seb
+* Started to update production_order_workflow in order to add tags and priority
+* updated ProductionOrder_zSelectMovement, added alias on table movement
+
+2005-11-25 Seb
+* Removed the limit to 1000 for ProductionOrder_zSelectMovement
+
+2005-11-05 Romain
+* Correct naming convention.
+
+2005-10-20 Romain
+* Correct naming convention.
+
+2005-10-19 Seb
+* added Production * Cell portal type
+* updated production_packing_list_builder
+* updated TransformationSourcingRule_selectMovement
+* use more activities in production_order_workflow
+
+2005-08-26 Seb
+* Set default security setting for all
+production modules
+
+2005-08-26 Romain
+* add condition object/hasCellContent to  all portal type used as a line for form *Line_view[Price|Quantity|Option].
+
+2005-07-26 Romain
+
+First version.

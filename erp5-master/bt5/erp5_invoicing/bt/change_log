@@ -1,0 +1,140 @@
+2011-11-22 yusei
+* Fix InvoiceTransaction_zSelectMovement. Maximum rows to retrieve is now 100. If there are more simulation movements then the rest is built next building time.
+
+2011-11-04 tatuya
+* Add default_tax_rule reference into InvoiceTransaction_selectInvoiceMovement because it was wrongly removed at c7f1a35c1abdb9f93c6353c5024aaa47bf6505e0 when replacing to specify the portal type with the rule reference.
+
+2011-10-12 Kazuhiko
+* Fix the issue that a Invoice document can wrongly have a needless Root Applied Rule when it is created by Delivery Builder with a site which has many activity nodes.
+
+2011-07-25 Kazuhiko
+* add grand_grand_parent_specialise_reference related key.
+
+2010-05-05 yo
+* Allow several simulation rules to have Mapped Property.
+
+2010-04-07 yusei
+* Fix python scripts which ids were wrong.
+
+2010-03-08 tatuya
+* Prevent to copy multiple payment conditions at the Delivery After Generation Script of Invoice Transaction. If the payment conditions are multiple, payment transaction builder manage to create too many payment transaction lines.
+
+2010-03-02 yusei
+* Remove short title.
+* Fix allowed content type setting.
+
+2010-02-10 yo
+* Add support for price precision.
+
+2009-12-16 yusei
+* Update xml format.
+
+2009-12-15 yusei
+* Add default expandable properties to default invoicing rule.
+
+2009-12-14 yusei
+* Add use field to invoice line view.
+
+2009-10-16 yusei
+* Update for the changes of new portal types of portal types.
+
+2009-09-07 yusuke
+* Replace ERP5Report to ERP5Form and ReportBox
+
+2009-09-01 yusuke
+* tax_category category is renamed to contribution_share category
+
+2009-08-20 Jérome
+* Move out old tax and discount system.
+
+2009-07-09 tatuya
+* Append Japanese localized invoice style-sheet fixing font setting. To avoid hand modification after printing Japanese invoice.
+
+2009-07-03 romain
+* Revert latest proxy field library simplification, as the design was not finalized.
+
+2009-06-22 tatuya
+* the erp5_invoicing is split into three business templates;
+'erp5_invoicing', 'erp5_simplified_invoicing' and
+'erp5_advanced_invoicing'.
+the erp5_invoicing now only have common invoicing setting.
+- When you want them to work compatible with previous erp5_invoicing
+you just install 'erp5_invoicing' and 'erp5_simplified_invoicing'
+- When you want to create invoices independently,
+you just install 'erp5_invoicing' and 'erp5_advanced_invoicing'.
+Note: You can not install both 'erp5_simplified_invoicing' and
+'erp5_advanced_invoicing' together. They cause conflicts.
+* Move Allowed Content Type 'Discount Line', 'Invoice Line', 'Payment
+Condition',
+ 'Tax Line' to erp5_simplified_invoicing
+* Move Base Category 'specialise' to erp5_simplified_invoicing
+* Move Actions to erp5_simplified_invoicing
+* Move Paths 'purchase_invoice_builder',
+  'purchase_invoice_tax_builder', 'purchase_invoice_transaction_builder'
+  'sale_invoice_builder', 'sale_invoice_tax_builder',
+  'sale_invoice_transaction_builder' to erp5_simplified_invoicing
+
+2009-05-18 yusei
+* Fix some proxy fields. proxy_listbox_ids had to be copied to new proxified fields but it was not copied.
+
+2009-05-08 yusei
+* Simplify field libraries and proxy fields. Old field libraries are kept for backward compatibility.
+* Update dependencies.
+
+2009-04-18 Kazuhiko
+* Version 5.4.1
+
+2009-03-13 yusei
+* Correct 	delivery_movement_account_interaction_workflow title.
+
+2009-02-17 yusei
+* Hide "Add Invoice Line" from the drop down action menu until invoice support to collect multiple different orders.
+
+2009-02-16 jerome
+* copy source_account and destination_account from supply line on delivery lines, and enable this for divergence on invoice lines.
+
+2009-02-12 yusei
+* Invoice Line can now contain Invoice Line. This is useful if we want to make a invoice which collect all orders from divisions in one company and list up invoice line per each division.
+
+2009-02-03 yo
+* Editable fields must use "cell" instead of "here" in the tales expressions, so they may not use proxy fields created for my_* intact. Due to this error, total_price and total_quantity could be wrongly displayed.
+
+2009-01-27 yusei
+* Added invoice_transmission_mode category.
+
+2008-11-13 yusei
+* Start to develop version 5.4.
+
+2008-10-14 yusei
+* Start to develop version 5.3.
+
+2008-09-16 Kazuhiko
+* revise payment_transaction_builder, purchase_invoice_builder, purchase_invoice_tax_builder, purchase_invoice_transaction_builder, sale_invoice_builder, sale_invoice_tax_builder and sale_invoice_transaction_builder using new API.
+
+2008-09-04 yusei
+* Update English messages.
+
+2008-08-28 yusei
+* Use Base_translateString or translateString instead of N_ for translation string.
+
+2008-06-27 yusei
+* Start to develop version 5.2.
+
+2008-06-26 yusei
+* Revise version to 5.1.
+
+2008-3-18 jerome
+* Use trade conditions with invoices
+* version 5.0
+
+2008-3-16 nicolas
+* add Print action for Invoices
+
+2003-03-12 jerome
+* Cleanup forms and add proxy fields
+
+2007-12-06 kazuhiko
+* use related_simulation_movement_path_list to reduce activity dependencies.
+
+2007-12-6 jerome
+* initial creation, from splitting erp5_accounting

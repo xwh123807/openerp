@@ -1,0 +1,40 @@
+<property_sheet_list>
+ <portal_type id="Project">
+  <item>Codification</item>
+ </portal_type>
+ <portal_type id="Project Line">
+  <item>Amount</item>
+  <item>OutcomeDescription</item>
+  <item>SortIndex</item>
+ </portal_type>
+ <portal_type id="Project Milestone">
+  <item>OutcomeDescription</item>
+  <item>SortIndex</item>
+ </portal_type>
+ <portal_type id="Requirement">
+  <item>Comment</item>
+  <item>Document</item>
+  <item>DublinCore</item>
+  <item>Folder</item>
+  <item>Reference</item>
+  <item>SortIndex</item>
+  <item>XMLObject</item>
+ </portal_type>
+ <portal_type id="Requirement Document">
+  <item>Reference</item>
+ </portal_type>
+ <portal_type id="Sale Order Line">
+  <item>OutcomeDescription</item>
+ </portal_type>
+ <portal_type id="Sale Order Milestone">
+  <item>OutcomeDescription</item>
+  <item>SortIndex</item>
+ </portal_type>
+ <portal_type id="Sale Packing List Line">
+  <item>OutcomeDescription</item>
+ </portal_type>
+ <portal_type id="Task">
+  <item>OutcomeDescription</item>
+  <item>TaskOrder</item>
+ </portal_type>
+</property_sheet_list>

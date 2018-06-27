@@ -1,0 +1,5 @@
+erp5_upgrader business template upgrades ERP5 to the latest version from whatever the version which is currently installed.
+
+It uses introspection to decide what should be upgraded (or not) and how. It is based on an alarm design which makes sure that everything on a given ERP5 site satisfies certain criteria: version of system libraries, version of products, version of business templates, existence of certain tools, configuration of certain tools, etc.
+
+If all alarms are in OK state, it is considered as a proof that the upgrade process went well from an instance maintenance point of view (but it does not prove that the upgrade process produces working instances).

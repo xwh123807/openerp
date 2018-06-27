@@ -1,0 +1,82 @@
+<allowed_content_type_list>
+ <portal_type id="Account Module">
+  <item>Account</item>
+ </portal_type>
+ <portal_type id="Accounting Period">
+  <item>Accounting Period</item>
+ </portal_type>
+ <portal_type id="Accounting Transaction">
+  <item>Accounting Transaction Line</item>
+  <item>Embedded File</item>
+ </portal_type>
+ <portal_type id="Accounting Transaction Module">
+  <item>Accounting Transaction</item>
+  <item>Balance Transaction</item>
+  <item>Payment Transaction</item>
+  <item>Purchase Invoice Transaction</item>
+  <item>Sale Invoice Transaction</item>
+ </portal_type>
+ <portal_type id="Accounting Transaction Root Simulation Rule">
+  <item>Category Membership Divergence Tester</item>
+  <item>DateTime Divergence Tester</item>
+  <item>Float Divergence Tester</item>
+  <item>Net Converted Quantity Divergence Tester</item>
+  <item>String Divergence Tester</item>
+  <item>Variation Divergence Tester</item>
+ </portal_type>
+ <portal_type id="Balance Transaction">
+  <item>Balance Transaction Line</item>
+ </portal_type>
+ <portal_type id="Internal Invoice Transaction">
+  <item>Internal Invoice Transaction Line</item>
+ </portal_type>
+ <portal_type id="Invoice Root Simulation Rule">
+  <item>Category Membership Divergence Tester</item>
+  <item>DateTime Divergence Tester</item>
+  <item>Float Divergence Tester</item>
+  <item>Net Converted Quantity Divergence Tester</item>
+  <item>Specialise Divergence Tester</item>
+  <item>String Divergence Tester</item>
+  <item>Variation Divergence Tester</item>
+ </portal_type>
+ <portal_type id="Organisation">
+  <item>Accounting Period</item>
+  <item>Cash Register</item>
+ </portal_type>
+ <portal_type id="Payment Simulation Rule">
+  <item>Category Membership Divergence Tester</item>
+  <item>DateTime Divergence Tester</item>
+  <item>Float Divergence Tester</item>
+  <item>Net Converted Quantity Divergence Tester</item>
+  <item>Specialise Divergence Tester</item>
+  <item>String Divergence Tester</item>
+  <item>Variation Divergence Tester</item>
+ </portal_type>
+ <portal_type id="Payment Transaction">
+  <item>Accounting Transaction Line</item>
+  <item>Embedded File</item>
+ </portal_type>
+ <portal_type id="Preference">
+  <item>Accounting Transaction</item>
+  <item>Payment Transaction</item>
+  <item>Purchase Invoice Transaction</item>
+  <item>Sale Invoice Transaction</item>
+ </portal_type>
+ <portal_type id="Property Sheet">
+  <item>Account Type Constraint</item>
+  <item>Accounting Transaction Balance Constraint</item>
+ </portal_type>
+ <portal_type id="Purchase Invoice Transaction">
+  <item>Embedded File</item>
+  <item>Purchase Invoice Transaction Line</item>
+ </portal_type>
+ <portal_type id="Rule Tool">
+  <item>Accounting Transaction Root Simulation Rule</item>
+  <item>Invoice Root Simulation Rule</item>
+  <item>Payment Simulation Rule</item>
+ </portal_type>
+ <portal_type id="Sale Invoice Transaction">
+  <item>Embedded File</item>
+  <item>Sale Invoice Transaction Line</item>
+ </portal_type>
+</allowed_content_type_list>

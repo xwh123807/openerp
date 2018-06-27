@@ -1,0 +1,61 @@
+This file will give you a quick help on how to get ERP5 running on a computer.
+http://wiki.erp5.org/ might contain more accurate information.
+
+Pre-requirements
+================
+
+The reader is supposed to have a basic knowledge of unix commands, MySQL and
+Zope administration.
+
+The Requirements
+================
+
+The following components are required in order to use ERP5:
+
+Third-party components:
+* Zope                                                              www.zope.org
+* Zope CMF                                                          cmf.zope.org
+* MySQL                                                            www.mysql.org
+* Localizer                                                       www.ikaaro.org
+* BTreeFolder2                http://hathaway.freezope.org/Software/BTreeFolder2
+* CMFhoto
+* CMFReportTool
+* ZMySQLDA
+* PluggableAuthService
+
+Some of those components can be downloaded as RPMs from nexedi repository :
+urpmi.addmedia nexedi http://www.nexedi.org/static/Mandrake/2006.0/RPMS/
+
+From ERP5 subversion repository:
+      svn co https://svn.erp5.org/repos/public/erp5/trunk/products/
+* CMFActivity
+* CMFCategory
+* ERP5
+* ERP5Catalog
+* ERP5Form
+* ERP5OOo
+* ERP5Security
+* ERP5SyncML
+* ERP5Type
+* ZSQLCatalog
+
+Installation
+============
+
+Move/copy each CVS module you listed above directly into the Products folder
+corresponding to the Zope instance you want to install ERP5 in.
+Restart Zope.
+
+First use
+=========
+
+From Zope Managment Interface:
+Select "ERP5 Site" from the dropdown box in the workspace.
+
+What to do if something goes wrong
+==================================
+
+Check that you have the latest versions from subversion.
+Check that you have all the required components in a working state.
+Restart Zope.
+

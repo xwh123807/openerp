@@ -1,0 +1,72 @@
+2014-02-19 Arnaud Fontaine
+* Move Constraint Property Sheets and Views to their proper bt5s.
+
+2011-11-22 yusei
+* Stop showing detailed DateTime in listbox. This problem started occur due to recent specification change of zope's DateTime.
+
+2011-07-01 yusei
+* Set proper title to interaction workflows.
+
+2011-04-14 yusei
+* Remove old unnecessary tales expression from relation string fields.
+
+2010-03-02 yusei
+* Remove short title.
+
+2009-10-16 yusei
+* Update for the changes of new portal types of portal types.
+
+2009-10-15 yusei
+* Fix budget_workflow worklist. Planned state did not exist. Now 1_submitted_budget_list shows a list of budgets which are waiting to be validated.
+
+2000-01-08 jerome
+Introduce budget models
+
+2008-09-29 fabrice
+*Add budget_cell_interaction_workflow
+* Add the engaged budget tab on Budget Line views
+* Move destination_account and budget_view tabs on Purchase Order, Purchase Order Line and Account to erp5_public_accounting_budget
+
+2008-07-30 fabrice
+* add the base category budget_section
+
+2008-07-09 fabrice
+* change budget_workflow
+
+2008-07-07 jerome
+* Use categories to configure the budget line and budget cell variations. Scripts adapt their behaviour to use those configurations.
+
+2008-05-23 jerome
+* Move documents, constraints and propertysheets to ERP5 product
+
+2007-10-30 yo
+* Set pricing_interaction_workflow to Budget Transaction.
+
+2007-08-07 yo
+* Take setGroupValue and _setGroupValue into account for the interaction workflow.
+* Rename workflow transitions and states for consistency.
+
+2007-05-22 yo
+* The budget constraint should check start_date_range_min and start_date_range_max, instead of start_date.
+
+2005-02-16 Romain
+* Build for CVS.
+
+2005-02-14 Romain
+* update workflow chains.
+
+2005-02-02 Romain
+* first build of a more generic version.
+
+2005-01-09 Romain
+* rename Transfert to Transfer
+
+2005-10-15 Kevin
+* first "as is" public release (thanks to Mayoro, the author of the whole module)
+* rename skin folder 'erp5_accounting' to 'erp5_accounting_for_budget' to avoid confusion
+* add the custom accounting_workflow that support budgets
+* move and merge function category to erp5_core.bt5
+* move and merge financial_section category to erp5_accounting.bt5
+* delete source_function and destination_function (they are duplicate with the ones in erp5_core.bt5)
+* move z_related_financial_section_category, z_related_function_category and z_related_group_category catalog methods to erp5_accounting.bt5
+* move groupCategory, financialSectionCategory and functionCategory related keys to erp5_accounting.bt5

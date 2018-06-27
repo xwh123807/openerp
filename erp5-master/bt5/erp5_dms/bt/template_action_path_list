@@ -1,0 +1,154 @@
+Document Ingestion Message | view
+Document Ingestion Module | list
+Document Module | advanced_search
+Document Module | contribute_file
+Document Module | document_search
+Document Module | view
+Document Module | webdav
+Drawing | create_snapshot
+Drawing | download
+Drawing | download_ooo
+Drawing | export
+Drawing | file_upload
+Drawing | html_view
+Drawing | jump_to_all_related
+Drawing | jump_to_predecessor
+Drawing | jump_to_similar
+Drawing | jump_to_similarity_cloud
+Drawing | jump_to_successor
+Drawing | jump_to_wiki_predecessor
+Drawing | jump_to_wiki_successor
+Drawing | local_permission
+Drawing | print
+Drawing | related_document
+Drawing | update_content_from_url
+Drawing | version_view
+Drawing | view
+Drawing | web_view
+External Source Module | view
+File | file_upload
+File | jump_to_all_related
+File | jump_to_predecessor
+File | jump_to_similar
+File | jump_to_similarity_cloud
+File | jump_to_successor
+File | jump_to_wiki_predecessor
+File | local_permission
+File | related_document
+File | version_view
+File | view_editor
+Image Module | list_ui
+Image Module | sort_on
+Image Module | view
+Image | export
+Image | file_upload
+Image | jump_to_all_related
+Image | jump_to_predecessor
+Image | jump_to_similar
+Image | jump_to_similarity_cloud
+Image | jump_to_successor
+Image | jump_to_wiki_predecessor
+Image | local_permission
+Image | related_document
+Image | version_view
+PDF | download
+PDF | file_upload
+PDF | html_view
+PDF | jump_to_all_related
+PDF | jump_to_predecessor
+PDF | jump_to_similar
+PDF | jump_to_similarity_cloud
+PDF | jump_to_successor
+PDF | jump_to_wiki_predecessor
+PDF | jump_to_wiki_successor
+PDF | local_permission
+PDF | preview
+PDF | related_document
+PDF | update_content_from_url
+PDF | version_view
+PDF | view
+PDF | web_view
+Presentation | create_snapshot
+Presentation | download
+Presentation | download_ooo
+Presentation | export
+Presentation | file_upload
+Presentation | html_view
+Presentation | jump_to_all_related
+Presentation | jump_to_predecessor
+Presentation | jump_to_similar
+Presentation | jump_to_similarity_cloud
+Presentation | jump_to_successor
+Presentation | jump_to_wiki_predecessor
+Presentation | jump_to_wiki_successor
+Presentation | local_permission
+Presentation | print
+Presentation | related_document
+Presentation | update_content_from_url
+Presentation | version_view
+Presentation | view
+Presentation | web_view
+RSS Feed | crawl
+RSS Feed | crawled_content
+RSS Feed | view
+Spreadsheet | create_snapshot
+Spreadsheet | download
+Spreadsheet | download_ooo
+Spreadsheet | export
+Spreadsheet | file_upload
+Spreadsheet | html_view
+Spreadsheet | jump_to_all_related
+Spreadsheet | jump_to_predecessor
+Spreadsheet | jump_to_similar
+Spreadsheet | jump_to_similarity_cloud
+Spreadsheet | jump_to_successor
+Spreadsheet | jump_to_wiki_predecessor
+Spreadsheet | jump_to_wiki_successor
+Spreadsheet | local_permission
+Spreadsheet | print
+Spreadsheet | related_document
+Spreadsheet | update_content_from_url
+Spreadsheet | version_view
+Spreadsheet | view
+Spreadsheet | web_view
+System Preference | dms_preference
+Text | create_snapshot
+Text | download
+Text | download_ooo
+Text | export
+Text | file_upload
+Text | html_view
+Text | jump_to_all_related
+Text | jump_to_predecessor
+Text | jump_to_similar
+Text | jump_to_similarity_cloud
+Text | jump_to_successor
+Text | jump_to_wiki_predecessor
+Text | jump_to_wiki_successor
+Text | local_permission
+Text | print
+Text | related_document
+Text | suggest_reference
+Text | update_content_from_url
+Text | version_view
+Text | view
+Text | web_view
+URL Crawler | crawl
+URL Crawler | crawled_content
+URL Crawler | view
+Web Illustration | list
+Web Illustration | local_permission
+Web Illustration | related
+Web Illustration | send_email
+Web Illustration | view
+Web Illustration | view_editor
+Web Illustration | web_view
+Web Page | related
+Web Page | version_view
+Web Table | list
+Web Table | local_permission
+Web Table | related
+Web Table | send_email
+Web Table | view
+Web Table | view_editor
+Web Table | web_view

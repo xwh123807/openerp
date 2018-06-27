@@ -1,0 +1,41 @@
+File | web_view
+Image | web_view
+Static Web Section | generate_section
+Static Web Section | layout_configuration
+Static Web Section | local_permission
+Static Web Section | new_default_page
+Static Web Section | new_page
+Static Web Section | predicate
+Static Web Section | section_content
+Static Web Section | view
+Static Web Section | web_view
+Web Page Module | list_ui
+Web Page Module | sort_on
+Web Page Module | view
+Web Page | list
+Web Page | local_permission
+Web Page | send_email
+Web Page | view
+Web Page | view_editor
+Web Page | web_view
+Web Section | generate_section
+Web Section | layout_configuration
+Web Section | local_permission
+Web Section | new_default_page
+Web Section | new_page
+Web Section | predicate
+Web Section | section_content
+Web Section | view
+Web Section | web_view
+Web Site Module | list_ui
+Web Site Module | sort_on
+Web Site Module | view
+Web Site | generate_section
+Web Site | layout_configuration
+Web Site | local_permission
+Web Site | new_default_page
+Web Site | predicate
+Web Site | preference
+Web Site | section_content
+Web Site | view
+Web Site | web_view

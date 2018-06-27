@@ -1,0 +1,37 @@
+<base_category_list>
+ <portal_type id="Assignment">
+  <item>agent</item>
+ </portal_type>
+ <portal_type id="Career">
+  <item>agent</item>
+ </portal_type>
+ <portal_type id="Position">
+  <item>agent</item>
+ </portal_type>
+ <portal_type id="Position Announcement">
+  <item>aggregate</item>
+  <item>classification</item>
+  <item>destination</item>
+  <item>function</item>
+  <item>group</item>
+  <item>predecessor</item>
+  <item>publication_section</item>
+  <item>similar</item>
+  <item>site</item>
+  <item>source</item>
+  <item>source_project</item>
+  <item>successor</item>
+ </portal_type>
+ <portal_type id="Position Announcement Module">
+  <item>business_application</item>
+ </portal_type>
+ <portal_type id="Position Module">
+  <item>business_application</item>
+ </portal_type>
+ <portal_type id="Position Opportunity">
+  <item>referral</item>
+ </portal_type>
+ <portal_type id="Position Opportunity Module">
+  <item>business_application</item>
+ </portal_type>
+</base_category_list>

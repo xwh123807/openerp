@@ -1,0 +1,361 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Test RenderJS UI</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test RenderJS UI</td></tr>
+</thead><tbody>
+<tal:block metal:use-macro="here/Zuite_CommonTemplate/macros/init" />
+
+<tr>
+  <td>open</td>
+  <td>${base_url}/bar_module/ListBoxZuite_reset</td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>assertTextPresent</td>
+  <td>Reset Successfully.</td>
+  <td></td>
+</tr>
+
+
+<tr>
+  <td>open</td>
+  <td>${base_url}/foo_module/FooModule_viewFooList/listbox/ListBox_setPropertyList?field_columns=id%7CID%0Atitle%7CTitle%0Adelivery.quantity%7CQuantity%0Asimulation_state%7CState</td>
+  <td></td>
+</tr>
+
+
+
+<tr>
+  <td>assertTextPresent</td>
+  <td>Set Successfully.</td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>open</td>
+  <td>${base_url}/web_site_module/renderjs_runner/#/foo_module</td>
+  <td></td>
+</tr>
+
+<tr>
+ 	<td>waitForElementPresent</td>
+ 	<td>//a[@data-i18n='Add']</td>
+  <td></td>
+</tr>
+ 
+<tr>
+ <td>click</td>
+ <td>link=Add</td>
+ <td></td>
+</tr>
+
+
+<tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/submit_dialog" />
+<tal:block tal:define="notification_configuration python: {'class': 'success',
+                                                           'text': 'Document created.'}">
+  <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_notification" />
+</tal:block>
+
+
+<tr>
+  <td>waitForElementPresent</td>
+ 	<td>//a[@data-i18n="Add"]</td>
+ 	<td></td>
+</tr>
+
+<tr>
+  <td>click</td>
+  <td>//a[@data-i18n="Add"]</td>
+  <td></td>
+</tr>
+
+
+<!-- create 2 Foo lines, one has same id as parent  -->
+
+<tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/submit_dialog" />
+<tal:block tal:define="notification_configuration python: {'class': 'success',
+                                                           'text': 'Document created.'}">
+  <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_notification" />
+</tal:block>
+
+<tr>
+ 	<td>waitForElementPresent</td>
+ 	<td>//button[@data-i18n='Save']</td>
+ 	<td></td>
+</tr>
+
+<tr>
+ 	<td>waitForElementPresent</td>
+ 	<td>//a[text()='Foo Line: 1']</td>
+ 	<td></td>
+</tr>
+
+<tr>
+  <td>click</td>
+ 	<td>//a[text()='Foo Line: 1']</td>
+ 	<td></td>
+</tr>
+
+<tr>
+  <td>waitForElementPresent</td>
+ 	<td>//div[@data-gadget-scope="field_listbox"]</td>
+ 	<td></td>
+</tr>
+
+
+<tr>
+  <td>waitForElementPresent</td>
+ 	<td>//a[@data-i18n="Add"]</td>
+ 	<td></td>
+</tr>
+
+<tr>
+  <td>click</td>
+  <td>//a[@data-i18n="Add"]</td>
+  <td></td>
+</tr>
+
+<tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/submit_dialog" />
+<tal:block tal:define="notification_configuration python: {'class': 'success',
+                                                           'text': 'Document created.'}">
+  <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_notification" />
+</tal:block>
+
+<tr>
+ 	<td>waitForElementPresent</td>
+ 	<td>//button[@data-i18n='Save']</td>
+ 	<td></td>
+</tr>
+
+<tr>
+ 	<td>waitForElementPresent</td>
+ 	<td>//a[text()='Foo Line: 2']</td>
+ 	<td></td>
+</tr>
+
+ 
+<tr>
+  <td>storeLocation</td>
+ 	<td>url</td>
+ 	<td></td>
+</tr>
+
+ 
+<tal:block metal:use-macro="here/Zuite_CommonTemplate/macros/wait_for_activities" />
+
+<tr>
+ 	<td>open</td>
+ 	<td>${url}</td>
+ 	<td></td>
+</tr>
+
+<tr>
+ 	<td>waitForElementPresent</td>
+ 	<td>//a[text()='Foo Line: 2']</td>
+ 	<td></td>
+</tr>
+
+<tr>
+  <td>click</td>
+ 	<td>//a[text()='Foo Line: 2']</td>
+ 	<td></td>
+</tr>
+
+<tal:block tal:define="pagination_configuration python: {'header': '(2)', 'footer': '2 Records'}">
+  <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/check_listbox_pagination_text" />
+</tal:block>
+
+<!-- Wait for the action page and click on the delete link -->
+<tr>
+ 	<td>waitForElementPresent</td>
+ 	<td>//a[@data-i18n='Actions']</td>
+ 	<td></td>
+</tr>
+<tr>
+ 	<td>click</td>
+ 	<td>//a[@data-i18n='Actions']</td>
+ 	<td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+ 	<td>//a[@data-i18n='Delete Document']</td>
+ 	<td></td>
+</tr>
+<tr>
+  <td>click</td>
+ 	<td>//a[@data-i18n='Delete Document']</td>
+ 	<td></td>
+</tr>
+
+<tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/submit_dialog" />
+<tal:block tal:define="notification_configuration python: {'class': 'success',
+                                                           'text': 'Document deleted'}">
+  <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_notification" />
+</tal:block>
+
+<!-- Deletion of a Foo Document will still show it in Module View but with "deleted" state -->
+<tr><td>waitForElementPresent</td>
+ 	  <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_list.html')]//div[@data-gadget-scope="field_listbox"]//a[text()="deleted"]</td><td></td></tr>
+
+<tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/toggle_editable_mode" />
+<tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_content_loaded" />
+
+<!-- We should see only one Foo Document -->
+<tr>
+ 	<td>waitForElementPresent</td>
+ 	<td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_list.html')]//div[@data-gadget-scope="field_listbox"]//a[@class="ui-link"]</td>
+ 	<td></td>
+</tr>
+
+<tr>
+ 	<td>click</td>
+ 	<td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_list.html')]//div[@data-gadget-scope="field_listbox"]//a[@class="ui-link"]</td>
+ 	<td></td>
+</tr>
+
+<tr>
+ 	<td>waitForElementPresent</td>
+ 	<td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_view.html')]//div[@data-gadget-scope="field_listbox"]//a[@class="ui-link"]</td>
+ 	<td></td>
+</tr>
+ 
+<tr>
+ 	<td>click</td>
+ 	<td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_view.html')]//div[@data-gadget-scope="field_listbox"]//a[@class="ui-link"]</td>
+ 	<td></td>
+</tr>
+
+<tr>
+ 	<td>waitForElementNotPresent</td>
+   <td>//div[@data-gadget-scope="field_listbox"]</td>
+  <td></td>
+</tr>
+
+<tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/toggle_editable_mode" />
+
+<!-- Wait for the action page and click on the delete link -->
+<tr>
+ 	<td>waitForElementPresent</td>
+ 	<td>//a[@data-i18n='Actions']</td>
+ 	<td></td>
+</tr>
+<tr>
+ 	<td>click</td>
+ 	<td>//a[@data-i18n='Actions']</td>
+ 	<td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+ 	<td>//a[@data-i18n='Delete Document']</td>
+ 	<td></td>
+</tr>
+<tr>
+  <td>click</td>
+ 	<td>//a[@data-i18n='Delete Document']</td>
+ 	<td></td>
+</tr>
+
+<tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/submit_dialog" />
+<tal:block tal:define="notification_configuration python: {'class': 'success',
+                                                           'text': 'Document deleted'}">
+  <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_notification" />
+</tal:block>
+
+<tr>
+ 	<td>waitForElementPresent</td>
+ 	<td>//a[@data-i18n="Previous"]</td>
+  <td></td>
+</tr>
+
+<tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/toggle_editable_mode" />
+<tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_content_loaded" />
+
+<tr>
+ 	<td>waitForElementPresent</td>
+ 	<td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_view.html')]//div[@data-gadget-scope="field_listbox"]//a[@class="ui-link"]</td>
+ 	<td></td>
+</tr>
+ 
+<tr>
+ 	<td>click</td>
+ 	<td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_view.html')]//div[@data-gadget-scope="field_listbox"]//a[@class="ui-link"]</td>
+ 	<td></td>
+</tr>
+
+<tr>
+ 	<td>waitForElementNotPresent</td>
+   <td>//div[@data-gadget-scope="field_listbox"]</td>
+  <td></td>
+</tr>
+
+<tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/toggle_editable_mode" />
+
+<!-- Wait for the action page and click on the delete link -->
+<tr>
+ 	<td>waitForElementPresent</td>
+ 	<td>//a[@data-i18n='Actions']</td>
+ 	<td></td>
+</tr>
+<tr>
+ 	<td>click</td>
+ 	<td>//a[@data-i18n='Actions']</td>
+ 	<td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+ 	<td>//a[@data-i18n='Delete Document']</td>
+ 	<td></td>
+</tr>
+<tr>
+  <td>click</td>
+ 	<td>//a[@data-i18n='Delete Document']</td>
+ 	<td></td>
+</tr>
+
+<tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/submit_dialog" />
+<tal:block tal:define="notification_configuration python: {'class': 'success',
+                                                           'text': 'Document deleted'}">
+  <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_notification" />
+</tal:block>
+
+<tr>
+ 	<td>waitForElementPresent</td>
+ 	<td>//a[@data-i18n="Previous"]</td>
+  <td></td>
+</tr>
+
+<tal:block tal:define="pagination_configuration python: {'header': '(0)', 'footer': 'No records'}">
+  <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/check_listbox_pagination_text" />
+</tal:block>
+
+<!-- Wait for the action page and check no delete link is here-->
+<tr>
+ 	<td>waitForElementPresent</td>
+ 	<td>//a[@data-i18n='Actions']</td>
+ 	<td></td>
+</tr>
+<tr>
+ 	<td>click</td>
+ 	<td>//a[@data-i18n='Actions']</td>
+ 	<td></td>
+</tr>
+<tr>
+ 	<td>waitForTextPresent</td>
+ 	<td>Delete</td>
+  <td></td>
+</tr>
+<tr>
+ 	<td>verifyElementNotPresent</td>
+ 	<td>//a[@data-i18n='Delete Document']</td>
+  <td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

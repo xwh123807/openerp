@@ -1,0 +1,68 @@
+<base_category_list>
+ <portal_type id="Document Analysis Document">
+  <item>document_analysis_document_type</item>
+ </portal_type>
+ <portal_type id="Document Analysis Lexicon">
+  <item>lexicon_source_type</item>
+ </portal_type>
+ <portal_type id="Document Analysis Lexicon Item">
+  <item>lexicon_item_type</item>
+  <item>lexicon_item_ubm</item>
+ </portal_type>
+ <portal_type id="Document Analysis Module">
+  <item>business_application</item>
+ </portal_type>
+ <portal_type id="Test Case">
+  <item>requirement</item>
+  <item>source</item>
+  <item>specialise</item>
+ </portal_type>
+ <portal_type id="Test Case Actor">
+  <item>group</item>
+  <item>site</item>
+  <item>use_case_actor_role</item>
+ </portal_type>
+ <portal_type id="Test Case Module">
+  <item>business_application</item>
+ </portal_type>
+ <portal_type id="Test Case Step">
+  <item>requirement</item>
+  <item>source_section</item>
+ </portal_type>
+ <portal_type id="Test Report">
+  <item>requirement</item>
+  <item>source</item>
+  <item>specialise</item>
+ </portal_type>
+ <portal_type id="Test Report Actor">
+  <item>group</item>
+  <item>site</item>
+  <item>source</item>
+  <item>use_case_actor_role</item>
+ </portal_type>
+ <portal_type id="Test Report Module">
+  <item>business_application</item>
+ </portal_type>
+ <portal_type id="Test Report Step">
+  <item>requirement</item>
+  <item>source_section</item>
+ </portal_type>
+ <portal_type id="Use Case">
+  <item>requirement</item>
+ </portal_type>
+ <portal_type id="Use Case Actor">
+  <item>group</item>
+  <item>site</item>
+  <item>use_case_actor_role</item>
+ </portal_type>
+ <portal_type id="Use Case Module">
+  <item>business_application</item>
+ </portal_type>
+ <portal_type id="Use Case Scenario">
+  <item>requirement</item>
+ </portal_type>
+ <portal_type id="Use Case Scenario Step">
+  <item>requirement</item>
+  <item>source_section</item>
+ </portal_type>
+</base_category_list>

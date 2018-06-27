@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+[ $# = 2 ] || {
+  echo "Usage:
+`basename "$0"` db_name table_name"
+  exit 1
+}
+
+exec watch -n 1 "${MYSQL:-mysql} -u root -t '$1' --disable-pager -t -e '  SELECT count(*) as NEW FROM \`$2\` WHERE processing_node = -1; SELECT count(*) as VALID FROM \`$2\` WHERE processing_node = 0; SELECT count(*) as ASSIGNED FROM \`$2\` WHERE processing_node > 0; SELECT count(*) as PROCESSING FROM \`$2\` WHERE processing = 1; SELECT count(*) as ASSIGNED, processing_node as node FROM \`$2\` WHERE processing_node > 0 GROUP BY processing_node; SELECT count(*) as PROCESSING, processing_node as node FROM \`$2\` WHERE processing_node > 0 AND processing = 1 GROUP BY processing_node; SELECT count(*) as FAILURE FROM \`$2\` WHERE processing_node = -2; SELECT count(*) as ERROR FROM \`$2\` WHERE processing_node = -3;'"
+

@@ -1,0 +1,46 @@
+2008-04-02 fabien
+* use searchFolder instead of contentValues to get the use case.
+* get the 'validated' use cases instead of the draft.
+
+2008-03-17 fabien
+* Translate and reindent UseCaseModule_viewUseCaseReportAsSxw.
+make it working on Use Case Object and Module instead of just module.
+* add use_case_report action on Use Case Portal Type.
+
+2007-09-25 yo
+* Set module group on portal types.
+
+2008-08-06 JPS
+* Removed feature module (now called requirement and part of erp5_project bt)
+
+2006-04-12 vincent
+* Add Test Case Module & Test Case Report Module
+
+2006-02-22 kevin
+* Fix bad default lisbox parameters.
+
+2006-01-25 yo
+* Fix the sort_on parameters in UseCaseModule_viewUseCaseReportAsSxw.
+
+2006-01-24 yo
+* Set the permissions of use_case_module.
+
+2006-01-24 yo
+* Remove the PropertySheet DocumentAnalysisLexiconItem.
+
+2006-01-24 yo
+* Perform refactoring of the Use Case Module.
+
+2005-11-03 Kevin
+* Change some object's title to respect ERP5 naming conventions.
+* Clean Use Case scenarii UI.
+* Add "counts" in Document Analysis, Use Case and Feature listboxes.
+* Use translated states in Feature module.
+* Set good permissions on portal types actions.
+* Use Icons shortcut for fast input.
+* Rename module using '_module' suffix to respect ERP5 naming conventions.
+
+2005-07-28 Kevin
+* FastInput_initialize is now working.
+* Re-add portal classes property sheets.
+* UI cleaned.

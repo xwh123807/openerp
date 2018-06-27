@@ -1,0 +1,40 @@
+Base Type | copy_roles
+Bug Line | document_list
+Bug Line | new_file
+Bug Line | view
+Bug Module | view
+Bug | bug_line_send
+Bug | document_list
+Bug | new_file
+Bug | view
+Business Template | clean_vcs_bt
+Business Template | conflicted_files
+Business Template | create_report
+Business Template | create_skin_folder
+Business Template | create_working_copy
+Business Template | git_commit
+Business Template | manage_field_library
+Business Template | rename_proxy_field
+Business Template | svn_cleanup_locks
+Business Template | svn_commit
+Business Template | update_vcs_bt
+Business Template | update_vcs_bt_norevert
+Business Template | view_svn_repos_info
+Category Tool | generate_translation_file
+Glossary Module | create_term_for_translation
+Glossary Module | export_po_file
+Glossary Module | find_duplicate_terms
+Glossary Module | find_terms_from_portal_type
+Glossary Module | find_terms_from_property_sheet
+Glossary Module | find_terms_from_workflow
+Glossary Module | update_fields_by_english_glossary
+Glossary Module | update_portal_types_by_english_glossary
+Glossary Module | update_workflows_by_english_glossary
+Glossary Module | view
+Glossary Term | view
+Preference | vcs
+Template Tool | bt_vcs_history
+Template Tool | migrate_business_template_list
+Template Tool | search_portal_type
+Types Tool | role_information_list_view
+portal_actions | generate_pot_file

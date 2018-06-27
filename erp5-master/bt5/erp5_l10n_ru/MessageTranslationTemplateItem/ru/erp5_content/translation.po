@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ERP5 Localized Content\n"
+"POT-Creation-Date: 2011-01-29 17:01+CET\n"
+"PO-Revision-Date: 2011-01-29 17:01+CET\n"
+"Last-Translator:  <>\n"
+"Language-Team: ru <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Asset"
+msgstr "Актив"
+
+msgid "Bank"
+msgstr "Банк"
+
+msgid "Cash"
+msgstr "Денежные Средства"
+
+msgid "Collected VAT"
+msgstr "НДС к Уплате"
+
+msgid "Equity"
+msgstr "Капитал"
+
+msgid "Expense"
+msgstr "Расходы"
+
+msgid "Income"
+msgstr "Доходы"
+
+msgid "Liability"
+msgstr "Пассив"
+
+msgid "Morphology"
+msgstr "Состав"
+
+msgid "Payable"
+msgstr "Кредиторы"
+
+msgid "Receivable"
+msgstr "Дебиторы"
+
+msgid "Refundable VAT"
+msgstr "НДС к Возмещению"
+
+msgid "Wire Transfer"
+msgstr "Банковский Перевод"
+
+msgid "cash on delivery"
+msgstr "Наложенный Платеж"

@@ -1,0 +1,443 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Test OfficeJS UI</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test OfficeJS UI</td></tr>
+</thead><tbody>
+<tal:block metal:use-macro="here/Zuite_CommonTemplate/macros/init" />
+<!-- Clean Up -->
+<tr>
+  <td>open</td>
+  <td>${base_url}/bar_module/ListBoxZuite_reset</td>
+  <td></td>
+</tr>
+<tr>
+  <td>assertTextPresent</td>
+  <td>Reset Successfully.</td>
+  <td></td>
+</tr>
+<!-- Initialize -->
+<tr>
+  <td>open</td>
+  <td>${base_url}/web_site_module/officejs_bookmark_manager?ignore_layout:int=1&editable_mode:int=1</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>name=Base_createCloneDocument:method</td>
+  <td></td>field_my_id
+</tr>
+<tr>
+  <td>clickAndWait</td>
+  <td>name=Base_createCloneDocument:method</td>
+  <td></td>
+</tr>
+<tr>
+  <td>verifyTextPresent</td>
+  <td>Created Clone Web Site</td>
+  <td></td>
+</tr>
+<tr>
+  <td>storeValue</td>
+  <td>name=field_my_id</td>
+  <td>test_url</td>
+</tr>
+<!-- Generic Officejs Test -->
+<tal:block metal:use-macro="here/Zuite_CommonTemplate/macros/wait_for_activities" />
+<tr>
+  <td>open</td>
+  <td>${base_url}/web_site_module/${test_url}/</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>link=Local is Enough</td>
+  <td></td>
+</tr>
+<tr>
+  <td>open</td>
+  <td>${base_url}/web_site_module/manage_main</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>name=ids:list</td>
+  <td></td>
+</tr>
+<tr>
+  <td>type</td>
+  <td>name=ids:list</td>
+  <td>${test_url}</td>
+</tr>
+<tr>
+  <td>clickAndWait</td>
+  <td>name=manage_delObjects:method</td>
+  <td></td>
+</tr>
+<!-- Offline Test -->
+<tr>
+  <td>open</td>
+  <td>${base_url}/web_site_module/${test_url}/</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>link=Local is Enough</td>
+  <td></td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>link=Local is Enough</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>link=Add</td>
+  <td></td>
+</tr>
+<!-- Save 1st bookmark -->
+<tr>
+  <td>click</td>
+  <td>link=Add</td>
+  <td></td>
+</tr>
+<tr>
+  <td>store</td>
+  <td>My cloud</td>
+  <td>title_1</td>
+</tr>
+<tr>
+  <td>store</td>
+  <td>${base_url}/ERP5Site_printParameterAsHTMLTitle?parameter=cloud</td>
+  <td>url_1</td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>identifier=title</td>
+  <td></td>
+</tr>
+<tr>
+  <td>type</td>
+  <td>name=title</td>
+  <td>${title_1}</td>
+</tr>
+<tr>
+  <td>type</td>
+  <td>name=url_string</td>
+  <td>${url_1}</td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>//button[@data-i18n='Save']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>link=Add</td>
+  <td></td>
+</tr>
+<!-- Save 2nd Bookmark -->
+<tr>
+  <td>click</td>
+  <td>link=Add</td>
+  <td></td>
+</tr>
+<tr>
+  <td>store</td>
+  <td>My blog</td>
+  <td>title_2</td>
+</tr>
+<tr>
+  <td>store</td>
+  <td>${base_url}/ERP5Site_printParameterAsHTMLTitle?parameter=blog</td>
+  <td>url_2</td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>identifier=title</td>
+  <td></td>
+</tr>
+<tr>
+  <td>type</td>
+  <td>name=title</td>
+  <td>${title_2}</td>
+</tr>
+<tr>
+  <td>type</td>
+  <td>name=url_string</td>
+  <td>${url_2}</td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>//button[@data-i18n='Save']</td>
+  <td></td>
+</tr>
+<!-- Verify Search -->
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//button[@data-i18n='Filter']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//div[@role='main']//div[@data-gadget-scope='erp5_searchfield']//input[@name='search']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>type</td>
+  <td>//div[@role='main']//div[@data-gadget-scope='erp5_searchfield']//input[@name='search']</td>
+  <td>${title_2}</td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>//div[@role='main']//div[@data-gadget-scope='erp5_searchfield']//button[@type='submit']</td>
+  <td></td>
+</tr>
+<tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_content_loaded_in_menu_page" />
+<tr>
+  <td>waitForElementPresent</td>
+  <td>link=${title_2}</td>
+  <td></td>
+</tr>
+<tr>
+  <td>assertFailureOnNext</td>
+  <td>false</td>
+  <td></td>
+</tr>
+<tr>
+  <td>verifyElementPresent</td>
+  <td>link=${title_1}</td>
+  <td></td>
+</tr>
+<!-- Search With Dispatcher and default redirection on bookmark -->
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//a[@data-i18n='Search']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>//a[@data-i18n='Search']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//button[@data-i18n='Proceed']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//div[@role='main']//input[@name='search']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>type</td>
+  <td>//div[@role='main']//input[@name='search']</td>
+  <td>cloud</td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>//button[@data-i18n='Proceed']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//h1[@class='test-script-title']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>verifyText</td>
+  <td>//h1[@class='test-script-title']</td>
+  <td>Title is : cloud</td>
+</tr>
+<!-- Add bookmark With Dispatcher Command -->
+<tr>
+  <td>open</td>
+  <td>${base_url}/web_site_module/${test_url}/</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//a[@data-i18n='Search']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>//a[@data-i18n='Search']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//button[@data-i18n='Proceed']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//div[@role='main']//input[@name='search']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>type</td>
+  <td>//div[@role='main']//input[@name='search']</td>
+  <td>!add ${base_url}/ERP5Site_printParameterAsHTMLTitle?parameter=</td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>//button[@data-i18n='Proceed']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>identifier=title</td>
+  <td></td>
+</tr>
+<tr>
+  <td>store</td>
+  <td>search</td>
+  <td>search_term</td>
+</tr>
+<tr>
+  <td>type</td>
+  <td>//input[@name='reference']</td>
+  <td>${search_term}</td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>//button[@data-i18n='Save']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>link=Add</td>
+  <td></td>
+</tr>
+<!--- Verify Search Command -->
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//a[@data-i18n='Search']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>//a[@data-i18n='Search']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//button[@data-i18n='Proceed']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//div[@role='main']//input[@name='search']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>type</td>
+  <td>//div[@role='main']//input[@name='search']</td>
+  <td>!search mysearchterm</td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>//button[@data-i18n='Proceed']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//h1[@class='test-script-title']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>verifyText</td>
+  <td>//h1[@class='test-script-title']</td>
+  <td>Title is : mysearchterm</td>
+</tr>
+<!-- Set preferences -->
+<tr>
+  <td>open</td>
+  <td>${base_url}/web_site_module/${test_url}/</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//a[@data-i18n='Preferences']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>//a[@data-i18n='Preferences']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//input[@name='auto_redirect']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>//input[@name='auto_redirect']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>//input[@name='search_engine']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>type</td>
+  <td>//input[@name='search_engine']</td>
+  <td>${base_url}/ERP5Site_printParameterAsHTMLTitle?parameter=</td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>//button[@data-i18n='Save']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>css=div.visible[data-gadget-scope="notification"]</td>
+  <td></td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>//a[@data-i18n='Search']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//button[@data-i18n='Proceed']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//div[@role='main']//input[@name='search']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>type</td>
+  <td>//div[@role='main']//input[@name='search']</td>
+  <td>chocolate</td>
+</tr>
+<tr>
+  <td>click</td>
+  <td>//button[@data-i18n='Proceed']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//h1[@class='test-script-title']</td>
+  <td></td>
+</tr>
+<tr>
+  <td>verifyText</td>
+  <td>//h1[@class='test-script-title']</td>
+  <td>Title is : chocolate</td>
+</tr>
+</tbody></table>
+</body>
+</html>

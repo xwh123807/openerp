@@ -1,0 +1,76 @@
+2013-09-08 arnaud.fontaine
+* ZODB Components: Revert 'Allow to execute runUnitTest for bt5 Test Components' to fix tests bootstrap.
+
+2013-09-03 arnaud.fontaine
+* ZODB Components: Workflow History must always be kept, so avoid an extra step for developers.
+
+2013-08-28 arnaud.fontaine
+* ZODB Components: Migrate Documents, Extensions and Tests.
+
+2010-12-13 nicolas.dumazet
+* Migrate Tools to portal type classes
+
+2010-09-21 nicolas
+* Add LiveTest instance to check
+Ingestion of URLs
+
+2009-10-16 rafael
+* Update for the changes of new portal types of portal types.
+
+2009-07-02 romain
+* Revert latest proxy field library simplification, as the design was not finalized.
+
+2009-05-18 yusei
+* Fix a proxy field. count_method should not be inherited from template field.
+
+2009-05-08 Yusei
+* Add field library and proxy fields.
+* Update dependencies.
+
+2009-04-18 Kazuhiko
+* Version 5.4.1
+
+2008-11-13 yusei
+* Start to develop version 5.4.
+
+2008-10-14 yusei
+* Start to develop version 5.3.
+
+2008-09-24 yusei
+* Update xml format.
+
+2008-09-04 yusei
+* Update English messages.
+
+2008-08-29 yusei
+* Use written English for message.
+
+2008-06-27 yusei
+* Start to develop version 5.2.
+
+2008-06-26 yusei
+* Revise version to 5.1.
+
+2008-06-19 yusei
+* Fixed Document_getPropertyDictFromContent and now it returns only true title metadata.
+
+2008-06-19 romain
+* Add missing mime_type base category
+
+2008-06-04 ivan
+* Set correct ingestion order
+
+2008-04-17 yusei
+* Revise version to 5.0.
+
+2008-03-26 yusei
+* Added contribution predicates for both of dms and crm ingestion.
+
+2008-03-25 yusei
+* Added Document_findTypeName. This is a configuration script that defines portal type search order.
+
+2008-03-17 yusei
+* move Contribution Tool portal type from dms.
+
+2008-03-14 yusei
+* move ingestion related stuff from core and dms to this business template.

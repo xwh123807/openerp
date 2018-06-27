@@ -1,0 +1,5 @@
+portal_skins/erp5_jquery
+portal_skins/erp5_jquery/jquery
+portal_skins/erp5_jquery/jquery/core
+portal_skins/erp5_jquery/jquery/core/**
+portal_skins/erp5_jquery/jquery/plugin

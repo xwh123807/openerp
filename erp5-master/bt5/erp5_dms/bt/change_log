@@ -1,0 +1,385 @@
+2013-09-03 arnaud.fontaine
+* ZODB Components: Workflow History must always be kept, so avoid an extra step for developers.
+
+2013-08-28 arnaud.fontaine
+* ZODB Components: Migrate Documents, Extensions and Tests.
+
+2011-11-11 arnaud.fontaine
+* Do not override portal_type for Catalog search when already given as a parameter of Document_getOtherVersionDocumentList.
+
+2011-03-28 Kazuhiko
+* we should have at most only one published/released/shared document for each reference/language, i.e. we should not have both published and released document with the same reference/language at the same time.
+
+2010-07-08 mohamadou
+* revert the last commit, setting permission on this state breaks some sites security.
+
+2010-06-08 mohamadou
+* set permission on embedded state to allow assignee and assignor access the document.
+
+2010-06-01 mayoro
+* add delete transtion from embedded because needed in erp5_egov
+* allow owner to delete documents in embedded state
+
+
+2010-03-24 nicolas
+* Change duration cache of dms_cache_factory to avoid keeping converted values indefinitely. New duration is 6 month.
+
+2010-03-12 ivan
+* Add conversion_failed state (indicating an external OOOd failure) and needed transitions.
+
+2010-02-12 ivan
+* Add new interaction that will add contributor (logged in user) to edited document
+
+2009-11-12 Kazuhiko
+* remove 'similar' base category because it is already included in erp5_web.
+
+2009-10-16 rafael
+* Update for the changes of new portal types of portal types.
+
+2009-09-23 Kazuhiko
+* add ERP5-integrated filebrowser for FCKeditor's image / link edit dialogue.
+
+2009-09-11 yusei
+* Fix Image Module action and make view action the first priority.
+
+2009-09-08 Nicolas
+* update content_md5 when upload a new file
+
+2009-08-25 Kazuhiko
+* add File_viewEditor for text/* documents.
+
+2009-08-21 ivan
+* Use full text search to find related documents (i.e. referencing documents)
+
+2009-08-12 Kazuhiko
+* use iframe_content in OOoDocument_viewAsWeb for Drawing and Presentation to have better paginations.
+* use OOoDocument_viewAsWeb instead of Drawing_viewAsWeb in all preview for Drawing and Presentation.
+
+2009-07-07 nicolas
+* add dms_cache_factory to store conversion values in persisent storage like flare
+To enable it, please update your DMS Preference.
+(Preferred Conversion Cache)
+
+2009-07-03 romain
+* Revert latest proxy field library simplification, as the design was not finalized.
+
+2009-07-03 jm
+* Remove 'edit' transition on processing_status_workflow and reuse edit_workflow.
+
+2009-05-15 yusei
+* Add my_editor_field to Base_viewDMSFieldLibrary.
+
+2009-05-08 yusei
+* Simplify field libraries and proxy fields. Old field libraries are kept for backward compatibility.
+* Update dependencies.
+
+2009-05-04 Vincent
+* Drop dependency on erp5_dms_catalog as the scriptable keys it provided are moved into erp5_catalog
+
+2009-04-18 Kazuhiko
+* Version 5.4.1
+
+2009-04-10 nicolas
+* add update_frequency base category
+
+2009-03-24 fabien
+* some method need to be renamed after been moved so change the name everywhere
+
+2008-11-13 yusei
+* Start to develop version 5.4.
+
+2008-10-29 yusei
+* Classification, Function fields are now translatable.
+
+2008-10-14 yusei
+* Added SortIndex property sheet to Image and File.
+
+2008-10-14 yusei
+* Start to develop version 5.3.
+
+2008-10-03 yusei
+* Fixed a bug which prevent to access to document_module/list.
+
+2008-09-24 yusei
+* Update xml format.
+
+2008-09-07 yusei
+* Update English messages.
+
+2008-09-04 yusei
+* Update English messages.
+
+2008-09-04 yusei
+* Fixed workflow title.
+
+2008-09-03 yusei
+* Fixed i18n markup in PDF_renderHTMLPreviewNavigation.
+
+2008-07-06 yo
+* Add effective date into Web Page.
+
+2008-06-27 yusei
+* Start to develop version 5.2.
+
+2008-06-26 yusei
+* Revise version to 5.1.
+
+2008-06-12 ivan
+* Move Role Definition to erp5_base
+
+2008-06-05 yusei
+* Use updateLocalRolesOnSecurityGroups instead of assignRoleToSecurityGroup in local_permission_interaction_workflow/scripts/Parent_updateAllLocalRoles
+
+2008-04-19 yo
+* Remove erp5_crm from the dependencies.
+
+2008-4-17 yusei
+* Revise version to 5.0.
+
+2008-4-14 yusei
+* Remove Document Ingestion Message from event group.
+
+2008-3-17 Yusei
+* Remove content_type_registry
+(erp5_core will provides generic good set).
+Please use the revision 747 or newer of erpt_core.
+* Move Contribution Tool portal type to erp5_ingestion.
+
+2008-3-17 Yusei
+* Remove portal_contributions (erp5_ingestion will provides it).
+
+2008-3-14 Yusei
+* Add dependency to erp5_ingestion.
+* Version up to 0.9.3.
+* Remove ingestion scripts from DMS.
+
+2008-2-14 Yusei
+* Improve wiki successor/predecessor.
+
+2008-1-16 Yusei
+* Added generic pdf viewer for pdf preview.
+
+2008-1-14 Yusei
+* Enable group and site fields on document view always.
+* Merge two follow_up fields to one.
+* Added scriptable keys in Catalog Methods. please also use newer erp5_core(rev 670).
+
+2008-1-10 Yusei
+* Added document import dialog for Person/Organisation.
+* Added related document list view for Person/Document. This replaces the default document list view.
+
+2008-1-8 Yusei
+* Added another follow_up field relate
+document to person and organisation
+in several document view forms.
+* Removed Conference portal type from follow_up field. It does not exists now.
+
+2007-12-21 Yusei
+* Refactored ingestion system. Please use revision 18459 or newer of ERP5 and ERP5OOo.
+* version up (0.9.1 -> 0.9.2)
+* add maintainer (yusei).
+
+2007-12-19 Yusei
+* Removed unused scripts in document_interaction_workflow.
+
+2007-12-18 Yusei
+* Fixed wrong field names around search dialog. (Note: Please update erp5_dms_mysql_innodb_catalog together.)
+
+2007-12-11 Yusei
+* Fixed dependencies. erp5_dms depends on erp5_crm. Because Document Ingestion Message is based on Event portal type.
+
+2007-12-10 Yusei
+* Disable group and site fields on document view when web_mode is off.
+
+2007-11-28 Yusei
+* Remove bookmark feature.
+
+2007-11-26 Yusei
+* Add bookmark action for document type portal types.
+
+2007-11-23 Yusei
+* Add bookmark feature for km.
+
+2007-11-21 Yusei
+* Search predecessor only from document type documents.
+
+2007-11-21 Yusei
+* Disable search using xxx_relative_url argument in advanced search, language property is not stored as relation in a document. And fixed ambiguous table name in sql.
+
+2007-11-16 Yusei
+* Fixed Base_showFoundText. selection_name argument is required for listbox.
+* Fixed Base_showFoundText. if document contains charactor which utf-8 codec cannot decode, remove it from result.
+
+2007-10-11 Kazuhiko
+* move portal_contributions from Paths to Tools.
+
+2007-10-04 yusei
+* Fixed a bug that search result does not appear. (stop to use countFolder)
+
+2007-10-03 yusei
+* Remove obsolete proxy field (Base_viewAdvancedSearchDialog.your_category_list)
+
+2007-10-03 yusei
+* Fixed broken proxy fields.
+(ExternalSource_view.my_follow_up_title and Image_view.my_follow_up_title)
+
+2007-09-25 yo
+* Set module group on portal types.
+
+2007-09-13 yo
+* Allow more for Manager, otherwise even changing permissions does not work.
+
+2007-09-13 yo
+* Manager must be allowed for reading documents at any stage for indexing and management.
+
+2007-03-26
+Architecture design completed. Cleanup of code in progress.
+
+2007-02-09
+Security settings moved out from the generic implementation.
+
+2007-02-03
+Reimplemented again, to use processing status workflow for everything.
+
+2007-01-29
+Reimplemented validation flag as publication workflow variable.
+
+2007-01-24
+Major refactoring - almost everything changed.
+
+2006-12-11
+Determining portal type based on content (if implementation provides the way to do so)
+
+2006-12-08
+Document validation workflow
+
+2006-11-15
+Added RSS support to document_folder
+
+2006-11-08
+Reading doc properties from content and from email text upon ingestion
+
+2006-11-02
+Deletion in publication workflow
+Advanced search dialog for putting together search string (Google-like)
+
+2006-11-01
+Implemented basic security settings (6 policies)
+
+2006-10-30
+Removed "collaborated", added "shared"
+Implemented "personal/project" security classification
+
+2006-10-28
+Added "collaborated" state to publication_workflow
+
+2006-10-08
+Fixes and implementation improvements
+
+2006-10-02
+Moved file uploading from /view form to object_exchange
+Uploading new file creates a new object with most properties copied
+Reorganised object actions.
+
+2006-10-01
+Too many things to describe here - refer to svn log and bugtracker on dedibox
+
+2006-09-14
+Fixed some bugs and controls, implemented publication workflow side effects, check unique identifier upon submission.
+Added language and version to catalog (compatibility), updated scripts accordingly
+
+2006-09-12
+First implementation of External Document (a web page, spidered and cached)
+
+2006-09-07
+Conversion for PdfDocument
+
+2006-09-05 BG
+Extended search functions (requires SQLCatalog patch)
+
+2006-08-30 BG
+Added ImageDocument type; assigned types to group dms_document.
+
+2006-08-26 BG
+Changed way to store original filename;
+Implemented listing wiki predecessors and successors
+
+2006-08-24 BG
+html display for Text, Spreadsheet and PdfDocument
+
+2006-08-24 BG
+Changed DMS Pdf File into PdfDocument (with another base class)
+Done a number of small fixtures.
+
+2008-08-17 BG
+Parsing search string for extra tricks
+
+2006-08-14 BG
+Server address from preferences; dms categories from preferences and managed with parallel list field;
+
+2006-08-13 BG
+Basic email ingestion
+
+2006-08-04 BG
+Support for advanced search; a dialog and output form for advanced search; fixes in display of found text.
+
+2006-08-03 BG
+Nice display of search results (with highlights from SearchableText); searchable text for Spreadsheet.
+
+2006-08-02 BG
+* Support for Pdf File
+* fixes in actions, type registry and forms
+* searchable text for Text type
+
+2006-08-01 BG
+* Support for File (unregistered content type)
+* Mime header caching and sending
+* Improvements to conversion procedure
+* Numerous bugfixes
+
+2006-07-27
+Type checking upon upload using content_type_registry
+
+2006-07-26 BG
+Cleaned redundant paths; removed wiki; removed redundant portal_types; removed predecessor base_cat (overlaps with erp5_project); completed content_type_registry; tidied up roles and actions in all types; implemented Graphic support.
+
+2006-07-25
+Fixed bugs; made it work with the conversion server; tidied up actions in Text.
+
+2006-07-24
+* made all the security system work (!!! required a change to ERP5Type.py and to destination_project base cat., not in svn yet)
+
+2006-02-22 BG
+* finished (and renamed) local roles interaction workflow
+* assigned portal types to appropriate workflows
+* made File a non-terminating leaf (not in this bt5)
+
+2006-07-20 BG
+* Completed document publication workflow
+* Fixed fields in document-related forms
+* patched Base_edit
+* added missing categories
+2006-05-05 JPS
+* Refactored as a document management system
+* Create portal types for every kind of document and use mime types in CMF
+* Added very basic wiki support
+* Implemented complete prototype of security and workflows (publication, staging). Spec is in decription of transitions and states.
+
+2006-05-27
+* Allowed target mimetypes now drawn from server and cached
+* Tested for some more mimetypes
+
+2006-05-23
+* Implemented generic file generation mechanism, tested for rtf
+
+2006-05-11
+* Fixed char encoding problems
+* Implemented editing base set of metadata
+* Fixed and tidied up controls
+
+2006-05-10
+* Fixed lots of bugs
+* Conversion and metadata editing works with the server
+
+2006-05-05
+* Initial build (previous log in cvs)

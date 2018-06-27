@@ -1,0 +1,108 @@
+2010-03-17 yusuke
+* Pay Sheet Model must also be of amount_generator group.
+* fixed a incorrect argument passing between PaySheetTransaction_applyModel and PaySheetTransaction_copySubObject.
+
+2010-03-02 yusei
+* Remove short title.
+
+2010-02-19 yusei
+* Move base_amount/payroll and base_amount/payroll/l10n categories from French localisation business template.
+
+2010-02-06 yusuke
+* Add a field for service recipient
+* Update service destination of pay sheet line view to also allow person
+* Remove no need base category definition.
+
+2010-01-31 yusei
+Add Payslip List Printout to Accounting Transaction Module.
+
+2010-01-04 aurel
+Update the bt to use the new structure of the base amount category
+
+2009-12-5 yusei
+* Fix PaySheetTransaction_getODTDataDict. Make print pay slip works without pay sheet model.
+
+2009-10-16 yusei
+* Update for the changes of new portal types of portal types.
+
+2009-09-07 yusuke
+* Replace ERP5Report to ERP5Form and ReportBox
+
+2009-09-01 yusuke
+* tax_category category is renamed to contribution_share category
+
+2009-06-10 fabien
+* Payroll Service is now replaced by Service
+
+2009-05-18 yusei
+* Fix some proxy fields. count_method should not be inherited from template field and proxy_listbox_ids had to be copied to new proxified fields but it was not copied.
+
+2009-05-11 yusei
+* Bump up the version.
+* Simplify field libraries and proxy fields. Old field libraries are kept for backward compatibility.
+* Update dependencies.
+
+2009-03-16 fabien
+* add a field version on Pay Sheet Model
+* use new methods from PaySheetModel class
+
+2009-03-10 fabien
+* fix some minor problems
+* add a default action on Pay Sheet Transaction portal type to be able to print a Payslip
+* add AsODT and AsODTStyles files
+* increment version number because of the new style of the payslip
+
+2009-02-26 fabien
+* update PaySheetTransaction_view and PaySheetModel_view to display payment_condition_payment_date only if cutom payment_condition_trade_date is selected.
+
+2009-02-04 fabien
+* when a specialise model is defined on a paysheet, apply it automatically
+* rewrite the apply model script
+* add some proxy listbox ids
+
+2009-01-28 fabien
+* remove some unused script and refeactor some very similar scripts in a generic one
+
+2009-01-21 fabien
+* remove unused field base_amount_list
+* change error messages in PaySheetTransaction_checkParameters to be consistant with other translations
+* translate a message in PaySheetModelLine_asCellRange
+
+2009-01-16 fabien
+* add a checkbox on Pay Sheet Model Line to create or not the related Pay Sheet Line
+
+2009-01-15 fabien
+* update bt format
+* change the related key because of the changes of uses of base_amount
+* Add base_application_list and base_contribution_list fields on PaySheetModelLine_view and remove base_amount on PaySheetModelLine and Payroll services
+
+2008-09-16 Kazuhiko
+* revise pay_sheet_transaction_builder using new API.
+* use  delivery_causality_workflow instead of invoice_causality_workflow in Pay Sheet Transaction.
+
+2008-09-04 yusei
+* Update English messages.
+
+2008-08-28 yusei
+* Use Base_translateString or translateString instead of N_ for translation message.
+
+2008-06-10 jerome
+* Add Payroll Taxes Report
+
+2008-06-06 jerome
+* Merge skin folders to have only erp5_payroll
+
+2008-03-06 jerome
+* API change: PaySheetTransaction_getMovementList was returning the total price as "xxx_quantity" on brains. It now returns quantity, price and total_price respectivly.
+
+2008-02-14 fabien
+* correct some script : context was used instead paysheet, so results were wrong
+
+2008-01-24 fabien
+* set version number to 2.1 : this bt is the second version of payroll.
+
+2007-10-16 fabien
+* add Pay Sheet Model | Pay Sheet Model Ratio Line in allowed content type
+
+2007-10-12 fabien
+* Initial revision

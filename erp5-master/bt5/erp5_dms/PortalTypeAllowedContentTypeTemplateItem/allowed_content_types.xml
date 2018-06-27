@@ -1,0 +1,69 @@
+<allowed_content_type_list>
+ <portal_type id="Contribution Tool">
+  <item>Document Ingestion Message</item>
+  <item>Drawing</item>
+  <item>File</item>
+  <item>Image</item>
+  <item>PDF</item>
+  <item>Presentation</item>
+  <item>Spreadsheet</item>
+  <item>Text</item>
+  <item>Web Page</item>
+ </portal_type>
+ <portal_type id="Document Ingestion Module">
+  <item>Document Ingestion Message</item>
+ </portal_type>
+ <portal_type id="Document Module">
+  <item>Drawing</item>
+  <item>File</item>
+  <item>PDF</item>
+  <item>Presentation</item>
+  <item>Spreadsheet</item>
+  <item>Text</item>
+ </portal_type>
+ <portal_type id="Drawing">
+  <item>Role Definition</item>
+ </portal_type>
+ <portal_type id="External Source Module">
+  <item>RSS Feed</item>
+  <item>URL Crawler</item>
+ </portal_type>
+ <portal_type id="File">
+  <item>Role Definition</item>
+ </portal_type>
+ <portal_type id="Image">
+  <item>Role Definition</item>
+ </portal_type>
+ <portal_type id="Image Module">
+  <item>Image</item>
+ </portal_type>
+ <portal_type id="PDF">
+  <item>Role Definition</item>
+ </portal_type>
+ <portal_type id="Presentation">
+  <item>Role Definition</item>
+ </portal_type>
+ <portal_type id="Spreadsheet">
+  <item>Role Definition</item>
+ </portal_type>
+ <portal_type id="Text">
+  <item>Role Definition</item>
+ </portal_type>
+ <portal_type id="URL Crawler">
+  <item>Drawing</item>
+  <item>File</item>
+  <item>Image</item>
+  <item>PDF</item>
+  <item>Presentation</item>
+  <item>Spreadsheet</item>
+  <item>Text</item>
+  <item>Web Page</item>
+ </portal_type>
+ <portal_type id="Web Illustration">
+  <item>Image</item>
+ </portal_type>
+ <portal_type id="Web Page Module">
+  <item>Web Illustration</item>
+  <item>Web Table</item>
+ </portal_type>
+</allowed_content_type_list>

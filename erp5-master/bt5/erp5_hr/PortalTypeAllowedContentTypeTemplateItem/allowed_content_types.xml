@@ -1,0 +1,21 @@
+<allowed_content_type_list>
+ <portal_type id="Position Announcement">
+  <item>File</item>
+  <item>Image</item>
+ </portal_type>
+ <portal_type id="Position Announcement Module">
+  <item>Position Announcement</item>
+ </portal_type>
+ <portal_type id="Position Module">
+  <item>Position</item>
+ </portal_type>
+ <portal_type id="Position Opportunity">
+  <item>Document</item>
+  <item>File</item>
+  <item>Image</item>
+  <item>Link</item>
+ </portal_type>
+ <portal_type id="Position Opportunity Module">
+  <item>Position Opportunity</item>
+ </portal_type>
+</allowed_content_type_list>

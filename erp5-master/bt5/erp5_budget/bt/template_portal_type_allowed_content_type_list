@@ -1,0 +1,11 @@
+Budget Line | Budget Cell
+Budget Model Module | Budget Model
+Budget Model | Category Budget Variation
+Budget Model | Node Budget Variation
+Budget Module | Budget
+Budget Transaction Module | Budget Transaction
+Budget Transfer | Budget Transfer Line
+Budget | Budget Line
+Budget | Budget Transfer Line
+Property Sheet | Transaction Quantity Value Feasability Constraint
+Property Sheet | Transaction Quantity Value Validity Constraint

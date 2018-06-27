@@ -1,0 +1,42 @@
+2011-11-14 tatuya
+* Add the trigger to call Immobilisation_edit when the workflow state is changed. Because it is possible changing state without properties editing.
+
+2011-04-04 Kazuhiko
+* configure searchable text property ids for Amortisation Transaction.
+
+2008-10-8 yusei
+* Update xml format.
+
+2008-09-16 Kazuhiko
+* revise amortisation_transaction_builder using new API.
+
+2008-08-28 yusei
+* Use Base_translateString or translateString instead of N_ for translation message.
+
+2007-10-30 yo
+* Set pricing_interaction_workflow to Immobilisation Line.
+
+2007-10-11 Nicolas
+Update Workflows, not using edit transition anymore
+
+2007-10-04 Nicolas
+Update Amortisation Transaction Causality Workflow
+rename edit transition to calculate
+
+2006-09-18 Nicolas
+* Use amortisation_transaction_builder instead amortisation_transaction_builder
+2006-03-10 Guillaume
+* Translated amortisation method titles
+
+2006-03-09 Guillaume
+* Removed result table item
+* Handle errors in Item_viewImmobilisationPeriods
+* Translate immobilisation validity errors
+* Forgot some workflow chains on Immobilisation and Immobilisation Line
+* Added immobilisation_delivery_workflow
+
+2006-03-02 Guillaume
+* Added immobilisation skins to Delivery Cell
+
+2006-03-01 Guillaume
+* New version of immobilisations. The previous version was using 'immobilisation movements' inside an item. The new one adds the 'immobilisation movement' concept on each delivery movement. Now we can immobilise many items at once

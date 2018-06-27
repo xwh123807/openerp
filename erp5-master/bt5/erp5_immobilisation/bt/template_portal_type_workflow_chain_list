@@ -1,0 +1,34 @@
+Amortisation Rule | edit_workflow
+Amortisation Rule | rule_validation_workflow
+Amortisation Transaction Line | delivery_movement_causality_interaction_workflow
+Amortisation Transaction Line | delivery_movement_simulation_interaction_workflow
+Amortisation Transaction Line | edit_workflow
+Amortisation Transaction | accounting_workflow
+Amortisation Transaction | amortisation_transaction_causality_workflow
+Amortisation Transaction | delivery_causality_interaction_workflow
+Amortisation Transaction | delivery_causality_workflow
+Amortisation Transaction | delivery_simulation_interaction_workflow
+Amortisation Transaction | edit_workflow
+Delivery Cell | immobilisation_movement_interaction_workflow
+Immobilisation Line | edit_workflow
+Immobilisation Line | immobilisation_movement_interaction_workflow
+Immobilisation Line | pricing_interaction_workflow
+Immobilisation | edit_workflow
+Immobilisation | immobilisation_delivery_workflow
+Immobilisation | immobilisation_movement_interaction_workflow
+Immobilisation | immobilisation_workflow
+Internal Packing List Line | immobilisation_movement_interaction_workflow
+Internal Packing List | immobilisation_movement_interaction_workflow
+Internal Packing List | immobilisation_workflow
+Inventory Cell | immobilisation_movement_interaction_workflow
+Inventory Line | immobilisation_movement_interaction_workflow
+Inventory | immobilisation_movement_interaction_workflow
+Inventory | immobilisation_workflow
+Purchase Packing List Cell | immobilisation_movement_interaction_workflow
+Purchase Packing List Line | immobilisation_movement_interaction_workflow
+Purchase Packing List | immobilisation_movement_interaction_workflow
+Purchase Packing List | immobilisation_workflow
+Sale Packing List Cell | immobilisation_movement_interaction_workflow
+Sale Packing List Line | immobilisation_movement_interaction_workflow
+Sale Packing List | immobilisation_movement_interaction_workflow
+Sale Packing List | immobilisation_workflow

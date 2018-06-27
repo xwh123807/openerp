@@ -1,0 +1,4 @@
+TemplateToolBusinessTemplateInstallationConstraint
+TemplateToolCategoryNameConstraint
+TemplateToolTableConsistencyConstraint
+TemplateToolWorkflowChainConsistencyConstraint

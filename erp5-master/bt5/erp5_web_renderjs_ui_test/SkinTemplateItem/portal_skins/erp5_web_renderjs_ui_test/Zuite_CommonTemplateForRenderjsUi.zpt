@@ -1,0 +1,1159 @@
+<tal:block xmlns:tal="http://xml.zope.org/namespaces/tal"
+           xmlns:metal="http://xml.zope.org/namespaces/metal">
+  <tal:block metal:define-macro="save">
+    <tr>
+      <td colspan="3"><b>Save</b></td>
+    </tr>
+    <tr>
+     <td>waitForElementPresent</td>
+     <td>//button[@data-i18n='Save']</td>
+     <td></td>
+    </tr>
+    <tr>
+     <td>waitForElementNotPresent</td>
+     <td>//button[@data-i18n='Save'][contains(@class, "ui-disabled")]</td>
+     <td></td>
+    </tr>
+    <tr>
+     <td>assertElementNotPresent</td>
+     <td>//button[@data-i18n='Save'][contains(@class, "ui-disabled")]</td>
+     <td></td>
+    </tr>
+    <tr>
+     <td>assertElementPresent</td>
+     <td>//button[@data-i18n='Save']</td>
+     <td></td>
+    </tr>
+    <tr>
+     <td>click</td>
+     <td>//button[@data-i18n='Save']</td>
+     <td></td>
+    </tr>
+    <!-- First loader while calling Base_edit -->
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//h1[@class="ui-title"]//a[contains(@class, "ui-icon-spinner")]</td>
+      <td></td>
+    </tr>
+    <!-- Save Button is disabled  -->
+    <tr>
+      <td>verifyElementPresent</td>
+      <td>//button[@data-i18n="Save"][contains(@class, "ui-disabled")]</td>
+      <td></td>
+    </tr>
+    <tal:block tal:define="notification_configuration python: {'class': 'success',
+                                                               'text': 'Data updated.'}">
+      <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_notification" />
+    </tal:block>
+    <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_content_loaded" />
+    <tr>
+      <td>verifyElementPresent</td>
+      <td>//button[@data-i18n="Save"][contains(@class, "ui-icon-check")]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="clear_query">
+    <tr>
+      <td colspan="3"><b>Clear the search query</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_list.html')]//input[@name='search']</td>
+      <td></td>
+    </tr>
+    <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/triggle_filter" />
+    <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/trash_editor_configuration" />
+    <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/submit_filter" />
+    <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_listbox_loaded" />
+  </tal:block>
+
+  <tal:block metal:define-macro="submit_search_filter">
+    <tr>
+      <td colspan="3"><b>Submit the filter panel</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//button[@class='plus ui-btn-c ui-override-theme ui-btn ui-icon-plus ui-btn-icon-left ui-corner-all']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//button[@data-i18n='Submit']</td>
+      <td></td>
+    </tr>
+    <tr>
+     <td>click</td>
+     <td>//button[@data-i18n='Submit']</td>
+     <td></td>
+    </tr>
+    <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_content_loaded" />
+  </tal:block>
+
+  <tal:block metal:define-macro="create_translation_data">
+    <tr>
+      <td colspan="3"><b>Create the translation data</b></td>
+    </tr>
+    <tr>
+      <td>open</td>
+      <td>${base_url}/Base_createBaseLanguage</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForTextPresent</td>
+      <td>done</td>
+      <td></td>
+    </tr>
+   <tal:block metal:use-macro="here/Zuite_CommonTemplate/macros/wait_for_activities" />
+  </tal:block>
+
+  <tal:block metal:define-macro="submit_dialog">
+    <tr>
+      <td colspan="3"><b>Submit the dialog</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_dialog.html')]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementNotPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_dialog.html')]//input[@class='dialogconfirm' and @type='submit' and @disabled]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>assertElementNotPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_dialog.html')]//input[@class='dialogconfirm' and @type='submit' and @disabled]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_dialog.html')]//input[@class='dialogconfirm' and @type='submit']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_dialog.html')]//input[@class='dialogconfirm' and @type='submit']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="update_dialog">
+    <tr>
+      <td colspan="3"><b>Update the dialog</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_dialog.html')]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementNotPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_dialog.html')]//button[@name='action_update' and @type='submit' and @disabled]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>assertElementNotPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_dialog.html')]//button[@name='action_update' and @type='submit' and @disabled]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_dialog.html')]//button[@name='action_update' and @type='submit']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_dialog.html')]//button[@name='action_update' and @type='submit']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="search_in_form_list">
+    <tr>
+      <td colspan="3"><b tal:content="python: 'Submit a form list search: %s' % search_query"></b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_list.html')]//input[@name='search']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_list.html')]//input[@name='search']</td>
+      <td tal:content="search_query"></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_list.html')]//div[@data-gadget-scope='erp5_searchfield']//button[contains(@class, 'search_button')]</td>
+      <td></td>
+    </tr>
+     <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_content_loaded" />
+  </tal:block>
+
+  <tal:block metal:define-macro="search_in_form_list_without_header_url">
+    <tr>
+      <td colspan="3"><b>Submit a form list search (without header URL)</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_list.html')]//input[@name='search']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_list.html')]//input[@name='search']</td>
+      <td tal:content="search_query"></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_list.html')]//div[@data-gadget-scope='erp5_searchfield']//button[contains(@class, 'search_button')]</td>
+      <td></td>
+    </tr>
+    <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_content_loaded_in_menu_page" />
+  </tal:block>
+
+  <tal:block metal:define-macro="check_search_in_form_list">
+    <tr>
+      <td colspan="3"><b tal:content="python: 'Check the search query: %s %s' % (parsed_query, search_query)"></b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_list.html')]//div[@data-gadget-scope='erp5_searchfield']//input[@name='search']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>assertValue</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_list.html')]//div[@data-gadget-scope='erp5_searchfield']//input[@type='hidden']</td>
+      <td tal:content="parsed_query"></td>
+    </tr>
+    <tr>
+      <td>assertValue</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_list.html')]//div[@data-gadget-scope='erp5_searchfield']//input[@name='search' and @type='search']</td>
+      <td tal:content="search_query"></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="wait_for_app_loaded">
+    <tr>
+      <td colspan="3"><b>Wait for the application to be loaded</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[@class="ui-icon-spinner ui-btn-icon-notext first-loader"]</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>waitForElementNotPresent</td>
+      <td>//div[@class="ui-icon-spinner ui-btn-icon-notext first-loader"]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="wait_for_content_loaded">
+    <tr>
+      <td colspan="3"><b>Wait for the content to be loaded</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_header.html')]//h1[@class="ui-title"]//*[contains(@class, "ui-icon-spinner")]</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>waitForElementNotPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_header.html')]//h1[@class="ui-title"]//*[contains(@class, "ui-icon-spinner")]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="check_listbox_pagination_text">
+    <tr>
+      <td colspan="3"><b tal:content="python: 'Check the listbox pagination text: %s' % pagination_configuration"></b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_field_listbox.html\')]//h1//span[@class=\'listboxloader\' and text()=\'%(header)s\']' % pagination_configuration"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>assertElementPresent</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_field_listbox.html\')]//h1//span[@class=\'listboxloader\' and text()=\'%(header)s\']' % pagination_configuration"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_field_listbox.html\')]//nav//span[@class=\'ui-disabled ui-right\' and text()=\'%(footer)s\']' % pagination_configuration"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>assertElementPresent</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_field_listbox.html\')]//nav//span[@class=\'ui-disabled ui-right\' and text()=\'%(footer)s\']' % pagination_configuration"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="wait_for_listbox_loaded">
+    <tr>
+      <td colspan="3"><b>Wait for the listbox to be loaded</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementNotPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_field_listbox.html')]//h1//span[contains(@class, "ui-icon-spinner")]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_field_listbox.html')]//nav//span[contains(text(), "ecord")]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="wait_for_content_loaded_in_menu_page">
+    <tr>
+      <td colspan="3"><b>Wait for the content to be loaded (in menu page)</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//h1[@class="ui-title"]//span[contains(@class, "ui-icon-spinner")]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementNotPresent</td>
+      <td>//h1[@class="ui-title"]//span[contains(@class, "ui-icon-spinner")]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="toggle_editable_mode">
+    <tr>
+      <td colspan="3"><b>Toggle editable mode</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_panel.html')]//div[contains(@data-gadget-url, 'gadget_erp5_field_multicheckbox.html')]//label</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_panel.html')]//div[contains(@data-gadget-url, 'gadget_erp5_field_multicheckbox.html')]//label</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="verify_is_non_editable_mode">
+    <tr>
+      <td colspan="3"><b>Check non editable mode</b></td>
+    </tr>
+    <tr>
+      <td>assertNotChecked</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_panel.html')]//div[contains(@data-gadget-url, 'gadget_erp5_field_multicheckbox.html')]//input</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="verify_is_editable_mode">
+    <tr>
+      <td colspan="3"><b>Check editable mode</b></td>
+    </tr>
+    <tr>
+      <td>assertChecked</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_panel.html')]//div[contains(@data-gadget-url, 'gadget_erp5_field_multicheckbox.html')]//input</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+
+  <tal:block metal:define-macro="go_to_history_view">
+    <tr>
+      <td colspan="3"><b>Go to history view</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@class, 'ui-header')]//a[@data-i18n='Views']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@class, 'ui-header')]//a[@data-i18n='Views']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//ul[@class='document-listview']//a[@data-i18n='History']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//ul[@class='document-listview']//a[@data-i18n='History']</td>
+      <td></td>
+    </tr>
+    <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_content_loaded" />
+    <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_listbox_loaded" />
+    <tr>
+      <td>assertElementPresent</td>
+      <td>//div[@data-gadget-url='${base_url}/web_site_module/renderjs_runner/gadget_erp5_pt_report_view.html']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+
+  <tal:block metal:define-macro="go_to_foo_default_view">
+    <tr>
+      <td colspan="3"><b>Go to default view</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@class, 'ui-header')]//a[@data-i18n='Views']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@class, 'ui-header')]//a[@data-i18n='Views']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//ul[@class='document-listview']//a[@data-i18n='View']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//ul[@class='document-listview']//a[@data-i18n='View']</td>
+      <td></td>
+    </tr>
+    <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_content_loaded" />
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//input[@name='field_my_id']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+
+  <tal:block metal:define-macro="go_to_foo_relation_field_view">
+    <tr>
+      <td colspan="3"><b>Go to relation field view</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@class, 'ui-header')]//a[@data-i18n='Views']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@class, 'ui-header')]//a[@data-i18n='Views']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//ul[@class='document-listview']//a[@data-i18n='Relation Fields']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//ul[@class='document-listview']//a[@data-i18n='Relation Fields']</td>
+      <td></td>
+    </tr>
+    <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_content_loaded" />
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//input[@name='field_my_id']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="go_to_foo_dummy_list_field_view">
+    <tr>
+      <td colspan="3"><b>Go to dummy list field view</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@class, 'ui-header')]//a[@data-i18n='Views']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@class, 'ui-header')]//a[@data-i18n='Views']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//ul[@class='document-listview']//a[@data-i18n='Dummy List Field Report']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//ul[@class='document-listview']//a[@data-i18n='Dummy List Field Report']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_dialog.html')]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="go_to_bar_datetime_field_view">
+    <tr>
+      <td colspan="3"><b>Go to datetime field view</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@class, 'ui-header')]//a[@data-i18n='Views']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@class, 'ui-header')]//a[@data-i18n='Views']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//ul[@class='document-listview']//a[@data-i18n='DateTimeField']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//ul[@class='document-listview']//a[@data-i18n='DateTimeField']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//input[@name='field_my_start_date']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="go_to_bar_dummy_multicheckbox_field_report_view">
+    <tr>
+      <td colspan="3"><b>Go to dummy multicheckbox field view</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@class, 'ui-header')]//a[@data-i18n='Views']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@class, 'ui-header')]//a[@data-i18n='Views']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//ul[@class='document-listview']//a[@data-i18n='Dummy Multicheckbox Field Report']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//ul[@class='document-listview']//a[@data-i18n='Dummy Multicheckbox Field Report']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_dialog.html')]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="go_to_foo_dummy_multilist_field_report_view">
+    <tr>
+      <td colspan="3"><b>Go to dummy multilistfield field view</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@class, 'ui-header')]//a[@data-i18n='Views']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@class, 'ui-header')]//a[@data-i18n='Views']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//ul[@class='document-listview']//a[@data-i18n='Dummy Multilist Field Report']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//ul[@class='document-listview']//a[@data-i18n='Dummy Multilist Field Report']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_pt_form_dialog.html')]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+
+  <tal:block metal:define-macro="triggle_filter">
+    <tr>
+      <td colspan="3"><b>Open the filter panel</b></td>
+    </tr>
+    <tr>
+     <td>waitForElementPresent</td>
+     <td>//div[contains(@data-gadget-url, 'gadget_erp5_header.html')]//button[@data-i18n='Filter']</td>
+     <td></td>
+    </tr>
+    <tr>
+     <td>click</td>
+     <td>//div[contains(@data-gadget-url, 'gadget_erp5_header.html')]//button[@data-i18n='Filter']</td>
+     <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="triggle_filter_and">
+    <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/triggle_filter" />
+    <tr>
+      <td colspan="3"><b>Check the filter panel in AND mode</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_search_editor.html')]//select[@name='heard_about']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>verifyValue</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_search_editor.html')]//select[@name='heard_about']</td>
+      <td>AND</td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="triggle_filter_or">
+    <tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/triggle_filter" />
+    <tr>
+      <td colspan="3"><b>Check the filter panel in OR mode</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_search_editor.html')]//select[@name='heard_about']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>verifyValue</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_search_editor.html')]//select[@name='heard_about']</td>
+      <td>OR</td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="add_new_filter_section">
+    <tr>
+      <td colspan="3"><b>Click on the + icon in the filter panel</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_search_editor.html')]//button[@class='plus ui-btn-c ui-override-theme ui-btn ui-icon-plus ui-btn-icon-left ui-corner-all']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_search_editor.html')]//button[@class='plus ui-btn-c ui-override-theme ui-btn ui-icon-plus ui-btn-icon-left ui-corner-all']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="triggle_sort">
+    <tr>
+      <td colspan="3"><b>Open the sort panel</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_field_listbox.html')]//button[@data-i18n='Sort']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementNotPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_field_listbox.html')]//button[@data-i18n='Sort' and @disabled]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>assertElementNotPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_sort_editor.html')]//button[@class='plus ui-btn-c ui-override-theme ui-btn ui-icon-plus ui-btn-icon-left ui-corner-all']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_field_listbox.html')]//button[@data-i18n='Sort']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_sort_editor.html')]//button[@class='plus ui-btn-c ui-override-theme ui-btn ui-icon-plus ui-btn-icon-left ui-corner-all']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>assertElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_sort_editor.html')]//button[@class='plus ui-btn-c ui-override-theme ui-btn ui-icon-plus ui-btn-icon-left ui-corner-all']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="set_filter_section">
+    <tr>
+      <td colspan="3"><b tal:content="python: 'Set the filter section %(index)i to %(key)s - %(value)s' % filter_section_configuration"></b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_search_editor.html\')]//div[@class=\'filter_item_container\']/div[%i]//select' % (filter_section_configuration['index'] + 1)"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>select</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_search_editor.html\')]//div[@class=\'filter_item_container\']/div[%i]//select' % (filter_section_configuration['index'] + 1)"></td>
+      <td tal:content="python: 'value=%s' % filter_section_configuration['key']"></td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_search_editor.html\')]//div[@class=\'filter_item_container\']/div[%i]//input' % (filter_section_configuration['index'] + 1)"></td>
+      <td tal:content="python: filter_section_configuration['value']"></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="submit_filter">
+    <tr>
+      <td colspan="3"><b>Submit the filter panel</b></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_search_editor.html')]//button[@class="submit responsive ui-last-child ui-btn ui-btn-icon-left ui-icon-check"]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="change_filter_to_or">
+    <tr>
+      <td colspan="3"><b>Change the filter to OR mode</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_search_editor.html')]//select[@name='heard_about']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>select</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_search_editor.html')]//select[@name='heard_about']</td>
+      <td>index=1</td>
+    </tr>
+    <tr>
+      <td>verifyValue</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_search_editor.html')]//select[@name='heard_about']</td>
+      <td>OR</td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+
+  <tal:block metal:define-macro="remove_filter_section">
+    <tr>
+      <td colspan="3"><b tal:content="python: 'Remove the filter section %(index)i' % filter_section_configuration"></b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_search_editor.html\')]//div[@class=\'filter_item_container\']/div[%i]' % (filter_section_configuration['index'] + 1)"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>focus</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_search_editor.html\')]//div[@class=\'filter_item_container\']/div[%i]//button' % (filter_section_configuration['index'] + 1)"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_search_editor.html\')]//div[@class=\'filter_item_container\']/div[%i]//button' % (filter_section_configuration['index'] + 1)"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementNotPresent</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_search_editor.html\')]//div[@class=\'filter_item_container\']/div[%i]' % (filter_section_configuration['index'] + 1)"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="check_filter_section">
+    <tr>
+      <td colspan="3"><b tal:content="python: 'Check the filter section %(index)i' % filter_section_configuration"></b></td>
+    </tr>
+    <tr>
+      <td>verifyValue</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_search_editor.html\')]//div[@class=\'filter_item_container\']/div[%i]//select' % (filter_section_configuration['index'] + 1)"></td>
+      <td tal:content="python: filter_section_configuration['key']"></td>
+    </tr>
+    <tr>
+      <td>verifyValue</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_search_editor.html\')]//div[@class=\'filter_item_container\']/div[%i]//input' % (filter_section_configuration['index'] + 1)"></td>
+      <td tal:content="python: filter_section_configuration['value']"></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+
+  <tal:block metal:define-macro="check_filter_domain_section">
+    <tr>
+      <td colspan="3"><b tal:content="python: 'Check the filter domain section %(index)i' % filter_domain_section_configuration"></b></td>
+    </tr>
+    <tr>
+      <td>verifyValue</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_search_editor.html\')]//div[@class=\'filter_item_container\']/div[%i]//select' % (filter_domain_section_configuration['index'] + 1)"></td>
+      <td tal:content="python: filter_domain_section_configuration['key']"></td>
+    </tr>
+    <tr>
+      <td>verifyValue</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_search_editor.html\')]//div[@class=\'filter_item_container\']/div[%i]//select[2]' % (filter_domain_section_configuration['index'] + 1)"></td>
+      <td>exact_match</td>
+    </tr>
+    <tr>
+      <td>verifyValue</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_search_editor.html\')]//div[@class=\'filter_item_container\']/div[%i]//select[3]' % (filter_domain_section_configuration['index'] + 1)"></td>
+      <td tal:content="python: filter_domain_section_configuration['value']"></td>
+    </tr>
+    <tal:block tal:repeat="option python: filter_domain_section_configuration.get('option_list', [['XXX', 'XXX']])">
+      <tr>
+        <td>assertElementPresent</td>
+        <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_search_editor.html\')]//div[@class=\'filter_item_container\']/div[%i]//select[3]//option[%i][@value=\'%s\' and text()=\'%s\']' % (filter_domain_section_configuration['index'] + 1, repeat['option'].index + 1, option[0], option[1])"></td>
+        <td></td>
+      </tr>
+    </tal:block>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="triggle_configure">
+    <tr>
+      <td colspan="3"><b>Open the configure panel</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_field_listbox.html')]//button[@data-i18n='Configure']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementNotPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_field_listbox.html')]//button[@data-i18n='Configure' and @disabled]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>assertElementNotPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_configure_editor.html')]//button[@class='plus ui-btn-c ui-override-theme ui-btn ui-icon-plus ui-btn-icon-left ui-corner-all']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_field_listbox.html')]//button[@data-i18n='Configure']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_configure_editor.html')]//button[@class='plus ui-btn-c ui-override-theme ui-btn ui-icon-plus ui-btn-icon-left ui-corner-all']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>assertElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_configure_editor.html')]//button[@class='plus ui-btn-c ui-override-theme ui-btn ui-icon-plus ui-btn-icon-left ui-corner-all']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="submit_configure">
+    <tr>
+      <td colspan="3"><b>Submit the configure panel</b></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_configure_editor.html')]//button[@class="submit responsive ui-last-child ui-btn ui-btn-icon-left ui-icon-check"]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="check_listbox_header">
+    <tr>
+      <td colspan="3"><b tal:content="python: 'Check the listbox header %(index)i' % header_configuration"></b></td>
+    </tr>
+    <tr>
+      <td>verifyText</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_field_listbox.html\')]//thead/tr/th[%i]' % (header_configuration['index'] + 1)"></td>
+      <td tal:content="python: header_configuration['text']"></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="trash_editor_configuration">
+    <tr>
+      <td colspan="3"><b tal:content="python: 'Trash the panel editor configuration'"></b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_editor_panel.html\')]//button[@class=\'trash ui-btn-c ui-override-theme ui-btn ui-icon-trash-o ui-btn-icon-left ui-corner-all\']'"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_editor_panel.html\')]//button[@class=\'trash ui-btn-c ui-override-theme ui-btn ui-icon-trash-o ui-btn-icon-left ui-corner-all\']'"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="remove_configure_section">
+    <tr>
+      <td colspan="3"><b tal:content="python: 'Remove the configure section %(index)i' % configure_section_configuration"></b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_configure_editor.html\')]//div[@class=\'column_item_container ui-controlgroup ui-corner_all\']/div[%i]' % (configure_section_configuration['index'] + 1)"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>focus</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_configure_editor.html\')]//div[@class=\'column_item_container ui-controlgroup ui-corner_all\']/div[%i]//button' % (configure_section_configuration['index'] + 1)"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_configure_editor.html\')]//div[@class=\'column_item_container ui-controlgroup ui-corner_all\']/div[%i]//button' % (configure_section_configuration['index'] + 1)"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waitForElementNotPresent</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_configure_editor.html\')]//div[@class=\'column_item_container ui-controlgroup ui-corner_all\']/div[%i]' % (configure_section_configuration['index'] + 1)"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="add_new_configure_section">
+    <tr>
+      <td colspan="3"><b>Click on the + icon in the configure panel</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_configure_editor.html')]//button[@class='plus ui-btn-c ui-override-theme ui-btn ui-icon-plus ui-btn-icon-left ui-corner-all']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>//div[contains(@data-gadget-url, 'gadget_erp5_configure_editor.html')]//button[@class='plus ui-btn-c ui-override-theme ui-btn ui-icon-plus ui-btn-icon-left ui-corner-all']</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="set_configure_section">
+    <tr>
+      <td colspan="3"><b tal:content="python: 'Set the configure section %(index)i to %(key)s' % configure_section_configuration"></b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_configure_editor.html\')]//div[@class=\'column_item_container ui-controlgroup ui-corner_all\']/div[%i]//select' % (configure_section_configuration['index'] + 1)"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>select</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_configure_editor.html\')]//div[@class=\'column_item_container ui-controlgroup ui-corner_all\']/div[%i]//select' % (configure_section_configuration['index'] + 1)"></td>
+      <td tal:content="python: 'value=%s' % configure_section_configuration['key']"></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="check_configure_section">
+    <tr>
+      <td colspan="3"><b tal:content="python: 'Check the configure section %(index)i' % configure_section_configuration"></b></td>
+    </tr>
+    <tr>
+      <td>verifyValue</td>
+      <td tal:content="python: '//div[contains(@data-gadget-url, \'gadget_erp5_configure_editor.html\')]//div[@class=\'column_item_container ui-controlgroup ui-corner_all\']/div[%i]//select' % (configure_section_configuration['index'] + 1)"></td>
+      <td tal:content="python: configure_section_configuration['key']"></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="wait_for_confirmation">
+    <tr>
+      <td>waitForConfirmation</td>
+      <td>This page contains unsaved changes, do you really want to leave the page ?</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="wait_for_notification">
+    <tr>
+      <td colspan="3"><b>Wait for the notification message</b></td>
+    </tr>
+    <tr>
+      <td>waitForElementPresent</td>
+      <td tal:content="python: '//div[@data-gadget-scope=\'notification\' and @class=\'visible\']//button[@class=\'%(class)s\' and text()=\'%(text)s\']' % notification_configuration"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>assertElementPresent</td>
+      <td tal:content="python: '//div[@data-gadget-scope=\'notification\' and @class=\'visible\']//button[@class=\'%(class)s\' and text()=\'%(text)s\']' % notification_configuration"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="verify_ckeditor_text_content"><tal:comment tal:replace="nothing"><!--
+  
+    this macro needs globals: text_content
+  
+    --></tal:comment>
+    <tr>
+      <td colspan="3"><b>Verify CKEditor Text Content</b></td>
+    </tr>
+    <!-- Wait for ckeditor to be loaded :/ How to inspect inside another iframe? -->
+    <tr>
+      <td>pause</td>
+      <td>2000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>storeEval</td>
+      <td>document.querySelector('#selenium_myiframe').contentWindow.document.querySelector('iframe').contentWindow.document.querySelector('iframe').contentWindow.document.body.innerHTML</td>
+      <td>_macro_verify_ckeditor_text_content_temporary_var</td>
+    </tr>
+    <tr>
+      <td>verifyEval</td>
+      <td>storedVars['_macro_verify_ckeditor_text_content_temporary_var']</td>
+      <td tal:content="python: text_content"></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+  <tal:block metal:define-macro="type_ckeditor_text_content"><tal:comment tal:replace="nothing"><!--
+  
+    this macro needs globals: text_content
+  
+    --></tal:comment>
+    <tr>
+      <td colspan="3"><b>Type CKEditor Text Content</b></td>
+    </tr>
+    <!-- Wait for ckeditor to be loaded :/ How to inspect inside another iframe? -->
+    <tr>
+      <td>pause</td>
+      <td>20000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>storeEval</td>
+      <td tal:content="python: 'document.querySelector(\'#selenium_myiframe\').contentWindow.document.querySelector(\'iframe\').contentWindow.document.querySelector(\'iframe\').contentWindow.document.body.innerHTML = \'{}\''.format(text_content.replace('\n', '\\n').replace('\'', '\\\''))"></td>
+      <td>_macro_type_ckeditor_text_content_temporary_var</td>
+    </tr>
+    <tr>
+      <td colspan="3"><p></p></td>
+    </tr>
+  </tal:block>
+
+</tal:block>

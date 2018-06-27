@@ -1,0 +1,9 @@
+Accounting Transaction Module | Balance Transaction
+Accounting Transaction | Embedded File
+Payment Transaction | Embedded File
+Preference | Accounting Transaction
+Preference | Payment Transaction
+Preference | Purchase Invoice Transaction
+Preference | Sale Invoice Transaction
+Purchase Invoice Transaction | Embedded File
+Sale Invoice Transaction | Embedded File

@@ -1,0 +1,20 @@
+Project Line | Amount
+Project Line | OutcomeDescription
+Project Line | SortIndex
+Project Milestone | OutcomeDescription
+Project Milestone | SortIndex
+Project | Codification
+Requirement Document | Reference
+Requirement | Comment
+Requirement | Document
+Requirement | DublinCore
+Requirement | Folder
+Requirement | Reference
+Requirement | SortIndex
+Requirement | XMLObject
+Sale Order Line | OutcomeDescription
+Sale Order Milestone | OutcomeDescription
+Sale Order Milestone | SortIndex
+Sale Packing List Line | OutcomeDescription
+Task | OutcomeDescription
+Task | TaskOrder

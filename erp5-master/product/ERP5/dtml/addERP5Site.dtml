@@ -1,0 +1,134 @@
+<dtml-let form_title="'Add Portal'">
+<dtml-if manage_page_header>
+  <dtml-var manage_page_header>
+  <dtml-var manage_form_title>
+<dtml-else>
+  <html><head><title>&dtml-form_title;</title></head>
+  <body>
+  <h2>&dtml-form_title;</h2>
+</dtml-if>
+</dtml-let>
+
+<!--
+  Form style based on Aleksandar Vacić's work,
+  ditributed under Creative Commons Paternity Licence:
+    * http://creativecommons.org/licenses/by/2.0/
+    * http://aplus.rs/lab/forms/
+-->
+
+<style type="text/css">
+input, select, textarea {
+ margin-left: .5em;
+}
+fieldset {
+ margin: 1em 0;
+ padding: .3em 1em;
+ border: 1px solid;
+}
+legend {
+ padding: .2em .5em;
+}
+fieldset div {
+ clear: both;
+ margin: .1em 0;
+ position: relative;
+}
+label {
+ margin: 0;
+ display: block;
+ width: 13em;
+ text-align: right;
+ float: left;
+}
+</style>
+
+<form action="manage_addERP5Site" method="POST">
+
+  <fieldset>
+    <legend class="form-title">ERP5 Site Properties</legend>
+    <div>
+      <label class="form-label" for="id">ID</label>
+      <input class="form-element" type="text" name="id" id="id" size="40" value="erp5"/>
+    </div>
+    <div>
+      <label class="form-label" for="title">Title</label>
+      <input class="form-element" type="text" id="title" name="title" size="40" value="ERP5"/>
+    </div>
+    <div>
+      <label class="form-label" for="description">Description</label>
+      <textarea class="form-element" name="description" id="description" cols="60" rows="4"></textarea>
+    </div>
+    <br/>
+  </fieldset>
+
+  <fieldset>
+    <legend class="form-title">User Management</legend>
+    <div>
+      <label class="form-label" for="create_userfolder">Membership source</label>
+      <select class="form-element" id="create_userfolder" name="create_userfolder" size="1">
+        <option value="1">Create a new user folder in the portal (default)</option>
+        <option value="0">I have an existing user folder and want to use it instead</option>
+      </select>
+    </div>
+    <br/>
+  </fieldset>
+
+  <fieldset>
+    <legend class="form-title">ERP5/MySQL connectivity (connection strings)</legend>
+    <div>
+      <label class="form-label" for="erp5_catalog_storage">Catalog storage</label>
+      <select class="form-element" name="erp5_catalog_storage" id="erp5_catalog_storage" size="1">
+        <dtml-in "getCatalogStorageList()">
+          <dtml-let btid=sequence-key>
+            <dtml-if expr="btid == 'erp5_mysql_innodb_catalog'">
+              <option value="<dtml-var sequence-key html_quote>" selected="selected"><dtml-var sequence-item html_quote></option>
+            <dtml-else>
+              <option value="<dtml-var sequence-key html_quote>"><dtml-var sequence-item html_quote></option>
+            </dtml-if>
+          </dtml-let>
+        </dtml-in>
+      </select>
+    </div>
+    <div>
+      <label class="form-label" for="erp5_sql_connection_string">ERP5 Database</label>
+      <input class="form-element" name="erp5_sql_connection_string" id="erp5_sql_connection_string" type="text" size="60" value="test test"/>
+    </div>
+    <div>
+      <label class="form-label" for="cmf_activity_sql_connection_string">CMF Activity Database</label>
+      <input class="form-element" name="cmf_activity_sql_connection_string" id="cmf_activity_sql_connection_string" type="text" size="60" value="test test"/>
+    </div>
+    <div>
+      <label class="form-label" for="sql_reset">Drop any existing table</label>
+      <input type="checkbox" name="sql_reset:int" value="1" id="sql_reset"/>
+    </div>
+    <div>
+      <p>The connection strings used for Z MySQL Database Connections are of the form:</p>
+      <blockquote><code>database[@host[:port]] [user [password [unix_socket]]]</code></blockquote>
+    </div>
+    <br/>
+  </fieldset>
+
+  <fieldset>
+    <legend class="form-title">Business Templates</legend>
+    <div title="Business Template names, or (TODO) URL pointing to a file in BT5 or ZEXP format.">
+      <label class="form-label" for="bt5">Install BT5</label>
+      <input class="form-element" name="bt5" id="bt5" type="text" size="60"/>
+    </div>
+    <div>
+      <label class="form-label" for="bt5_repository_url">Repositories</label>
+      <textarea class="form-element" name="bt5_repository_url" id="bt5_repository_url" cols="60" rows="4"></textarea>
+    </div>
+    <br/>
+  </fieldset>
+
+  <input style="float:right" class="form-element" type="submit" name="submit" value="Create a new ERP5 Site instance"/>
+
+</form>
+<br/><br/>
+
+<dtml-if manage_page_footer>
+  <dtml-var manage_page_footer>
+<dtml-else>
+  </body></html>
+</dtml-if>
+

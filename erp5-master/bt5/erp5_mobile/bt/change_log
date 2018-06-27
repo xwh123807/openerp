@@ -1,0 +1,30 @@
+2013-09-03 arnaud.fontaine
+* ZODB Components: Workflow History must always be kept, so avoid an extra step for developers.
+
+2013-08-28 arnaud.fontaine
+* ZODB Components: Migrate Documents, Extensions and Tests.
+
+2009-08-19 Mohamadou
+* Disallow Export as vCard in  other modules
+* Add check/uncheck checkbox in list view
+* Add "Configure icon" in actions box
+
+2009-03-10 Mohamadou
+* In listmode it is now posible to copy/paste/cut/delete/find/filter/show_all/sort or add new element.
+* In document view it is possible to clone or add new one
+* In document view the current tab is highlighted.
+
+2009-01-15 Kazuhiko
+* Sync with erp5_xhtml_style (r.24958).
+
+2008-01-02 Nicolas
+* Display Url Columns in listbox
+
+2007-12-10 Nicolas
+* Add new Skin: Mobile
+
+2007-10-11 Yusei
+* Modified ListBox_asHTML. This changes depends on ERP5Form changes. Please upgrade ERP5Form revision 16942 or above.
+
+2007-09-19 Kazuhiko
+* use portal_url.getPortalObject().absolute_url() instead of portal_url.getPortalPath() for better virtual host support.

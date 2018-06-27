@@ -1,0 +1,23 @@
+<hidden_content_type_list>
+ <portal_type id="Accounting Transaction">
+  <item>Embedded File</item>
+ </portal_type>
+ <portal_type id="Accounting Transaction Module">
+  <item>Balance Transaction</item>
+ </portal_type>
+ <portal_type id="Payment Transaction">
+  <item>Embedded File</item>
+ </portal_type>
+ <portal_type id="Preference">
+  <item>Accounting Transaction</item>
+  <item>Payment Transaction</item>
+  <item>Purchase Invoice Transaction</item>
+  <item>Sale Invoice Transaction</item>
+ </portal_type>
+ <portal_type id="Purchase Invoice Transaction">
+  <item>Embedded File</item>
+ </portal_type>
+ <portal_type id="Sale Invoice Transaction">
+  <item>Embedded File</item>
+ </portal_type>
+</hidden_content_type_list>

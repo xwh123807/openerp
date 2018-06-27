@@ -1,0 +1,29 @@
+<allowed_content_type_list>
+ <portal_type id="Budget">
+  <item>Budget Line</item>
+  <item>Budget Transfer Line</item>
+ </portal_type>
+ <portal_type id="Budget Line">
+  <item>Budget Cell</item>
+ </portal_type>
+ <portal_type id="Budget Model">
+  <item>Category Budget Variation</item>
+  <item>Node Budget Variation</item>
+ </portal_type>
+ <portal_type id="Budget Model Module">
+  <item>Budget Model</item>
+ </portal_type>
+ <portal_type id="Budget Module">
+  <item>Budget</item>
+ </portal_type>
+ <portal_type id="Budget Transaction Module">
+  <item>Budget Transaction</item>
+ </portal_type>
+ <portal_type id="Budget Transfer">
+  <item>Budget Transfer Line</item>
+ </portal_type>
+ <portal_type id="Property Sheet">
+  <item>Transaction Quantity Value Feasability Constraint</item>
+  <item>Transaction Quantity Value Validity Constraint</item>
+ </portal_type>
+</allowed_content_type_list>

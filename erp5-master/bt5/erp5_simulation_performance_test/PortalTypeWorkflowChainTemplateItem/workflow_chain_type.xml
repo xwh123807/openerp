@@ -1,0 +1,10 @@
+<workflow_chain>
+ <chain>
+  <type>Sale Order</type>
+  <workflow>test_simulation_performance_interaction_workflow</workflow>
+ </chain>
+ <chain>
+  <type>Sale Packing List</type>
+  <workflow>test_simulation_performance_interaction_workflow</workflow>
+ </chain>
+</workflow_chain>

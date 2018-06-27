@@ -1,0 +1,35 @@
+Benchmark Result Line | view
+Benchmark Result | view
+Cloud Performance Unit Test Distributor | view
+ERP5 Project Unit Test Distributor | view
+ERP5 Scalability Distributor | view
+Scalability Test Suite | vcs_repository
+Scalability Test Suite | view
+SlapOS Agent Distributor | view
+SlapOS Agent Test Suite | software_release_unit_test
+SlapOS Agent Test Suite | vcs_repository
+SlapOS Agent Test Suite | view
+SlapOS Software Release Unit Test | vcs_repository
+SlapOS Software Release Unit Test | view
+Task Distribution Tool | view
+Test Node Module | view
+Test Node | view
+Test Result Line | jump_previous_test_result_line
+Test Result Line | view
+Test Result Line | view_result_history
+Test Result Module | view
+Test Result Module | view_chart_report
+Test Result Module | view_test_perf_report
+Test Result Module | view_test_result_diff
+Test Result Node | view
+Test Result | jump_previous_test_result
+Test Result | jump_test_suite
+Test Result | jump_viewvc_revision
+Test Result | view
+Test Result | view_graph
+Test Result | view_node_list
+Test Result | view_performance_graph
+Test Suite Module | view
+Test Suite Repository | view
+Test Suite | periodicity
+Test Suite | view

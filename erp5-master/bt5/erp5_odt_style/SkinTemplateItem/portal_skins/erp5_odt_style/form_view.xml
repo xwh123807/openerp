@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<ZopeData>
+  <record id="1" aka="AAAAAAAAAAE=">
+    <pickle>
+      <global name="OOoTemplate" module="Products.ERP5OOo.OOoTemplate"/>
+    </pickle>
+    <pickle>
+      <dictionary>
+        <item>
+            <key> <string>OLE_documents_zipstring</string> </key>
+            <value> <string encoding="base64">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
+bWxQSwUGAAAAAAIAAgCeAAAAhwwAAAAA</string> </value>
+        </item>
+        <item>
+            <key> <string>_bind_names</string> </key>
+            <value>
+              <object>
+                <klass>
+                  <global name="NameAssignments" module="Shared.DC.Scripts.Bindings"/>
+                </klass>
+                <tuple/>
+                <state>
+                  <dictionary>
+                    <item>
+                        <key> <string>_asgns</string> </key>
+                        <value>
+                          <dictionary>
+                            <item>
+                                <key> <string>name_subpath</string> </key>
+                                <value> <string>traverse_subpath</string> </value>
+                            </item>
+                          </dictionary>
+                        </value>
+                    </item>
+                  </dictionary>
+                </state>
+              </object>
+            </value>
+        </item>
+        <item>
+            <key> <string>content_type</string> </key>
+            <value> <string>application/vnd.oasis.opendocument.text</string> </value>
+        </item>
+        <item>
+            <key> <string>expand</string> </key>
+            <value> <int>0</int> </value>
+        </item>
+        <item>
+            <key> <string>filename</string> </key>
+            <value> <string>object/aq_parent/title_or_id</string> </value>
+        </item>
+        <item>
+            <key> <string>id</string> </key>
+            <value> <string>form_view</string> </value>
+        </item>
+        <item>
+            <key> <string>ooo_script_name</string> </key>
+            <value> <string></string> </value>
+        </item>
+        <item>
+            <key> <string>ooo_stylesheet</string> </key>
+            <value> <string>Base_getODTMetaStyleSheet</string> </value>
+        </item>
+        <item>
+            <key> <string>ooo_xml_file_id</string> </key>
+            <value> <string>content.xml</string> </value>
+        </item>
+        <item>
+            <key> <string>output_encoding</string> </key>
+            <value> <string>utf-8</string> </value>
+        </item>
+        <item>
+            <key> <string>title</string> </key>
+            <value> <unicode></unicode> </value>
+        </item>
+      </dictionary>
+    </pickle>
+  </record>
+</ZopeData>

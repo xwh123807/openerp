@@ -1,0 +1,3 @@
+Provides Jupyter kernel backend on ERP5.
+
+Note: This Business Template allows to execute code in unrestricted environment. By default this functionality is disabled. In order to being able to execute Jupyter code one shall enable it in System Preferences on Data Notebook tab with option "Enable Data Notebook (synchronous, unrestricted, unsafe, obsolete)"

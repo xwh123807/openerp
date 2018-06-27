@@ -1,0 +1,36 @@
+2013-09-03 arnaud.fontaine
+* ZODB Components: Workflow History must always be kept, so avoid an extra step for developers.
+
+2013-08-28 arnaud.fontaine
+* ZODB Components: Migrate Documents, Extensions and Tests.
+
+2010-09-30 nicolas.dumazet
+* Revert changes from 29th after adding Order abstract portal type to erp5_trade
+
+2010-09-29 nicolas.dumazet
+* do not use newTempOrder, create temporary sale order instead (portal type classes require the portal type to exist to create temporary objects, and 'Order' portal type does not exist)
+
+2009-09-14 lucas
+* added navigation for Anonymous user
+
+2009-08-20 lucas
+* Merged the three forms (SaleOrder_viewAsWebConfirmPaymentMode,
+SaleOrder_viewAsWebConfirmPersonalInformation and SaleOrder_viewAsWebConfirm) into only one SaleOrder_viewAsWebConfirm.
+
+2008-11-13 ivan
+* Move portal_sessions to erp5_core
+
+2008-08-28 ivan
+* Decrease default session life time
+
+2008-08-28 yusei
+* Use Base_translateString or translateString instead of N_ for translation message.
+
+2007-06-07 Ivan
+* Update. Split core script from widgets
+
+2007-01-30 Ivan
+* Update
+
+2007-01-12 Ivan
+* Initial import

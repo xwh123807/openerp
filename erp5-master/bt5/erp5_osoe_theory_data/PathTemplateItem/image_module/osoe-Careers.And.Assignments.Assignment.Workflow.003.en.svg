@@ -1,0 +1,76 @@
+<svg width="1052.3622" height="744.09448" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker orient="auto" refY="0" refX="0" id="Arrow1Lend">
+   <path id="path3955" d="m-10,0l-4,4l14,-4l-14,-4l4,4z" marker-start="none" stroke-width="1pt" stroke="#000000" fill-rule="evenodd"/>
+  </marker>
+  <marker orient="auto" refY="0" refX="0" id="Arrow1Mend">
+   <path id="path3961" d="m-4,0l-2,2l7,-2l-7,-2l2,2z" marker-start="none" stroke-width="1pt" stroke="#000000" fill-rule="evenodd"/>
+  </marker>
+  <marker orient="auto" refY="0" refX="0" id="Arrow1Lend-8">
+   <path id="path3955-7" d="m-10,0l-4,4l14,-4l-14,-4l4,4z" marker-start="none" stroke-width="1pt" stroke="#000000" fill-rule="evenodd"/>
+  </marker>
+  <marker orient="auto" refY="0" refX="0" id="Arrow1Lend-8-2">
+   <path id="path3955-7-7" d="m-10,0l-4,4l14,-4l-14,-4l4,4z" marker-start="none" stroke-width="1pt" stroke="#000000" fill-rule="evenodd"/>
+  </marker>
+  <marker orient="auto" refY="0" refX="0" id="Arrow1Lend-8-2-8">
+   <path id="path3955-7-7-3" d="m-10,0l-4,4l14,-4l-14,-4l4,4z" marker-start="none" stroke-width="1pt" stroke="#000000" fill-rule="evenodd"/>
+  </marker>
+ </defs>
+ <metadata id="metadata7">image/svg+xml</metadata>
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="1054.3622" height="746.09448" id="canvas_background" fill="none"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="layer1">
+   <path d="m370.57949,413.06365l365.23351,-142.41366" id="path3899" marker-end="url(#Arrow1Lend)" stroke-width="2.35817px" stroke="#b4cd3b" fill="none"/>
+   <path d="m368.38152,259.141l292.5875,-0.0698l0,0" id="path3903" marker-end="url(#Arrow1Lend)" stroke-width="2.81815px" stroke="#b4cd3b" fill="none"/>
+   <path d="m169.32182,231.33488c-1.43449,-6.92712 -4.6723,-13.47274 -9.30767,-18.81653c-4.63537,-5.34379 -10.65795,-9.47381 -17.31295,-11.87249c-6.65501,-2.39868 -13.92758,-3.06065 -20.9063,-1.90295c-6.97872,1.1577 -13.64799,4.13248 -19.172,8.55154c-6.37738,5.10172 -11.16764,12.0626 -14.11744,19.67819c-2.94979,7.61559 -4.09886,15.86879 -3.83991,24.0316c0.19082,6.01498 1.144,12.03627 3.20969,17.68865c2.0657,5.65237 5.26932,10.93269 9.617,15.09371c7.01159,6.71055 16.97019,10.22473 26.6405,9.40089c9.67032,-0.82384 18.89095,-5.97196 24.66635,-13.77187" id="path3915" marker-end="url(#Arrow1Mend)" stroke-width="2.36781px" stroke="#b4cd3b" fill="none"/>
+   <ellipse id="path4720" cx="265.1088" cy="111.22302" rx="15.30229" ry="15.34418" stroke-dashoffset="0" stroke-dasharray="1.80000007, 1.80000007" stroke-miterlimit="4" stroke-width="0.6" fill="#b4cd3b" opacity="0.64"/>
+   <text xml:space="preserve" x="293.35086" y="466.47968" id="text6238" transform="translate(0,-308.2677001953125) scale(1.0029230117797852,0.9970855116844177) " font-family="Sans" fill="#04446a" font-weight="normal" font-style="normal" font-size="41.77366px">
+    <tspan id="tspan6240" x="293.35086" y="466.47968">New</tspan>
+   </text>
+   <text xml:space="preserve" x="87.61755" y="613.03198" id="text6250" transform="translate(0,-308.2677001953125) scale(1.0834236145019531,0.9230000376701355) " font-family="Sans" fill="#04446a" font-weight="normal" font-style="normal" font-size="28.69932px">
+    <tspan id="tspan6252" x="87.61755" y="613.03198">Edit</tspan>
+   </text>
+   <text xml:space="preserve" x="815.65674" y="802.80182" id="text6258" transform="translate(0,-308.2677001953125) scale(1.0834236145019531,0.9230000376701355) " fill="#04446a" font-family="Sans" font-size="28.69932px" font-weight="normal" font-style="normal">
+    <tspan id="tspan6260" x="815.65674" y="802.80182">Edit</tspan>
+   </text>
+   <path d="m872.24298,439.21995c1.8221,6.96022 5.49999,13.42551 10.55165,18.54854c5.05166,5.12303 11.46472,8.89125 18.39869,10.81081c6.93397,1.91956 14.37188,1.98576 21.33892,0.18991c6.96704,-1.79584 13.44615,-5.44932 18.58819,-10.48163c5.7842,-5.66076 9.8246,-12.99296 11.99538,-20.78968c2.17078,-7.79673 2.51273,-16.04535 1.48587,-24.07322c-0.77145,-6.03115 -2.31864,-11.99359 -4.94811,-17.47591c-2.62946,-5.48232 -6.36575,-10.47875 -11.13842,-14.24592c-7.54494,-5.95539 -17.62619,-8.58049 -27.11748,-7.06125c-9.4913,1.51924 -18.24947,7.15991 -23.55855,15.1728" id="path3915-0-4" marker-end="url(#Arrow1Mend)" stroke-width="2.36781px" stroke="#b4cd3b" fill="none"/>
+   <path d="m366.59318,419.63715l300.89818,-2.71385" id="path3108" marker-end="url(#Arrow1Lend)" marker-start="none" stroke-width="1.82765px" stroke="#b4cd3b" fill="none"/>
+   <path d="m779.32468,383.89269l0.74098,-111.00439" id="path3110" marker-end="url(#Arrow1Lend)" stroke-width="1.83912px" stroke="#b4cd3b" fill="none"/>
+   <path d="m267.84192,553.53911l492.47564,-281.8208" id="path3112" marker-end="url(#Arrow1Lend)" stroke-width="2.09324px" stroke="#b4cd3b" fill="none"/>
+   <path d="m773.30215,456.80195l-463.44931,-1.43628" id="path3114" marker-end="url(#Arrow1Lend)" stroke-width="2.30053px" stroke="#b4cd3b" fill="none"/>
+   <text xml:space="preserve" x="453.66425" y="804.85004" id="text3118" transform="translate(0,-308.2677001953125) scale(1.004070520401001,0.9959459900856018) " fill="#04446a" font-family="Sans" font-size="28.6px" font-weight="normal" font-style="normal">
+    <tspan id="tspan3120" x="453.66425" y="804.85004">Validate</tspan>
+   </text>
+   <text xml:space="preserve" x="453.93399" y="761.5907" id="text3122" transform="translate(0,-308.2677001953125) scale(1.0619207620620728,0.9416898488998413) " font-family="Sans" fill="#04446a" font-weight="normal" font-style="normal" font-size="28.69932px">
+    <tspan id="tspan3124" x="453.93399" y="761.5907">Edit</tspan>
+   </text>
+   <rect id="rect3961-00" width="217.1953" height="54.75808" x="664.39526" y="214.60571" ry="18.11105" stroke-miterlimit="4" stroke-width="2.48441" fill="#b4cd3b"/>
+   <text xml:space="preserve" x="749.45728" y="538.58289" id="text3957-0-4" transform="translate(0,-308.2677001953125) scale(0.9593572020530701,1.0423645973205566) " font-family="Sans" fill="#000000" font-weight="normal" font-style="normal" font-size="26.91113px">
+    <tspan id="tspan3959-1-5" x="749.45728" y="538.58289">cancelled</tspan>
+   </text>
+   <rect id="rect3961-00-5" width="217.1953" height="54.75808" x="667.83765" y="385.62909" ry="18.11105" stroke-miterlimit="4" stroke-width="2.48441" fill="#b4cd3b"/>
+   <text xml:space="preserve" x="753.04553" y="699.42383" id="text3957-0-4-4" transform="translate(0,-308.2677001953125) scale(0.9593572616577148,1.0423645973205566) " font-family="Sans" fill="#000000" font-weight="normal" font-style="normal" font-size="26.91113px">
+    <tspan id="tspan3959-1-5-7" x="753.04553" y="699.42383">updated</tspan>
+   </text>
+   <rect id="rect3961-00-7" width="217.1953" height="54.75808" x="158.47275" y="232.91101" ry="18.11105" stroke-miterlimit="4" stroke-width="2.48441" fill="#b4cd3b"/>
+   <text xml:space="preserve" x="222.10165" y="555.79797" id="text3957-0-4-7" transform="translate(0,-308.2677001953125) scale(0.9593572616577148,1.0423645973205566) " font-family="Sans" fill="#000000" font-weight="normal" font-style="normal" font-size="26.91113px">
+    <tspan id="tspan3959-1-5-6" x="222.10165" y="555.79797">draft</tspan>
+   </text>
+   <rect id="rect3961-00-8" width="217.1953" height="54.75808" x="155.6563" y="392.58301" ry="18.11105" stroke-miterlimit="4" stroke-width="2.48441" fill="#b4cd3b"/>
+   <text xml:space="preserve" x="219.16595" y="704.26019" id="text3957-0-4-5" transform="translate(0,-308.2677001953125) scale(0.9593572020530701,1.0423645973205566) " font-family="Sans" fill="#000000" font-weight="normal" font-style="normal" font-size="26.91113px">
+    <tspan id="tspan3959-1-5-0" x="219.16595" y="704.26019">started</tspan>
+   </text>
+   <rect id="rect3961-00-1" width="217.1953" height="54.75808" x="156.65253" y="552.58087" ry="18.11105" stroke-miterlimit="4" stroke-width="2.48441" fill="#b4cd3b"/>
+   <text xml:space="preserve" x="212.60022" y="862.0932" id="text3957-0-4-1" transform="translate(0,-308.2677001953125) scale(0.9593572020530701,1.0423645973205566) " fill="#000000" font-family="Sans" font-size="26.91113px" font-weight="normal" font-style="normal">
+    <tspan id="tspan3959-1-5-5" x="212.60022" y="862.0932">stopped</tspan>
+   </text>
+   <path d="m263.53112,126.03015l0.75483,103.59874" id="path3110-5" marker-end="url(#Arrow1Lend-8)" stroke-width="1.79323px" stroke="#b4cd3b" fill="none"/>
+   <path d="m262.07211,286.52111l0.75483,103.59874" id="path3110-5-4" marker-end="url(#Arrow1Lend-8-2)" stroke-width="1.79323px" stroke="#b4cd3b" fill="none"/>
+   <path d="m262.28517,447.4382l0.75483,103.59874" id="path3110-5-4-7" marker-end="url(#Arrow1Lend-8-2-8)" stroke-width="1.79323px" stroke="#b4cd3b" fill="none"/>
+  </g>
+ </g>
+</svg>

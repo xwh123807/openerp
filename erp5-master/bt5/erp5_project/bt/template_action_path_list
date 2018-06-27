@@ -1,0 +1,90 @@
+Person | jump_to_task
+Person | jump_to_task_report
+Project Cell | view
+Project Line | add_task_related
+Project Line | bug_list
+Project Line | constraint
+Project Line | contents
+Project Line | create_new_file
+Project Line | document_list
+Project Line | jump_to_related_sale_order_lines
+Project Line | jump_to_related_task
+Project Line | jump_to_related_task_report
+Project Line | task_fast_input_dialog
+Project Line | task_list
+Project Line | view
+Project Milestone | constraint
+Project Milestone | create_new_file
+Project Milestone | document_list
+Project Milestone | view
+Project Module | view
+Project Module | worker_monthly_report
+Project | add_task_related
+Project | bug_list
+Project | content
+Project | create_new_file
+Project | detailed_report
+Project | document_list
+Project | jump_to_related_sale_order_lines
+Project | jump_to_related_task
+Project | jump_to_related_task_report
+Project | milestone
+Project | planning
+Project | project_monthly_report
+Project | project_task_report
+Project | project_view_gantt
+Project | report
+Project | task_fast_input_dialog
+Project | task_list
+Project | task_report_list
+Project | transactions
+Project | view
+Requirement Document | cleanup_descriptions
+Requirement Document | detailed_report
+Requirement Document | fast_input
+Requirement Document | orphaned
+Requirement Document | project_mapping
+Requirement Document | reference_generate
+Requirement Document | view
+Requirement Module | fast_input
+Requirement Module | view
+Requirement | fast_input
+Requirement | project_list
+Requirement | reference_generate
+Requirement | view
+Sale Order Line | create_task
+Sale Order Line | project
+Sale Order Milestone | profile_view
+Sale Order Milestone | project
+Sale Order Milestone | view
+Sale Order | detailed_report
+Sale Order | milestone_view
+Sale Packing List Line | project
+System Preference | project_preference
+Task Line | price_view
+Task Line | quantity_view
+Task Line | view
+Task Module | planning_report
+Task Module | view
+Task Module | workflow_report
+Task Report Line | price_view
+Task Report Line | quantity_view
+Task Report Line | view
+Task Report Module | icalendar_export
+Task Report Module | planning_report
+Task Report Module | view
+Task Report Module | workflow_report
+Task Report | jump_to_related_invoice
+Task Report | jump_to_related_task
+Task Report | payment_condition
+Task Report | profile_view
+Task Report | view
+Task | apply_trade_condition
+Task | constraint
+Task | duplicate_task
+Task | jump_to_predecessor_task
+Task | jump_to_related_task_report
+Task | jump_to_successor_task
+Task | payment_condition
+Task | profile_view
+Task | view

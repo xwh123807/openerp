@@ -1,0 +1,383 @@
+2011-12-01 Kazuhiko
+* add a sample robots.txt that returns the location of the XML sitemap.
+
+2011-11-30 Kazuhiko
+* add WebSite_viewSiteMapAsXML that returns the XML sitemap defined in http://www.sitemaps.org/protocol.html .
+
+2011-09-28 Kazuhiko
+* support domain_tree and report_tree in WebSection_getDocumentValueList.
+
+2011-02-22 Kazuhiko
+* remove portal_type configuration from listbox of WebSection_viewAsWeb,  WebSection_viewContent and WebSection_viewContentList.
+
+2010-10-08 kazuhiko
+* no longer allow Access contents information and View for Anonymous, because there is no reason to allow anonymous users to access web_site_module itself. we should publish Web Site document if we want to publish it.
+
+2010-09-22 kazuhiko
+* use Web Section's url in WebSection_getPermanentURL script, if it is called against a document.
+
+2010-03-05 fabien
+* fix caches id bug. Now caches should works much better.
+
+2010-02-02 fabien
+* remove WebSection_getPermanentURLForView which was bad (see bug #1507) and use getPermanentUrl() from WebSection.py.
+* WebSection_getPermanentUrl script is not used anymore (and should never be used, it should be called only by getPermanentUrl() from WebSection.py). Now by default, getPermanentUrl(document) always return a link to html content. If you want to get a link to a file (ie. openoffice document, pdf document, ...) you should explicitly specify it :
+getPermanentUrl(document, view=False)
+
+2010-01-22 nicolas
+* Update configuration of Caching Policy Manager to fill Last-Modified Header with modification_date.
+* Web Site and Web Section are not using Caching Policy Manager
+* Use getPortalWebDocumentTypeLits instead of Hardcoded portal_type
+
+2009-10-16 rafael
+* Update for the changes of new portal types of portal types.
+
+2009-09-11 yusei
+* Fix action orders of web page module and make view action first. Otherwise module list method does not work.
+* Add bt/template_registered_skin_selection_list to business template.
+
+2009-08-21 Kazuhiko
+* add WebSection_viewToolbarWidget that can be used for all web sites with the same appearance.
+
+2009-06-29 nicolas
+* Check that user doesn't already exists
+
+2009-05-15 yusei
+* Add a template field for Editor Field to Base_viewWebFieldLibrary.
+
+2009-05-08 yusei
+* Simplify field libraries and proxy fields. Old field libraries are kept for backward compatibility.
+* Update dependencies.
+
+2009-03-24 fabien
+* move some scripts from km to here. This scripts are usefull to display listbox search style.
+* some method need to be renamed after been moved so change the name everywhere
+
+2009-01-25 jps
+* Renamed erp5_web_default_theme to clarify the fact that there is no default theme in erp5_web and that erp5_web is a framework to build Web sites based on ERP5.
+
+2008-11-13 yusei
+* Start to develop version 5.4.
+
+2008-10-29 yusei
+* Update xml format.
+
+2008-10-29 yusei
+* Publication Section fields are now translatable.
+
+2008-10-14 yusei
+* Start to develop version 5.3.
+
+2008-09-08 yusei
+* Added web mode version of Base_doLanguage.
+
+2008-09-08 yusei
+* Use Base_translateString instead of translate.
+
+2008-09-07 yusei
+* Update English messages.
+
+2008-09-04 yusei
+* Update English messages.
+
+2008-09-04 yusei
+* Correct action title on Web Section.
+
+2008-09-03 yusei
+* Remove text which is not suitable for translation.
+
+2008-08-29 yusei
+* Correct message text.
+
+2008-08-28 yusei
+* Fixed text in WebSite_viewContributePropertyRenderer.
+
+2008-07-15 rafael
+* Updated WebSection_zGetDocumentValueList to support more params and fix some issues.
+
+2008-07-06 yo
+* Add effective date into Web Page.
+
+2008-07-06 yo
+* Use getDocumentValue instead of restrictedTraverse again, as the acquisition problem has been fixed in the Product.
+
+2008-07-01
+* Fix WebSection_viewInlinePageRenderer. Prevent to get a non document object. Thank you for Thomas Nouret.
+
+2008-06-28 yo
+* Use restrictedTraverse instead of getDocumentValue in WebSection_viewInlinePageRenderer, because we need an appropriate acquisition wrapper here.
+
+2008-06-28 yo
+* Add a standard method for string substitutions.
+
+2008-06-27 yusei
+* Start to develop version 5.2.
+
+2008-06-26 yusei
+* Revise version to 5.1.
+
+2008-06-26 yo
+* Add a skin selection name field into Web Section.
+
+2008-06-13 ivan
+* Enable Role Definitions for Web Site and Web Section. Show workflow state for Web Site and Web Section
+
+2008-06-12 yo
+* Refactor WebSection_getDocumentValueList, so that it can be mostly shared with km. Now this script relies on a custom Z SQL Method to generate a good query.
+
+2008-06-11 yo
+* Make WebSection_getPermanentURL consistent.
+
+2008-06-11 yo
+* Make the scripts for retrieving documents more consistent.
+
+2008-06-10 yo
+* Add a field for text content substitutions.
+
+2008-06-03 vincentd
+* add rights for manager in publication_workflow(Published state)
+
+2008-5-26 jps
+* Revise version to 5.0.1.
+* Configuration is now more generic
+* Improved breadcrumbs
+
+2008-4-17 yusei
+* Revise version to 5.0.
+
+2007-12-21 Yusei
+* Update file contribution part. Please update erp5_web and erp5_dms together.
+
+2007-11-28 Yusei
+* Remove hardcoded ingestion email address from WebSite_viewContributeRenderer. Please use Email Ingestion Address preference instead.
+
+2007-11-28 Yusei
+* Remove bookmark box from WebSite_viewDashboardRenderer.
+
+2007-11-23 Yusei
+* Add bookmark box in WebSite_viewDashboardRenderer.
+* Try to get simulation state if validation state accessor does not exists.
+
+2007-11-21 Yusei
+* if document's title is empty, then display its id in document relation box.
+
+2007-09-04 Kazuhiko
+* use absolute_url_path instead of getPortalPath for better virtual host support.
+
+2007-01-19 JPS
+* Global commit of refactored bt. More refactoring needed still
+
+2006-10-05 Kevin
+* Minor fixes.
+* Don't show unvisible object in sub_web_object_list (thanks to Kristian).
+
+2006-10-04 Kevin
+* New ERP5Web_getNiceURI script to transform any string to a Search Engine friendly URI.
+
+2006-09-25 Kevin
+* Fix web page web view editable fields.
+* Factorize editable_mode management.
+* Remove fields_errors variable to let it be handled in an upper layer of the code.
+
+2006-09-22 Kevin
+* Factorize common page template header.
+* Re-sync erp5_web template header with xhtml_style one.
+* Fix admin toolbox clone widget style consistency.
+
+2006-09-21 Kevin
+* Modify CSS selectors to apply the right style to forms and input by default.
+* erp5_web depends on erp5_xhtml_style.
+* Clean up default css.
+
+2006-09-20 Kevin
+* Admin toolbox style clean-up.
+
+2006-09-19 Kevin
+* Much more sementical breadcrumb with hierarchical lists.
+* Admin Toolbar: add webdav and direct ERP5 access link.
+* Admin toolbar is now floating in the default style.
+* Add link to web site root on logo.
+* Add default link style.
+* Add default breadcrumb style.
+
+2006-09-18 Kevin
+* Merge all admin toolbar code in one single page template.
+* No need of special form for web site first page: the default document to display is known through aggregate category.
+
+2006-09-14 Kevin
+* Reorder actions.
+* Delete deprecated custom first page layout.
+* New version of generic admin tool box (work still in progress).
+* Add admin toolbox in the default layout.
+
+2006-09-12 Kevin
+* Rewrite default group generation using macro and WebSite_getGroupList script.
+* Little default theme esthetics enhancements.
+* Add custom view of web site in default theme.
+
+2006-09-11 Kevin
+* Split css in two parts: the generic classes for web forms and the specific classes for the theme.
+* Add the alpha code (still not used) that auto-aggregate some form groups in 1-pass for easy custom template creation (see big documentation in the script itself).
+
+2006-09-08 Kevin
+* Use group id for the layout.
+* Fix css layout to support ie6.
+* Delete xml type declaration to let IE 6 parse the web page.
+* Tag columns in the layout via 'column' css class.
+* Show transition_message only when one is found.
+* New way of generating tag id, css class and title of groups.
+* Reduce search box size.
+* Add list of tested browser.
+
+2006-09-07 Kevin
+* Brand new 3-column flexible layout.
+* Add custom view for Web Site module.
+* Define the logo CSS class on the field, not on the field group.
+* Add missing picture.
+
+2006-09-06 Kevin
+* Add default listbox erp5 styling and and web styling.
+* Listbox rendering in web style seems to work: mark it as upgraded and ready to be used.
+* Divide sidebar in two groups: one left, one right.
+
+2006-09-06 Stefan
+* WebSection_getDocumentValueList now checks if section Items have a
+getIntIndex()-Method while trying to sort them.
+
+2006-09-05 Kevin
+* Add extra web-content widget box support.
+
+2006-09-04 Kevin
+* Use a custom script to render consistent and nice title depending of the context.
+* Add a big comment about why I think this script should not return what it currently return (comments welcomed).
+* Add a new login box web widget.
+* Add new navigation related widgets : breadcrumb and different flavours of subcontent menus.
+* Enhance CSS layout and general webdesign.
+* Lots of renaming to match generic CSS classes.
+* Add About box, breadcrumb, login box and navigation boxes to default layout.
+
+2006-09-01 Stefan
+* Add missing **kw in WebSite_getDocumentUrl to accept parameters submitted by the Listbox.
+* Add two section views in default theme to display either the section title, description and
+content or the default document.
+
+2006-09-01 Kevin
+* Reorder and comment CSS.
+* Add some titles on form groups.
+
+2006-08-31 Kevin
+* Add portal status message.
+* Add default generic layout for web editable_mode.
+* Set the default Webmaster User ID at Web Site creation.
+* Webmaster and ID are now required.
+Rename "Webmaster" to "Webmaster User ID" to avoid confusion.
+* Add alternate Web Page view for web mode.
+
+2006-08-31 Stefan
+* WebSection_getDocumentValueList now returns the newest version for each
+document if there are multiple versions.
+* WebSite_getDocumentValue returns the newest Version of a Document if it
+is called with a reference (name parameter).
+
+2006-08-30 Stefan
+* WebSite_getDocumentValue is now be able to display any object with a refernce property.
+
+2006-08-30 Kevin
+* Add default custom render of Web Page for web sites.
+
+2006-08-29 Kevin
+* Clean-up group naming.
+* Fix bad selection name.
+
+2006-08-29 Stefan
+* WebSection_getDocumentValueList uses Predicate API.
+* Sorts result by order Index.
+
+2006-08-28 Kevin
+* Render extra widgets in the default template.
+* Add dummy widgets in the default layout.
+* Firefox don't like CSS rendered via a Page Template.
+* Enhance default theme's CSS.
+* Delete div wrapper for web widget rendering in erp5_web_default_template.
+
+2006-08-25 Stefan
+* Membership and Multimembership can be used simultaneously. The corresponding
+base categories may not overlap. The results of both memberships are unified.
+
+2006-08-25 Kevin
+* Move all scripts and forms in uncertain state to erp5_web_old skin folder.
+* Move all specific scripts and forms from erp5_web skin folder to brand new web widget libray folder.
+* Update default web theme to use latests xhtml_style generic macros.
+
+2006-08-24 Stefan
+* Update fields name to match naming convention.
+
+2006-08-24 Kevin
+* Add default CSS to default theme.
+* Use aggregate relations everywhere to define default content.
+
+2006-08-24 Stefan
+* URLs work with and without virtual hosting.
+* No duplicate entries in WebSection_getDocumentValueList() if a page is associated by aggregate and also in a relevant publication section.
+* Problem with WebSection_getDocumentValueList() fixed (aggregated pages were not in the list form this context).
+* Removed some context.log() entries.
+
+2006-08-23 Stefan
+* First rework of Web API scripts.
+
+2006-08-23 Kevin
+* Multiple Publication Sections can be set on Web Pages.
+* One default page can be set on Web Section through agregate relation.
+* Add a new folder to store web widget library.
+
+2006-08-22 Kevin
+* Add default web site theme.
+* Set default web theme on newly created Web Sites.
+
+2006-08-21 Kevin
+* Fix section bad form rendering with xhtml_style.
+* Respect naming conventions.
+
+2006-08-18 Kevin
+* Fix some Form's group to work with xhtml_style.
+* Fix default template on WebSection.
+* Fix ListBox Web Style strings.
+
+2006-07-27 Kevin
+* Some search result screen modifications.
+* Allow sorting of new columns.
+* Add some comments to not forget bugs and ToDos.
+
+2006-07-25 Kevin
+* Differentiate two level of layout: container_layout and content_layout.
+* Fix WebSite_newContent.
+* Revert consistent tab naming (JPS).
+
+2006-07-23 Kevin
+* Add WebSite_getBaseURL to get dynamic base url.
+
+2006-07-21 Kevin
+* Enhancements on My Stuff page.
+* Make column filter box working and support pagination in generic HTML style listboxes.
+* Auto-reset some listboxes when needed.
+Hide non-working features (advanced search etc.).
+* Remove dummy 'Theme', 'Programme' and 'Service' columns.
+* Move ERP55 FCKEditor wrapper in a dedicated skin folder.
+* Move Mockup to dedicated folder.
+* WebSite_newContent definitely replace WebSite_clone.
+
+2006-07-20 Kevin
+* Add description on publication workflow.
+* In ListBox_asWebStyleHTML, use editable_field returned by the rendering of a listbox to get and apply the css style even if the table cell is empty.
+* Add listbox mockups.
+* Add generic My Task/Worklist Report.
+* Add simple version of My Stuff/My Document page.
+
+2006-06-15 Kevin
+* Move fulltext indexing ZSQLMethods to erp5_core.
+
+2006-06-12 Kevin
+* Update maintainer list.
+
+2006-03-07 Vincent Pelletier
+* First working version of the Business Template

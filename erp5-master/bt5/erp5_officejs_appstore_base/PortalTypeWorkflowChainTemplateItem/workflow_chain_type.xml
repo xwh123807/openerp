@@ -1,0 +1,6 @@
+<workflow_chain>
+ <chain>
+  <type>Software Publication</type>
+  <workflow>-ticket_workflow, officejs_appstore_interaction_workflow, officejs_software_publication_workflow</workflow>
+ </chain>
+</workflow_chain>

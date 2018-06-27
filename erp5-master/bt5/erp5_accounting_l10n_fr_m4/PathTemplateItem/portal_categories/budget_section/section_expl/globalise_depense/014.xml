@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<ZopeData>
+  <record id="1" aka="AAAAAAAAAAE=">
+    <pickle>
+      <global name="Category" module="erp5.portal_type"/>
+    </pickle>
+    <pickle>
+      <dictionary>
+        <item>
+            <key> <string>categories</string> </key>
+            <value>
+              <tuple>
+                <string>budget_section/section_expl/globalise_depense/014</string>
+              </tuple>
+            </value>
+        </item>
+        <item>
+            <key> <string>description</string> </key>
+            <value> <string>(regroupement des comptes 709, 739 )</string> </value>
+        </item>
+        <item>
+            <key> <string>id</string> </key>
+            <value> <string>014</string> </value>
+        </item>
+        <item>
+            <key> <string>int_index</string> </key>
+            <value> <int>3</int> </value>
+        </item>
+        <item>
+            <key> <string>portal_type</string> </key>
+            <value> <string>Category</string> </value>
+        </item>
+        <item>
+            <key> <string>short_title</string> </key>
+            <value> <string>Atténuations de produits</string> </value>
+        </item>
+        <item>
+            <key> <string>title</string> </key>
+            <value> <string>014 - Atténuations de produits </string> </value>
+        </item>
+      </dictionary>
+    </pickle>
+  </record>
+</ZopeData>

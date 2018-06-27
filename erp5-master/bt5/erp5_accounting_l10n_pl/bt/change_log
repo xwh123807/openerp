@@ -1,0 +1,32 @@
+2008-03-12 shufla
+* started cleanup and preparation for further extending
+
+2007-07-27 shufla
+* translated description
+* new version
+* added information for upgraders
+* added users to dates in changelog
+* translated some old changelog entries
+
+2006-09-30 bartek
+Added Polish GAP to this template
+
+2006-06-16 bartek
+Fixed some things suggested by JP
+Spun payroll of as separate template
+
+2006-05-05 bartek
+Fixed in getInvetory for proper currency calculation
+
+2006-05-02 bartek
+Paysheet is working
+VAT-7 report and needed fixes
+
+2006-05-01 bartek
+Przystosowane do nowej wersji wszystkiego
+PL i BS przerobione na OO
+Trochę poprawek
+(!!! nie działa paysheet bo erp5_payroll jest zwalona)
+
+2006-02-18 bartek
+Pierwszy eksport - wstępnie sprawdzone rachunek wyników i bilans, działająca podstawowa wesja listy płac.

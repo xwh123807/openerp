@@ -1,0 +1,34 @@
+<workflow_chain>
+ <chain>
+  <type>Project</type>
+  <workflow>edit_workflow, project_workflow</workflow>
+ </chain>
+ <chain>
+  <type>Project Line</type>
+  <workflow>edit_workflow</workflow>
+ </chain>
+ <chain>
+  <type>Requirement</type>
+  <workflow>edit_workflow, requirement_analysis_workflow</workflow>
+ </chain>
+ <chain>
+  <type>Requirement Document</type>
+  <workflow>edit_workflow, validation_workflow</workflow>
+ </chain>
+ <chain>
+  <type>Task</type>
+  <workflow>delivery_causality_interaction_workflow, delivery_causality_workflow, delivery_simulation_interaction_workflow, edit_workflow, task_workflow</workflow>
+ </chain>
+ <chain>
+  <type>Task Line</type>
+  <workflow>delivery_movement_causality_interaction_workflow, delivery_movement_simulation_interaction_workflow, edit_workflow</workflow>
+ </chain>
+ <chain>
+  <type>Task Report</type>
+  <workflow>delivery_causality_interaction_workflow, delivery_causality_workflow, delivery_simulation_interaction_workflow, edit_workflow, task_report_workflow</workflow>
+ </chain>
+ <chain>
+  <type>Task Report Line</type>
+  <workflow>delivery_movement_causality_interaction_workflow, delivery_movement_simulation_interaction_workflow, edit_workflow</workflow>
+ </chain>
+</workflow_chain>

@@ -1,0 +1,29 @@
+2013-04-12 arnaud.fontaine
+* Ignore temporary documents for content translation Interaction Workflow. This is useless and likely to trigger errors anyway, such as the document being not available when Interactions is actually called.
+
+2012-01-05 Kazuhiko
+* move create/drop table SQL for content_translation table from erp5_content_translation to erp5_full_text_*_catalog BT.
+
+2011-12-20 Kazuhiko
+* use groonga storage engine instead of MyISAM.
+
+2010-04-02 yusuke
+* Fixed the column name conflict.
+
+2010-03-03 yusuke
+* Use sql_deferred_connection instead of sql_connection
+
+2010-03-02 yusei
+* Remove short title.
+
+2010-02-26 yusuke
+* supports catalog search.
+
+2010-01-19 yusei
+* Now translation accessors return original value if there is no translation. For translation UI of content translation, use no_original_value parameter and do not display original value in input fields.
+
+2009-11-05 yusei
+* Initial release.
+
+2009-09-02 yusei
+* Pre-release for review.

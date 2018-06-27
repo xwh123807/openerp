@@ -1,0 +1,24 @@
+2011-11-25 aurel
+* Updated to use last code with new simulation
+
+2010-02-19 yusei
+* Move base_amount/payroll and base_amount/payroll/l10n categories to erp5_payroll.
+
+2010-01-04 aurel
+Update the bt to use the new structure of the base amount category
+
+2009-09-01 yusuke
+* tax_category category is renamed to contribution_share category
+
+2009-03-10 fabien
+* add a macro used to display localised information in a part of the payslip
+* increment version number because of the new style of the payslip
+
+2009-01-28 fabien
+* add salaire_net_imposable base_amount category
+
+2008-01-24 fabien
+* add version number
+
+2007-11-09 fabien
+* Initial revision

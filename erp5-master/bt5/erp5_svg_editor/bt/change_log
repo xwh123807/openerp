@@ -1,0 +1,19 @@
+2016-01-19 tristan
+* Gadgetify method-draw
+* Remove EditorField support
+
+2016-01-18 tristan
+* Replace svg-edit by method-draw
+* Remove jquery plugin dependencies to improve maintenance
+
+2010-12-29 gabriel
+* Fix issue to reload the page and insert the text_content on svg editor
+
+2010-11-21 gabriel
+* Clear the text_content field to use SVG Editor from EditorField
+
+2010-11-09 gabriel
+* Initial implementation to SVG Editor to be supported in EditorField
+
+2010-11-08 gabriel
+* The initial commit

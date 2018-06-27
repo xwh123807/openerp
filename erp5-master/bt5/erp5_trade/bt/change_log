@@ -1,0 +1,775 @@
+2016-04-22 gabriel
+* Add Delivery Node so that we can store information to delivery a node
+
+2015-06-12 arnaud.fontaine
+* As there may be several trade_phase which could be set on a Trade Model Path, all of them should be displayed in ListBox and not only the first one.
+
+2015-06-12 arnaud.fontaine
+* Remove fields which have never been used on TradeModelPath view.
+
+2015-06-12 arnaud.fontaine
+* Allow to set ID in several Simulation-related views.
+
+2014-02-19 Arnaud Fontaine
+* Portal Types of ZODB Property Sheets Constraint should be in 'constraint' 'group'.
+
+2014-02-19 Arnaud Fontaine
+* Move Constraint Property Sheets and Views to their proper bt5s.
+
+2014-01-15 tatuya
+* Add Pricing Preference Tab so that we can optimise pricing query.
+
+2013-09-03 arnaud.fontaine
+* ZODB Components: Workflow History must always be kept, so avoid an extra step for developers.
+
+2013-08-28 arnaud.fontaine
+* ZODB Components: Migrate Documents, Extensions and Tests.
+
+2013-05-28 arnaud.fontaine
+* Fix incorrect change of my_view_mode_quantity ProxyField which must point to Base_viewFieldLibrary/my_view_mode_quantity so that figure CSS class is applied (9fcbe9c).
+
+2013-04-17 arnaud.fontaine
+* erp5_simulation should not be required as some system do not use simulation.
+
+2012-01-05 Kazuhiko
+* move builders from erp5_trade to erp5_simulation_test BT.
+
+2011-12-14 arnaud.fontaine
+* Allow to jump from Organisation to its related Sale Trade Conditions, Purchase Trade Conditions and Internal Trade Conditions.
+
+2011-11-22 yusei
+* Stop showing detailed DateTime in listbox. This problem started occur due to recent specification change of zope's DateTime.
+
+2011-11-12 yusei
+* source_trade and destination_trade must be copied from trade condition to order/delivery.
+
+2011-09-28 yusei
+* Improve stock report and show stock also by group.
+
+2011-09-28 yusei
+* Improve Base_getBySiteCurrentStockList and support group category.
+
+2011-09-20 tatuya
+* Modify Order_zSelectMovement  to make Packing List enable to represent Transfer of rights(ownership). To do this, remove WHERE expression to exclude simulation movements that have same source and destination.
+
+2011-09-15 tatuya
+* Fix the issue that Sale Packing List wrongly has Root Applied Rule sometimes when it is created by Delivery Builder with a site which has many activity nodes.
+
+2011-06-23 tatuya
+* Show the owner at Inventory module listbox because the inventories can be owned by multiple sections.
+
+2011-06-02 arnaud.fontaine
+* Fix issue on stock listbox when there is no unit conversion defined.
+
+2011-05-27 arnaud.fontaine
+* Fix stock listbox and add a new column 'order'.
+
+2011-04-14 yusei
+* Remove old unnecessary tales expression from relation string fields.
+
+2011-04-04 yusei
+* Fix tales expression on property "enabled" of my_view_mode_payment_date. This field cannot be displayed.
+
+2011-03-30 nicolas
+* Add internal trade conditions
+
+2010-10-21 yusei
+* Add reset movement price action to returned sale packing list.
+
+2010-10-21 yusei
+* Add reverse_arrow_category parameter to Order_applyTradeCondition. This option is useful when trade condition is applied to returned packing list.
+
+2010-10-15 nicolas.dumazet
+* No restrictions on subtypes of Order portal type
+
+2010-09-30 nicolas.dumazet
+* Add abstract Order portal type to be able to create temporary documents of Order portal type.
+
+2010-08-07 JPS
+* make the terms match payment condition and capacity property sheets in TradeModelPath_view
+
+2010-07-15 yusei
+* Add source_carrier, source_referral, source_function, destination_carrier, destination_referral, destination_function to copied category list of trade condition.
+
+2010-06-22 JPS
+* Business Path now split into Business Link and Trade Model Path
+
+2010-06-21 yo
+* Specify the inventory group to the portal type Inventory.
+
+2010-06-08 kazuhiko
+* 'Validate Inventory Action' should be allowed for Assignor.
+
+2010-06-03 yo
+* Add details tabs into Returned Sale Packing List and Returned Purchase Packing List for consistency.
+
+2010-06-01 kazuhiko
+* Use the same dependencies for Delivery_updateApplideRule to make it possible to merge activities.
+
+2010-05-24 kazuhiko
+* Improve activity dependencies for Delivery_updateAppliedRule, eg. delivery.activate(tag='(path)_updateAppliedRule', after_tag='(path)_expand').Delivery_updateAppliedRule(activate_kw={'tag':'(path)_expand'})
+
+2010-05-24 yusei
+* Update Movement_getUseItemList. Add an empty select option to the result.
+
+2010-05-21 yusei
+* Display preferred base amounts in base contribution list and base application list.
+
+2010-05-21 yusei
+* Change base amount preference. Only one preferred list on trade is enough.
+* Revert previous changes. On movements, display uses defined on the corresponding resource only.
+
+2010-05-21 yusei
+* Display preferred uses if preference is set.
+
+2010-05-21 yusei
+* Add two system preference properties for base amount category.
+
+2010-05-21 yo
+* Add a new action Reset Prices into Sale Order, Sale Packing List, Purchase Order, and Purchase Packing List.
+
+2010-05-18 yo
+* Change the default of rounding to False, as it is currently very slow to apply rounding models. So those who want to use this feature should enable it explicitly.
+
+2010-05-18 yo
+* Have Base_getSpecialisedAggregatedAmountList to pass the parameter rounding to getAggregatedAmountList. It defaults to True, as this method is used for UI, and rounding should be applied in the UI in most cases.
+
+2010-05-17 yo
+* Inventory Line and Inventory Cell are not invoice movements.
+
+2010-05-10 tatuya
+* Fix the groups of the Internal Order Module portal type. Add module group into it.
+
+2010-05-06 nicolas.dumazet
+* Add Internal Order, Internal Order Line and Internal Order Cell portal types
+
+2010-05-04 yo
+* Fix the template field of my_incoterm of BusinessPath_view, as it was impossible to edit a Business Path any more.
+
+2010-04-13 kazuhiko
+* Add predicate_view action in Business Path.
+
+2010-03-24 tatuya
+* Add Test Method Id field into BusinessPath_viewAdvanced so that Business Process will select appropriate Business Paths using the test method through Predicate API.
+
+2010-03-16 yo
+* Add Returned Purchase Packing List family.
+
+2010-03-16 yo
+* Returned Sale Packing List should generate a root applied rule using default_delivery_rule by default.
+
+2010-03-16 yo
+* Update the workflow chain of returned sale packing list line for base contribution.
+
+2010-03-16 yo
+* Fix mistakes about the direction of returned sale packing list.
+
+2010-03-11 yusuke
+* Reference generating script goes to erp5_base.
+
+2010-03-02 yusei
+* Remove short title.
+
+2010-02-19 yusei
+* Set business_application category to Business Process Module.
+
+2010-02-10 yo
+* Add support for price precision.
+
+2010-01-21 aurel
+* add fast input for inventory and sale packing list, factorize the code so that it is easy to add a new fast input
+
+2009-12-16 yo
+* Change the permission of sale order fast input to Add portal content. This is not still sufficient (because Modified portal content on lines is also required), but better than before.
+
+2009-12-14 yusei
+* Replace sales group type with sale group type.
+
+2009-12-14 yusei
+* Add new group type to each Sale/Purchase/Internal type informations.
+
+2009-12-14 yusei
+* Add use field to order line view and packing list line view.
+
+2009-12-12 yo
+* Show translated logical paths instead of paths of quantity units in the Stock tab.
+
+2009-12-11 yusei
+* Display use category on trade model lines and aggregated amounts.
+
+2009-12-11 yusei
+* Add use category field to TradeModelLine_view.
+
+2009-12-1 yusei
+* Update title of TradeModelLine_view.my_resource_title. Now both product and service can be used.
+
+2009-12-1 yusei
+* Add calculation script field and create line field to trade model line view.
+* Modify quantity field on trade model line view to display floating number only if quantity property has value and is not set to None.
+* Modify resource field on trade model line and allow users to choose Product document.
+
+2009-11-26 yusei
+* Add target level field to trade model line view.
+
+2009-11-26 yusei
+* Update xml format.
+
+2009-11-18 yusei
+* Fix wrong python script parameter.
+
+2009-11-10 tatuya
+* Fix Sale and PurchaseOrder_view/listbox_quantity_unit  to show empty drop-down list if the line does not have any resource. This fix makes Delivery and Line  consistence of quantity_unit displaying.
+
+2009-10-23 tatuya
+* Clean-up returned sale packing list forms, workflows according to sale/purchase packing list.
+
+2009-10-16 yusei
+* Update for the changes of new portal types of portal types.
+
+2009-09-09 yusei
+* Fix list view of packing list modules and supply modules and use countFolder method to count result.
+
+2009-09-07 yusuke
+* Replace ERP5Report to ERP5Form and ReportBox
+
+2009-08-20 Jérome
+* Move out old tax and discount system.
+
+2009-07-02 romain
+* Revert latest proxy field library simplification, as the design was not finalized.
+
+2009-06-19 tatuya
+* Fix workflow scripts to enable to create  Sale Invoices and Purchase Invoices when using erp5_advanced_invoicing
+
+2009-05-19 yusei
+* Fix some proxy fields. count_method should not be inherited from template field and proxy_listbox_ids had to be copied to new proxified fields but it was not copied.
+
+2009-05-01 yusei
+* Fix some mistakes on previous field library conversion.
+
+2009-04-30 yusei
+* Simplify field libraries and proxy fields. Old field libraries are kept for backward compatibility. Need recent version of erp5_core(newer than r1193).
+* Update dependencies.
+
+2009-04-18 Kazuhiko
+* Version 5.4.1
+
+2009-04-15 Kazuhiko
+* move open order functionality to erp5_open_order BT.
+
+2009-03-13 yusei
+* Correct workflow titles.
+
+2009-02-15 yusei
+* Fixed wrong field name in OpenSaleOrder_view.
+
+2009-02-09 yusei
+* Added open order functionality.
+
+2009-01-29 yusei
+* Use activate_kw parameter in build method.
+
+2008-12-9 yusei
+* Display all selected business applications in listbox.
+
+2008-11-13 yusei
+* Start to develop version 5.4.
+
+2008-10-14 yusei
+* Start to develop version 5.3.
+
+2008-10-02 Jerome
+* Add delivery_tax_interaction workflow to update tax line when delivery line is deleted.
+
+2008-09-16 Kazuhiko
+* revise purchase_packing_list_builder and sale_packing_list_builder using new API.
+* use  delivery_causality_workflow instead of invoice_causality_workflow in Internal Packing List, Purchase Packing List and Sale Packing List.
+
+2008-09-11 Kazuhiko
+* Add a script for selecting deliveries in purchase_packing_list_builder like in sale_packing_list_builder.
+
+2008-09-10 yusei
+* Update worklist action box names.
+
+2008-09-08 yusei
+* Enable template feature for Sales Order.
+
+2008-09-04 yusei
+* Update English messages.
+
+2008-08-29 yusei
+* Correct text.
+
+2008-08-28 yusei
+* Use Base_translateString or translateString instead of N_ for translation message.
+
+2008-07-30 Jerome
+Add "offered" and "rejected" state on order workflow, to manage offers.
+
+2008-07-16 Jerome
+Add worklists for diverged packing lists.
+
+2008-07-09 Nicolas
+use standard packing_list_workflow for Internal Packing Lists
+
+2008-07-07 Nicolas
+Proxify Internal Packing List
+
+2008-06-27 yusei
+* Start to develop version 5.2.
+
+2008-06-26 yusei
+* Revise version to 5.1.
+
+2008-06-18 jerome
+* ignore container state for packing list workflow transitions
+
+2008-06-03 vincentd
+* Add all rights to manager to inventory workflow(Deleted), order_workflow(Deleted, Closed, Cancelled, Open), packing_list_causality_workflow (Building, Solving) and packing_list_workflow(Deleted, Cancelled)
+
+2008-05-26 yo
+* Change the title of my_order to Priority, because only priority-related categories are displayed in Express.
+
+2008-04-18 jerome
+* Bump to version 5.0
+
+2008-04-17 jerome
+* Add new discount system, similar to new tax system.
+
+2008-04-16 alex
+* move Supplies to PDM
+* push version to 1.0rc17
+
+2008-04-14 jerome
+* Add new Tax system.
+
+2008-04-11 aurel
+* Add order report.
+
+2008-04-10
+* Add stock report.
+
+2007-08-10 Seb
+* Proxify inventory forms
+* update role setting on many workflist
+* update permission settings on many worklfow
+
+2007-10-30 yo
+* Set pricing_interaction_workflow to Container, Container Line, Internal Packing List Line, Inventory Line, Purchase Order Line, Purchase Packing List Line, Returned Sale Packing List Line, Sale Order Line, and Sale Packing List Line.
+
+2007-09-30 yo
+* Clean up the actions of portal types.
+
+2007-09-25 yo
+* Set module group on portal types.
+
+2007-09-21 Yusei
+* Add open and closed states to order_workflow.
+
+2007-09-05 Kazuhiko
+* Remove packing_list.edit() from Delivery_confirm because expansion will be invoked from interaction workflow.
+
+2007-08-13 Jerome
+* Remove portal type actions that are now defined as global actions
+
+2007-08-02 Romain
+* Add InventoryConstraint
+
+207-07-30 yo
+* Add Resource_getPriceCalculationOperandDict.
+
+2006-09-12 Romain
+* Fix ReturnedSalePackingListModule_viewReturnedSalePackingListList
+* Fix group's name.
+
+2006-08-02 Romain
+* Added title to some forms.
+
+2006-07-03 Kevin
+* Merge Seb's delivery_patch business template and erp5_trade.
+* Revert previous action.
+* Add a short basic description.
+
+2006-05-11 Alex
+* make sure the Container is indexed before checking if the delivery is packed.
+* fixed name of rule used in order_interaction_workflow
+* Stop using Delivery Cell on Orders and Internal Packing List (workflows are still a dumb copy of Delivery Cell's and might need to be adapted)
+2006-05-10 Jerome
+* Added inventory_workflow
+* Hide Price & Inventory tabs if no cells on Inventory Line.
+* Copy Source from Purchase Trade Condition when applying it
+* Set updateAppliedRule on Purchase Line / Cell Edit
+* Add Person portal type to source/destination administration/decision
+
+2006-05-03 Romain
+* Remove useless field in PurchaseTradeCondition_viewProfile.
+
+2006-04-20 Romain
+* Make supply_line_interaction_workflow compatible with Sale/Purchase Supply Line.
+
+2006-03-09 Seb
+* Fix parameters in DeliverBuilder_selectConfirmedDeliveryList
+
+2006-03-09 Romain
+* Fix history action in Purchase/Sale Supply Cell.
+
+2006-03-08 Romain
+* Added Sale Supply Line/Cell, Purchase Supply Line/Cell.
+* Use proxy field for Supply.
+
+2006-03-08 Seb
+* Added script for selecting deliveries in sale_packing_list_builder
+
+2006-03-03 Seb
+* Added Returned Sale Packing List properties
+
+2006-03-03 romain
+* add proxy field in internal packing list.
+
+2006-02-28 romain
+* add proxy field in purchase trade condition, purchase order, sale packing list, purchase packing list.
+
+2006-02-27 alex
+* Added Non Discountable Additional Price and Variable Additional Price to Supply Lines
+
+2006-02-22 kevin
+* Fix bad default lisbox parameters.
+
+2006-02-22 romain
+* use proxy field in sale trade condition, sale order.
+
+2006-02-16 jerome
+* update Payment Condition forms to use souce/destination payment categories, quantity and efficiency.
+
+2006-01-24 Seb
+* call updateCausalityState with fast option in SalePackingList_copyOrderProperties
+* in the case we add new lines to an existing packing_list already confirmed, do not delete data in PackingList_copyOrderProperties
+
+2006-01-21 JPS
+* Removed support for assignRoleToSecurityGroup in PackingList_copyOrderProperties and moved to dedicated script
+
+2006-01-21 JPS
+* Added support for assignRoleToSecurityGroup in PackingList_copyOrderProperties
+
+2006-01-06 Romain
+* add Delivery_viewInventory
+
+2005-12-20 Kevin
+* Update state type of packing_list_workflow, internal_packing_list_workflow and order_workflow states.
+
+2005-12-19 Jérome
+* bug fix; don't use SQLQueue in delivery_edit_workflow
+* trigger delivery_edit on workflow transitions.
+
+2005-12-19 Seb
+* added category type 'sub_variation' on aggregate
+
+2005-12-14 Seb
+* use activity tags in packing_list_workflow/scripts/PackingList_updateAppliedRule
+
+2005-12-14 jerome
+* package the content of trade_date category, because PaymentCondition_getTradeDate depends on it
+
+2005-12-11 seb
+* fixed the duplicate applied rule problem in order_workflow
+
+2005-12-08 yo
+* Fix the LEFT JOIN syntax in Order_zSelectMovement.
+
+2005-12-05 Seb
+* Cleaned SaleOrder_applySaleTradeCondition
+
+2005-11-30 aurel
+* add aggregateMovementGroup in portal_deliveries/purchase_packing_list_builder
+
+2005-11-30 Seb
+* Renamed in portal_skins two forms:
+SalePackingList_viewSolveActionsDialog to PackingList_viewSolveActionsDialog, and also the action script.
+
+2005-11-29 aurel
+* set flag "acquire permissions" on state permissions of packing_list_causality_workflow apart for building and solving
+
+2005-11-26 Jérome
+* remove permission managed by packing_list_container_workflow, they are not in use.
+
+2005-11-23 aurel
+* remove SalePackingList_getCellOrLine
+
+2005-11-23 Romain
+* change Delivery Cell Portal Type on purchase_packing_list_builder.
+
+2005-11-23 aurel
+* added SalePackingList_doSolveActions, SalePackingList_getCellOrLine and SalePackingList_viewSolveActionsDialog in order to choose solve action on sale packing list cell
+
+2005-11-18 Alex
+* added proxy manager on PurchaseOrder_selectMovement script
+
+2005-11-18 yo
+* The meta type of Internal Packing List Line was wrong.
+* Remove actions.
+
+2005-11-11 Romain
+* add print on SupplyLine.
+* correct SupplyLine* forms.
+* Correct naming convention.
+
+2005-11-10 Romain
+* correct SupplyLine_init
+
+2005-11-09 Romain
+* modify PurchaseOrder_view, PurchasePackingList_view
+
+2005-11-08 Romain
+* added supply_line_interaction_workflow.
+* modified the pricing model on SupplyLine (added and modify some skins)
+* removed supply_module
+* removed Supply Module, Supply
+* added purchase_supply_module, sale_supply_module
+* added Sale Supply, Sale Supply Module, Purchase Supply, Purchase Supply Module
+
+2005-11-05 Romain
+* dirty bug fix on Order_zSelectMovement
+* configure Purchase Order Line in order to create Delivery Cell inside.
+* Correct naming conventions.
+
+2005-11-04 Romain
+* correct PurchasePackingList_copyOrderProperties (replace build by startBuilding)
+* modified order_workflow/scripts/Order_buildPackingList
+
+2005-11-03 Romain
+* added OrderLine_zGetRelatedQuantity
+
+2005-11-03 Seb
+* updated order_workflow and packing_list_causality workflow in order to use tags and in order to not wait until all the simulation is reindexed before creating the packing_list
+
+2005-10-20 Romain
+* Correct naming convention.
+
+2005-10-13 Jérome
+* added delivery_edit_workflow to reindew simulation and updateAppliedRule when necessary (FIXME: in the current implementation, I guess it reindexes more than necessary)
+* added titles on workflow states
+* move related keys to ERP5Catalog/sql
+
+2005-10-13 Jérome
+* added the script Delivery_setCausalityFromSimulation
+* launch the invoice building when a packing list is started
+
+2005-10-06 Seb
+* Modified packing_list_interaction_workflow, when a content is modified in a packing it is better to start an activity than doing things immediatly, this increase a lot the speed to modify many cells or lines
+
+2005-10-06 Romain
+* Add print and export action on Supply Module
+* add form SupplyModule_viewSupplyList
+* add listbox filed in Supply_view
+* add print action on Supply
+* associate edit_workflow to Supply Line
+
+2005-09-29 Seb
+* change the way of calling delivery_builders in order_workflow
+* fixed packing_list_workflow
+* modified a transition of packing_list_causality_workflow
+* SalePackingList_copyOrderProperties
+* SaleOrder_selectMovement use now explanation_portal_type
+
+2005-09-28 Jérome
+* fix SaleOrder_applySaleTradeCondition
+
+2005-09-28 Jérome
+* Checks the validity of the order before passing transitions in order_workflow
+
+2005-09-28 Seb
+* Updated packing_list_workflow
+* Added portal_type Puchase Packing List Cell
+
+2005-09-27 Seb
+* Updated packing_list_causality_worfklow
+packing_list_worklfow
+SalePackingList_copyOrderProperties
+PurchasePackingList_copyOrderProperties
+packing_list_interaction_workflow
+
+2005-09-23 Seb
+* Added portal type "Sale Packing List Cell"
+
+2005-09-12 JPS
+* Added proxy security Manager to Delivery_asCellRange script
+
+2005-09-13 Seb
+* In order_workfow, start the method
+build of the delivery builder with an SQLQueue activity (so we can build several deliveries)
+
+2005-09-08 Seb
+* Improved the script
+SaleOrder_applySaleTradeCondition
+
+2005-09-07 Jérome
+move invoice related portal types from erp5_trade to erp5_accounting
+
+2005-09-06 Romain 1.0rc13
+* Remove target_quantity reference in DeliveryLine_zGetRelatedQuantity.
+
+2005-08-29 Romain
+* Remove Payment stuff in PurchaseOrder_applyPurchaseTradeCondition.
+
+2005-08-26 Romain
+* add condition object/hasCellContent to  all portal type used as a line for form *Line_view[Price|Quantity|Option].
+
+2005-08-24 Seb
+* Purchase packing list generation optimization
+* modify PurchasePackingList_copyOrderProperties
+* added Delivery_confirm
+
+2005-08-22 Romain
+* modify parameter in PurchaseOrder_selectMovement
+* ContainerLine_asCellRange works with option variation
+
+2005-08-19 Romain
+* add auto_planned state in order_workflow
+
+2005-08-18 Jérome
+* make Organisation's jumps optional
+
+2005-07-26 Kevin
+
+repair PurchaseOrder_applyPurchaseTradeCondition (thanks to Mayoro)
+
+2005-07-26 Romain
+
+Added industrial_phase as a variation of Resource.
+Modify DeliveryLine_viewPrice, DeliveryLine_viewQuantity.
+Add DeliveryLine_viewIndustrialPhase, DeliveryCell_asPredicate.
+
+2005-07-21 Romain
+Modified some forms and scripts in order to make option variation working.
+
+Option are not part of the matrix dimension (use parameter omit_option_base_category).
+DeliveryLine_asCellRange
+OrderLine_asCellRange
+
+Display option variation with DeliveryLine_hashVariationCategoryItemList, but they are not required.
+
+Modified matrixbox_variation_category_list on DeliveryLine_viewPrice and
+DeliveryLine_viewQuantity, in order not to erase option saved on cell.
+
+2005-07-19 Mikaël
+- Changed
+ContainerLine_asCellRange
+DeliveryLine_asCellRange
+InventoryLine_asCellRange
+InvoiceLine_asCellRange
+OrderLine_asCellRange
+SupplyLine_asCellRange
+with **kw as very last script's parameter
+
+2005-07-10 Jérome
+
+- Moved simulation_movement_interaction_workflow to erp5_core
+
+2005-07-08 Romain
+
+- Add simulation_movement_interaction_workflow from Guillaume.
+
+2005-07-06 Seb
+
+- Added SectionPathMovementGroup to builders
+
+2005-06-23 Kevin
+
+- Add InventoryLine_zGetTotal
+
+2005-06-23 yo
+
+- Add Supply Module, Supply, supply_module.
+
+- Add my_resource_title into SupplyLine_view.
+
+2005-06-20
+
+Added script SupplyLine_asCellRange
+
+2005-06-16
+
+Fix problem in SupplyLine_asCellRange
+
+2005-06-16
+
+Added script for the asPredicate method
+for supply line and cells, and also
+trade condition
+
+2005-06-13
+
+Add base category aggregate.
+
+2005-06-09
+
+Add Internal Packing List and Inventory modules.
+
+2005-06-08
+
+Add permissions setting for some workflows.
+Remove container workflow on Purchase Packing List.
+
+2005-06-02
+
+Updated everything about Supply Lines and Cells
+
+2005-06-02
+
+Modify some workflow scripts in order to index objects immediately.
+
+2005-05-31
+
+Add packing list workflows.
+Modify Delivery_zGetTotal.
+
+2005-05-11
+
+Add causality workflows.
+
+2005-05-09
+
+Modify configuration of Delivery Builder.
+
+2005-05-04
+
+Add packing list workflow.
+
+2005-04-22
+
+Modify security settings.
+
+2005-04-19
+
+Change my_title field on all forms (name become Title, and not required anymore).
+Order_zSelectMovement must use ZSQLBrain.
+
+2005-04-18
+
+Add DeliveryBuilder.
+Use explanation_uid in movement table.
+Correct Order_zSelectMovement.
+
+2005-04-07
+
+Finish some Form
+
+2005-04-06
+
+Modify TradeCondition_viewPayment
+
+2005-04-06
+
+Move base categories to erp5_core:
+destination_administration
+destination_decision
+destination_payment
+source_administration
+source_decision
+source_payment
+
+Remove base categories:
+target_destination
+target_destination_section
+target_source
+target_source_section

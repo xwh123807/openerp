@@ -1,0 +1,11 @@
+<property_sheet_list>
+ <portal_type id="Bug">
+  <item>Bug</item>
+ </portal_type>
+ <portal_type id="Glossary Term">
+  <item>Comment</item>
+  <item>DublinCore</item>
+  <item>Reference</item>
+  <item>Version</item>
+ </portal_type>
+</property_sheet_list>

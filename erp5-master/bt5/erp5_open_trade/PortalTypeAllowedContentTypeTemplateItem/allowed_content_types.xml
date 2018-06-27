@@ -1,0 +1,32 @@
+<allowed_content_type_list>
+ <portal_type id="Open Internal Order">
+  <item>Open Internal Order Line</item>
+  <item>Payment Condition</item>
+ </portal_type>
+ <portal_type id="Open Internal Order Line">
+  <item>Open Internal Order Cell</item>
+ </portal_type>
+ <portal_type id="Open Internal Order Module">
+  <item>Open Internal Order</item>
+ </portal_type>
+ <portal_type id="Open Purchase Order">
+  <item>Open Purchase Order Line</item>
+  <item>Payment Condition</item>
+ </portal_type>
+ <portal_type id="Open Purchase Order Line">
+  <item>Open Purchase Order Cell</item>
+ </portal_type>
+ <portal_type id="Open Purchase Order Module">
+  <item>Open Purchase Order</item>
+ </portal_type>
+ <portal_type id="Open Sale Order">
+  <item>Open Sale Order Line</item>
+  <item>Payment Condition</item>
+ </portal_type>
+ <portal_type id="Open Sale Order Line">
+  <item>Open Sale Order Cell</item>
+ </portal_type>
+ <portal_type id="Open Sale Order Module">
+  <item>Open Sale Order</item>
+ </portal_type>
+</allowed_content_type_list>

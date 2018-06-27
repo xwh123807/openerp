@@ -1,0 +1,18 @@
+Calendar Exception | group_calendar_interaction_workflow
+Group Calendar Assignment | edit_workflow
+Group Calendar Assignment | group_calendar_workflow
+Group Calendar | edit_workflow
+Group Calendar | group_calendar_interaction_workflow
+Group Calendar | group_calendar_workflow
+Group Presence Period | edit_workflow
+Group Presence Period | group_calendar_interaction_workflow
+Leave Request Period | edit_workflow
+Leave Request Period | leave_request_interaction_workflow
+Leave Request | edit_workflow
+Leave Request | leave_request_interaction_workflow
+Leave Request | leave_request_workflow
+Presence Request Period | edit_workflow
+Presence Request Period | presence_request_interaction_workflow
+Presence Request | edit_workflow
+Presence Request | presence_request_interaction_workflow
+Presence Request | presence_request_workflow

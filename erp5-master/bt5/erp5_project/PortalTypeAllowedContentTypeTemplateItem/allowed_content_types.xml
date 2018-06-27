@@ -1,0 +1,47 @@
+<allowed_content_type_list>
+ <portal_type id="Project">
+  <item>File</item>
+  <item>Image</item>
+  <item>Project Line</item>
+  <item>Project Milestone</item>
+ </portal_type>
+ <portal_type id="Project Line">
+  <item>File</item>
+  <item>Image</item>
+  <item>Project Cell</item>
+  <item>Project Line</item>
+ </portal_type>
+ <portal_type id="Project Milestone">
+  <item>File</item>
+  <item>Image</item>
+ </portal_type>
+ <portal_type id="Project Module">
+  <item>Project</item>
+ </portal_type>
+ <portal_type id="Requirement">
+  <item>Requirement</item>
+ </portal_type>
+ <portal_type id="Requirement Document">
+  <item>Requirement</item>
+ </portal_type>
+ <portal_type id="Requirement Module">
+  <item>Requirement Document</item>
+ </portal_type>
+ <portal_type id="Sale Order">
+  <item>Sale Order Milestone</item>
+ </portal_type>
+ <portal_type id="Task">
+  <item>Payment Condition</item>
+  <item>Task Line</item>
+ </portal_type>
+ <portal_type id="Task Module">
+  <item>Task</item>
+ </portal_type>
+ <portal_type id="Task Report">
+  <item>Payment Condition</item>
+  <item>Task Report Line</item>
+ </portal_type>
+ <portal_type id="Task Report Module">
+  <item>Task Report</item>
+ </portal_type>
+</allowed_content_type_list>

@@ -1,0 +1,30 @@
+<allowed_content_type_list>
+ <portal_type id="Static Web Section">
+  <item>File</item>
+  <item>Image</item>
+  <item>Role Definition</item>
+ </portal_type>
+ <portal_type id="Web Page">
+  <item>Embedded File</item>
+ </portal_type>
+ <portal_type id="Web Page Module">
+  <item>Web Page</item>
+ </portal_type>
+ <portal_type id="Web Section">
+  <item>File</item>
+  <item>Image</item>
+  <item>Role Definition</item>
+  <item>Static Web Section</item>
+  <item>Web Section</item>
+ </portal_type>
+ <portal_type id="Web Site">
+  <item>File</item>
+  <item>Image</item>
+  <item>Role Definition</item>
+  <item>Static Web Section</item>
+  <item>Web Section</item>
+ </portal_type>
+ <portal_type id="Web Site Module">
+  <item>Web Site</item>
+ </portal_type>
+</allowed_content_type_list>

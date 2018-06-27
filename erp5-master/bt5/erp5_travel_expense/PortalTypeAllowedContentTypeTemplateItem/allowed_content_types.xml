@@ -1,0 +1,20 @@
+<allowed_content_type_list>
+ <portal_type id="Expense Record Module">
+  <item>Expense Record</item>
+ </portal_type>
+ <portal_type id="Expense Sheet Module">
+  <item>Expense Sheet</item>
+ </portal_type>
+ <portal_type id="Expense Validation Request Module">
+  <item>Expense Validation Request</item>
+ </portal_type>
+ <portal_type id="Record Module">
+  <item>Leave Report Record</item>
+  <item>Leave Request Record</item>
+  <item>Localisation Record</item>
+  <item>Travel Request Record</item>
+ </portal_type>
+ <portal_type id="Travel Request Module">
+  <item>Travel Request</item>
+ </portal_type>
+</allowed_content_type_list>

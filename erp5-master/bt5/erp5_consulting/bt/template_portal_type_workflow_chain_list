@@ -1,0 +1,13 @@
+Test Case Actor | edit_workflow
+Test Case Step | edit_workflow
+Test Case | edit_workflow
+Test Case | validation_workflow
+Test Report Step | edit_workflow
+Test Report Step | test_report_step_workflow
+Test Report | edit_workflow
+Test Report | test_report_workflow
+Use Case Actor | edit_workflow
+Use Case Scenario Step | edit_workflow
+Use Case Scenario | edit_workflow
+Use Case | edit_workflow
+Use Case | validation_workflow

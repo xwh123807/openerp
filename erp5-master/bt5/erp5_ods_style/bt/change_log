@@ -1,0 +1,61 @@
+2010-03-02 yusei
+* Remove short title.
+
+2009-09-07 yusuke
+* replace ERP5Report to ERP5Form and ReportBox
+
+2009-04-18 Kazuhiko
+* Version 5.4.1
+
+2009-01-07 Romain
+* Add macros for deferred rendering in report_view
+
+2008-11-18 yusei
+* Convert cell data to string explicitly.
+
+2008-11-13 yusei
+* Start to develop version 5.4.
+
+2008-10-14 yusei
+* Start to develop version 5.3.
+
+2008-09-04 yusei
+* Update English messages.
+
+2008-08-28 yusei
+* Update Base_translateString or translateString instead of N_ for translation message.
+
+2008-06-26 yusei
+* Revise version to 5.1.
+
+2008-04-17 yusei
+* Revise version to 5.0.
+
+2008-04-15 Thibaut
+Include field OOoChart in ODS style
+
+
+2008-01-17 Seb
+* add listbox_line_ods_macro
+* in report tree, enable the tree structure in the ods document
+
+2007-09-04 rie
+*modifies your_format
+*change ods sheet's title of report_view and of form_list
+
+2007-08-31 rie
+*improve encoding
+
+2007-08-30 rie
+*improve name of field and file
+*move global action into portal_properties
+
+2007-08-29 rie
+*improve naming
+
+2007-08-24 rie
+*add report function.
+*add some style sheet
+
+2007-06-28 jerome
+initial prototype

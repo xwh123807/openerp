@@ -1,0 +1,38 @@
+<base_category_list>
+ <portal_type id="Pay Sheet Cell">
+  <item>contribution_share</item>
+  <item>product_line</item>
+  <item>salary_range</item>
+ </portal_type>
+ <portal_type id="Pay Sheet Line">
+  <item>base_amount</item>
+  <item>contribution_share</item>
+  <item>salary_range</item>
+ </portal_type>
+ <portal_type id="Pay Sheet Model Cell">
+  <item>contribution_share</item>
+  <item>product_line</item>
+  <item>salary_range</item>
+ </portal_type>
+ <portal_type id="Pay Sheet Model Module">
+  <item>business_application</item>
+ </portal_type>
+ <portal_type id="Pay Sheet Model Slice">
+  <item>contribution_share</item>
+  <item>product_line</item>
+  <item>salary_range</item>
+ </portal_type>
+ <portal_type id="Pay Sheet Transaction">
+  <item>quantity_unit</item>
+  <item>specialise</item>
+ </portal_type>
+ <portal_type id="Payroll Enrollment Record Module">
+  <item>business_application</item>
+ </portal_type>
+ <portal_type id="Service">
+  <item>base_amount</item>
+ </portal_type>
+ <portal_type id="Social Declaration Report Module">
+  <item>business_application</item>
+ </portal_type>
+</base_category_list>

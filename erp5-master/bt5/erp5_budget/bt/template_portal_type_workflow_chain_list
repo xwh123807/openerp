@@ -1,0 +1,17 @@
+Budget Cell | edit_workflow
+Budget Line | budget_line_interaction_workflow
+Budget Line | edit_workflow
+Budget Model | edit_workflow
+Budget Model | validation_workflow
+Budget Transaction | budget_transaction_workflow
+Budget Transaction | edit_workflow
+Budget Transaction | pricing_interaction_workflow
+Budget Transfer Line | edit_workflow
+Budget Transfer | edit_workflow
+Budget | budget_interaction_workflow
+Budget | budget_workflow
+Budget | edit_workflow
+Category Budget Variation | edit_workflow
+Node Budget Variation | edit_workflow
+Transaction Quantity Value Feasability Constraint | dynamic_class_generation_interaction_workflow
+Transaction Quantity Value Validity Constraint | dynamic_class_generation_interaction_workflow

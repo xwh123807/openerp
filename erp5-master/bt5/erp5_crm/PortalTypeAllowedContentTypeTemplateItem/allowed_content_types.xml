@@ -1,0 +1,42 @@
+<allowed_content_type_list>
+ <portal_type id="Campaign">
+  <item>Event Path</item>
+  <item>Outcome Path</item>
+ </portal_type>
+ <portal_type id="Campaign Module">
+  <item>Campaign</item>
+ </portal_type>
+ <portal_type id="Event Module">
+  <item>Acknowledgement</item>
+  <item>Fax Message</item>
+  <item>Letter</item>
+  <item>Mail Message</item>
+  <item>Note</item>
+  <item>Phone Call</item>
+  <item>Short Message</item>
+  <item>Site Message</item>
+  <item>Visit</item>
+  <item>Web Message</item>
+ </portal_type>
+ <portal_type id="Letter">
+  <item>Embedded File</item>
+ </portal_type>
+ <portal_type id="Mail Message">
+  <item>Embedded File</item>
+ </portal_type>
+ <portal_type id="Meeting">
+  <item>Event Path</item>
+ </portal_type>
+ <portal_type id="Meeting Module">
+  <item>Meeting</item>
+ </portal_type>
+ <portal_type id="Preference">
+  <item>Support Request</item>
+ </portal_type>
+ <portal_type id="Sale Opportunity Module">
+  <item>Sale Opportunity</item>
+ </portal_type>
+ <portal_type id="Support Request Module">
+  <item>Support Request</item>
+ </portal_type>
+</allowed_content_type_list>

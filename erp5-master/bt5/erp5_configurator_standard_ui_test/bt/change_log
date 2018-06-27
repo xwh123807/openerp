@@ -1,0 +1,20 @@
+2013-09-03 arnaud.fontaine
+* ZODB Components: Workflow History must always be kept, so avoid an extra step for developers.
+
+2013-08-28 arnaud.fontaine
+* ZODB Components: Migrate Documents, Extensions and Tests.
+
+2011-08-16 rafael
+* Remove useless code and do not re-setup conversion server.
+
+2011-04-13 lucas
+* The 'Hello' text is not displayed anymore.
+
+2011-04-07 lucas
+* Removed useless properties from Zuite_getConfigurationTestDict.
+
+2011-04-07 lucas
+* Updated the test to work with the new user interface.
+
+2010-01-07 rafael
+* Inicial release.

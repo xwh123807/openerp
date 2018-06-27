@@ -1,0 +1,233 @@
+#! /usr/bin/env python
+##############################################################################
+#
+# Copyright (c) 2002 Nexedi SARL and Contributors. All Rights Reserved.
+#                    Yoshinori Okuji <yo@nexedi.com>
+#
+# WARNING: This program as such is intended to be used by professional
+# programmers who take the whole responsability of assessing all potential
+# consequences resulting from its eventual inadequacies and bugs
+# End users who are looking for a ready-to-use solution with commercial
+# garantees and support are strongly adviced to contract a Free Software
+# Service Company
+#
+# This program is Free Software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+#
+##############################################################################
+
+
+"""Generate repository information on Business Templates.
+"""
+
+import posixpath
+import tarfile
+import os
+import sys
+import cgi
+from base64 import b64encode
+from cStringIO import StringIO
+from hashlib import sha1
+from urllib import unquote
+
+
+# Order is important for installation
+# We want to have:
+#  * workflow and portal_type* before ZODB Component {Document,Extension...}
+#  * path after module, because path can be module content
+#  * path after categories, because path can be categories content
+#  * path after portal types roles so that roles in the current bt can be used
+#  * path before workflow chain, because path can be a portal type
+#         (until chains are set on portal types with categories)
+#  * skin after paths, because we can install a custom connection string as
+#       path and use it with SQLMethods in a skin.
+#    ( and more )
+item_name_list = (
+  'registered_version_priority_selection',
+  'workflow',
+  'product',
+  'document',
+  'property_sheet',
+  'constraint',
+  'extension',
+  'test',
+  'role',
+  'tool',
+  'message_translation',
+  'site_property',
+  'portal_type',
+  'portal_type_allowed_content_type',
+  'portal_type_hidden_content_type',
+  'portal_type_property_sheet',
+  'portal_type_base_category',
+  'category',
+  'module',
+  'portal_type_roles',
+  'path',
+  'skin',
+  'registered_skin_selection',
+  'preference',
+  'action',
+  'local_roles',
+  'portal_type_workflow_chain',
+  'catalog_method',
+  'catalog_result_key',
+  'catalog_related_key',
+  'catalog_result_table',
+  'catalog_search_key',
+  'catalog_keyword_key',
+  'catalog_datetime_key',
+  'catalog_full_text_key',
+  'catalog_request_key',
+  'catalog_multivalue_key',
+  'catalog_topic_key',
+  'catalog_scriptable_key',
+  'catalog_role_key',
+  'catalog_local_role_key',
+  'catalog_security_uid_column',
+)
+
+item_set = set(('CatalogDateTimeKey' if x == 'catalog_datetime_key' else
+             ''.join(map(str.title, x.split('_')))) + 'TemplateItem'
+            for x in item_name_list)
+item_set.add('bt')
+item_name_list = tuple('_%s_item' % x for x in item_name_list)
+
+class BusinessTemplateRevision(list):
+
+  def hash(self, path, text):
+    self.append((path, sha1(text).digest()))
+
+  def digest(self):
+    self.sort()
+    return b64encode(sha1('\0'.join(h + p for (h, p) in self)).digest())
+
+
+class BusinessTemplate(dict):
+
+  property_list = frozenset('''
+title
+version
+description
+license
+dependency_list
+test_dependency_list
+provision_list
+copyright_list
+force_install
+'''.split())
+
+  def __init__(self):
+    self.revision = BusinessTemplateRevision()
+
+  def _read(self, path, file):
+    try:
+      text = file.read()
+    finally:
+      file.close()
+    if path.startswith('bt/'):
+      name = path[3:]
+      if name in self.property_list:
+        if name.endswith('_list'):
+          self[name[:-5]] = text.splitlines()
+        else:
+          self[name] = text
+      elif name == 'revision':
+        return
+    self.revision.hash(unquote(path) if '%' in path else path, text)
+
+  def __iter__(self):
+    self['revision'] = self.revision.digest()
+    return iter(sorted(self.iteritems()))
+
+  @classmethod
+  def fromTar(cls, tar):
+    """Read an archived Business Template info"""
+    self = cls()
+    for info in tar:
+      if not info.isdir():
+        name = info.name.split('/', 1)[1]
+        if name.split('/', 1)[0] in item_set:
+          self._read(name, tar.extractfile(info))
+    return iter(self)
+
+  @classmethod
+  def fromDir(cls, dir):
+    """Read Business Template Directory info"""
+    self = cls()
+    lstrip_len = len(dir + os.sep)
+    for root, dirs, files in os.walk(dir):
+      if root:
+        for path in files:
+          path = os.path.join(root, path)
+          self._read(posixpath.normpath(path[lstrip_len:]), open(path, 'rb'))
+      else:
+        dirs[:] = item_set.intersection(dirs)
+    return iter(self)
+
+def generateInformation(dir, info=id, err=None):
+  xml = StringIO()
+  xml.write('<?xml version="1.0"?>\n<repository>\n')
+  for name in sorted(os.listdir(dir)):
+    path = os.path.join(dir, name)
+    if name.endswith('.bt5'):
+      info('Reading %s... ' % name)
+      try:
+        tar = tarfile.open(path, 'r:gz')
+      except tarfile.TarError:
+        if err:
+          err('An error happened in %s; skipping\n' % name)
+          continue
+        raise
+      try:
+        property_list = BusinessTemplate.fromTar(tar)
+      finally:
+        tar.close()
+    elif os.path.isfile(os.path.join(path, 'bt', 'title')):
+      info('Reading Directory %s... ' % name)
+      property_list = BusinessTemplate.fromDir(path)
+    else:
+      continue
+    xml.write('  <template id="%s">\n' % name)
+    for k, v in property_list:
+      for v in (v,) if type(v) is str else v:
+        xml.write('    <%s>%s</%s>\n' % (k, cgi.escape(v), k))
+    xml.write('  </template>\n')
+    info('done\n')
+  xml.write('</repository>\n')
+  return xml
+
+def main(dir_list=None, **kw):
+  if dir_list is None:
+    kw.setdefault('info', sys.stdout.write)
+    kw.setdefault('err', sys.stderr.write)
+    dir_list = sys.argv[1:] or '.'
+
+  for d in dir_list:
+    bt5list = generateInformation(d, **kw).getvalue()
+    # add pid in filename to avoid conflicts if several process calls genbt5list
+    destination_path =  os.path.join(d, 'bt5list')
+    temporary_path = destination_path + '.new.%i' % os.getpid()
+    try:
+      with open(temporary_path, 'wb') as f:
+        f.write(bt5list)
+      os.rename(temporary_path, destination_path)
+    finally:
+      try:
+        os.remove(temporary_path)
+      except OSError:
+        pass
+
+if __name__ == "__main__":
+  main()

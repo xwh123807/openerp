@@ -1,0 +1,6940 @@
+# Rafael Monnerat <rafael@nexedi.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: ERP5 Localized Interface\n"
+"POT-Creation-Date: 2010-10-29 20:10+BRT\n"
+"PO-Revision-Date: 2010-11-04 19:22-0200\n"
+"Last-Translator: Rafael Monnerat <rafael@nexedi.com>\n"
+"Language-Team: Brazilian Portuguese <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "${count} documents created successfully."
+msgstr "${count} documentos criados com sucesso."
+
+msgid "${count} tasks created."
+msgstr "${count} tarefas criadas."
+
+msgid "${day_name} ${date}"
+msgstr "${day_name} ${date}"
+
+msgid "${days} Days"
+msgstr "${days} Dias"
+
+msgid "${delivery_portal_type} ${delivery_title}"
+msgstr "${delivery_portal_type} ${delivery_title}"
+
+msgid "${delivery_portal_type} ${delivery_title} (${causality_portal_type} ${causality_title})"
+msgstr "${delivery_portal_type} ${delivery_title} (${causality_portal_type} ${causality_title})"
+
+msgid "${grouped_line_count} lines grouped."
+msgstr "${grouped_line_count} linhas agrupadas."
+
+msgid "${key} ${usage}"
+msgstr "${key} ${usage}"
+
+msgid "${min_quantity} <= Quantity"
+msgstr "${min_quantity} <= Quantidade"
+
+msgid "${min_quantity} <= Quantity < ${max_quantity}"
+msgstr "${min_quantity} <= Quantidade < ${max_quantity}"
+
+msgid "${month_name} ${year}"
+msgstr "${month_name} ${year}"
+
+msgid "${number} records"
+msgstr "${number} registros"
+
+msgid "${page} of ${total_pages}"
+msgstr "${page} de ${total_pages}"
+
+msgid "- ${number} items selected"
+msgstr "- ${number} items selecionados"
+
+msgid "-- Developper Mode --"
+msgstr "-- Modo do Desenvolvedor --"
+
+msgid "-- Directory --"
+msgstr "-- Diretório --"
+
+msgid "-- Object --"
+msgstr "-- Objeto --"
+
+msgid "-- Others --"
+msgstr "-- Outros --"
+
+msgid "-- Quick Search --"
+msgstr "-- Busca Rápida --"
+
+msgid "-- Select Classification --"
+msgstr "-- Selecione uma Classificação --"
+
+msgid "-- Select Document Type --"
+msgstr "-- Selecione o Tipo de Documento --"
+
+msgid "-- Select Project --"
+msgstr "-- Selecione um Projeto --"
+
+msgid "-- User --"
+msgstr "-- Usuário --"
+
+msgid "-- Workflows --"
+msgstr "-- Workflows --"
+
+msgid "-- Your Instances --"
+msgstr "-- Suas Instâncias --"
+
+msgid "A Campaign is a marketing mini-project which keeps track of all events associated to a given marketing action. Use it for example to manage press relation campaigns, assessment campaigns, product presentation campaigns which involve contacting many customers through email, phone, etc."
+msgstr "Uma Campanha é um mini-projeto de marketing que acompanha os eventos relacionados à uma ação de Marketing. Pode-se usar uma Campanha para gerenciar campanhas relacionadas a divulgação na imprensa, campanhas de avaliação, apresentação de produtos que envolvam contar muitos clientes por email, telefone, etc."
+
+msgid "A Currency is a resource which can be credited or debited on general ledger accounts. It defines currency information, identification and exchange rates to one or multiple reference currencies."
+msgstr "A Moeda Corrente é um recurso que pode ser creditado ou debitado nas contas do razão geral. Ela define a moeda local, a identificação e taxas de câmbio a uma ou várias moedas de referência."
+
+msgid "A Graphic file (OOo, DXF)"
+msgstr "Um arquivo gráfico (OOo, DXF)"
+
+msgid "A Note is an event which can be used to track project or tickets besides formal communication based on email, fax, etc."
+msgstr "Uma nota é um evento que pode ser usado para rastrear projetos ou tickets além da comunicação formal, baseado em e-mail, fax, etc"
+
+msgid "A Presentation file (OOo, PPT)"
+msgstr "Um arquivo de apresentação (OOo, PPT)"
+
+msgid "A Product is a tangible good which can be produced and traded (ex. a pen, a bicycle, a suit, etc.). Products may define multiple variations and configuration options. Trading information such as price, customer, reference, etc. may be defined on a Product, although it is recommended in complex environments to use Sale Supplies for that purpose. In a production environment, Components are procured and Products are sold."
+msgstr "Um produto é um bem tangível que podem ser produzidos e comercializados (por exemplo, uma caneta, uma bicicleta, uma roupa, etc.) Os produtos podem definir múltiplas variações e opções de configuração. Informações de negociação, tais como preço, cliente, referência, etc, podem ser definidas em um produto, mas é recomendado em ambientes complexos de usar *Sales Supplies* para esta finalidade. Em um ambiente de produção, os componentes são adquiridos e produtos são vendidos."
+
+msgid "A Query allows for capturing questions of users about ERP5 documents. It can be used as a collaboration tool, for sharing knowledge or to provide online help."
+msgstr "A consulta permite a captura questões dos utilizadores sobre os documentos do ERP5. Ele pode ser usado como uma ferramenta de colaboração, para compartilhar conhecimentos ou para fornecer ajuda on-line."
+
+msgid "A Sale packing list gathers the different shipment details regarding a sale order."
+msgstr "Uma entrega de venda reúne os detalhes de diferentes expedições a respeito de um pedido de venda."
+
+msgid "A Service is an immaterial Resource that can be traded (eg. shipping, support ...)"
+msgstr "Um Serviço é um Recurso imaterial que pode ser negociado."
+
+msgid "A Spreadsheet file (OOo, XLS)"
+msgstr "Um arquivo de planilha (OOo, XLS)"
+
+msgid "A Telephone object can contain a telephone number."
+msgstr "Um objeto Telefone contém um número de telefone."
+
+msgid "A Text file (OOo, DOC)"
+msgstr "Um arquivo texto (OOo, DOC)"
+
+msgid "A URL allows to represent in a standard way coordinates such as web sites, emails, ftp sites, etc."
+msgstr "A URL permite representar de uma forma padrão de coordenadas, tais como web sites, e-mails, sites FTP, etc."
+
+msgid "A Visit is an event which can be used to register visits with third parties, be them customers, suppliers or prospects"
+msgstr "Uma Visita é um evento que pode ser usado para registrar as visitas  com terceiros, sejam eles clientes ou fornecedores."
+
+msgid "A Web Page is an HTML document which contains images and files."
+msgstr "Uma página Web é um documento HTML que contém imagens e arquivos."
+
+msgid "A Web Site is the root of a tree of Web Sections and web documents (like web pages or any erp5 object like products, etc.)."
+msgstr "Um Web Site é a raiz de uma árvore de seções Web e documentos Web (como páginas web ou qualquer objeto ERP5 produtos similares, etc.)"
+
+msgid ""
+"A bank account number holds a collection of numbers and codes (ex. SWIFT, RIB, etc.) which may be used to identify a bank account. It is owned by a Person or an Organisation. A Bank Account contains Agents with Agent Privileges used by the owner to delegate the management of the bank account to trusted third-party Persons.\n"
+"\n"
+"BankAccount inherits from Base and from the mix-in Coordinate."
+msgstr ""
+"Um número de conta bancária contém uma coleção de números e/ou códigos (p.e. SWIFT, RIB, 34132, etc.) que pode ser usado para identificar uma conta bancária. Este número pertence a uma Pessoa ou Empresa. Uma conta bancária contem agentes com privilégios utilizados por seu dono para delegar o gerenciamento da conta para terceiros de sua confiança.\n"
+"\n"
+"(Comentário Técnico, não contribui para o usuário)\n"
+"A Conta Bancária herda conceitos da Base e de Coordenação"
+
+msgid "A change log"
+msgstr "Log de Mudanças"
+
+msgid "A chat address is an identifier in an Instant Messaging service."
+msgstr "O endereço de bate-papo é um identificador para um serviço de mensagens instantâneas."
+
+msgid "A credit registered in a bank and that can be used for a payment"
+msgstr "Um cartão de crédito que pode ser usado para pagamento."
+
+msgid "A discount consists in cutting the price of a product in a sale order."
+msgstr "Um desconto consiste em reduzir o preço de um produto em uma ordem de venda."
+
+msgid "A discount line bears a specific discount that will be applied to either an order or a product."
+msgstr "A Linha de Desconto tem um desconto específico, que será aplicada a qualquer pedido ou um produto."
+
+msgid "A document for which translation has been requested and which has not yet been assigned a translator or a revisor."
+msgstr "Um documento cuja tradução tenha sido solicitada e que ainda não tenha sido enviada para um tradutor ou um revisor."
+
+msgid "A document shared by limited people in the organisation (ex. team, project, etc.)"
+msgstr "Um documento compartilhado por pessoas limitadas na organização (ex. equipe, projeto, etc)"
+
+msgid "A document shared by limited people in the organisation (ex. team, project, etc.). Every assigned knowledge contributor or knowledge manager may modify it depending on its classification policy."
+msgstr "Um documento compartilhado por pessoas limitadas na organização (ex. time, projeto, etc.). Todo o contribuidor de conhecimento ou gerente de conhecimento designado, pode modificar o documento dependendo da política de classificação."
+
+msgid "A document that has been confirmed in ERP5"
+msgstr "Um documento que foi confirmado no ERP5"
+
+msgid "A document which has been submitted for review by the relevant reviewer."
+msgstr "Um documento que foi submetido para revisão pelo revisor pertinente."
+
+msgid "A document which is part of another document and which acquired security from it."
+msgstr "Um documento que é parte de outro documento e que tem a mesma permissão dele"
+
+msgid "A document which is released and becomes accessible to its associates (team, project, members, partners, etc.) based on the security definition"
+msgstr "Um documento que é publicado e se torna acessível aos seus associados (projeto da equipe, membros, parceiros, etc) com base na definição de segurança"
+
+msgid "A fax number that can be stored on a person or organisation document"
+msgstr "Um número de fax pode ser armazenado em uma pessoa ou documento da organização"
+
+msgid "A file, in its widest sense"
+msgstr "Um arquivo, em seu sentido mais amplo"
+
+msgid "A geographic address holds the geographic address of a person or company."
+msgstr "Um endereço geográfico mantém um referência espacial de uma pessoa ou uma empresa"
+
+msgid "A list of allowed content types for portal types"
+msgstr "A lista de tipos de conteúdos permitidos por portal types"
+
+msgid "A list of maintainers"
+msgstr "Lista de mantenedores"
+
+msgid "A list of property sheet for portal types"
+msgstr "Uma lista de property sheet dos portal types"
+
+msgid "A public document. Everyone can access it."
+msgstr "Um documento público. Todos podem acessar este documento."
+
+msgid "A published document. Everyone can access it."
+msgstr "Um documento publicado. Todos podem acessar."
+
+msgid "A purchase packing list gathers the different shipment details regarding a purchase order"
+msgstr "Uma entrega de compra reúne os detalhes de diferentes expedições a respeito de um pedido de compra."
+
+msgid "A revision identifier"
+msgstr "Identificador da revisão"
+
+msgid "A step in the career of a person."
+msgstr "Um passo na carreira de uma pessoa."
+
+msgid "A tax document helps the user define the name and abbreviation of the different taxes that will be used in ERP5. Although, this document do not bear any ratio or % notion."
+msgstr "Imposto ajuda ao usuário a definir o nome e a abreviação de diferentes impostos que serão usados no ERP5. Embora, esse documento não tem nenhuma relação ou % de noção."
+
+msgid "A typical per unit height of the resource"
+msgstr "Uma típica unidade de Altura do Recurso."
+
+msgid "A typical per unit length of the resource"
+msgstr "Uma típica unidade de comprimento do Recurso."
+
+msgid "A typical per unit weight of the resource"
+msgstr "Uma típica unidade de peso do Recurso."
+
+msgid "A typical per unit width of the resource"
+msgstr "Uma típica unidade de largura do Recurso."
+
+msgid "A version identifier"
+msgstr "Identificador da Versão"
+
+msgid "Accept Decision"
+msgstr "Aceitar Decisão"
+
+msgid "Accept Translation"
+msgstr "Aceitar Tradução"
+
+msgid "Accept the new value defined on the invoice and update the prevision accordingly"
+msgstr "Aceitar o novo valor definido na fatura e atualizar a previsão de acordada"
+
+msgid "Accepts a translation and sets the validation state to submitted, waiting for further approval before publication."
+msgstr "Aceita uma tradução e define o estado como submetido, esperando uma nova aprovação antes de ser publicado."
+
+msgid "Accepts the change that has been done rather than the original prevision. This action will be available whenever a packing list is divergent."
+msgstr "Aceita a mudança que foi feita ao invés do valor na previsão inicial. Esta ação estará disponível sempre que uma entrega é divergente."
+
+msgid "Account"
+msgstr "Conta"
+
+msgid "Account Invalidated"
+msgstr "Conta Invalidada"
+
+msgid "Account Module"
+msgstr "Módulo de Contas"
+
+msgid "Account Name"
+msgstr "Nome da Conta"
+
+msgid "Account Type"
+msgstr "Tipo de Conta"
+
+msgid "Account Type must be set"
+msgstr "Tipo da Conta precisa ser definida"
+
+msgid "Account Workflow"
+msgstr "Workflow de Contas"
+
+msgid "Account must be defined"
+msgstr "Conta precisa ser definida"
+
+msgid "Accounting"
+msgstr "Contabilidade"
+
+msgid "Accounting Period"
+msgstr "Exercício Contábil"
+
+msgid "Accounting Periods"
+msgstr "Exercícios Contábeis"
+
+msgid "Accounting Preference"
+msgstr "Preferência de contabilidade"
+
+msgid "Accounting Preferences"
+msgstr "Preferências de contabilidade"
+
+msgid "Accounting Transaction"
+msgstr "Transação Contábil"
+
+msgid "Accounting Transactions"
+msgstr "Transações Contábeis"
+
+msgid "Accounting Transactions to Close"
+msgstr "Transações Contábeis para Fechar"
+
+msgid "Accounting Transactions to Post"
+msgstr "Transações Contábeis para Enviar"
+
+msgid "Accounting Transactions to Start"
+msgstr "Transações Contábeis para Iniciar"
+
+msgid "Accounting Workflow"
+msgstr "Workflow de Contabilidade"
+
+msgid "Accounting periods created."
+msgstr "Exercícios Contábeis criados"
+
+msgid "Accounting preferences: The default currency when creating new transactions"
+msgstr "Preferências de contabilidade: A moeda padrão quando for criar uma nova transação."
+
+msgid "Accounting preferences: The maximum (inclusive) date for transactions"
+msgstr "Preferências de contabilidade: A Data máxima para transações."
+
+msgid "Accounting preferences: The minimum (inclusive) date for transactions"
+msgstr "Preferências de contabilidade: A Data mínima para transações."
+
+msgid "Accounting preferences: The preferred accounting plan"
+msgstr "Preferências de contabilidade: "
+
+msgid "Accounts"
+msgstr "Contas"
+
+msgid "Accounts to Validate"
+msgstr "Contas para Validar"
+
+msgid "Acknowledge"
+msgstr "Reconhecer"
+
+msgid "Acknowledge Event"
+msgstr "Reconhecer Evento"
+
+msgid "Acknowledge Event Action [transition in event_workflow]"
+msgstr "Reconhecer Evento"
+
+msgid "Acknowledge Event [transition in event_workflow]"
+msgstr "Reconhecer Evento"
+
+msgid "Acknowledged"
+msgstr "Reconhecido"
+
+msgid "Acknowledged [state in event_workflow]"
+msgstr "Reconhecido"
+
+msgid "Action"
+msgstr "Ação"
+
+msgid "Action called in order to change the state of the assignment to update it"
+msgstr "Ação chamada para mudar o estado da uma designação de atualizá-lo"
+
+msgid "Action that will mark the career step of a person as stopped"
+msgstr "Ação que marcará a carreira da pessoa como parada."
+
+msgid "Action used to start the treatment of a project"
+msgstr "Ação utilizada para iniciar o projeto"
+
+msgid "Action used to stop a project"
+msgstr "Ação usada para parar um projeto"
+
+msgid "Action used to suspend a project. Once a project is suspended it is not worked on anymore, but can be reopened later."
+msgstr "Ação usada para suspender um projeto. Uma vez que o projeto está suspenso, este não é trabalhado mais, mas pode ser reaberto mais tarde."
+
+msgid "Action which will disable the preference"
+msgstr "Ação que irá desabilitar a preferência"
+
+msgid "Action..."
+msgstr "Ação..."
+
+msgid "Actions"
+msgstr "Ações"
+
+msgid "Active"
+msgstr "Ativo"
+
+msgid "Active Preference"
+msgstr "Preferência Ativa"
+
+msgid "Activity"
+msgstr "Atividade"
+
+msgid "Activity Pending"
+msgstr "Atividade Pendente"
+
+msgid "Actor"
+msgstr "Ator"
+
+msgid "Actors"
+msgstr "Atores"
+
+msgid "Add ${portal_type}"
+msgstr "Adicionar ${portal_type}"
+
+msgid "Add Document with Requirements"
+msgstr "Adicionar Documento com Requisitos"
+
+msgid "Add Gadgets"
+msgstr "Adicionar Gadgets"
+
+msgid "Add Requirements"
+msgstr "Adicionar Requisitos"
+
+msgid "Add Task Related to This Project"
+msgstr "Adicionar Tarefas relaciona a este Projeto"
+
+msgid "Add Tasks"
+msgstr "Adicionar Tarefas"
+
+msgid "Add gadgets"
+msgstr "Adicionar Gadgets"
+
+msgid "Add new tab"
+msgstr "Adicionar Nova aba"
+
+msgid "Add tab"
+msgstr "Adicionar Aba"
+
+msgid "Added"
+msgstr "Adicionado"
+
+msgid "Added Files"
+msgstr "Arquivos Adicionados"
+
+msgid "Additional Payments"
+msgstr "Pagamentos Adicionais"
+
+msgid "Additional Price"
+msgstr "Preço Adicional"
+
+msgid "Additional Term (Days)"
+msgstr "Termo Adicional (dias)"
+
+msgid "Address"
+msgstr "Endereço"
+
+msgid "Addresses"
+msgstr "Endereços"
+
+msgid "Adopt Prevision"
+msgstr "Adotar Previsão"
+
+msgid "Adopt prevision"
+msgstr "Adotar Previsão"
+
+msgid "Advanced Document Search"
+msgstr "Busca Avançada de Documentos"
+
+msgid "Advanced Search"
+msgstr "Busca Avançada"
+
+msgid "Agent"
+msgstr "Agente"
+
+msgid "Agents"
+msgstr "Agentes"
+
+msgid "Alarm"
+msgstr "Alarme"
+
+msgid "Allowed Content Types"
+msgstr "Tipos de Conteúdo Permitidos"
+
+msgid "An Account defines a legislation independent general ledger account which can hold multiple amounts of currencies. It can be mapped to any number of national accounting nomenclatures and to financial analysis plan."
+msgstr "Uma Conta define um plano contábil genérico, independente de legislação, que pode conter múltiplas moedas. Pode ser mapeado para qualquer nomeclatura nacional contábil e plano de análise financeira."
+
+msgid "An Agent is a Person who is permitted to perform some actions on the bank account according to Privileges."
+msgstr "Um Agente é uma pessoa a quem é permitido realizar algumas ações em contas bancárias, segundo previlégios do sistema."
+
+msgid "An Assignment allows a person to be assigned to an organisation during a period without changing his career organisation."
+msgstr "Uma Designação permite uma pessoa ser nomeada para uma organização durante um período de tempo sem mudar sua carreira organizacional."
+
+msgid "An Email object can contain a link to an online resource."
+msgstr "Um objeto de e-mail pode conter um link para um recurso online."
+
+msgid "An RSS feed is a text document which can populate itself with news extracted from its own content."
+msgstr "Um feed RSS é um documento de texto que pode preencher-se com notícias extraídas de seu próprio conteúdo."
+
+msgid "An accounting transaction, created from scratch by the accountant or whoever entitled to create transactions in ERP5"
+msgstr "Uma transação contábil, criada a partir do zero por um contador ou alguém autorizado a criar transações no ERP5"
+
+msgid "An inventory line can be found in inventory documents, and bears the available stock of a certain product reference. There will be one inventory line for each product reference of the inventory."
+msgstr "Uma Linha de Inventário pode ser encontrado em documentos do tipo Inventário, e tem o estoque disponível de uma determinada referência de um produto. Haverá uma Linha de Inventário para cada referência de produto do Inventário"
+
+msgid "Answer"
+msgstr "Resposta"
+
+msgid "Answer Query Action [transition in query_workflow]"
+msgstr "Responder Pergunta"
+
+msgid "Answer Query [transition in query_workflow]"
+msgstr "Responder Pergunta"
+
+msgid "Answered"
+msgstr "Respondido"
+
+msgid "Answered [state in query_workflow]"
+msgstr "Respondido"
+
+msgid "Any Documents"
+msgstr "Responder Consulta"
+
+msgid "Apply Purchase Trade Condition"
+msgstr "Aplicar Condição de Compra"
+
+msgid "Apply Sale Trade Condition"
+msgstr "Aplicar Condição de Venda"
+
+msgid "Apply Trade Condition"
+msgstr "Aplicar Condição de Negócio"
+
+msgid "Approval Requested [state in ticket_workflow]"
+msgstr "Aprovação Solicitada"
+
+msgid "Approve"
+msgstr "Aprovar"
+
+msgid "Approved"
+msgstr "Aprovado"
+
+msgid "April"
+msgstr "Abril"
+
+msgid "Archive"
+msgstr "Arquivar"
+
+msgid "Archive Document Action"
+msgstr "Arquivar Documento"
+
+msgid "Archive Document Action [transition in document_publication_workflow]"
+msgstr "Arquivar Documento"
+
+msgid "Archive Document [transition in document_publication_workflow]"
+msgstr "Arquivar Documento"
+
+msgid "Archive [transition in document_publication_workflow]"
+msgstr "Arquivar"
+
+msgid "Archive a document which has been replaced by a more recent version by setting the validation state to archived."
+msgstr "Arquiva um documento que tenha sido substituído por uma versão mais recente, definindo o estado como arquivado."
+
+msgid "Archived"
+msgstr "Arquivado"
+
+msgid "Archived [state in document_publication_workflow]"
+msgstr "Arquivado"
+
+msgid "Area"
+msgstr "Área"
+
+msgid "Arguments"
+msgstr "Argumentos"
+
+msgid "Articles"
+msgstr "Artigos"
+
+msgid "Ascending"
+msgstr "Ascendente"
+
+msgid "Assign"
+msgstr "Designar"
+
+msgid "Assign Bug"
+msgstr "Designar Bug"
+
+msgid "Assign Bug [transition in bug_workflow]"
+msgstr "Designar Bug"
+
+msgid "Assign Document Action [transition in document_ingestion_workflow]"
+msgstr "Designar"
+
+msgid "Assign Document [transition in document_ingestion_workflow]"
+msgstr "Designar"
+
+msgid "Assign Event"
+msgstr "Designar Evento"
+
+msgid "Assign Event Action [transition in event_workflow]"
+msgstr "Designar Evento"
+
+msgid "Assign Event [transition in event_workflow]"
+msgstr "Designar Evento"
+
+msgid "Assign Translation"
+msgstr "Designar Tradução"
+
+msgid "Assign Translation Action"
+msgstr "Designar Tradução"
+
+msgid "Assign Translation Action [transition in document_publication_workflow]"
+msgstr "Designar Tradução"
+
+msgid "Assign Translation [transition in document_publication_workflow]"
+msgstr "Designar Tradução"
+
+msgid "Assign for Translation"
+msgstr "Designar para Tradução"
+
+msgid "Assigned"
+msgstr "Designado"
+
+msgid "Assigned Tasks"
+msgstr "Tarefas Atribuídas"
+
+msgid "Assigned to"
+msgstr "Designado para"
+
+msgid "Assignment"
+msgstr "Designação"
+
+msgid "Assignments"
+msgstr "Designações"
+
+msgid "Assignments in updated state are being updated before being reopened."
+msgstr "Atribuições no estado atualizado estão sendo atualizadas antes de serem reabertas."
+
+msgid "Attributes"
+msgstr "Atributos"
+
+msgid "BT Title"
+msgstr "Título"
+
+msgid "Backup And Remove"
+msgstr "Backup e Remover"
+
+msgid "Backup And Upgrade"
+msgstr "Backup e Atualizar"
+
+msgid "Balance"
+msgstr "Balanço"
+
+msgid "Bank"
+msgstr "Banco"
+
+msgid "Bank Account"
+msgstr "Conta Bancária"
+
+msgid "Bank Account ${bank_account_reference} is invalid."
+msgstr "Conta Bancária ${bank_account_reference} está inválida."
+
+msgid "Bank Account Number"
+msgstr "Número da Conta Bancária"
+
+msgid "Bank Accounts"
+msgstr "Contas Bancárias"
+
+msgid "Bank Code"
+msgstr "Número da agência"
+
+msgid "Base Contribution"
+msgstr "Base de Contribuição"
+
+msgid "Base Contribution must be defined"
+msgstr "Base de Contribuição precisa ser definida"
+
+msgid "Base Price"
+msgstr "Preço Base"
+
+msgid "Base Salary"
+msgstr "Salário Base"
+
+msgid "Begin"
+msgstr "Início"
+
+msgid "Begin Date"
+msgstr "Data de Início"
+
+msgid "Birth Name"
+msgstr "Nome de Solteira"
+
+msgid "Birthday"
+msgstr "Data de Nascimento"
+
+msgid "Birthplace"
+msgstr "Naturalidade"
+
+msgid "Body"
+msgstr "Corpo"
+
+msgid "Both"
+msgstr "Ambos"
+
+msgid "Branch Number"
+msgstr "Número da Agência"
+
+msgid "Browse"
+msgstr "Navegar"
+
+msgid "Budget"
+msgstr "Orçamento"
+
+msgid "Budget Consumption"
+msgstr "Consumo do Orçamento"
+
+msgid "Budget Line"
+msgstr "Linha de Orçamento"
+
+msgid "Budget Lines"
+msgstr "Linhas de Orçamento"
+
+msgid "Budget Model"
+msgstr "Modelo de Orçamento"
+
+msgid "Budget Models"
+msgstr "Modelos de Orçamento"
+
+msgid "Budget Situation"
+msgstr "Situação do Orçamento"
+
+msgid "Budget Start Date"
+msgstr "Data Inicial Orçamento"
+
+msgid "Budget Stop Date"
+msgstr "Data Final Orçamento"
+
+msgid "Budget Type"
+msgstr "Tipo de Orçamento"
+
+msgid "Budget Variation"
+msgstr "Variação do Orçamento"
+
+msgid "Budget Variations"
+msgstr "Variações do Orçamento"
+
+msgid "Budget Workflow"
+msgstr "Workflow de Orçamento"
+
+msgid "Budget to Submit"
+msgstr "Orçamento para Enviar"
+
+msgid "Budgets"
+msgstr "Orçamentos"
+
+msgid "Bug"
+msgstr "Bug"
+
+msgid "Bug Workflow"
+msgstr "Workflow de Bugs"
+
+msgid "Bugs"
+msgstr "Bugs"
+
+msgid "Bugs Assigned to Follow"
+msgstr "Bugs Designados para Seguir"
+
+msgid "Bugs to Follow"
+msgstr "Bugs para Seguir"
+
+msgid "Bugs to Resolve"
+msgstr "Bugs para Resolver"
+
+msgid "Bugs to Validate"
+msgstr "Bugs para Validar"
+
+msgid "Build Business Template"
+msgstr "Construir Business Template"
+
+msgid "Build Business Template Action [transition in business_template_building_workflow]"
+msgstr "Construir Business Template"
+
+msgid "Build Business Template [transition in business_template_building_workflow]"
+msgstr "Construir Business Template"
+
+msgid "Building"
+msgstr "Construindo"
+
+msgid "Building State"
+msgstr "Status"
+
+msgid "Building [state in delivery_causality_workflow]"
+msgstr "Construindo"
+
+msgid "Built"
+msgstr "Construído"
+
+msgid "Built [state in business_configuration_simulation_workflow]"
+msgstr "Construído"
+
+msgid "Built [state in business_template_building_workflow]"
+msgstr "Construído"
+
+msgid "Business Template"
+msgstr "Business Template"
+
+msgid "Business Template Definition"
+msgstr "Definição do Business Template"
+
+msgid "Business Template ID"
+msgstr "Business Template ID"
+
+msgid "Business Template Name"
+msgstr "Nome do Business Template"
+
+msgid "Business Template Title"
+msgstr "Título do Business Template"
+
+msgid "Business Templates"
+msgstr "Business Templates"
+
+msgid "Buyer"
+msgstr "Comprador"
+
+msgid "CRM"
+msgstr "CRM"
+
+msgid "CSV Style"
+msgstr "Estilo CSV"
+
+msgid "Cache Duration"
+msgstr "Duração do Cache"
+
+msgid "Calculating"
+msgstr "Calculando"
+
+msgid "Calculating [state in delivery_causality_workflow]"
+msgstr "Calculando"
+
+msgid "Campaign"
+msgstr "Campanha"
+
+msgid "Campaign Detailed Report"
+msgstr "Relatório detalhado de Campanha"
+
+msgid "Campaign Module"
+msgstr "Módulo de Campanhas"
+
+msgid "Campaign Status"
+msgstr "Status da Campanha"
+
+msgid "Campaign Type"
+msgstr "Tipo de Campanha"
+
+msgid "Campaign Types"
+msgstr "Tipos de Campanha"
+
+msgid "Campaigns"
+msgstr "Campanhas"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Cancel Accounting Period"
+msgstr "Cancelar Período Contábil"
+
+msgid "Cancel Accounting Period Action [transition in accounting_period_workflow]"
+msgstr "Cancelar Período Contábil"
+
+msgid "Cancel Accounting Period [transition in accounting_period_workflow]"
+msgstr "Cancelar Período Contábil"
+
+msgid "Cancel Action"
+msgstr "Cancelar Ação"
+
+msgid "Cancel Assignment"
+msgstr "Cancelar Designação"
+
+msgid "Cancel Assignment Action [transition in assignment_workflow]"
+msgstr "Cancelar Designação"
+
+msgid "Cancel Assignment [transition in assignment_workflow]"
+msgstr "Cancelar Designação"
+
+msgid "Cancel Budget"
+msgstr "Cancelar Orçamento"
+
+msgid "Cancel Budget Action"
+msgstr "Cancelar Orçamento"
+
+msgid "Cancel Career Step"
+msgstr "Cancelar Passo da Carreira"
+
+msgid "Cancel Career Step Action [transition in career_workflow]"
+msgstr "Cancelar Passo da Carreira"
+
+msgid "Cancel Career Step [transition in career_workflow]"
+msgstr "Cancelar Passo da Carreira"
+
+msgid "Cancel Document Publication"
+msgstr "Cancelar Publicação do Documento"
+
+msgid "Cancel Document Publication Action"
+msgstr "Cancelar Publicação do Documento"
+
+msgid "Cancel Document Publication Action [transition in document_publication_workflow]"
+msgstr "Cancelar Publicação do Documento"
+
+msgid "Cancel Document Publication [transition in document_publication_workflow]"
+msgstr "Cancelar Publicação do Documento"
+
+msgid "Cancel Event"
+msgstr "Cancelar Evento"
+
+msgid "Cancel Event Action [transition in event_workflow]"
+msgstr "Cancelar Evento"
+
+msgid "Cancel Event [transition in event_workflow]"
+msgstr "Cancelar Evento"
+
+msgid "Cancel Inventory"
+msgstr "Cancelar Inventário"
+
+msgid "Cancel Inventory Action [transition in inventory_workflow]"
+msgstr "Cancelar Inventário"
+
+msgid "Cancel Inventory [transition in inventory_workflow]"
+msgstr "Cancelar Inventário"
+
+msgid "Cancel Order"
+msgstr "Cancelar Pedido"
+
+msgid "Cancel Order Action"
+msgstr "Cancelar Pedido"
+
+msgid "Cancel Order Action [transition in open_order_workflow]"
+msgstr "Cancelar Pedido"
+
+msgid "Cancel Order Action [transition in order_workflow]"
+msgstr "Cancelar Pedido"
+
+msgid "Cancel Order [transition in open_order_workflow]"
+msgstr "Cancelar Pedido"
+
+msgid "Cancel Order [transition in order_workflow]"
+msgstr "Cancelar Pedido"
+
+msgid "Cancel Packing List"
+msgstr "Cancelar Entrega"
+
+msgid "Cancel Packing List Action"
+msgstr "Cancelar Entrega"
+
+msgid "Cancel Packing List Action [transition in packing_list_workflow]"
+msgstr "Cancelar Entrega"
+
+msgid "Cancel Packing List [transition in packing_list_workflow]"
+msgstr "Cancelar Entrega"
+
+msgid "Cancel Query Action [transition in query_workflow]"
+msgstr "Cancelar Pergunta"
+
+msgid "Cancel Query [transition in query_workflow]"
+msgstr "Cancelar Pergunta"
+
+msgid "Cancel Sale Opportunity Action [transition in sale_opportunity_workflow]"
+msgstr "Cancelar Oportunidade de Venda"
+
+msgid "Cancel Sale Opportunity [transition in sale_opportunity_workflow]"
+msgstr "Cancelar Oportunidade de Venda"
+
+msgid "Cancel Ticket"
+msgstr "Cancelar"
+
+msgid "Cancel Ticket Action"
+msgstr "Cancelar"
+
+msgid "Cancel Ticket Action [transition in ticket_workflow]"
+msgstr "Cancelar"
+
+msgid "Cancel Ticket [transition in ticket_workflow]"
+msgstr "Cancelar"
+
+msgid "Cancel Transaction"
+msgstr "Cancelar Transação"
+
+msgid "Cancel Transaction Action"
+msgstr "Cancelar Transação"
+
+msgid "Cancel Transaction Action [transition in accounting_workflow]"
+msgstr "Cancelar Transação"
+
+msgid "Cancel Transaction [transition in accounting_workflow]"
+msgstr "Cancelar Transação"
+
+msgid "Cancel [transition in bug_event_workflow]"
+msgstr "Cancelar"
+
+msgid "Cancel [transition in bug_workflow]"
+msgstr "Cancelar"
+
+msgid "Cancel a document in ERP5"
+msgstr "Cancelar um document no ERP5."
+
+msgid "Canceled"
+msgstr "Cancelado"
+
+msgid "Cancelled"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in accounting_period_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in accounting_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in assignment_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in bug_event_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in bug_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in career_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in document_publication_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in event_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in inventory_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in open_order_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in order_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in packing_list_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in query_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in requirement_analysis_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in sale_opportunity_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in task_report_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in task_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled [state in ticket_workflow]"
+msgstr "Cancelado"
+
+msgid "Cancelled."
+msgstr "Cancelado."
+
+msgid "Cardholder Name"
+msgstr "Titular do cartão"
+
+msgid "Career"
+msgstr "Carreira"
+
+msgid "Career Begin Date"
+msgstr "Data de Início da Carreira"
+
+msgid "Career Comments"
+msgstr "Comentários da Carreira"
+
+msgid "Career End"
+msgstr "Final da Carreira"
+
+msgid "Career End Date"
+msgstr "Data de Termino da Carreira"
+
+msgid "Career Function"
+msgstr "Função na Carreira"
+
+msgid "Career Start"
+msgstr "Início da Carreira"
+
+msgid "Career Step"
+msgstr "Passo da Carreira"
+
+msgid "Career Steps"
+msgstr "Passos da Carreira"
+
+msgid "Career Title"
+msgstr "Nome da Carreira"
+
+msgid "Careers"
+msgstr "Carreiras"
+
+msgid "Cash"
+msgstr "Dinheiro"
+
+msgid "Cash Classification"
+msgstr "Classificação do Dinheiro"
+
+msgid "Categories"
+msgstr "Categorias"
+
+msgid "Category"
+msgstr "Categoria"
+
+msgid "Causality"
+msgstr "Gerado de"
+
+msgid "Cells"
+msgstr "Celulas"
+
+msgid "Change Function"
+msgstr "Alterar Função"
+
+msgid "Change Language"
+msgstr "Alterar Idioma"
+
+msgid "Change Log"
+msgstr "Log de Alterações"
+
+msgid "Change Page"
+msgstr "Alterar Página"
+
+msgid "Change Password"
+msgstr "Trocar Senha"
+
+msgid "Change State"
+msgstr "Alterar Estado"
+
+msgid "Changelog"
+msgstr "Log de Alterações"
+
+msgid "Chat Address"
+msgstr "Endereço de bate-papo"
+
+msgid "Check All"
+msgstr "Marcar Todos"
+
+msgid "Children"
+msgstr "Crianças"
+
+msgid "Choice"
+msgstr "Opções"
+
+msgid "City"
+msgstr "Cidade"
+
+msgid "Civil Status"
+msgstr "Estado Civil"
+
+msgid "Class"
+msgstr "Classe"
+
+msgid "Class Attributes"
+msgstr "Atributos da Classe"
+
+msgid "Class Methods"
+msgstr "Métodos da Classe"
+
+msgid "Classification"
+msgstr "Classificação"
+
+msgid "Clean Business Template"
+msgstr "Limpar Business Template"
+
+msgid "Clean Business Template Action [transition in business_template_building_workflow]"
+msgstr "Limpar Business Template"
+
+msgid "Clean Business Template [transition in business_template_building_workflow]"
+msgstr "Limpar Business Template"
+
+msgid "Clean SVN Unversioned Files"
+msgstr "Limpar Arquivos não versionados no SVN"
+
+msgid "Clean Up SVN Locks"
+msgstr "Limpar Locks do SVN"
+
+msgid "Click here to contribute by email."
+msgstr "Clique aqui para contribuir por email."
+
+msgid "Client"
+msgstr "Cliente"
+
+msgid "Client Project"
+msgstr "Projeto do Cliente"
+
+msgid "Client Reference"
+msgstr "Referência do Cliente"
+
+msgid "Client must be defined"
+msgstr "Cliente precisa ser definido"
+
+msgid "Client must be validated"
+msgstr "Cliente precisa ser validado"
+
+msgid "Clients Roles"
+msgstr "Papéis dos Clientes"
+
+msgid "Clock"
+msgstr "Relógio"
+
+msgid "Clone"
+msgstr "Clonar"
+
+msgid "Close"
+msgstr "Fechar"
+
+msgid "Close Accounting Period"
+msgstr "Fechar Período Contábil"
+
+msgid "Close Accounting Period Action"
+msgstr "Fechar Período Contábil"
+
+msgid "Close Accounting Period Action [transition in accounting_period_workflow]"
+msgstr "Fechar Período Contábil"
+
+msgid "Close Accounting Period [transition in accounting_period_workflow]"
+msgstr "Fechar Período Contábil"
+
+msgid "Close Accounting Transaction"
+msgstr "Fechar Transação Contábil"
+
+msgid "Close Bug"
+msgstr "Fechar Bug"
+
+msgid "Close Bug [transition in bug_workflow]"
+msgstr "Fechar Bug"
+
+msgid "Close Project"
+msgstr "Encerrar Projeto"
+
+msgid "Close Task"
+msgstr "Fechar Tarefa"
+
+msgid "Close Ticket"
+msgstr "Fechar"
+
+msgid "Close Ticket Action"
+msgstr "Fechar"
+
+msgid "Close Ticket Action [transition in ticket_workflow]"
+msgstr "Fechar"
+
+msgid "Close Ticket [transition in ticket_workflow]"
+msgstr "Fechar"
+
+msgid "Closed"
+msgstr "Fechado"
+
+msgid "Closed Accounting Period"
+msgstr "Período Contábil Encerrado"
+
+msgid "Closed [state in accounting_period_workflow]"
+msgstr "Encerrado"
+
+msgid "Closed [state in accounting_workflow]"
+msgstr "Encerrado"
+
+msgid "Closed [state in bug_workflow]"
+msgstr "Fechado"
+
+msgid "Closed [state in project_workflow]"
+msgstr "Encerrado"
+
+msgid "Closed [state in ticket_workflow]"
+msgstr "Fechado"
+
+msgid "Closing Date"
+msgstr "Data de Encerramento"
+
+msgid "Code"
+msgstr "Código"
+
+msgid "Coefficient used to materialize different salary levels for persons who have the same qualification but not the same experience: such as 1.1 or 1.2 or 2.1 etc, the higher the figure, the higher the salary"
+msgstr "Um coeficiente relacionado com a classificação do salário da pessoa"
+
+msgid "Collection"
+msgstr "Coleção"
+
+msgid "Colour"
+msgstr "Cor"
+
+msgid "Colour List"
+msgstr "Lista de Cores"
+
+msgid "Colours"
+msgstr "Cores"
+
+msgid "Column"
+msgstr "Coluna"
+
+msgid "Comment"
+msgstr "Comentário"
+
+msgid "Comments"
+msgstr "Comentários"
+
+msgid "Comments which can be read by internal users but unlike description, are not printed out on official documents."
+msgstr "Comentários que podem ser lidos por usuários internos, mas ao contrário de descrição, não são impressos em documentos oficiais."
+
+msgid "Compare"
+msgstr "Comparar"
+
+msgid "Component"
+msgstr "Componente"
+
+msgid "Component Individual Variation"
+msgstr "Variação Individual do Componente"
+
+msgid "Component Individual Variations"
+msgstr "Variações Individual do Componente"
+
+msgid "Component List"
+msgstr "Lista de Componentes"
+
+msgid "Component Module"
+msgstr "Módulo de Componentes"
+
+msgid "Components"
+msgstr "Componentes"
+
+msgid "Configure"
+msgstr "Configurar"
+
+msgid "Configure Categories"
+msgstr "Configurar Categorias"
+
+msgid "Confirm"
+msgstr "Confirmar"
+
+msgid "Confirm Order"
+msgstr "Confirmar Pedido"
+
+msgid "Confirm Order Action"
+msgstr "Confirmar Pedido"
+
+msgid "Confirm Order Action [transition in order_workflow]"
+msgstr "Confirmar Pedido"
+
+msgid "Confirm Order [transition in order_workflow]"
+msgstr "Confirmar Pedido"
+
+msgid "Confirm Packing List"
+msgstr "Confirmar Entrega"
+
+msgid "Confirm Packing List Action"
+msgstr "Confirmar Entrega"
+
+msgid "Confirm Packing List Action [transition in packing_list_workflow]"
+msgstr "Confirmar Entrega"
+
+msgid "Confirm Packing List [transition in packing_list_workflow]"
+msgstr "Confirmar Entrega"
+
+msgid "Confirm Transaction"
+msgstr "Confirmar Transação"
+
+msgid "Confirm Transaction Action"
+msgstr "Confirmar Transação"
+
+msgid "Confirm Transaction Action [transition in accounting_workflow]"
+msgstr "Confirmar Transação"
+
+msgid "Confirm Transaction [transition in accounting_workflow]"
+msgstr "Confirmar Transação"
+
+msgid "Confirm [transition in packing_list_workflow]"
+msgstr "Confirmar"
+
+msgid "Confirmation"
+msgstr "Confirmação"
+
+msgid "Confirmed"
+msgstr "Confirmado"
+
+msgid "Confirmed [state in accounting_workflow]"
+msgstr "Confirmado"
+
+msgid "Confirmed [state in order_workflow]"
+msgstr "Confirmado"
+
+msgid "Confirmed [state in packing_list_workflow]"
+msgstr "Confirmado"
+
+msgid "Confirmed [state in requirement_analysis_workflow]"
+msgstr "Confirmado"
+
+msgid "Confirmed [state in task_report_workflow]"
+msgstr "Confirmado"
+
+msgid "Confirmed [state in task_workflow]"
+msgstr "Confirmado"
+
+msgid "Constraints"
+msgstr "Restrições"
+
+msgid "Consumed Budget"
+msgstr "Orçamento Consumido"
+
+msgid "Contact Type"
+msgstr "Tipo do Contato"
+
+msgid "Contacts"
+msgstr "Contatos"
+
+msgid "Container"
+msgstr "Contêiner"
+
+msgid "Container Content"
+msgstr "Conteúdo Contêiner"
+
+msgid "Container Line"
+msgstr "Item do Contêiner"
+
+msgid "Container is the term used in sales packing lists to nominate the container in which the goods will be shipped. The quantity of goods in the container that will be shipped can be different from the quantity of goods that was ordered, and in this case, it will possible for the user to take the action \"Update quantity from container\"."
+msgstr "Contêiner é o termo utilizado em vendas para designar a embalagem em que as mercadorias serão enviada. A quantidade de mercadorias no Pacote que será enviado pode ser diferente da quantidade de mercadorias que foi ordenado, e, neste caso, será possível para o usuário tomar a ação \"Atualizar Quantidade\"."
+
+msgid "Container lines bear the different good references included in the container. If three different goods (e-g product references) are in the same container, there will be three container lines: one for each product reference."
+msgstr "Item do Contêiner suportam diferentes referências a produtos incluídas no pacote.Se três diferentes produtos (por exemplo, referências de produtos) estiverem no mesmo pacote,haverá três Item do Contêiner: uma referência para cada produto."
+
+msgid "Containers"
+msgstr "Pacotes"
+
+msgid "Content"
+msgstr "Conteúdo"
+
+msgid "Content Format"
+msgstr "Formato do Conteúdo"
+
+msgid "Contents"
+msgstr "Conteúdo"
+
+msgid "Contextual Help"
+msgstr "Ajuda de Contexto"
+
+msgid "Contribute"
+msgstr "Contribuir"
+
+msgid "Contribute Content"
+msgstr "Contribuir Conteúdo"
+
+msgid "Contribute File"
+msgstr "Contribuir Arquivo"
+
+msgid "Contribution"
+msgstr "Contribuição"
+
+msgid "Contribution Tool"
+msgstr "Ferramenta de Contribuição"
+
+msgid "Contribution Tool provides a single place to contribute content to an ERP5 Site."
+msgstr "Ferramenta de contribuição é um lugar único para conteúdo de contribuição para um site de ERP5."
+
+msgid "Contributors"
+msgstr "Colaboradores"
+
+msgid "Convergent [transition in delivery_causality_workflow]"
+msgstr "Convergir"
+
+msgid "Conversion"
+msgstr "Conversão"
+
+msgid "Conversion Format for reports."
+msgstr "Formato de conversão para os relatórios."
+
+msgid "Conversion Server Address"
+msgstr "Endereço do Servidor de Conversão"
+
+msgid "Conversion Server Port"
+msgstr "Porta do Servidor de Conversão"
+
+msgid "Convert Action [transition in processing_status_workflow]"
+msgstr "Converter "
+
+msgid "Convert File"
+msgstr "Converter Arquivo"
+
+msgid "Convert File [transition in processing_status_workflow]"
+msgstr "Converter Arquivo"
+
+msgid "Convert Price"
+msgstr "Converter Preço"
+
+msgid "Convert to OpenDocument [transition in processing_status_workflow]"
+msgstr "Converter para OpenDocument"
+
+msgid "Converted"
+msgstr "Convertido"
+
+msgid "Converted Credit"
+msgstr "Crédito Convertido"
+
+msgid "Converted Debit"
+msgstr "Débito Convertido"
+
+msgid "Converted Quantity"
+msgstr "Quantidade Convertida"
+
+msgid "Converted [state in processing_status_workflow]"
+msgstr "Convertido"
+
+msgid "Converted quantity"
+msgstr "Quantidade Convertida"
+
+msgid "Converting"
+msgstr "Convertendo"
+
+msgid "Converting [state in processing_status_workflow]"
+msgstr "Convertendo"
+
+msgid "Copy"
+msgstr "Copiar"
+
+msgid "Corporate Name"
+msgstr "Nome Corporativo"
+
+msgid "Corporate Registration Code"
+msgstr "CNPJ"
+
+msgid "Count"
+msgstr "Contar"
+
+msgid "Counter"
+msgstr "Contador"
+
+msgid "Counters"
+msgstr "Contadores"
+
+msgid "Country"
+msgstr "País"
+
+msgid "Country of origin"
+msgstr "País de Origem"
+
+msgid "Country prefix"
+msgstr "Prefixo do País"
+
+msgid "Create Default Web Page"
+msgstr "Criar Página Web Padrão"
+
+msgid "Create Document"
+msgstr "Criar Documento"
+
+msgid "Create Module"
+msgstr "Criar Módulo"
+
+msgid "Create New Bug"
+msgstr "Criar novo Bug"
+
+msgid "Create New Document"
+msgstr "Criar Novo Documento"
+
+msgid "Create New Documents"
+msgstr "Criar Novos Documentos"
+
+msgid "Create New Event"
+msgstr "Criar Novo Evento"
+
+msgid "Create New Events"
+msgstr "Criar Novos Eventos"
+
+msgid "Create New File"
+msgstr "Criar Novo Arquivo"
+
+msgid "Create New Module"
+msgstr "Criar Novo Módulo"
+
+msgid "Create New Web Page"
+msgstr "Criar Nova Página Web"
+
+msgid "Create Related Event"
+msgstr "Criar Evento Relacionado"
+
+msgid "Create Related Event Action [transition in event_workflow]"
+msgstr "Criar Evento Relacionado"
+
+msgid "Create Related Event [transition in event_workflow]"
+msgstr "Criar Evento Relacionado"
+
+msgid "Create Related Payment"
+msgstr "Criar Pagamento Relacionado"
+
+msgid "Create Related Payments"
+msgstr "Criar Pagamentos Relacionados"
+
+msgid "Create Sale Opportunity"
+msgstr "Criar Oportunidade de Venda"
+
+msgid "Create Snapshot"
+msgstr "Criar Snapshot"
+
+msgid "Create Terms"
+msgstr "Criar Termos"
+
+msgid "Create Terms from English Ones for Translation"
+msgstr "Criar Termos a partir do Inglês para Tradução"
+
+msgid "Create User"
+msgstr "Criar Usuário"
+
+msgid "Create User Action [transition in user_account_workflow]"
+msgstr "Criar Usuário"
+
+msgid "Create User [transition in user_account_workflow]"
+msgstr "Criar Usuário"
+
+msgid "Create your New Account"
+msgstr "Criar Sua Nova Conta"
+
+msgid "Create a New Event for Reply"
+msgstr "Criar um Novo Evento para Responder"
+
+msgid "Create a Task"
+msgstr "Criar uma Tarefa"
+
+msgid "Created after"
+msgstr "Criado Depois"
+
+msgid "Created before"
+msgstr "Criado Antes"
+
+msgid "Created Clone ${portal_type}."
+msgstr "Criado o Clone de um ${portal_type}."
+
+msgid "Created and associated ${count} new events to the selected ticket."
+msgstr "Criado e Associado ${count} novos eventos para o ticket selecionado."
+
+msgid "Created by"
+msgstr "Criado por "
+
+msgid "Creating"
+msgstr "Criando"
+
+msgid "Creation Date"
+msgstr "Data de Criação"
+
+msgid "Creation date"
+msgstr "Data de criação"
+
+msgid "Credit"
+msgstr "Crédito"
+
+msgid "Credit Card"
+msgstr "Cartão de Crédito"
+
+msgid "Credit Card Number"
+msgstr "Número do Cartão de Crédito"
+
+msgid "Credit Card Type"
+msgstr "Tipo do Cartão de Crédito"
+
+msgid "Credit Normal Balance"
+msgstr "Balanço Normal de Crédito"
+
+msgid "Currencies"
+msgstr "Moedas correntes"
+
+msgid "Currency"
+msgstr "Moeda Corrente"
+
+msgid "Currency Code"
+msgstr "Código da moeda"
+
+msgid "Currency List"
+msgstr "Lista de Moedas"
+
+msgid "Currency Module"
+msgstr "Módulo de Moedas"
+
+msgid "Currency Purchase"
+msgstr "Moeda (Compra)"
+
+msgid "Currency Sale"
+msgstr "Moeda (Venda)"
+
+msgid "Currency Symbol"
+msgstr "Símbolo Monetário"
+
+msgid "Currency must be defined"
+msgstr "Moeda precisa ser definida"
+
+msgid "Currency must be defined in preferences."
+msgstr "Moeda precisa ser definida em preferências."
+
+msgid "Current"
+msgstr "Corrente"
+
+msgid "Current Budget"
+msgstr "Orçamento Atual"
+
+msgid "Current Description"
+msgstr "Descrição Atual"
+
+msgid "Current Function"
+msgstr "Função Atual"
+
+msgid "Current skills"
+msgstr "Habilidades Atuais"
+
+msgid "Customer"
+msgstr "Cliente"
+
+msgid "Cut"
+msgstr "Cortar"
+
+msgid "DMS File"
+msgstr "Arquivo DMS"
+
+msgid "Data+Updated."
+msgstr "Dados+Atualizados."
+
+msgid "Date"
+msgstr "Data"
+
+msgid "Date Format"
+msgstr "Formato da Data"
+
+msgid "Date Order"
+msgstr "Ordem da Data"
+
+msgid "Date at which the bank account has been closed"
+msgstr "Data em que a conta bancária foi encerrada"
+
+msgid "Date at which the bank account has been opened"
+msgstr "Data na qual a conta bancária foi aberta."
+
+msgid "Date at which the document was ingested"
+msgstr "Data em que o documento foi inserido"
+
+msgid "Date at which the invoice was shipped"
+msgstr "Data em que a fatura foi enviada"
+
+msgid "Date has expire."
+msgstr "Data Expirou"
+
+msgid "Date must be defined"
+msgstr "Data precisa ser definida"
+
+msgid "Day"
+msgstr "Dia"
+
+msgid "Day / Month / Year"
+msgstr "Dia / Mês / Ano"
+
+msgid "Days"
+msgstr "Dias"
+
+msgid "Days of Month"
+msgstr "Dias da Semana"
+
+msgid "Days of Week"
+msgstr "Dias da Semana"
+
+msgid "Debit"
+msgstr "Débito"
+
+msgid "Debit Limit"
+msgstr "Limite de Débito"
+
+msgid "Declare Container Missing"
+msgstr "Declarar Falta do Contêiner"
+
+msgid "Declares a packing list as packed, ready for shipment"
+msgstr "Declara a entrega como empacotada, pronto para envio."
+
+msgid "Declares a packing list as received and creates the related accounting transaction"
+msgstr "Declara a entrega como recebida e cria transação contábil relacionada."
+
+msgid "Declares the packing list status as received"
+msgstr "Declara a entrega com o estado como recebido."
+
+msgid "Default Classification"
+msgstr "Classificação Padrão"
+
+msgid "Default Price"
+msgstr "Preço Padrão"
+
+msgid "Default Quantity"
+msgstr "Quantidade Padrão "
+
+msgid "Default Style used for reports."
+msgstr "Estilo padrão usado para relatórios."
+
+msgid "Default Telephone"
+msgstr "Telefone Padrão"
+
+msgid "Default state of the document"
+msgstr "Estado padrão do documento"
+
+msgid "Defines the additional term (in days) allowed to the customer to pay his order"
+msgstr "Define o termo adicional (em dias) permitidos para o cliente pagar seu pedido."
+
+msgid "Defines the steps of a sale opportunity"
+msgstr "Define as etapas de uma oportunidade de venda"
+
+msgid "Defines to who the invoice will be sent"
+msgstr "Define quem irá receber a fatura."
+
+msgid "Delete"
+msgstr "Apagar"
+
+msgid "Delete Account Action [transition in account_workflow]"
+msgstr "Apagar Conta"
+
+msgid "Delete Account [transition in account_workflow]"
+msgstr "Apagar Conta"
+
+msgid "Delete Accounting Period Action [transition in accounting_period_workflow]"
+msgstr "Apagar Período Contábil"
+
+msgid "Delete Accounting Period [transition in accounting_period_workflow]"
+msgstr "Apagar Período Contábil"
+
+msgid "Delete Action [transition in inventory_workflow]"
+msgstr "Apagar"
+
+msgid "Delete Action [transition in open_order_workflow]"
+msgstr "Apagar"
+
+msgid "Delete Action [transition in order_workflow]"
+msgstr "Apagar"
+
+msgid "Delete Action [transition in packing_list_workflow]"
+msgstr "Apagar"
+
+msgid "Delete Action [transition in rule_validation_workflow]"
+msgstr "Apagar"
+
+msgid "Delete Action [transition in validation_workflow]"
+msgstr "Apagar"
+
+msgid "Delete Assignment Action [transition in assignment_workflow]"
+msgstr "Apagar Designação"
+
+msgid "Delete Business Template Action [transition in business_template_installation_workflow]"
+msgstr "Apagar Business Template"
+
+msgid "Delete Business Template [transition in business_template_installation_workflow]"
+msgstr "Apagar Business Template"
+
+msgid "Delete Document Action [transition in document_ingestion_workflow]"
+msgstr "Apagar Documento"
+
+msgid "Delete Document Action [transition in document_publication_workflow]"
+msgstr "Apagar Documento"
+
+msgid "Delete Document [transition in document_ingestion_workflow]"
+msgstr "Apagar Documento"
+
+msgid "Delete Document [transition in document_publication_workflow]"
+msgstr "Apagar Documento"
+
+msgid "Delete Event Action [transition in event_workflow]"
+msgstr "Apagar Evento"
+
+msgid "Delete Event [transition in event_workflow]"
+msgstr "Apagar Evento"
+
+msgid "Delete Message Action [transition in notification_message_workflow]"
+msgstr "Apagar Mensagem"
+
+msgid "Delete Message [transition in notification_message_workflow]"
+msgstr "Apagar Mensagem"
+
+msgid "Delete Objects"
+msgstr "Apagar Objetos"
+
+msgid "Delete Preference Action [transition in preference_workflow]"
+msgstr "Apagar Preferência"
+
+msgid "Delete Preference [transition in preference_workflow]"
+msgstr "Apagar Preferência"
+
+msgid "Delete Query Action [transition in query_workflow]"
+msgstr "Apagar Pergunta"
+
+msgid "Delete Query [transition in query_workflow]"
+msgstr "Apagar Pergunta"
+
+msgid "Delete Sale Opportunity Action [transition in sale_opportunity_workflow]"
+msgstr "Apagar Oportunidade de Venda"
+
+msgid "Delete Sale Opportunity [transition in sale_opportunity_workflow]"
+msgstr "Apagar Oportunidade de Venda"
+
+msgid "Delete The Objects"
+msgstr "Apagar os Objetos"
+
+msgid "Delete Ticket Action [transition in ticket_workflow]"
+msgstr "Apagar"
+
+msgid "Delete Ticket [transition in ticket_workflow]"
+msgstr "Apagar"
+
+msgid "Delete Transaction Action [transition in accounting_workflow]"
+msgstr "Apagar Transação"
+
+msgid "Delete [transition in bug_workflow]"
+msgstr "Apagar"
+
+msgid "Delete [transition in inventory_workflow]"
+msgstr "Apagar"
+
+msgid "Delete [transition in open_order_workflow]"
+msgstr "Apagar"
+
+msgid "Delete [transition in order_workflow]"
+msgstr "Apagar"
+
+msgid "Delete [transition in packing_list_workflow]"
+msgstr "Apagar"
+
+msgid "Delete [transition in rule_validation_workflow]"
+msgstr "Apagar"
+
+msgid "Delete [transition in validation_workflow]"
+msgstr "Apagar"
+
+msgid "Delete a document in ERP5"
+msgstr "Apagar um documento no ERP5"
+
+msgid "Deleted"
+msgstr "Apagado"
+
+msgid "Deleted [state in account_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in accounting_period_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in accounting_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in assignment_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in bug_event_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in bug_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in business_template_installation_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in document_ingestion_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in document_publication_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in event_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in inventory_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in knowledge_pad_validation_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in notification_message_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in open_order_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in order_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in packing_list_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in preference_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in project_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in query_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in requirement_analysis_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in rule_validation_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in sale_opportunity_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in task_report_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in task_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in ticket_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted [state in validation_workflow]"
+msgstr "Apagado"
+
+msgid "Deleted objects: ${object_ids}"
+msgstr "Objetos apagado: ${object_ids}"
+
+msgid "Deleted."
+msgstr "Apagado."
+
+msgid "Deliver Event"
+msgstr "Entregar Evento"
+
+msgid "Deliver Event Action [transition in event_workflow]"
+msgstr "Entregar Evento"
+
+msgid "Deliver Event [transition in event_workflow]"
+msgstr "Entregar Evento"
+
+msgid "Deliver Packing List"
+msgstr "Entregar"
+
+msgid "Deliver Packing List Action"
+msgstr "Entregar"
+
+msgid "Deliver Packing List Action [transition in packing_list_workflow]"
+msgstr "Entregar"
+
+msgid "Deliver Packing List [transition in packing_list_workflow]"
+msgstr "Entregar"
+
+msgid "Deliver [transition in bug_event_workflow]"
+msgstr "Entregue"
+
+msgid "Deliver to"
+msgstr "Entregue para"
+
+msgid "Deliverable to"
+msgstr "Entregue para"
+
+msgid "Delivered"
+msgstr "Entregue"
+
+msgid "Delivered [state in bug_event_workflow]"
+msgstr "Entregue"
+
+msgid "Delivered [state in event_workflow]"
+msgstr "Entregue"
+
+msgid "Delivered [state in internal_packing_list_workflow]"
+msgstr "Entregue"
+
+msgid "Delivered [state in packing_list_workflow]"
+msgstr "Entregue"
+
+msgid "Delivered [state in requirement_analysis_workflow]"
+msgstr "Entregue"
+
+msgid "Delivered [state in task_report_workflow]"
+msgstr "Entregue"
+
+msgid "Delivery"
+msgstr "Entregar"
+
+msgid "Delivery Date"
+msgstr "Data de Entrega"
+
+msgid "Delivery Date must be defined"
+msgstr "Data de Entrega precisa ser definida"
+
+msgid "Delivery Mode"
+msgstr "Modo de Entrega"
+
+msgid "Dependencies"
+msgstr "Dependências"
+
+msgid "Descending"
+msgstr "Descendente"
+
+msgid "Description"
+msgstr "Descrição"
+
+msgid "Desired Login Name"
+msgstr "Nome do Login desejável"
+
+msgid "Destination"
+msgstr "Destino"
+
+msgid "Detailed Report"
+msgstr "Relatório detalhado"
+
+msgid "Details"
+msgstr "Detalhes"
+
+msgid "Detect Converted File"
+msgstr "Detectar Arquivo Convertido"
+
+msgid "Detect Uploaded File"
+msgstr "Detectar Arquivo Carregado"
+
+msgid "Diff Business Template"
+msgstr "Comparar Business Templates"
+
+msgid "Diff Two Objects"
+msgstr "Diferença de dois Objetos"
+
+msgid "Differences"
+msgstr "Diferenças"
+
+msgid "Difficulty"
+msgstr "Dificuldade"
+
+msgid "Dimension"
+msgstr "Dimensão"
+
+msgid "Direction"
+msgstr "Direção"
+
+msgid "Disable"
+msgstr "Desabilitar"
+
+msgid "Disable Preference"
+msgstr "Desabilitar Preferência"
+
+msgid "Disable Preference Action [transition in preference_workflow]"
+msgstr "Desabilitar Preferência "
+
+msgid "Disable Preference [transition in preference_workflow]"
+msgstr "Desabilitar Preferência "
+
+msgid "Disabled"
+msgstr "Desabilitado"
+
+msgid "Disabled [state in preference_workflow]"
+msgstr "Desabilitado"
+
+msgid "Discount"
+msgstr "Desconto"
+
+msgid "Discount Line"
+msgstr "Linha de Desconto"
+
+msgid "Discount Lines"
+msgstr "Linhas de Desconto"
+
+msgid "Discount Model Line"
+msgstr "Linha de Modelo de Desconto"
+
+msgid "Discount Type"
+msgstr "Tipo de Desconto"
+
+msgid "Discounts"
+msgstr "Descontos"
+
+msgid "Display Default Page"
+msgstr "Mostrar Página Padrão"
+
+msgid "Diverged"
+msgstr "Divergente"
+
+msgid "Diverged [state in delivery_causality_workflow]"
+msgstr "Divergente"
+
+msgid "Divergence"
+msgstr "Divergência"
+
+msgid "Divergence Messages"
+msgstr "Mensagens (Divergência)"
+
+msgid "Divergence Scope"
+msgstr "Escopo da Divergência"
+
+msgid "Divergences"
+msgstr "Divergências"
+
+msgid "Divergent [transition in delivery_causality_workflow]"
+msgstr "Divergente"
+
+msgid "Do not forget to logout or exit your browser when you are done."
+msgstr "Não esqueça de sair do sistema quando você terminar."
+
+msgid "Document"
+msgstr "Documento"
+
+msgid "Document Module"
+msgstr "Módulos de Documentos"
+
+msgid "Document Properties"
+msgstr "Propriedades do Documento"
+
+msgid "Document Publication Workflow"
+msgstr "Workflow de Publicação de Documentos"
+
+msgid "Document Reference"
+msgstr "Referência do Documento"
+
+msgid "Document Type"
+msgstr "Tipo do Documento"
+
+msgid "Document is a minimal type designed to hold flexible content. It can be used for rapid application development and prototyping. It is only provided here as an example, as a reminder and as a way to prevent creating a new portal type with such a generic name. It should not be used in normal situation."
+msgstr "O documento é um tipo mínimo projetado para manter o conteúdo flexível. Ele pode ser usado para o desenvolvimento rápido de aplicações e protótipos. Este é fornecido apenas como exemplo, como um lembrete e como forma de impedir a criação de um novo tipo de portal com um nome tão genérico. Não deve ser utilizado em situação normal."
+
+msgid "Documentation"
+msgstr "Documentação"
+
+msgid "Documentation URL"
+msgstr "URL de documentação"
+
+msgid "Documents"
+msgstr "Documentos"
+
+msgid "Documents in this state were deleted by the user as a result of clicking on the trash button or calling the delete action"
+msgstr "Documentos neste estado foram apagados pelo usuário como resultado de clicar no botão de lixeira ou chamando a ação de exclusão"
+
+msgid "Documents to Review"
+msgstr "Documentos para Revisão"
+
+msgid "Documents to Submit"
+msgstr "Documentos para Enviar Revisão"
+
+msgid "Domains"
+msgstr "Domínio"
+
+msgid "Download"
+msgstr "Baixar"
+
+msgid "Download Business Template"
+msgstr "Baixar Business Template"
+
+msgid "Download Business Template from URL"
+msgstr "Baixar Business Template a partir de uma URL"
+
+msgid "Download Business Templates from Repositories"
+msgstr "Baixar Business Template a partir do Repositório"
+
+msgid "Download Converted File"
+msgstr "Baixar Arquivo Convertido"
+
+msgid "Download MD5"
+msgstr "MD5 do Download"
+
+msgid "Download Original File"
+msgstr "Baixar Arquivo Original"
+
+msgid "Download Snapshot"
+msgstr "Baixar Snapshot"
+
+msgid "Download Target File"
+msgstr "Baixar Arquivo Alvo"
+
+msgid "Download as PDF"
+msgstr "Baixar como PDF"
+
+msgid "Draft"
+msgstr "Rascunho"
+
+msgid "Draft Campaigns"
+msgstr "Rascunho de Campanhas"
+
+msgid "Draft Events"
+msgstr "Rascunho de Eventos"
+
+msgid "Draft Meetings"
+msgstr "Rascunho de Reuniões"
+
+msgid "Draft Support Requests"
+msgstr "Rascunho de Pedidos de Suporte"
+
+msgid "Draft To Validate"
+msgstr "Rascunho para Validar"
+
+msgid "Draft [state in account_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in accounting_period_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in accounting_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in acknowledgement_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in archive_inventory_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in archive_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in assignment_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in bug_event_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in bug_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in business_template_building_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in career_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in delivery_causality_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in document_ingestion_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in document_publication_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in event_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in external_document_publication_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in inventory_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in notification_message_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in open_order_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in order_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in packing_list_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in project_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in publication_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in query_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in requirement_analysis_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in rule_validation_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in sale_opportunity_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in task_report_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in task_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in ticket_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in user_account_workflow]"
+msgstr "Rascunho"
+
+msgid "Draft [state in validation_workflow]"
+msgstr "Rascunho"
+
+msgid "Drafts to Publish"
+msgstr "Rascunhos para Publicar"
+
+msgid "Drafts to Validate"
+msgstr "Rasculhos para Validar"
+
+msgid "Drawing"
+msgstr "Desenho"
+
+msgid "Duplicate"
+msgstr "Duplicar"
+
+msgid "Duration"
+msgstr "Duração"
+
+msgid "ERP5"
+msgstr "ERP5"
+
+msgid "ERP5 Modules"
+msgstr "Módulos ERP5"
+
+msgid "Economic Class"
+msgstr "Classe Econômica"
+
+msgid "Edit"
+msgstr "Editar"
+
+msgid "Edit ${portal_type}"
+msgstr "Editar ${portal_type}"
+
+msgid "Edit Action [transition in edit_workflow]"
+msgstr "Editar"
+
+msgid "Edit Business Template [transition in business_template_building_workflow]"
+msgstr "Editar Business Template"
+
+msgid "Edit Portal Type '${portal_type}'"
+msgstr "Editar Portal Type '${portal_type}'"
+
+msgid "Edit Workflow"
+msgstr "Workflow de edição "
+
+msgid "Edit [transition in document_publication_workflow]"
+msgstr "Editar"
+
+msgid "Edit [transition in edit_workflow]"
+msgstr "Editar"
+
+msgid "Edit [transition in processing_status_workflow]"
+msgstr "Editar"
+
+msgid "Editable"
+msgstr "Editável"
+
+msgid "Effective Date"
+msgstr "Data de Efetivação"
+
+msgid "Efficiency"
+msgstr "Eficiência"
+
+msgid "Efficiency (%)"
+msgstr "Eficiência (%)"
+
+msgid "Efficiency (coef.)"
+msgstr "Eficiência (coef.)"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Email Confirmation"
+msgstr "Email de Confirmação"
+
+msgid "Embedded Document"
+msgstr "Document Embutido"
+
+msgid "Emit"
+msgstr "Emitir"
+
+msgid "Emit date"
+msgstr "Data de Emitir"
+
+msgid "Emitted"
+msgstr "Emitido"
+
+msgid "Employee"
+msgstr "Funcionário"
+
+msgid "Employee Name"
+msgstr "Nome do Funcionário"
+
+msgid "Employee Number"
+msgstr "Número do Funcionário"
+
+msgid "Employer"
+msgstr "Empregador"
+
+msgid "Empty"
+msgstr "Vazio"
+
+msgid "Empty [state in processing_status_workflow]"
+msgstr "Vazio"
+
+msgid "Empty lines deleted."
+msgstr "Apagado linhas vazias."
+
+msgid "Empty+lines+deleted."
+msgstr "Apagado+linhas+vazias."
+
+msgid "Enable"
+msgstr "Habilitar"
+
+msgid "Enable Preference"
+msgstr "Habilitar Preferência"
+
+msgid "Enable Preference Action [transition in preference_workflow]"
+msgstr "Habilitar Preferência"
+
+msgid "Enable Preference [transition in preference_workflow]"
+msgstr "Habilitar Preferência"
+
+msgid "Enabled"
+msgstr "Habilitado"
+
+msgid "Enabled [state in preference_workflow]"
+msgstr "Habilitado"
+
+msgid "Enables a \"global\" preference"
+msgstr "Habilita a preferência como global"
+
+msgid "Enables a preference"
+msgstr "Habilitar preferência"
+
+msgid "End"
+msgstr "Fim"
+
+msgid "End Date"
+msgstr "Data de Fim"
+
+msgid "End of Month"
+msgstr "Final do Mês"
+
+msgid "English"
+msgstr "Inglês"
+
+msgid "Entity"
+msgstr "Entidade"
+
+msgid "Equal to"
+msgstr "Igual a"
+
+msgid "Error Message"
+msgstr "Mensagem de erro"
+
+msgid "Estimated Time"
+msgstr "Tempo Estimado"
+
+msgid "Event"
+msgstr "Evento"
+
+msgid "Event Activity"
+msgstr "Atividade do Evento"
+
+msgid "Event Date"
+msgstr "Data do Evento"
+
+msgid "Event Detailed Report"
+msgstr "Relatório Detalhado de Eventos"
+
+msgid "Event Direction"
+msgstr "Direção do Evento"
+
+msgid "Event Module"
+msgstr "Módulo de Eventos"
+
+msgid "Event Nature"
+msgstr "Natureza do Evento"
+
+msgid "Event Origin"
+msgstr "Origem do Evento"
+
+msgid "Event Preview"
+msgstr "Visualizar Evento"
+
+msgid "Event Sender Email"
+msgstr "Email do Remetente"
+
+msgid "Event Title"
+msgstr "Título do Evento"
+
+msgid "Event Type"
+msgstr "Tipo de Evento"
+
+msgid "Events"
+msgstr "Eventos"
+
+msgid "Events in this state are incoming events or carbon copies of outgoing events received through the email interface of ERP5 CRM."
+msgstr "Eventos neste estado são os eventos de entrada ou cópias de carbono de eventos de saída recebidos através da interface do e-mail do ERP5 CRM."
+
+msgid "Everybody"
+msgstr "Todos"
+
+msgid "Everything"
+msgstr "Tudo"
+
+msgid "Exact Match"
+msgstr "Resultado Exato"
+
+msgid "Exchange Rate"
+msgstr "Taxa de Câmbio"
+
+msgid "Expense"
+msgstr "Despesa"
+
+msgid "Expenses"
+msgstr "Despesas"
+
+msgid "Expiration Date"
+msgstr "Data de Expiração"
+
+msgid "Expire"
+msgstr "Expirar"
+
+msgid "Expire Category Action [transition in category_publication_workflow]"
+msgstr "Expirar Categoria"
+
+msgid "Expire Category [transition in category_publication_workflow]"
+msgstr "Expirar Categoria"
+
+msgid "Expire Event"
+msgstr "Expirar Evento"
+
+msgid "Expire Event Action [transition in event_workflow]"
+msgstr "Expirar Evento"
+
+msgid "Expire Event [transition in event_workflow]"
+msgstr "Expirar Evento"
+
+msgid "Expire Protected Category [transition in category_publication_workflow]"
+msgstr "Expirar Categoria Protegida"
+
+msgid "Expire Published Category [transition in category_publication_workflow]"
+msgstr "Expirar Categoria Publicada"
+
+msgid "Expire Sale Opportunity Action [transition in sale_opportunity_workflow]"
+msgstr "Expirar Oportunidade de Vanda"
+
+msgid "Expire Sale Opportunity [transition in sale_opportunity_workflow]"
+msgstr "Expirar Oportunidade de Vanda"
+
+msgid "Expire [transition in category_publication_workflow]"
+msgstr "Expirar"
+
+msgid "Expired"
+msgstr "Expirado"
+
+msgid "Expired [state in category_publication_workflow]"
+msgstr "Expirado"
+
+msgid "Expired [state in event_workflow]"
+msgstr "Expirado"
+
+msgid "Expired [state in sale_opportunity_workflow]"
+msgstr "Expirar"
+
+msgid "Explains what is the expected outcome of this Project Line"
+msgstr "Explica o qual é o resultado esperado para esta linha de projeto."
+
+msgid "Explanation"
+msgstr "Explicação"
+
+msgid "Export"
+msgstr "Exportar"
+
+msgid "Export Business Template"
+msgstr "Exportar Business Template"
+
+msgid "Export Format"
+msgstr "Formato de Exportação"
+
+msgid "Export Mode"
+msgstr "Modo de Exportação"
+
+msgid "Export Terms as PO File"
+msgstr "Exportar termos como PO File"
+
+msgid "Export XMI File"
+msgstr "Exportar Arquivo XMI"
+
+msgid "Export to Spreadsheet"
+msgstr "Exportar para Planilha"
+
+msgid "Extension"
+msgstr "Ramal"
+
+msgid "External Folder"
+msgstr "Pasta Externa"
+
+msgid "Extract [transition in document_publication_workflow]"
+msgstr "Extrair"
+
+msgid "FAX"
+msgstr "Fax"
+
+msgid "Family"
+msgstr "Família"
+
+msgid "Favorite"
+msgstr "Favorito"
+
+msgid "Fax"
+msgstr "Fax"
+
+msgid "Fax Message"
+msgstr "Mensagem de Fax"
+
+msgid "Feature"
+msgstr "Característica"
+
+msgid "Feature Description"
+msgstr "Descrição "
+
+msgid "Feature State"
+msgstr "Estado"
+
+msgid "Feature Title"
+msgstr "Título"
+
+msgid "Features"
+msgstr "Características"
+
+msgid "File"
+msgstr "Arquivo"
+
+msgid "File Name"
+msgstr "Nome do Arquivo"
+
+msgid "File State"
+msgstr "Estado do Arquivo"
+
+msgid "File Type"
+msgstr "Tipo de Arquivo"
+
+msgid "File uploaded."
+msgstr "Arquivo Enviado"
+
+msgid "FileName"
+msgstr "Nome do Arquivo"
+
+msgid "Filename"
+msgstr "Nome do Arquivo"
+
+msgid "Files"
+msgstr "Arquivos"
+
+msgid "Files And Images"
+msgstr "Arquivos e Imagens"
+
+msgid "Fill your login and new password."
+msgstr "Preencha seu login e sua nova senha."
+
+msgid "Filter"
+msgstr "Filtrar"
+
+msgid "Financial Information"
+msgstr "Informações Financeiras"
+
+msgid "Financial Informations"
+msgstr "Informações Financeiras"
+
+msgid "Find"
+msgstr "Procurar"
+
+msgid "Find Terms"
+msgstr "Procurar Termos"
+
+msgid "Find Terms from Property Sheet"
+msgstr "Procurar Termos dos Property Sheet"
+
+msgid "Find Terms from Workflows"
+msgstr "Procurar Termos dos Workflows"
+
+msgid "Finish Task"
+msgstr "Terminar Tarefa"
+
+msgid "Finish Translation"
+msgstr "Terminar Tradução"
+
+msgid "Finish Translation Action"
+msgstr "Terminar Tradução"
+
+msgid "Finish Translation Action [transition in document_publication_workflow]"
+msgstr "Terminar Tradução"
+
+msgid "Finish Translation [transition in document_publication_workflow]"
+msgstr "Terminar Tradução"
+
+msgid "Finish the work"
+msgstr "Terminar o Trabalho"
+
+msgid "First"
+msgstr "Primeiro"
+
+msgid "First Name"
+msgstr "Primeiro Nome"
+
+msgid "First name."
+msgstr "Primeiro Nome."
+
+msgid "Float Number Style"
+msgstr "Estilo de números (Float)"
+
+msgid "Folder"
+msgstr "Pasta"
+
+msgid "Format"
+msgstr "Formato"
+
+msgid "Found"
+msgstr "Encontrado"
+
+msgid "French"
+msgstr "Francês"
+
+msgid "Frequency"
+msgstr "Frequência"
+
+msgid "Frequency in Days"
+msgstr "Frequência (dias)"
+
+msgid "Frequency in Hours"
+msgstr "Frequência (horas)"
+
+msgid "Frequency in Months"
+msgstr "Frequência (meses)"
+
+msgid "Frequency in Weeks"
+msgstr "Freqüência (semanas)"
+
+msgid "Friday"
+msgstr "Sexta"
+
+msgid "From ${start_date} to ${stop_date}"
+msgstr "De ${start_date} até ${stop_date}"
+
+msgid "Full Inventory"
+msgstr "Inventário Completo"
+
+msgid "Function"
+msgstr "Função"
+
+msgid "Function changed."
+msgstr "Função Alterada."
+
+msgid "Functions"
+msgstr "Funções"
+
+msgid "Future"
+msgstr "Futuro"
+
+msgid "GAP must be set"
+msgstr "GAP precisa ser definida"
+
+msgid "Gender"
+msgstr "Sexo"
+
+msgid "Generate POT File"
+msgstr "Gerar um Arquivo POT"
+
+msgid "Globally Enable"
+msgstr "Habilitar Globalmente"
+
+msgid "Globally Enabled"
+msgstr "Habilitado Globalmente"
+
+msgid "Globally Enabled [state in preference_workflow]"
+msgstr "Habilitado Globalmente"
+
+msgid "Glossary"
+msgstr "Glossário"
+
+msgid "Glossary Term"
+msgstr "Termo do Glossário"
+
+msgid "Group"
+msgstr "Grupo"
+
+msgid "Group by"
+msgstr "Agrupado por"
+
+msgid "Group:"
+msgstr "Grupo:"
+
+msgid "Groups"
+msgstr "Grupos"
+
+msgid "Guess Portal Types From Modules"
+msgstr "Adivinhar Portal Types dos Módulos"
+
+msgid "Guess Portal Types from Modules"
+msgstr "Adivinhar Portal Types dos Módulos"
+
+msgid "Guess Properties of Portal Types"
+msgstr "Adivinhar Propriedades dos Portal Types"
+
+msgid "Handled Project"
+msgstr "Projeto de Controle"
+
+msgid "Having trouble logging in? Make sure to enable cookies in your web browser."
+msgstr "Está tendo problmes para entrar no sistema? Habilite os cookies no seu navegador."
+
+msgid "Height (cm)"
+msgstr "Altura (cm)"
+
+msgid "Height (m)"
+msgstr "Altura (m)"
+
+msgid "Hide"
+msgstr "Ocultar"
+
+msgid "Hide Document"
+msgstr "Ocultar Documento"
+
+msgid "Hide Document Action"
+msgstr "Ocultar Documento"
+
+msgid "Hide Document Action [transition in document_publication_workflow]"
+msgstr "Ocultar Documento"
+
+msgid "Hide Document [transition in document_publication_workflow]"
+msgstr "Ocultar Documento"
+
+msgid "Hide tabs"
+msgstr "Esconder abas"
+
+msgid "Hides a document which was published or released by mistake by setting the validation_state to hidden."
+msgstr "Esconde um documento que foi publicado ou lançado por engano, definindo seu como oculto."
+
+msgid "History"
+msgstr "Histórico"
+
+msgid "Hostname of the oood server."
+msgstr "Endereço do servidor de conversão."
+
+msgid "Hours"
+msgstr "Homas"
+
+msgid "How much this currency is worth in terms of the reference currency."
+msgstr "Quanto vale esta moeda em termos de moeda de referência."
+
+msgid "Html Style"
+msgstr "Estilo de HTML"
+
+msgid "I forgot my password!"
+msgstr "Esqueci minha senha!"
+
+msgid "Identification"
+msgstr "Identificação"
+
+msgid "If a document is missing in order to process an action, ERP5 will warn the user that this is Missing"
+msgstr "Se um documento está faltando com o objetivo de processar uma ação, o ERP5 irá advertir o usuário de que este está faltando."
+
+msgid "If set, payment will occur at the end of the month of the payment term."
+msgstr "Se definido, o pagamento ocorrerá no final do mês do prazo de pagamento."
+
+msgid "Image"
+msgstr "Imagem"
+
+msgid "Image type documents in ERP5. Many formats are supported"
+msgstr "Documentos do tipo imagem no ERP5. Muitos formatos são suportados"
+
+msgid "Images"
+msgstr "Imagens"
+
+msgid "Import / Export"
+msgstr "Importar / Exportar"
+
+msgid "In a purchase/sale trade condition document, a discount model line defines the discount behaviour of an order towards certain products."
+msgstr "Em documento de condição de venda/compra, uma Linha de Modelo de Desconto define o comportamento do desconto de um pedido para certos produtos."
+
+msgid "In this state, no transaction can be input anymore on the account as it has been closed"
+msgstr "Neste estado, nenhuma transação pode ser inserida na conta uma vez que foi fechada"
+
+msgid "Incoming FAX"
+msgstr "Fax Recebido"
+
+msgid "Incoming Fax"
+msgstr "Fax Recebido"
+
+msgid "Incoming Letter"
+msgstr "Carta Recebida"
+
+msgid "Index"
+msgstr "Índice"
+
+msgid "Index used to sort invoice lines in a list"
+msgstr "Índice usado para ordenar as linhas da fatura em uma lista"
+
+msgid "Indicate how often (in days) the event will happen (every x days)"
+msgstr "Indique quantas vezes(em dias) o evento vai acontecer(a cada dia x)"
+
+msgid "Indicate how often (in hours) the event will happen (every x hours)"
+msgstr "Indicar a freqüência (em horas) que o evento vai acontecer (a cada X horas)"
+
+msgid "Indicate how often (in week) the event will happen (every x weeks)"
+msgstr "Indica quão frequente (em semanas) o evento irá acontecer (toda x semanas)"
+
+msgid "Indicates how often (in months) the event will happen (every x months)"
+msgstr "Indique quantas vezes(em meses) o evento vai acontecer(a cada mês x)"
+
+msgid "Indicates if we display link to translation system in interface or not"
+msgstr "Indica se é mostrado o link para o sistema de tradução"
+
+msgid "Indicates that the conversion of document to an open document is in process"
+msgstr "Indica que a conversão do documento para um documento aberto está na fila para ser convertido"
+
+msgid "Industrial Phase"
+msgstr "Fase Industrial"
+
+msgid "Info"
+msgstr "Informações "
+
+msgid "Initial Budget"
+msgstr "Orçamento Inicial"
+
+msgid "Initial Contacts"
+msgstr "Contatos iniciais"
+
+msgid "Inspect object"
+msgstr "Inspecionar Objeto"
+
+msgid "Install"
+msgstr "Instalar"
+
+msgid "Install Business Template"
+msgstr "Instalar Business Template"
+
+msgid "Install Business Template Action [transition in business_template_installation_workflow]"
+msgstr "Install Business Template"
+
+msgid "Install Business Template [transition in business_template_installation_workflow]"
+msgstr "Install Business Template"
+
+msgid "Install Business Templates from Repositories"
+msgstr "Install Business Template do Repositório"
+
+msgid "Installation Choice"
+msgstr "Opções de Instalação"
+
+msgid "Installation State"
+msgstr "Estado de Instalação "
+
+msgid "Installed"
+msgstr "Instalado"
+
+msgid "Installed [state in business_template_installation_workflow]"
+msgstr "Instalado"
+
+msgid "Instructions"
+msgstr "Instruções"
+
+msgid "Internal Packing List"
+msgstr "Lista de Entrega Interna"
+
+msgid "Internal Packing List Line"
+msgstr "Linha"
+
+msgid "Internal Packing List Lines"
+msgstr "Linhas"
+
+msgid "Internal Packing Lists"
+msgstr "Lista de Entregas Internas"
+
+msgid "Invalidate"
+msgstr "Invalidar"
+
+msgid "Invalidate Account"
+msgstr "Invalidar"
+
+msgid "Invalidate Account Action [transition in account_workflow]"
+msgstr "Invalidar Conta"
+
+msgid "Invalidate Account [transition in account_workflow]"
+msgstr "Invalidar Conta"
+
+msgid "Invalidate Action"
+msgstr "Invalidar"
+
+msgid "Invalidate Action [transition in rule_validation_workflow]"
+msgstr "Invalidar"
+
+msgid "Invalidate Action [transition in validation_workflow]"
+msgstr "Invalidar"
+
+msgid "Invalidate Message Action [transition in notification_message_workflow]"
+msgstr "Invalidar Mensagem"
+
+msgid "Invalidate Message [transition in notification_message_workflow]"
+msgstr "Invalidar Mensagem"
+
+msgid "Invalidate [transition in rule_validation_workflow]"
+msgstr "Invalidar"
+
+msgid "Invalidate [transition in validation_workflow]"
+msgstr "Invalidar"
+
+msgid "Invalidated"
+msgstr "Invalidado"
+
+msgid "Invalidated [state in account_workflow]"
+msgstr "Inválido"
+
+msgid "Invalidated [state in rule_validation_workflow]"
+msgstr "Inválido"
+
+msgid "Invalidated [state in validation_workflow]"
+msgstr "Inválido"
+
+msgid "Inventory"
+msgstr "Inventário"
+
+msgid "Inventory Chart"
+msgstr "Gráfico (Inventário)"
+
+msgid "Inventory Date"
+msgstr "Data do Inventário"
+
+msgid "Inventory Line"
+msgstr "Linha de Inventário"
+
+msgid "Inventory State"
+msgstr "Estado do Inventário"
+
+msgid "Inventory Variation Chart"
+msgstr "Gráfico de Variação do Inventário"
+
+msgid "Invisible [state in knowledge_pad_validation_workflow]"
+msgstr "Tornar Invisível"
+
+msgid "Invisible [transition in knowledge_pad_validation_workflow]"
+msgstr "Invisível"
+
+msgid "Invoice"
+msgstr "Fatura"
+
+msgid "Invoice Cell"
+msgstr "Célula da Fatura"
+
+msgid "Invoice Date"
+msgstr "Data da Fatura"
+
+msgid "Invoice Line"
+msgstr "Linha da Fatura"
+
+msgid "Invoice Lines"
+msgstr "Linhas da Fatura"
+
+msgid "Invoice Number"
+msgstr "Número da Fatura"
+
+msgid "Invoice Recipient"
+msgstr "Destinatário da Fatura"
+
+msgid "Invoice Sender"
+msgstr "Emissor da Fatura"
+
+msgid "Invoice Type"
+msgstr "Tipo de Fatura"
+
+msgid "Invoice View"
+msgstr "Ver Fatura"
+
+msgid "Invoices Report"
+msgstr "Relatório de Faturas"
+
+msgid "Item"
+msgstr "Item"
+
+msgid "Item Module"
+msgstr "Módulo de Itens"
+
+msgid "Items"
+msgstr "Items"
+
+msgid "Items+Copied."
+msgstr "Items+Copiado(s)."
+
+msgid "July"
+msgstr "Julho"
+
+msgid "Jump"
+msgstr "Ir para"
+
+msgid "Jump to Accounting Preference"
+msgstr "Ir para Preferências Contábeis"
+
+msgid "Jump to Active Preference"
+msgstr "Ir para preferências ativas"
+
+msgid "Jump to Bank Accounts"
+msgstr "Ir para Contas Bancárias"
+
+msgid "Jump to Related Payment"
+msgstr "Ir para Pagamentos relacionados"
+
+msgid "Jump..."
+msgstr "Ir para..."
+
+msgid "June"
+msgstr "Junho"
+
+msgid "Keyword Keys"
+msgstr "Palavras Chaves"
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Language Code"
+msgstr "Código do Idioma"
+
+msgid "Language of the message notification"
+msgstr "Idioma da Mensagem de Notificação "
+
+msgid "Language of the term"
+msgstr "Idioma do Termo"
+
+msgid "Language of the web page, it uses code like en, fr, ja..."
+msgstr "Idioma da página web, utiliza-se códigos como en, fr, ja ..."
+
+msgid "Large Image Height"
+msgstr "Altura da Imagem Maior"
+
+msgid "Last Name"
+msgstr "Último Nome"
+
+msgid "Last Report"
+msgstr "Último Relatório"
+
+msgid "Last name."
+msgstr "Último Nome."
+
+msgid "Latest Additions"
+msgstr "Últimas Adições"
+
+msgid "Latest Documents"
+msgstr "Últimos Documentos"
+
+msgid "Length (cm)"
+msgstr "Comprimento (cm)"
+
+msgid "Length (m)"
+msgstr "Comprimento (m)"
+
+msgid "Letter"
+msgstr "Carta"
+
+msgid "Level"
+msgstr "Nível"
+
+msgid "License"
+msgstr "Licença"
+
+msgid "Line"
+msgstr "Linha"
+
+msgid "Lines created."
+msgstr "Linhas Criadas"
+
+msgid "List"
+msgstr "Lista"
+
+msgid "List Content"
+msgstr "Listar Conteúdo"
+
+msgid "List Mode"
+msgstr "Modo de Listagem"
+
+msgid "List of the specific needs to complete the project"
+msgstr "Lista de necessidades específicas para completar o projeto.\n"
+
+msgid "List of the specific needs to complete the task"
+msgstr "Lista de necessidades específicas para completar a tarefa."
+
+msgid "Localisation"
+msgstr "Localização "
+
+msgid "Location"
+msgstr "Localização"
+
+msgid "Log in"
+msgstr "Entrar"
+
+msgid "Log out"
+msgstr "Sair"
+
+msgid "Logged In as :"
+msgstr "Conectado como :"
+
+msgid "Logged in as :"
+msgstr "Conectado como :"
+
+msgid "Login"
+msgstr "Entrar"
+
+msgid "Login ID"
+msgstr "Login ID"
+
+msgid "Logout"
+msgstr "Sair"
+
+msgid "Lost Sale Opportunity, as it has been rejected by the customer"
+msgstr "Oportunidade de Venda rejeitada pelo cliente"
+
+msgid "Mail Message"
+msgstr "Mensagem de Email "
+
+msgid "Main Resource"
+msgstr "Recurso Principal"
+
+msgid "Maintainers"
+msgstr "Mantetores"
+
+msgid "Manage Business Templates"
+msgstr "Gerenciar Business Templates"
+
+msgid "Manage members"
+msgstr "Gerenciar Membros"
+
+msgid "Marital Status"
+msgstr "Estado civil"
+
+msgid ""
+"Mark the beginning and the end of an Accounting Period.\n"
+"Once the period is closed (i.e. the Accounting Period Delimiter is in delivered state), it is no longer possible to validate Transaction in this period"
+msgstr ""
+"Define o início e o fim de um Exercício Contábil.\n"
+"Uma vez que o período esteja fechado (p.e. o Delimitador de Período Contábil esteja no estado de entregue), não será mais possível validar transações neste período."
+
+msgid "Max. Stock"
+msgstr "Estoque Max."
+
+msgid "Means that the container has been prepared and is ready to be shipped"
+msgstr "Significa que o Contêiner  foi preparado e está pronto para ser entregue."
+
+msgid "Measure"
+msgstr "Medida"
+
+msgid "Measures"
+msgstr "Medidas"
+
+msgid "Medium Image Height"
+msgstr "Altura da Imagem Média"
+
+msgid "Medium Image Width"
+msgstr "Largura da Imagem Média"
+
+msgid "Meeting"
+msgstr "Reunião"
+
+msgid "Meeting Detailed Report"
+msgstr "Relatório de Detalhado da Reunião"
+
+msgid "Meeting Module"
+msgstr "Módulos de Reunião"
+
+msgid "Meeting Status"
+msgstr "Status da Reunião"
+
+msgid "Meeting Type"
+msgstr "Tipo de Reunião"
+
+msgid "Meeting Types"
+msgstr "Tipos de Reunião"
+
+msgid "Meetings"
+msgstr "Reuniões"
+
+msgid "Memory Used"
+msgstr "Memória usada"
+
+msgid "Messages"
+msgstr "Mensagens"
+
+msgid "Metadata"
+msgstr "Metadados"
+
+msgid "Methods"
+msgstr "Métodos"
+
+msgid "Micro Image Height"
+msgstr "Altura da Imagem Micro"
+
+msgid "Micro Image Width"
+msgstr "Largura da Imagem Micro"
+
+msgid "Middle Name"
+msgstr "Nome do Meio"
+
+msgid "Migrate Folder"
+msgstr "Migrar Pasta"
+
+msgid "Min. Stock"
+msgstr "Estoque Min."
+
+msgid "Missing"
+msgstr "Faltando"
+
+msgid "Missing [state in packing_list_container_workflow]"
+msgstr "Faltando"
+
+msgid "Mobile Telephone"
+msgstr "Celular"
+
+msgid "Modification Date"
+msgstr "Data de Modificação"
+
+msgid "Modified"
+msgstr "Modificado"
+
+msgid "Modified Files"
+msgstr "Arquivos Modificados"
+
+msgid "Modified Categories"
+msgstr "Categorias Modificadas."
+
+msgid "Modules"
+msgstr "Módulos"
+
+msgid "Monday"
+msgstr "Segunda"
+
+msgid "Month"
+msgstr "Mês"
+
+msgid "Month / Day / Year"
+msgstr "Mês / Dia / Ano"
+
+msgid "Monthly"
+msgstr "Mensal"
+
+msgid "Monthly Report"
+msgstr "Relatório Mensal"
+
+msgid "Months"
+msgstr "Meses"
+
+msgid "More news..."
+msgstr "Mais Notícias..."
+
+msgid "More tasks..."
+msgstr "Mais tarefas"
+
+msgid "Movements"
+msgstr "Movimentos"
+
+msgid "My Contacts"
+msgstr "Meus Contatos"
+
+msgid "My Documents"
+msgstr "Meus Documentos"
+
+msgid "My Favourites"
+msgstr "Meus Favoritos"
+
+msgid "My Language"
+msgstr "Meu Idioma"
+
+msgid "My favourites"
+msgstr "Meus favoritos"
+
+msgid "My language"
+msgstr "Meu Idioma"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Nano Image Height"
+msgstr "Altura da Imagem Nano"
+
+msgid "Nano Image Width"
+msgstr "Largura da Imagem Nano"
+
+msgid "Nationality"
+msgstr "Nacionalidade"
+
+msgid "New"
+msgstr "Novo"
+
+msgid "New ${portal_type}"
+msgstr "Novo(a) ${portal_type}"
+
+msgid "New ${portal_type} added."
+msgstr "Novo ${portal_type} adicionado."
+
+msgid "New ${portal_type} created."
+msgstr "Novo ${portal_type} criado."
+
+msgid "New Event"
+msgstr "Novo Evento"
+
+msgid "New Events"
+msgstr "Novos Eventos"
+
+msgid "New File"
+msgstr "Novo Arquivo"
+
+msgid "New Function"
+msgstr "Nova Função"
+
+msgid "New Incoming Events"
+msgstr "Novos eventos recebidos"
+
+msgid "New Link"
+msgstr "Novo Link"
+
+msgid "New Page"
+msgstr "Nova Página"
+
+msgid "New Value"
+msgstr "Novo Valor"
+
+msgid "New [state in document_ingestion_workflow]"
+msgstr "Novo"
+
+msgid "New [state in event_workflow]"
+msgstr "Novo"
+
+msgid "New default Web Page for section ${web_section}."
+msgstr "Nova Página Web Padrão para Seção ${web_section}."
+
+msgid "New event created."
+msgstr "Novo evento criado."
+
+msgid "News"
+msgstr "Notícias"
+
+msgid "Next"
+msgstr "Próximo"
+
+msgid "Next Alarm Date"
+msgstr "Data do Próximo Alarme"
+
+msgid "Next Page"
+msgstr "Próxima Página"
+
+msgid "No ${portal_type} Related."
+msgstr "Nenhum ${portal_type} Relacionado."
+
+msgid "No ${portal_type} related."
+msgstr "Nenhum ${portal_type} relacionado."
+
+msgid "No divergence found."
+msgstr "Nenhuma divergência encontrada."
+
+msgid "No result !"
+msgstr "Nenhum resultado!"
+
+msgid "No result."
+msgstr "Nenhum Resultado."
+
+msgid "None"
+msgstr "Nenhum"
+
+msgid "Not Installed"
+msgstr "Não Instalado "
+
+msgid "Not Installed [state in business_template_installation_workflow]"
+msgstr "Não Instalado "
+
+msgid "Not available"
+msgstr "Indisponível"
+
+msgid "Note"
+msgstr "Nota"
+
+msgid "Nothing to add."
+msgstr "Nada para adicionar."
+
+msgid "Nothing to paste."
+msgstr "Nada para colar."
+
+msgid "Notification"
+msgstr "Notificação"
+
+msgid "Notification Message"
+msgstr "Mensagem de notificação"
+
+msgid "Notification Message Module"
+msgstr "Módulo de Mensagem de Notificação"
+
+msgid "Notification Message Workflow"
+msgstr "Workflow de Mensagens de Notificação"
+
+msgid "Notification Messages"
+msgstr "Mensagens de notificação"
+
+msgid "Notification Mode"
+msgstr "Modo de Notificação"
+
+msgid "November"
+msgstr "November"
+
+msgid "Number"
+msgstr "Número"
+
+msgid "Number of Children"
+msgstr "Número de Filhos"
+
+msgid "Numerical"
+msgstr "Numérico"
+
+msgid "ODS Style"
+msgstr "Estilo ODS"
+
+msgid "ODT Style"
+msgstr "Estilo ODR"
+
+msgid "Object"
+msgstr "Objeto"
+
+msgid "Object Created."
+msgstr "Objeto Criado."
+
+msgid "Object copied as ${item_id}"
+msgstr "Objetos copiados como ${item_id}"
+
+msgid "Object copied from ${source_item}"
+msgstr "Objetos copiados de ${source_item}"
+
+msgid "Object created."
+msgstr "Objeto criado."
+
+msgid "Object+Created."
+msgstr "Objeto+Criado."
+
+msgid "Objects"
+msgstr "Objetos"
+
+msgid "October"
+msgstr "Outubro"
+
+msgid "Offer"
+msgstr "Oferecer"
+
+msgid "Offer by Email"
+msgstr "Oferecer por Email"
+
+msgid "Offered"
+msgstr "Oferecido"
+
+msgid "Offered Purchase Orders to Follow"
+msgstr "Entregas de Compra Oferecidas para Seguir"
+
+msgid "Offered Sale Orders to Follow"
+msgstr "Pedidos de Venda Oferecidos para Seguir"
+
+msgid "Offered [state in open_order_workflow]"
+msgstr "Oferecido"
+
+msgid "Offered [state in order_workflow]"
+msgstr "Oferecido"
+
+msgid "Offered [state in sale_opportunity_workflow]"
+msgstr "Oferecido"
+
+msgid "Offers to Send"
+msgstr "Ofertas para Enviar"
+
+msgid "Office Document"
+msgstr "Documento de Escritório"
+
+msgid "Old Value"
+msgstr "Valor Antigo"
+
+msgid "Omit Empty Accounts"
+msgstr "Omitir Contas Vazias"
+
+msgid "Open"
+msgstr "Abrir"
+
+msgid "Open Bug"
+msgstr "Abrir Bug"
+
+msgid "Open Bugs"
+msgstr "Bugs Abertos"
+
+msgid "Open Campaigns"
+msgstr "Abrir Campanha"
+
+msgid "Open Meetings"
+msgstr "Reuniões em Aberto"
+
+msgid "Open Project"
+msgstr "Abrir Projeto"
+
+msgid "Open Support Requests"
+msgstr "Pedido de Suporte Abertos"
+
+msgid "Open Ticket"
+msgstr "Abrir"
+
+msgid "Open Ticket Action"
+msgstr "Abrir"
+
+msgid "Open Ticket Action [transition in ticket_workflow]"
+msgstr "Abrir"
+
+msgid "Open Ticket [transition in ticket_workflow]"
+msgstr "Abrir"
+
+msgid "Open [state in bug_workflow]"
+msgstr "Abrir"
+
+msgid "Open [state in project_workflow]"
+msgstr "Abrir"
+
+msgid "Open [state in ticket_workflow]"
+msgstr "Abrir"
+
+msgid "Opening Date"
+msgstr "Data de Abertura"
+
+msgid "Operations Manager"
+msgstr "Gerente de Operação"
+
+msgid "Operator"
+msgstr "Operador"
+
+msgid "Operators"
+msgstr "Operadores"
+
+msgid "Optional Resource"
+msgstr "Recurso Opcional"
+
+msgid "Order"
+msgstr "Ordenar"
+
+msgid "Order Index"
+msgstr "Índice do Pedido"
+
+msgid "Order Line"
+msgstr "Linha de Pedido"
+
+msgid "Order Lines"
+msgstr "Linhas de Pedido"
+
+msgid "Order Placed"
+msgstr "Pedido Alocado"
+
+msgid "Order Placed [state in open_order_workflow]"
+msgstr "Pedido Alocado"
+
+msgid "Order Placed [state in order_workflow]"
+msgstr "Pedido Alocado"
+
+msgid "Order Reference"
+msgstr "Referência do Pedido"
+
+msgid "Order Summary"
+msgstr "Sumário do Pedido"
+
+msgid "Order Type"
+msgstr "Tipo de Pedido"
+
+msgid "Order Workflow"
+msgstr "Workflow de Pedidos"
+
+msgid "Order has been confirmed to the customer or has been confirmed by the supplier"
+msgstr "Pedido foi confirmado para o cliente ou foi confirmado pelo fornecedor."
+
+msgid "Order reference"
+msgstr "Referência do Pedido"
+
+msgid "Order type"
+msgstr "Tipo de Pedido"
+
+msgid "Ordered"
+msgstr "Solicitado"
+
+msgid "Ordered Quantity"
+msgstr "Quantidade Pedida"
+
+msgid "Ordered [state in task_workflow]"
+msgstr "Solicitada"
+
+msgid "Orders"
+msgstr "Pedidos"
+
+msgid "Organisation"
+msgstr "Organização"
+
+msgid "Organisation Module"
+msgstr "Módulo de Organizações"
+
+msgid "Organisation Usual Name"
+msgstr "Nome da Organização"
+
+msgid "Organisation that sends the invoice"
+msgstr "Organização que emite a fatura"
+
+msgid "Organisations"
+msgstr "Organizações"
+
+msgid "Organisations capture the contact information (ex. name, phone number) and their classification (ex. site, group, function etc.). Organisations are supported by a standard validation workflow."
+msgstr "Organizações captura as informações do contato (ex. nome, número de telefone) e sua classificação (ex. site do grupo, função, etc.) As organizações são apoiadas por um fluxo de trabalho de validação padrão."
+
+msgid "Origin"
+msgstr "Origem"
+
+msgid "Origin Reference"
+msgstr "Referencia da Origem"
+
+msgid "Original Filename"
+msgstr "Nome Original"
+
+msgid "Original Reference"
+msgstr "Referência original"
+
+msgid "Original filename"
+msgstr "Nome Original"
+
+msgid "Orphan Files"
+msgstr "Arquivos Órfãos"
+
+msgid "Orphaned Requirements"
+msgstr "Requisitos Órfãos"
+
+msgid "Orphaned Requirements Report"
+msgstr "Relatório de Requisitos Órfãos"
+
+msgid "Others"
+msgstr "Outros"
+
+msgid "Outcome Description"
+msgstr "Descrição do Resultado Esperado"
+
+msgid "Overdraft Facility"
+msgstr "Linha de Crédito"
+
+msgid "Overdraft facility of a bank account"
+msgstr "Linha de crédito de uma conta bancária"
+
+msgid "Owner"
+msgstr "Proprietário"
+
+msgid "Owners:"
+msgstr "Proprietários:"
+
+msgid "PDF"
+msgstr "PDF"
+
+msgid "PDF documents store PDF files and can convert them to HTML, Text or different image formats."
+msgstr "Documento PDF armazena um arquivo PDF e podem ser convertidos para HTML, Texto ou diferentes formatos de imagem."
+
+msgid "PDM"
+msgstr "PDM"
+
+msgid "Pack Container"
+msgstr "Empacotar"
+
+msgid "Packed"
+msgstr "Empacotado"
+
+msgid "Packed [state in packing_list_container_workflow]"
+msgstr "Empacotado"
+
+msgid "Packing List Line"
+msgstr "Linha de Entrega"
+
+msgid "Packing List Movement"
+msgstr "Movimento de Linha de Entrega"
+
+msgid "Packing List Workflow"
+msgstr "Workflow de Entrega"
+
+msgid "Packing List updated."
+msgstr "Entrega atualizada."
+
+msgid "Packing Lists"
+msgstr "Entregas"
+
+msgid "Packing list has been shipped"
+msgstr "A Entrega foi enviada."
+
+msgid "Packing list that has been prepared (packed), ready for shipment"
+msgstr "Entrega que foi preparada (empacotada), pronta para o envio."
+
+msgid "Parameters"
+msgstr "Parâmetros"
+
+msgid "Partners"
+msgstr "Parceiros"
+
+msgid "Password"
+msgstr "Senha"
+
+msgid "Password Confirm"
+msgstr "Confirmação (Senha)"
+
+msgid "Password Confirmation"
+msgstr "Confirmação (Senha)"
+
+msgid "Password changed."
+msgstr "Senha alterada."
+
+msgid "Password for a user in ERP5"
+msgstr "Senha de um usuário no ERP5"
+
+msgid "Password reset."
+msgstr "Senha redefinida."
+
+msgid "Password to commit in the svn"
+msgstr "Senha para Commitar no SVN"
+
+msgid "Passwords do not match."
+msgstr "Senhas não são iguais."
+
+msgid "Paste"
+msgstr "Colar"
+
+msgid "Paths"
+msgstr "Caminhos"
+
+msgid "Payee"
+msgstr "Beneficiário"
+
+msgid "Payer"
+msgstr "Pagador"
+
+msgid "Payment"
+msgstr "Pagamento"
+
+msgid "Payment Condition"
+msgstr "Condição de Pagamento"
+
+msgid "Payment Date"
+msgstr "Data de Pagamento"
+
+msgid "Payment Mode"
+msgstr "Forma de Pagamento"
+
+msgid "Payment conditions can be either on a sale/purchase order or on a sale/purchase trade condition document. Payment condition describes the payment conditions that will be applied to an order, such as the payment mode, the term, etc.."
+msgstr "Condições de pagamento pode existir tanto em um pedido de venda/compra ou em uma condição de negócio de compra/venda. Condição de pagamento descreve as condições de pagamento que será aplicado para um pedido, tal como, modo de pagamento, prazo, etc.."
+
+msgid "Payment of ${invoice_title}"
+msgstr "Pagamento da ${invoice_title}"
+
+msgid "Pending"
+msgstr "Pendente"
+
+msgid "Pending Events"
+msgstr "Eventos Pendentes"
+
+msgid "Pending Offers"
+msgstr "Ofertas Pendentes"
+
+msgid "Pending [state in document_staging_workflow]"
+msgstr "Pendente"
+
+msgid "Pending [state in event_workflow]"
+msgstr "Pendente"
+
+msgid "Pending prototypes"
+msgstr "Protótipos Pendentes"
+
+msgid "People"
+msgstr "Pessoas"
+
+msgid "Per Product"
+msgstr "Por Produto"
+
+msgid "Percentage"
+msgstr "Porcentagem"
+
+msgid "Percentage Of Total"
+msgstr "Porcentagem do Total"
+
+msgid "Percentage Realized"
+msgstr "Porcentagem Relizada"
+
+msgid "Percentage of Total"
+msgstr "Porcentagem Total"
+
+msgid "Percentage of total"
+msgstr "Porcentagem Total"
+
+msgid "Period Start Date"
+msgstr "Data de Início do Período"
+
+msgid "Periodicity"
+msgstr "Periodicidade"
+
+msgid "Periodicity Start Date"
+msgstr "Data Inicial (Periodicidade)"
+
+msgid "Periodicity Stop Date"
+msgstr "Data Final (Periodicidade)"
+
+msgid "Person"
+msgstr "Pessoa"
+
+msgid "Person Career"
+msgstr "Carreira da Pessoa"
+
+msgid "Person Module"
+msgstr "Módulo de Pessoas"
+
+msgid "Person who is creating the event."
+msgstr "Pessoa que está criando o evento."
+
+msgid "Personal Name"
+msgstr "Nome Pessoal"
+
+msgid "Persons"
+msgstr "Pessoas"
+
+msgid "Persons capture the contact information (ex. name, phone number) and the relation between entities (ex. who is assigned to which function and which organisation). Persons are supported by a standard validation workflow."
+msgstr "Pessoas mantém a informação de contato (p.e. nome, número de telefone) e o relacionamento entre entidades (p.e. quem está associado à qual função em qual organização). Pessoas são mantidas por um workflow padrão."
+
+msgid "Phone"
+msgstr "Telefone"
+
+msgid "Phone Call"
+msgstr "Ligação Telefônica"
+
+msgid "Place Order"
+msgstr "Alocar Pedido"
+
+msgid "Place Order Action"
+msgstr "Alocar Pedido"
+
+msgid "Place Order Action [transition in open_order_workflow]"
+msgstr "Alocar Pedido"
+
+msgid "Place Order Action [transition in order_workflow]"
+msgstr "Alocar Pedido"
+
+msgid "Place Order [transition in open_order_workflow]"
+msgstr "Alocar Pedido"
+
+msgid "Place Order [transition in order_workflow]"
+msgstr "Alocar Pedido"
+
+msgid "Plain Text"
+msgstr "Texto Plano"
+
+msgid "Plan"
+msgstr "Planejar"
+
+msgid "Plan Order"
+msgstr "Planejar Pedido"
+
+msgid "Plan Order Action"
+msgstr "Planejar Pedido"
+
+msgid "Plan Order Action [transition in open_order_workflow]"
+msgstr "Planejar Pedido"
+
+msgid "Plan Order Action [transition in order_workflow]"
+msgstr "Planejar Pedido"
+
+msgid "Plan Order [transition in open_order_workflow]"
+msgstr "Planejar Pedido"
+
+msgid "Plan Order [transition in order_workflow]"
+msgstr "Planejar Pedido"
+
+msgid "Plan Transaction"
+msgstr "Planejar Transação"
+
+msgid "Plan Transaction Action"
+msgstr "Planejar Transação"
+
+msgid "Plan Transaction Action [transition in accounting_workflow]"
+msgstr "Planejar Transação"
+
+msgid "Plan Transaction [transition in accounting_workflow]"
+msgstr "Planejar Transação"
+
+msgid "Plan [transition in bug_event_workflow]"
+msgstr "Planejar"
+
+msgid "Planned"
+msgstr "Planejado"
+
+msgid "Planned [state in accounting_workflow]"
+msgstr "Planejado"
+
+msgid "Planned [state in bug_event_workflow]"
+msgstr "Planejado"
+
+msgid "Planned [state in open_order_workflow]"
+msgstr "Planejado"
+
+msgid "Planned [state in order_workflow]"
+msgstr "Planejado"
+
+msgid "Planned [state in requirement_analysis_workflow]"
+msgstr "Planejado"
+
+msgid "Planned [state in task_workflow]"
+msgstr "Planejado"
+
+msgid "Planning"
+msgstr "Planejamento"
+
+msgid "Plans of purchase orders"
+msgstr "Plano de pedidos de compra"
+
+msgid "Port of the oood server."
+msgstr "Porta do servidor de conversão"
+
+msgid "Portal Type"
+msgstr "Portal Type"
+
+msgid "Portal Types"
+msgstr "Portal Types"
+
+msgid "Portuguese/Brazil"
+msgstr "Português/Brasil"
+
+msgid "Post"
+msgstr "Postar"
+
+msgid "Post Event"
+msgstr "Enviar Evento"
+
+msgid "Post Event Action [transition in event_workflow]"
+msgstr "Enviar Evento"
+
+msgid "Post Event [transition in event_workflow]"
+msgstr "Enviar Evento"
+
+msgid "Post Query"
+msgstr "Enviar Pergunta"
+
+msgid "Post Query Action [transition in query_workflow]"
+msgstr "Enviar Pergunta"
+
+msgid "Post Query [transition in query_workflow]"
+msgstr "Enviar Pergunta"
+
+msgid "Post [transition in bug_event_workflow]"
+msgstr "Postar"
+
+msgid "Post a Query"
+msgstr "Enviar uma Pergunta"
+
+msgid "Postal Code"
+msgstr "Código Postal"
+
+msgid "Posted"
+msgstr "Enviado"
+
+msgid "Posted Events"
+msgstr "Eventos Postados"
+
+msgid "Posted [state in event_workflow]"
+msgstr "Postado"
+
+msgid "Posted [state in query_workflow]"
+msgstr "Enviado"
+
+msgid "Precision"
+msgstr "Precisão"
+
+msgid "Predecessors"
+msgstr "Antecessores"
+
+msgid "Preference"
+msgstr "Preferência"
+
+msgid "Preference objects store user preferences, and are editable through the Preference Tool."
+msgstr "Preferência armazenada as preferências do usuário, e não modificadas através da ferramenta de preferências."
+
+msgid "Preferences"
+msgstr "Preferências"
+
+msgid "Preferred classification policy for newly created documents"
+msgstr "Política de classificação preferencial para documentos recém-criados"
+
+msgid "Prefix"
+msgstr "Prefixo"
+
+msgid "Prepare Response"
+msgstr "Preparar Resposta"
+
+msgid "Prepare Response Action"
+msgstr "Preparar Resposta"
+
+msgid "Presentation"
+msgstr "Apresentação"
+
+msgid "Prev. Period"
+msgstr "Período Anterior"
+
+msgid "Preview"
+msgstr "Visualizar"
+
+msgid "Preview Error:"
+msgstr "Visualizar (ERROR)"
+
+msgid "Previous"
+msgstr "Anterior"
+
+msgid "Previous Balance"
+msgstr "Balanço Anterior"
+
+msgid "Previous Page"
+msgstr "Página Anterior"
+
+msgid "Previous Period"
+msgstr "Periodo Anterior"
+
+msgid "Prevision Quantity"
+msgstr "Quantidade Anterior"
+
+msgid "Prevision Value"
+msgstr "Valor Anterior"
+
+msgid "Price"
+msgstr "Preço"
+
+msgid "Price converted."
+msgstr "Preço convertido."
+
+msgid "Print"
+msgstr "Imprimir"
+
+msgid "Print Invoice"
+msgstr "Imprimir Fatura"
+
+msgid "Print Mode"
+msgstr "Mode de Impressão"
+
+msgid "Print Order"
+msgstr "Imprimir Pedido"
+
+msgid "Print Packing List"
+msgstr "Imprimir Entrega"
+
+msgid "Print Payslip"
+msgstr "Imprimir comprovante de pagamento"
+
+msgid "Print Style"
+msgstr "Etilo de Impressão"
+
+msgid "Priority"
+msgstr "Prioridade"
+
+msgid "Priority of the preference."
+msgstr "Prioridade da Preferência."
+
+msgid "Private"
+msgstr "Privado"
+
+msgid "Private [state in document_staging_workflow]"
+msgstr "Tornar Privado"
+
+msgid "Privilege"
+msgstr "Privilégio"
+
+msgid "Privileges"
+msgstr "Privilégios"
+
+msgid "Problem"
+msgstr "Problema"
+
+msgid "Problem Detected"
+msgstr "Problema Detectado."
+
+msgid "Process file [transition in processing_status_workflow]"
+msgstr "Processar Arquivo"
+
+msgid "Product"
+msgstr "Produto"
+
+msgid "Product Individual Variation"
+msgstr "Variação Individual do Produto"
+
+msgid "Product Individual Variations"
+msgstr "Variações Individuais do Produto"
+
+msgid "Product Interest"
+msgstr "Produto de Interesse"
+
+msgid "Product Line"
+msgstr "Linha de Produto"
+
+msgid "Product Module"
+msgstr "Módulo  de Produtos"
+
+msgid "Product or Service"
+msgstr "Produto ou Serviço"
+
+msgid "Products"
+msgstr "Produtos"
+
+msgid "Products to Validate"
+msgstr "Produtos para Validar"
+
+msgid "Profile"
+msgstr "Perfil"
+
+msgid "Profit and Loss Account"
+msgstr "Conta de Resultados"
+
+msgid "Project"
+msgstr "Projeto"
+
+msgid "Project Cell"
+msgstr "Célula do Projeto"
+
+msgid "Project Constraints"
+msgstr "Restrições do Projeto"
+
+msgid "Project ID"
+msgstr "Projeto (ID)"
+
+msgid "Project Line"
+msgstr "Linha de Projeto"
+
+msgid "Project Lines"
+msgstr "Linhas de Projeto"
+
+msgid "Project Location"
+msgstr "Localização do Projeto"
+
+msgid "Project Milestone"
+msgstr "Marco do Projeto"
+
+msgid "Project Milestones"
+msgstr "Marcos do Projeto"
+
+msgid "Project Title"
+msgstr "Título do Projeto"
+
+msgid "Project Workflow"
+msgstr "Workflow de Projetos"
+
+msgid "Project to Open"
+msgstr "Projeto para Abrir"
+
+msgid "Project to Resume"
+msgstr "Projeto para Continuar"
+
+msgid "Project:"
+msgstr "Projeto:"
+
+msgid "Projects"
+msgstr "Projetos"
+
+msgid "Propose"
+msgstr "Propor"
+
+msgid "Proposed"
+msgstr "Proposto"
+
+msgid "Prospect Contacted"
+msgstr "Prospecto Contatado"
+
+msgid "Prospect Contacted [state in sale_opportunity_workflow]"
+msgstr "Prospecto Contatado"
+
+msgid "Protect Category Action [transition in category_publication_workflow]"
+msgstr "Proteger Categoria"
+
+msgid "Protect Category [transition in category_publication_workflow]"
+msgstr "Proteger Categoria"
+
+msgid "Protect [transition in category_publication_workflow]"
+msgstr "Proteger"
+
+msgid "Protected [state in category_publication_workflow]"
+msgstr "Protegido"
+
+msgid "Protocol"
+msgstr "Protocolo"
+
+msgid "Prototyping"
+msgstr "Prototipagem"
+
+msgid "Provision"
+msgstr "Fornece"
+
+msgid "Public"
+msgstr "Público"
+
+msgid "Public [state in external_document_publication_workflow]"
+msgstr "Publicar"
+
+msgid "Public [state in knowledge_pad_validation_workflow]"
+msgstr "Publicar"
+
+msgid "Public [transition in knowledge_pad_validation_workflow]"
+msgstr "Publicar"
+
+msgid "Public description of the document."
+msgstr "Descrição pública do documento."
+
+msgid "Publication Date"
+msgstr "Data de Publicação"
+
+msgid "Publication Section"
+msgstr "Seção de Publicação"
+
+msgid "Publication State"
+msgstr "Estado de Publicação"
+
+msgid "Publication Workflow"
+msgstr "Workflow de Publicação"
+
+msgid "Publish"
+msgstr "Publicar"
+
+msgid "Publish Alive"
+msgstr "Publicar Ativo"
+
+msgid "Publish Category Action [transition in category_publication_workflow]"
+msgstr "Publicar Categoria"
+
+msgid "Publish Category [transition in category_publication_workflow]"
+msgstr "Publicar Categoria"
+
+msgid "Publish Document"
+msgstr "Publicar Documento"
+
+msgid "Publish Document Action"
+msgstr "Publicar Documento"
+
+msgid "Publish Document Action [transition in document_publication_workflow]"
+msgstr "Publicar Documento"
+
+msgid "Publish Document Action [transition in external_document_publication_workflow]"
+msgstr "Publicar Documento"
+
+msgid "Publish Document Action [transition in publication_workflow]"
+msgstr "Publicar Documento"
+
+msgid "Publish Document Alive"
+msgstr "Publicar Documento Ativo"
+
+msgid "Publish Document Alive Action [transition in document_publication_workflow]"
+msgstr "Publicar Documento Ativo"
+
+msgid "Publish Document Alive [transition in document_publication_workflow]"
+msgstr "Publicar Documento Ativo"
+
+msgid "Publish Document [transition in document_publication_workflow]"
+msgstr "Publicar Documento"
+
+msgid "Publish Document [transition in external_document_publication_workflow]"
+msgstr "Publicar Documento"
+
+msgid "Publish Document [transition in publication_workflow]"
+msgstr "Publicar Documento"
+
+msgid "Publish [transition in category_publication_workflow]"
+msgstr "Publicar"
+
+msgid "Publish [transition in document_staging_workflow]"
+msgstr "Publicar"
+
+msgid "Published"
+msgstr "Publicado"
+
+msgid "Published Alive"
+msgstr "Publicado Ativo"
+
+msgid "Published Alive [state in document_publication_workflow]"
+msgstr "Publicado Ativo"
+
+msgid "Published [state in category_publication_workflow]"
+msgstr "Publicado"
+
+msgid "Published [state in document_publication_workflow]"
+msgstr "Publicado"
+
+msgid "Published [state in publication_workflow]"
+msgstr "Publicado"
+
+msgid "Published:"
+msgstr "Publicado:"
+
+msgid "Publishes a document and triggers the archival of any public document of a previous version"
+msgstr "Publica um documento e aciona o arquivamento de qualquer documento público de uma versão anterior"
+
+msgid "Purchase"
+msgstr "Comprar"
+
+msgid "Purchase Order"
+msgstr "Pedido de Compra"
+
+msgid "Purchase Order Line"
+msgstr "Linha do Pedido de Compra"
+
+msgid "Purchase Order Lines"
+msgstr "Linhas do Pedido de Compra"
+
+msgid "Purchase Order Module"
+msgstr "Módulo de Pedido de Compra"
+
+msgid "Purchase Orders"
+msgstr "Pedidos de Compra"
+
+msgid "Purchase Orders to Confirm"
+msgstr "Purchase Orders para Confirmar"
+
+msgid "Purchase Orders to Order"
+msgstr "Purchase Orders para Solicitar"
+
+msgid "Purchase Orders to Plan"
+msgstr "Purchase Orders para Planejar"
+
+msgid "Purchase Packing List"
+msgstr "Entrega de Compra"
+
+msgid "Purchase Packing List Cell"
+msgstr "Célula de Entrega de Compra"
+
+msgid "Purchase Packing List Details"
+msgstr "Detalhes da Entrega de Compra"
+
+msgid "Purchase Packing List Line"
+msgstr "Linha de Entrega de Compra"
+
+msgid "Purchase Packing List Lines"
+msgstr "Linhas da Entrega de Compra"
+
+msgid "Purchase Packing List Module"
+msgstr "Módulo de Entregas de Compra"
+
+msgid "Purchase Packing List Movements"
+msgstr "Movimentos de Entrega de Compra"
+
+msgid "Purchase Packing List related to Purchase Invoice Transaction."
+msgstr "Entrega de Compra relacionada á Fatura de Compra"
+
+msgid "Purchase Packing List related to Purchase Order."
+msgstr "Entrega de Compra relacionada ao Pedido de Compra"
+
+msgid "Purchase Packing List to Confirm"
+msgstr "Entrega de Compra para Confirmar"
+
+msgid "Purchase Packing List to Receive"
+msgstr "Entrega de Compra para Receber"
+
+msgid "Purchase Packing List to Solve"
+msgstr "Entrega de Compra para Resolver"
+
+msgid "Purchase Packing List to Validate"
+msgstr "Entrega de Compra para Validar"
+
+msgid "Purchase Packing Lists"
+msgstr "Entregas de Compra"
+
+msgid "Purchase Price"
+msgstr "Preço de Compra"
+
+msgid "Purchase Trade Condition"
+msgstr "Condição de Compra"
+
+msgid "Purchase Trade Condition Module"
+msgstr "Modulo de Condição de Compra"
+
+msgid "Purchase Trade Conditions"
+msgstr "Condições de Compra"
+
+msgid "Purchase Trade Conditions to Validate"
+msgstr "Condições de Compra para Validar"
+
+msgid "Purchase orders not confirmed"
+msgstr "Pedidos de Compra nao confirmados"
+
+msgid "Purchase trade condition"
+msgstr "Condição de Compra"
+
+msgid "Quantity"
+msgstr "Quantidade"
+
+msgid "Quantity Precision"
+msgstr "Precisão (Quantidade)"
+
+msgid "Quantity Unit"
+msgstr "Unidade (Quantidade)"
+
+msgid "Quantity must be defined in lines"
+msgstr "Quantidade precisa ser definida nas Linhas"
+
+msgid "Quantity unit"
+msgstr "Unidade (Quantidade)"
+
+msgid "Quarterly"
+msgstr "Trimestral"
+
+msgid "Queries"
+msgstr "Consultas"
+
+msgid "Queries to Answer"
+msgstr "Consultas para Responder"
+
+msgid "Query"
+msgstr "Pergunta"
+
+msgid "Query Module"
+msgstr "Módulo de Perguntas"
+
+msgid "Query Type"
+msgstr "Tipo de Pergunta"
+
+msgid "Query Workflow"
+msgstr "Workflow de Perguntas"
+
+msgid "Query was answered."
+msgstr "Consulta foi respondida."
+
+msgid "Quick Search"
+msgstr "Busca Rápida"
+
+msgid "RSS Feed"
+msgstr "Feed RSS"
+
+msgid "Ratio"
+msgstr "Razão"
+
+msgid "Re-install Business Template"
+msgstr "Reinstalar Business Template"
+
+msgid "Re-install Business Template [transition in business_template_installation_workflow]"
+msgstr "Reinstalar Business Template"
+
+msgid "Ready"
+msgstr "Pronto"
+
+msgid "Real Client"
+msgstr "Cliente Real"
+
+msgid "Rebuild Business Template"
+msgstr "Reconstruir Business Template"
+
+msgid "Rebuild Business Template [transition in business_template_building_workflow]"
+msgstr "Preferências de contabilidade: "
+
+msgid "Receive"
+msgstr "Receber"
+
+msgid "Receive Document Action [transition in document_ingestion_workflow]"
+msgstr "Receber Documento"
+
+msgid "Receive Document [transition in document_ingestion_workflow]"
+msgstr "Receber Documento"
+
+msgid "Receive Event"
+msgstr "Receber Evento"
+
+msgid "Receive Event Action [transition in event_workflow]"
+msgstr "Receber Evento"
+
+msgid "Receive Event [transition in event_workflow]"
+msgstr "Receber Evento"
+
+msgid "Receive Packing List"
+msgstr "Receber Entrega"
+
+msgid "Receive Packing List Action"
+msgstr "Receber Entrega"
+
+msgid "Receive Packing List Action [transition in packing_list_workflow]"
+msgstr "Receber Entrega"
+
+msgid "Receive Packing List [transition in packing_list_workflow]"
+msgstr "Receber Entrega"
+
+msgid "Receive [transition in document_ingestion_workflow]"
+msgstr "Receber"
+
+msgid "Received"
+msgstr "Recebido"
+
+msgid "Received [state in packing_list_workflow]"
+msgstr "Recebido"
+
+msgid "Recent Changes"
+msgstr "Alterações Recentes"
+
+msgid "Recipient"
+msgstr "Destinatário"
+
+msgid "Recipient or Beneficiary"
+msgstr "Destinatário ou Beneficiário"
+
+msgid "Recipient or Beneficiary must be defined"
+msgstr "Destinatário ou Beneficiário precisa ser definido."
+
+msgid "Recipient or Beneficiary of the invoice"
+msgstr "Destinatário ou Beneficiário da fatura"
+
+msgid "Recipient or beneficiary of the supply"
+msgstr "Destinatário ou beneficiário do fornecimento"
+
+msgid "Recipients"
+msgstr "Destinatários"
+
+msgid "Reconfigure Portal"
+msgstr "Reconfigurar o Portal"
+
+msgid "Reference"
+msgstr "Referência"
+
+msgid "Reference updated."
+msgstr "Referência atualizada."
+
+msgid "Reference:"
+msgstr "Referência:"
+
+msgid "References"
+msgstr "Referências"
+
+msgid "Refuse"
+msgstr "Recusar"
+
+msgid "Refused"
+msgstr "Recusado"
+
+msgid "Region"
+msgstr "Região"
+
+msgid "Register"
+msgstr "Registrar"
+
+msgid "Reinstall Business Template Action [transition in business_template_installation_workflow]"
+msgstr "Reinstalar Business Template"
+
+msgid "Reinstall Business Template [transition in business_template_installation_workflow]"
+msgstr "Reinstalar Business Template"
+
+msgid "Reject"
+msgstr "Recusar"
+
+msgid "Reject Document"
+msgstr "Recusar Documento"
+
+msgid "Reject Document Action"
+msgstr "Recusar Documento"
+
+msgid "Reject Document Action [transition in document_publication_workflow]"
+msgstr "Recusar Documento"
+
+msgid "Reject Document [transition in document_publication_workflow]"
+msgstr "Recusar Documento"
+
+msgid "Reject Message Action [transition in notification_message_workflow]"
+msgstr "Recusar Mensagem"
+
+msgid "Reject Message [transition in notification_message_workflow]"
+msgstr "Recusar Mensagem"
+
+msgid "Reject Offer"
+msgstr "Recusar Oferta"
+
+msgid "Reject Offer Action [transition in open_order_workflow]"
+msgstr "Recusar Oferta"
+
+msgid "Reject Offer Action [transition in order_workflow]"
+msgstr "Recusar Oferta"
+
+msgid "Reject Offer Action [transition in sale_opportunity_workflow]"
+msgstr "Recusar Oferta"
+
+msgid "Reject Offer [transition in open_order_workflow]"
+msgstr "Recusar Oferta"
+
+msgid "Reject Offer [transition in order_workflow]"
+msgstr "Recusar Oferta"
+
+msgid "Reject Offer [transition in sale_opportunity_workflow]"
+msgstr "Recusar Oferta"
+
+msgid "Rejected"
+msgstr "Recusado"
+
+msgid "Rejected [state in open_order_workflow]"
+msgstr "Recusado"
+
+msgid "Rejected [state in order_workflow]"
+msgstr "Recusado"
+
+msgid "Rejected [state in sale_opportunity_workflow]"
+msgstr "Recusado"
+
+msgid "Rejects a document which was submitted by setting its validation state to draft."
+msgstr "Rejeita um documento que foi submetido pela validação a partir do Rascunho."
+
+msgid "Related Bug"
+msgstr "Bug Relacionado"
+
+msgid "Related Business Template"
+msgstr "Business Template Relacionada."
+
+msgid "Related Components"
+msgstr "Componentes Relacionados"
+
+msgid "Related Documents"
+msgstr "Documentos Relacionados"
+
+msgid "Related Events"
+msgstr "Evento Recebidos"
+
+msgid "Related Invoice"
+msgstr "Faturas Relacionadas"
+
+msgid "Related Objects"
+msgstr "Objetos Relacionados"
+
+msgid "Related Organisation"
+msgstr "Organização Relacionada"
+
+msgid "Related Person"
+msgstr "Pessoa Relacionada"
+
+msgid "Related Persons"
+msgstr "Pessoas Relacionadas"
+
+msgid "Related Purchase Invoice"
+msgstr "Fatura de Compra Relacionada"
+
+msgid "Related Purchase Order"
+msgstr "Pedido de Compra Relacionado"
+
+msgid "Related Sale Order"
+msgstr "Pedidos de Venda Relacionados"
+
+msgid "Related Sale Trade Condition"
+msgstr "Condições de Venda Relacionadas"
+
+msgid "Related Tasks"
+msgstr "Tarefas Relacionadas"
+
+msgid "Related Transformation"
+msgstr "Transformação Relacionada"
+
+msgid "Release"
+msgstr "Liberar"
+
+msgid "Released"
+msgstr "Liberado"
+
+msgid "Releases a document and triggers the archival of any released document of a previous version"
+msgstr "Libera um documento e aciona o arquivamento de qualquer documento lançado de uma versão anterior"
+
+msgid "Remaining"
+msgstr "Remanescentes:"
+
+msgid "Remember my name"
+msgstr "Lembrar meu usuário"
+
+msgid "Removed Files"
+msgstr "Arquivos Removidos"
+
+msgid "Removed files"
+msgstr "Arquivos removidos."
+
+msgid "Reopens a document that would have been closed previously, in order to modify it, such as an accounting period"
+msgstr "Reabre um documento que teria sido fechado anteriormente a fim de modificá-lo, como um período contabilístico"
+
+msgid "Replace Business Template [transition in business_template_installation_workflow]"
+msgstr "Substituir Business Template"
+
+msgid "Replaced"
+msgstr "Substituído"
+
+msgid "Replaced [state in business_template_installation_workflow]"
+msgstr "Substituído"
+
+msgid "Reply to"
+msgstr "Responder para"
+
+msgid "Reply to Event by Email"
+msgstr "Responder o Evento por Email"
+
+msgid "Reply to email address, extracted from header."
+msgstr "Responder para o e-mail extraído do cabeçalho."
+
+msgid "Report"
+msgstr "Relatório"
+
+msgid "Report Format"
+msgstr "Formato do Relatório"
+
+msgid "Report Style"
+msgstr "Estilo do relatório"
+
+msgid "Reports"
+msgstr "Relatórios"
+
+msgid "Repositories"
+msgstr "Repositórios"
+
+msgid "Request"
+msgstr "Requerer"
+
+msgid "Request Approval"
+msgstr "Solicitar Aprovação"
+
+msgid "Request Approval Action"
+msgstr "Solicitar Aprovação"
+
+msgid "Request Approval Action [transition in sale_opportunity_workflow]"
+msgstr "Solicitar Aprovação"
+
+msgid "Request Approval Action [transition in ticket_workflow]"
+msgstr "Solicitar Aprovação"
+
+msgid "Request Approval [transition in sale_opportunity_workflow]"
+msgstr "Solicitar Aprovação"
+
+msgid "Request Approval [transition in ticket_workflow]"
+msgstr "Solicitar Aprovação"
+
+msgid "Request Approval of Manager"
+msgstr "Solicitar Aprovação do Gerente"
+
+msgid "Request Approval of Manager [transition in ticket_workflow]"
+msgstr "Solicitar Aprovação do Gerente"
+
+msgid "Request Processing"
+msgstr "Solicitar Processamento"
+
+msgid "Request Processing Action [transition in event_workflow]"
+msgstr "Solicitar Processamento"
+
+msgid "Request Processing [transition in event_workflow]"
+msgstr "Solicitar Processamento"
+
+msgid "Request Subscription"
+msgstr "Solicitar Inscrição"
+
+msgid "Request Translation"
+msgstr "Solicitar Tradução"
+
+msgid "Request Translation Action"
+msgstr "Solicitar Tradução"
+
+msgid "Request Translation Action [transition in document_publication_workflow]"
+msgstr "Solicitar Tradução"
+
+msgid "Request Translation [transition in document_publication_workflow]"
+msgstr "Solicitar Tradução"
+
+msgid "Requested Project"
+msgstr "Projeto Solicitante"
+
+msgid "Requester"
+msgstr "Solicitante"
+
+msgid "Requirement"
+msgstr "Requisito"
+
+msgid "Requirement Count"
+msgstr "Contagem de Requisito"
+
+msgid "Requirement Document"
+msgstr "Documento de Requisito"
+
+msgid "Requirement Documents"
+msgstr "Documentos de Requisito"
+
+msgid "Requirement State"
+msgstr "Estado do Requisito"
+
+msgid "Requirement Title"
+msgstr "Título do Requisito"
+
+msgid "Requirements"
+msgstr "Requisitos"
+
+msgid "Resolve"
+msgstr "Resolver"
+
+msgid "Resolve SVN Conflicted Files"
+msgstr "Resolver Conflitos de Arquivos do SVN"
+
+msgid "Resolve [transition in bug_workflow]"
+msgstr "Resolver"
+
+msgid "Resolved"
+msgstr "Resolvido"
+
+msgid "Resolved [state in bug_workflow]"
+msgstr "Resolvido"
+
+msgid "Resource"
+msgstr "Recurso"
+
+msgid "Resource Inventory"
+msgstr "Recurso do Inventário"
+
+msgid "Resource List"
+msgstr "Lista de Recursos"
+
+msgid "Resources"
+msgstr "Recursos"
+
+msgid "Respond"
+msgstr "Responder"
+
+msgid "Respond Event"
+msgstr "Responder Evento"
+
+msgid "Respond Event Action [transition in event_workflow]"
+msgstr "Responder Evento"
+
+msgid "Respond Event [transition in event_workflow]"
+msgstr "Responder Evento"
+
+msgid "Respond Workflow Action"
+msgstr "Responder"
+
+msgid "Responded"
+msgstr "Respondido"
+
+msgid "Responded [state in event_workflow]"
+msgstr "Respondido"
+
+msgid "Restart"
+msgstr "Reiniciar"
+
+msgid "Restart Accounting Period"
+msgstr "Reiniciar Período Contábil"
+
+msgid "Restart Accounting Period Action [transition in accounting_period_workflow]"
+msgstr "Reiniciar Período Contábil"
+
+msgid "Restart Accounting Period [transition in accounting_period_workflow]"
+msgstr "Reiniciar Período Contábil"
+
+msgid "Restart Task"
+msgstr "Reiniciar Tarefa"
+
+msgid "Result"
+msgstr "Resultado"
+
+msgid "Results"
+msgstr "Resultados"
+
+msgid "Results <em>${start} - ${stop}</em> of <em>${total}</em>."
+msgstr "Resultados <em>${start} - ${stop}</em> de <em>${total}</em>."
+
+msgid "Retract"
+msgstr "Retrair"
+
+msgid "Retract Document Publication Action [transition in external_document_publication_workflow]"
+msgstr "Retrair Publicação do Documento"
+
+msgid "Retract Document Publication [transition in external_document_publication_workflow]"
+msgstr "Retrair Publicação do Documento"
+
+msgid "Returned Sale Packing List"
+msgstr "Entrega Retornada de Venda"
+
+msgid "Returned Sale Packing Lists"
+msgstr "Entregas Retornadas de Venda "
+
+msgid "Revalidate"
+msgstr "Revalidar"
+
+msgid "Revert &amp; Update Business Template from SVN"
+msgstr "Reverter &amp;  Atualizar Business Templates a partir do SVN"
+
+msgid "Revision"
+msgstr "Revisão"
+
+msgid "Revision Number"
+msgstr "Número de Revisão"
+
+msgid "Rights"
+msgstr "Direitos"
+
+msgid "Role"
+msgstr "Papel"
+
+msgid "Roles"
+msgstr "Papéis"
+
+msgid "Rule"
+msgstr "Regra"
+
+msgid "Rules"
+msgstr "Regras"
+
+msgid "Run Unit Tests"
+msgstr "Rodar Testes Unitários"
+
+msgid "Salary Coefficient"
+msgstr "Coeficiente Salarial"
+
+msgid "Salary Level"
+msgstr "Nível Salarial"
+
+msgid "Salary coefficient"
+msgstr "Coeficiente Salarial"
+
+msgid "Salary level"
+msgstr "Nível Salarial"
+
+msgid "Sale"
+msgstr "Venda"
+
+msgid "Sale Opportunities"
+msgstr "Oportunidades de Venda"
+
+msgid "Sale Opportunities to Qualify"
+msgstr "Oportunidade de Venda para Qualificar"
+
+msgid "Sale Opportunities to Validate"
+msgstr "Oportunidades de Venda para Validar"
+
+msgid "Sale Opportunity"
+msgstr "Oportunidade de Venda"
+
+msgid "Sale Opportunity Detailed Report"
+msgstr "Relatório detalahdo da Oportunidade de Venda"
+
+msgid "Sale Opportunity Module"
+msgstr "Módulo da Oportunidade de Venda"
+
+msgid "Sale Opportunity Status"
+msgstr "Status da Oportunidade de Venda"
+
+msgid "Sale Opportunity Type"
+msgstr "Tipo de Oportunidade de Venda"
+
+msgid "Sale Opportunity converted into Sale"
+msgstr "Oportunidade de Venda é convertido para uma Venda"
+
+msgid "Sale Order"
+msgstr "Pedido de Venda"
+
+msgid "Sale Order Line"
+msgstr "Linha de Pedido de Venda"
+
+msgid "Sale Order Lines"
+msgstr "Linhas de Pedido de Venda"
+
+msgid "Sale Order Module"
+msgstr "Módulo de Pedido de Venda"
+
+msgid "Sale Orders"
+msgstr "Pedidos de Venda"
+
+msgid "Sale Orders to Confirm"
+msgstr "Pedidos de Venda para Confirmar"
+
+msgid "Sale Orders to Order"
+msgstr "Pedidos de Venda para Solicitar"
+
+msgid "Sale Orders to Plan"
+msgstr "Pedidos de Venda para Planejar"
+
+msgid "Sale Packing List"
+msgstr "Entrega de Venda"
+
+msgid "Sale Packing List Details"
+msgstr "Detalhes da Entrega de Venda"
+
+msgid "Sale Packing List Line"
+msgstr "Linha de Entrega de Venda"
+
+msgid "Sale Packing List to Prepare"
+msgstr "Entrega de Venda para Preparar"
+
+msgid "Sale Packing List to Process"
+msgstr "Entrega de Venda para Processar"
+
+msgid "Sale Packing List to Solve"
+msgstr "Entrega de Venda para Resolver"
+
+msgid "Sale Packing List to Validate"
+msgstr "Entrega de Venda para Validar"
+
+msgid "Sale Packing List to process"
+msgstr "Entrega de Venda para processar"
+
+msgid "Sale Packing Lists"
+msgstr "Lista de Entregas de Venda"
+
+msgid "Sale Price"
+msgstr "Preço de Venda"
+
+msgid "Sale Trade Condition"
+msgstr "Condição de Venda"
+
+msgid "Sale Trade Condition Module"
+msgstr "Módulo de Condições de Venda"
+
+msgid "Sale Trade Conditions"
+msgstr "Condições de Venda"
+
+msgid "Sale order lines are part of sale orders and bear the different product or service references that have been sold by the company."
+msgstr "Linha de Pedido de Venda sao partes de um Pedido de Venda e tem um produto ou serviço diferente que foram vendido pela empresa."
+
+msgid "Sale packing list lines are part of sale packing lists, and bear the different references that have been sold. For each product/service reference there will be a sale packing list line."
+msgstr "Linha de Entrega de Venda são partes de uma entrega de venda, e tem diferentes referências que foram vendidas. Para cada referência de produto/serviço existirá uma Linha de Entrega de Venda."
+
+msgid "Save"
+msgstr "Salvar"
+
+msgid "Save &amp; Edit"
+msgstr "Salvar &amp; Editar"
+
+msgid "Save &amp; View"
+msgstr "Salvar &amp; Visualizar"
+
+msgid "Save Business Template"
+msgstr "Salvar Business Template"
+
+msgid "Saved in ${path} ."
+msgstr "Salvo em ${path} ."
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Search Key"
+msgstr "Chave de Busca"
+
+msgid "Search Results"
+msgstr "Resultados da Busca"
+
+msgid "Search Tips"
+msgstr "Dicas de Busca"
+
+msgid "Search Type:"
+msgstr "Tipo de Busca"
+
+msgid "Section Transaction Reference"
+msgstr "Referencia  "
+
+msgid "Segment"
+msgstr "Segmento"
+
+msgid "Select Actions"
+msgstr "Selecionar Ações"
+
+msgid "Select Favorite"
+msgstr "Selecionar Favoritos"
+
+msgid "Select Language"
+msgstr "Selecionar Idioma"
+
+msgid "Select Module"
+msgstr "Selecionar Módulo"
+
+msgid "Select Report"
+msgstr "Selecionar Relatório"
+
+msgid "Select Search"
+msgstr "Selecionar Busca"
+
+msgid "Select Template"
+msgstr "Selecionar Modelo"
+
+msgid "Select Variation"
+msgstr "Selecionar Variação"
+
+msgid "Select appropriate document in the list."
+msgstr "Selecione o documento apropriado na lista."
+
+msgid "Sell"
+msgstr "Vender"
+
+msgid "Sell Action [transition in sale_opportunity_workflow]"
+msgstr "Vender"
+
+msgid "Sell [transition in sale_opportunity_workflow]"
+msgstr "Vender"
+
+msgid "Seller"
+msgstr "Vendedor"
+
+msgid "Send"
+msgstr "Enviar"
+
+msgid "Send Mail"
+msgstr "Enviar Email"
+
+msgid "Send Offer"
+msgstr "Enviar Oferta"
+
+msgid "Send Offer Action [transition in sale_opportunity_workflow]"
+msgstr "Enviar Oferta"
+
+msgid "Send Offer [transition in sale_opportunity_workflow]"
+msgstr "Enviar Oferta"
+
+msgid "Send by Email"
+msgstr "Enviar por Email"
+
+msgid "Sender"
+msgstr "Remetente"
+
+msgid "Sender / Caller"
+msgstr "Remetente / Emissor"
+
+msgid "Sender or Caller"
+msgstr "Remetente ou Emissor"
+
+msgid "Sender or Provider"
+msgstr "Remetente ou Fornecedor"
+
+msgid "Sender or Provider must be defined"
+msgstr "Remetente ou Fornecedor precisa ser definido"
+
+msgid "Sent"
+msgstr "Enviado"
+
+msgid "Sent [state in bug_event_workflow]"
+msgstr "Enviado"
+
+msgid "September"
+msgstr "Setembro"
+
+msgid "Serial Number"
+msgstr "Número Serial"
+
+msgid "Service"
+msgstr "Serviço"
+
+msgid "Service Condition"
+msgstr "Condição do Serviço"
+
+msgid "Service Individual Variation"
+msgstr "Variação Individual dos Serviço"
+
+msgid "Service Individual Variations"
+msgstr "Variações Individuais do Serviço"
+
+msgid "Service Module"
+msgstr "Módulos de Serviço"
+
+msgid "Service Provider"
+msgstr "Provedor do Serviço"
+
+msgid "Services"
+msgstr "Serviços"
+
+msgid "Services to Validate"
+msgstr "Serviços para Validar"
+
+msgid "Set Packing List Ready"
+msgstr "Definir Entrega Pronta"
+
+msgid "Set Packing List Ready Action"
+msgstr "Definir Entrega Pronta"
+
+msgid "Set Packing List Ready Action [transition in packing_list_workflow]"
+msgstr "Definir Entrega Pronta"
+
+msgid "Set Packing List Ready [transition in packing_list_workflow]"
+msgstr "Definir Entrega Pronta"
+
+msgid "Set Ready"
+msgstr "Definir como Pronto"
+
+msgid "Set Relation"
+msgstr "Definir Relação"
+
+msgid "Set Resolved"
+msgstr "Definir como Resolvido"
+
+msgid "Set ready"
+msgstr "Definir como Pronto"
+
+msgid "Sets the document state as started"
+msgstr "Define o estado do documento como iniciado"
+
+msgid "Setting the 'Remember my name' option will set a cookie with your username, so that when you login next time, your user name will already be filled in for you."
+msgstr "Ao marcar a opção 'Lembrar meu usuário', um cookie será definido, com o nome do seu usuário. Então na próxima vez que você for entrar no sistema, o nome de seu usuário já estará preenchido."
+
+msgid "Settings"
+msgstr "Configurações"
+
+msgid "Severity"
+msgstr "Gravidade"
+
+msgid "Share"
+msgstr "Compartilhar"
+
+msgid "Share Alive"
+msgstr "Compartilhar Ativo"
+
+msgid "Share Document"
+msgstr "Compartilhar Documento"
+
+msgid "Share Document Action"
+msgstr "Compartilhar"
+
+msgid "Share Document Action [transition in document_publication_workflow]"
+msgstr "Compartilhar"
+
+msgid "Share Document Alive"
+msgstr "Compartilhar Ativo"
+
+msgid "Share Document Alive Action [transition in document_publication_workflow]"
+msgstr "Compartilhar Ativo"
+
+msgid "Share Document Alive [transition in document_publication_workflow]"
+msgstr "Compartilhar Ativo"
+
+msgid "Share Document [transition in document_publication_workflow]"
+msgstr "Compartilhar Ativo"
+
+msgid "Shared"
+msgstr "Compartilhado"
+
+msgid "Shared Alive"
+msgstr "Compartilhado Ativo"
+
+msgid "Shared Alive [state in document_publication_workflow]"
+msgstr "Compartilhado Ativo"
+
+msgid "Shared [state in document_publication_workflow]"
+msgstr "Compartilhado"
+
+msgid "Ship"
+msgstr "Despachar"
+
+msgid "Ship Packing List"
+msgstr "Enviar a Entrega"
+
+msgid "Ship Packing List Action"
+msgstr "Enviar a Entrega"
+
+msgid "Ship Packing List Action [transition in packing_list_workflow]"
+msgstr "Enviar a Entrega"
+
+msgid "Ship Packing List [transition in packing_list_workflow]"
+msgstr "Enviar a Entrega"
+
+msgid "Ship To"
+msgstr "Enviar para"
+
+msgid "Ship the packing list and declares a packing list as shipped"
+msgstr "Envia a entrega e define a entrega como enviada."
+
+msgid "Shipped"
+msgstr "Enviado"
+
+msgid "Shipped [state in packing_list_workflow]"
+msgstr "Enviado"
+
+msgid "Shipping Date"
+msgstr "Data de Envio"
+
+msgid "Shipping Date must be defined"
+msgstr "Data de envio precisa ser definida"
+
+msgid "Show All"
+msgstr "Mostrar Todos"
+
+msgid "Show tabs"
+msgstr "Mostrar abas"
+
+msgid "Signature"
+msgstr "Assinatura"
+
+msgid "Signature Preview"
+msgstr "Visualizar Assinatura"
+
+msgid "Similar"
+msgstr "Similar"
+
+msgid "Similar Documents"
+msgstr "Documentos Similares"
+
+msgid "Simulation State"
+msgstr "Estado"
+
+msgid "Site"
+msgstr "Sítio"
+
+msgid "Sitemap"
+msgstr "Mapa do Site"
+
+msgid "Size"
+msgstr "Tamanho"
+
+msgid "Size:"
+msgstr "Tamanho:"
+
+msgid "Skill"
+msgstr "Habilidade"
+
+msgid "Skills"
+msgstr "Habilidades"
+
+msgid "Skin Folders"
+msgstr "Pastas de Skin"
+
+msgid "Small Image Height"
+msgstr "Tamanho da Imagem Pequena"
+
+msgid "Social Security Identification Number"
+msgstr "Número de Identificação do Seguro Social"
+
+msgid "Sold"
+msgstr "Vendido"
+
+msgid "Sold [state in sale_opportunity_workflow]"
+msgstr "Vendido"
+
+msgid "Solve Alarm"
+msgstr "Resolver Alarme"
+
+msgid "Solve Divergence"
+msgstr "Resolver Divergência"
+
+msgid "Solve Divergences"
+msgstr "Resolver Divergências"
+
+msgid "Solve Divergences Action [transition in delivery_causality_workflow]"
+msgstr "Resolver Divergências"
+
+msgid "Solve Divergences [transition in delivery_causality_workflow]"
+msgstr "Resolver Divergências"
+
+msgid "Solved"
+msgstr "Resolvido"
+
+msgid "Solved [state in delivery_causality_workflow]"
+msgstr "Resolvido"
+
+msgid "Solving"
+msgstr "Resolvendo"
+
+msgid "Solving [state in delivery_causality_workflow]"
+msgstr "Resolvendo"
+
+msgid "Sorry, ${count} items are in use."
+msgstr "Desculpe, ${count} items estão em uso."
+
+msgid "Sorry, 1 item is in use."
+msgstr "Desculpe, 1 item esta em uso."
+
+msgid "Sort"
+msgstr "Ordenar"
+
+msgid "Source"
+msgstr "Fonte"
+
+msgid "Split"
+msgstr "Dividir"
+
+msgid "Split Document"
+msgstr "Dividir Documento"
+
+msgid "Split Document [state in document_publication_workflow]"
+msgstr "Dividir Documento"
+
+msgid "Splits a document in multiple subdocuments to accelerate translation. Sets validation_state to split."
+msgstr "Dividi um documento em múltiplos sub documentos para acelerar a tradução. Define o estado de validação para dividido."
+
+msgid "Spreadsheet"
+msgstr "Planilha"
+
+msgid "Spreadsheet Column"
+msgstr "Coluna da Planilha"
+
+msgid "Spreadsheet Name"
+msgstr "Nome da Planilha"
+
+msgid "Start"
+msgstr "Iniciar"
+
+msgid "Start Accounting Period"
+msgstr "Iniciar Período Contábil"
+
+msgid "Start Accounting Period Action [transition in accounting_period_workflow]"
+msgstr "Iniciar Período Contábil"
+
+msgid "Start Accounting Period [transition in accounting_period_workflow]"
+msgstr "Iniciar Período Contábil"
+
+msgid "Start Assignment"
+msgstr "Iniciar Designação"
+
+msgid "Start Assignment Action [transition in assignment_workflow]"
+msgstr "Iniciar Designação"
+
+msgid "Start Assignment [transition in assignment_workflow]"
+msgstr "Iniciar Designação"
+
+msgid "Start Career Step"
+msgstr "Iniciar Passo da Carreira"
+
+msgid "Start Career Step Action [transition in career_workflow]"
+msgstr "Iniciar Passo da Carreira"
+
+msgid "Start Career Step [transition in career_workflow]"
+msgstr "Iniciar Passo na Carreira"
+
+msgid "Start Date"
+msgstr "Data Inicial"
+
+msgid "Start Project"
+msgstr "Iniciar Projeto"
+
+msgid "Start Task"
+msgstr "Iniciar Tarefa"
+
+msgid "Started"
+msgstr "Iniciado"
+
+msgid "Started [state in accounting_period_workflow]"
+msgstr "Iniciado"
+
+msgid "Started [state in assignment_workflow]"
+msgstr "Iniciado"
+
+msgid "Started [state in career_workflow]"
+msgstr "Iniciado"
+
+msgid "Started [state in open_order_workflow]"
+msgstr "Iniciado"
+
+msgid "Started [state in requirement_analysis_workflow]"
+msgstr "Iniciado"
+
+msgid "Started [state in task_report_workflow]"
+msgstr "Iniciado"
+
+msgid "State"
+msgstr "Estado"
+
+msgid "State of a document that has been cancelled"
+msgstr "Estado de um documento que tenha sido cancelado"
+
+msgid "State of a document that has been invalidated in ERP5"
+msgstr "Estado de um documento que tenha sido invalidado no ERP5"
+
+msgid "State of a document that has been planned in ERP5"
+msgstr "Estado de um documento que foi planejado no ERP5"
+
+msgid "State of a document that has been validated in ERP5"
+msgstr "Estado do documento que está validado no ERP5"
+
+msgid "State of a preference that is enabled for a complete site"
+msgstr "Estado da preferência que é habilitado para todo o site"
+
+msgid "State of the document when converted to an open document"
+msgstr "Estado do documento quando convertido para um documento aberto"
+
+msgid "State of the query after being deleted"
+msgstr "Estado da pergunta depois de ser apagada"
+
+msgid "States"
+msgstr "Estados"
+
+msgid "Statistics"
+msgstr "Estatística"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Status changed."
+msgstr "Status Modificado."
+
+msgid "Status:"
+msgstr "Status:"
+
+msgid "Stock"
+msgstr "Estoque"
+
+msgid "Stock Report"
+msgstr "Relatório de Estoque"
+
+msgid "Stock by Variation"
+msgstr "Estoque por Variação"
+
+msgid "Stock per Variation"
+msgstr "Estoque por Variação"
+
+msgid "Stop"
+msgstr "Parar"
+
+msgid "Stop Accounting Period"
+msgstr "Encerrar Período Contável"
+
+msgid "Stop Assignment"
+msgstr "Encerrar Designação"
+
+msgid "Stop Assignment Action [transition in assignment_workflow]"
+msgstr "Encerrar Designação"
+
+msgid "Stop Assignment [transition in assignment_workflow]"
+msgstr "Encerrar Designação"
+
+msgid "Stop Career Step"
+msgstr "Parar Carreira"
+
+msgid "Stop Career Step Action [transition in career_workflow]"
+msgstr "Parar Passo da Carreira"
+
+msgid "Stop Career Step [transition in career_workflow]"
+msgstr "Parar Passo da Carreira"
+
+msgid "Stop Date"
+msgstr "Data Final"
+
+msgid "Stop Project"
+msgstr "Parar Projeto"
+
+msgid "Stopped"
+msgstr "Parado"
+
+msgid "Stopped Project"
+msgstr "Projeto Parado"
+
+msgid "Stopped is a state of a document for which the treatment has been stopped in ERP5"
+msgstr "Parado é um estado de um documento que o seu uso foi interrompido no ERP5"
+
+msgid "Street Address"
+msgstr "Endereço"
+
+msgid "Subcategories"
+msgstr "Subcategoria"
+
+msgid "Subject"
+msgstr "Assunto"
+
+msgid "Submit"
+msgstr "Enviar"
+
+msgid "Submit Budget"
+msgstr "Enviar Orçamento para Aprovação"
+
+msgid "Submit Budget Action"
+msgstr "Enviar Orçamento para Aprovação"
+
+msgid "Submit Document for Review"
+msgstr "Enviar Documento para Revisão"
+
+msgid "Submit Document for Review Action"
+msgstr "Enviar Documento para Revisão"
+
+msgid "Submit Document for Review Action [transition in document_publication_workflow]"
+msgstr "Enviar Documento para Revisão"
+
+msgid "Submit Document for Review [transition in document_publication_workflow]"
+msgstr "Enviar Documento para Revisão"
+
+msgid "Submit Doument for Review [transition in document_publication_workflow]"
+msgstr "Enviar Documento para Revisão"
+
+msgid "Submit Event"
+msgstr "Enviar Evento para Revisão"
+
+msgid "Submit Event Action"
+msgstr "Enviar Evento para Revisão"
+
+msgid "Submit Event Action [transition in event_workflow]"
+msgstr "Enviar Evento para Revisão"
+
+msgid "Submit Event [transition in event_workflow]"
+msgstr "Enviar Evento para Revisão"
+
+msgid "Submit Message Action [transition in notification_message_workflow]"
+msgstr "Enviar Mensagem para Revisão"
+
+msgid "Submit Message [transition in notification_message_workflow]"
+msgstr "Enviar Mensagem para Revisão"
+
+msgid "Submit Project"
+msgstr "Enviar Projeto (Revisão)"
+
+msgid "Submit for Review"
+msgstr "Enviar para Revisão"
+
+msgid "Submits a document for review by setting validation_state to submitted."
+msgstr "Submete um documento para revisão definindo o estado de validação como submetido."
+
+msgid "Submitted"
+msgstr "Enviado para Revisão"
+
+msgid "Submitted Campaigns"
+msgstr "Campanha Enviada para Aprovação"
+
+msgid "Submitted Meetings"
+msgstr "Reuniões Enviadas para Aprovação"
+
+msgid "Submitted Support Requests"
+msgstr "Pedidos de Suporte Enviados para Revisão"
+
+msgid "Subversion"
+msgstr "Controle de Versão"
+
+msgid "Suffix"
+msgstr "Sufixo"
+
+msgid "Summary"
+msgstr "Sumário"
+
+msgid "Sunday"
+msgstr "Domingo"
+
+msgid "Supervisor"
+msgstr "Supervisor"
+
+msgid "Supplier"
+msgstr "Fornecedor"
+
+msgid "Supplier Project"
+msgstr "Projeto Fornecedor"
+
+msgid "Supplier Reference"
+msgstr "Referência do Fornecedor"
+
+msgid "Supplier must be defined"
+msgstr "Fornecedor precisa ser definida"
+
+msgid "Suppliers"
+msgstr "Fornecedores"
+
+msgid "Support Request"
+msgstr "Pedido de Suporte"
+
+msgid "Support Request Detailed Report"
+msgstr "Relatório detalhado de Pedido de Suporte"
+
+msgid "Support Request Module"
+msgstr "Módulo de Pedidos de Suporte"
+
+msgid "Support Request Status"
+msgstr "Status do Pedido de Suporte"
+
+msgid "Support Request Type"
+msgstr "Tipo de Pedido de Suporte"
+
+msgid "Support Request Types"
+msgstr "Tipos de Pedido de Suporte"
+
+msgid "Support Requests"
+msgstr "Pedidos de Suporte"
+
+msgid "Surname"
+msgstr "Sobrenome"
+
+msgid "Suspend Project"
+msgstr "Suspender Projeto"
+
+msgid "Suspended Project"
+msgstr "Projeto Suspendido"
+
+msgid "System Preference"
+msgstr "Preferência do sistema"
+
+msgid "Tab 1"
+msgstr "Aba 1"
+
+msgid "Tab name"
+msgstr "Nome da Aba"
+
+msgid "Target Format"
+msgstr "Formato Alvo"
+
+msgid "Target Price"
+msgstr "Preço Alvo"
+
+msgid "Target Product"
+msgstr "Produto Alvo"
+
+msgid "Task"
+msgstr "Tarefa"
+
+msgid "Task Items"
+msgstr "Itens da Tarefa"
+
+msgid "Task Line"
+msgstr "Linha de Tarefa"
+
+msgid "Task Module"
+msgstr "Módulos de Tarefa"
+
+msgid "Task Report"
+msgstr "Relatório de Tarefa"
+
+msgid "Task Report Line"
+msgstr "Linha de Relatório de Tarefa"
+
+msgid "Task Report Lines"
+msgstr "Linhas de Relatório de Tarefa"
+
+msgid "Task Report State"
+msgstr "Estado do Relatório de Tarefa"
+
+msgid "Task Report Workflow"
+msgstr "Workflow de Relatórios de Tarefas"
+
+msgid "Task Reports"
+msgstr "Relatórios de Tarefas"
+
+msgid "Task Title"
+msgstr "Título"
+
+msgid "Task Workflow"
+msgstr "Workflow de Tarefas"
+
+msgid "Tasks"
+msgstr "Tarefas"
+
+msgid "Tasks Reports"
+msgstr "Relatórios de Tarefas"
+
+msgid "Tasks to Confirm"
+msgstr "Tarefas para Confirmar"
+
+msgid "Tasks to Validate"
+msgstr "Tarefas para Validar"
+
+msgid "Tax"
+msgstr "Imposto"
+
+msgid "Tax Line"
+msgstr "Linha de Imposto"
+
+msgid "Tax Model Line"
+msgstr "Linha de Module de Imposto"
+
+msgid "Tax lines can be included in sale or purchase orders in order to define the tax rate that will be applied to taxable products and services of the order."
+msgstr "Linha de Imposto podem ser incluído em pedidos de venda/compra para definir a taxa de imposto que será aplicada aos produtos e serviços tributáveis do pedido."
+
+msgid "Tax model lines are the equivalent of tax lines, only they are used in purchase and trade conditions instead of purchase and trade orders."
+msgstr "Linhas de Modelo de Imposto são equivalentes a Linha de Imposto, apenas são usados em  Condições de Compra e Venda ao invés de Pedido de Compra e Venda."
+
+msgid "Telephone"
+msgstr "Telefone"
+
+msgid "Tells who requested the ticket"
+msgstr "Informa quem solicitou o ticket"
+
+msgid "Temporary close"
+msgstr "Fechar Temporariamente"
+
+msgid "Temporary closed"
+msgstr "Temporariamente encerrado"
+
+msgid "Term (Days)"
+msgstr "Prazo (dias)"
+
+msgid "Text"
+msgstr "Texto"
+
+msgid "Text Editor"
+msgstr "Editor de Texto"
+
+msgid "Text Format"
+msgstr "Formato do texto"
+
+msgid "Text Area Field Height"
+msgstr "Altura do Campo de Texto"
+
+msgid "Text Area Field Width"
+msgstr "Largura do Campo de Texto"
+
+msgid "The Accounting Period is closed. It is no longer possible to add accounting transactions in this period. A balance transaction has been created."
+msgstr "O período de contabilidade está fechado. Não é mais possível adicionar transações contábeis no período. Uma transação de equilíbrio foi criado."
+
+msgid "The Accounting Period is open. It is therefore possible to post accounting."
+msgstr "O período de contabilidade esta aberto. Portanto, é possível enviar mensagens de contabilidade."
+
+msgid "The Accounting Period is temporary closed, but can be opened back. In this state it is not possible to post transactions during this period."
+msgstr "O período de contabilidade é temporário encerrado, mas pode ser aberto novamente. Neste estado, não é possível publicar transacções durante o período."
+
+msgid "The Accounting Period will be temporary closed, but can be reopened. In this state it is not possible to post transactions during this period."
+msgstr "O período contábil será temporariamente fechado, mas pode ser reaberto. Neste estado, não é possível publicar transações durante o período."
+
+msgid "The Closed State notifies that either the accounting period, the account or the transaction has been closed, and cannot be modified anymore."
+msgstr "O estado fechado informa que o período contábil, a conta ou a transação foram fechadas e não podem mais ser modificada."
+
+msgid "The Date"
+msgstr "Data"
+
+msgid "The Default Quantity."
+msgstr "A quantidade padrão."
+
+msgid "The End date of an operation"
+msgstr "A data de término de uma operação"
+
+msgid "The Invoice Reference"
+msgstr "A referência da fatura"
+
+msgid "The Location where the project is handled, most of the time the name of an organisation."
+msgstr "A localização onde o projeto é tratado. Na maioria dos casos, a referência é o nome da organização."
+
+msgid "The Sale Opportunity has expired."
+msgstr "Uma oportunidade de venda que expirou."
+
+msgid "The Share Alive workflow method sets the document validation state to shared_alive and archives any previously shared document with same version and same language."
+msgstr "O método de workflow, Compartilhar Ativo, define o estado de validação do documento como Compartilhado Ativo e arquiva qualquer documento compartilhado anterior com a mesma versão e com a mesma língua."
+
+msgid "The Share workflow method sets the document validation state to shared and archive any previous shared document with same reference and same language."
+msgstr "O método de workflow compartilhar define o estado do documento como compartilhado e arquiva qualquer documento anterior compartilhado com mesma referência e mesma língua."
+
+msgid "The Social Security Identification Number of the organisation"
+msgstr "O Número de Identificação do Seguro Social da organização"
+
+msgid "The Social Security Identification Number of the person"
+msgstr "O Número de Identificação do Seguro Social da pessoa"
+
+msgid "The Version of the Rule"
+msgstr "A versão da regra"
+
+msgid "The absolute date at which payment is expected to be made."
+msgstr "A data em que o pagamento deverá ser feito."
+
+msgid "The account is open and can be used to input transactions."
+msgstr "A conta é aberta e pode ser usada para operações de entrada."
+
+msgid "The accountable project on the client side."
+msgstr "O projeto de responsabilidade no lado do cliente."
+
+msgid "The accountable project on the supplier side."
+msgstr "O projeto responsável do lado do fornecedor."
+
+msgid "The amount limit an agent is allowed to debit on a bank account"
+msgstr "O limite que um agente é permitido para débito em conta bancária"
+
+msgid "The bank organisation which delivered the credit card"
+msgstr "A organizaçao bancária que emitiu o cartão de crédito"
+
+msgid "The branch number is a 6 digit number as part of a bank account number that indicates the bank and the branch where the account is held."
+msgstr "O número da agência é um número de 6 dígitos parte de um número de conta bancária que indica o banco e a agência onde a conta é mantida."
+
+msgid "The content of the document considered as a text string"
+msgstr "O conteúdo do documento considerado como um texto."
+
+msgid "The corporate registration code of this organisation"
+msgstr "O código de registro empresarial da organização"
+
+msgid "The date at which an operation starts in ERP5"
+msgstr "A data em que a operação iniciou no ERP5"
+
+msgid "The date at which products were shipped or the date at which a service started."
+msgstr "A data na qual os produtos foram enviados ou a data na qual um serviço foi iniciado."
+
+msgid "The date at which shipped products were delivered or the date at which a service was completed."
+msgstr "A data que os produtos enviados foram entregues ou a data que o serviço foi acabado."
+
+msgid "The date at which the agent has no right anymore on the bank account"
+msgstr "A data que o agente não tem mais direito na conta bancária."
+
+msgid "The date at which the event was created"
+msgstr "A data em que o evento foi criado"
+
+msgid "The date at which the ticket is supposed to stop."
+msgstr "A data em que o ticket irá parar."
+
+msgid "The date at which the ticket was created."
+msgstr "A data em que o ticket foi criado."
+
+msgid "The date from which the offer is valid."
+msgstr "A data em que a oferta é válida."
+
+msgid "The date of the inventory."
+msgstr "Data do inventário."
+
+msgid "The date the organisation was registered."
+msgstr "A data que a organização foi registrada"
+
+msgid "The date when a document is published."
+msgstr "A data do documento quando é publicado"
+
+msgid "The date when the document expires."
+msgstr "Data quando o documento expira."
+
+msgid "The date when the document starts being valid."
+msgstr "Data na qual o documento passa a ser válido."
+
+msgid "The default price"
+msgstr "O preço padrão"
+
+msgid "The default price for the task"
+msgstr "O preço base para a tarefa."
+
+msgid "The document is private and can be seen only by its owner."
+msgstr "O documento é confidencial e só pode ser visto pelo dono."
+
+msgid "The height in pixel of small image"
+msgstr "O tamanho do pixel da imagem pequena"
+
+msgid "The inventory module helps the user make a full inventory of the available products in the different warehouses of the company. There will be an inventory line for each product reference that is part of the inventory."
+msgstr "O módulo de inventário ajuda o usuário para fazer um inventário completo dos produtos disponíveis em diferentes armazéns de empresa. Existirá uma Linha de Inventário para cada referência de produto que faz parte do inventário."
+
+msgid "The invoice date for the client in the case of a Purchase Invoice Transaction"
+msgstr "A Data da Fatura para o cliente no caso de uma Transação de Fatura de Compra"
+
+msgid "The invoice date for the supplier in the case of a Sale Invoice Transaction."
+msgstr "A Data da Fatura para o fornecedor no caso de uma Transação da Fatura de Venda"
+
+msgid "The invoiced person or organisation."
+msgstr "A pessoa ou organização faturados."
+
+msgid "The invoicing person or organisation."
+msgstr "A pessoa ou organizacao da fatura."
+
+msgid "The list of project lines that need to be fulfilled before this one is treated"
+msgstr "A lista de linhas de projeto que precisam ser completadas antes desta ser iniciada."
+
+msgid "The list of tasks that need to be fulfilled before this one is treated"
+msgstr "A lista de tarefas que precisam ser totalmente completadas antes desta iniciar."
+
+msgid "The list of the resources involved in the project. Most of the time, it's a supplier's worker"
+msgstr "A lista de recursos envolvidos em um projeto, na maioria das vezes um produto ou um componente."
+
+msgid "The maximal stock quantity of a resource."
+msgstr "A quantidade máxima de estoque de um recurso."
+
+msgid "The minimal stock quantity of a resource."
+msgstr "A quantidade mínima de estoque de um recurso."
+
+msgid "The name of a document in ERP5"
+msgstr "O nome do documento no ERP5"
+
+msgid "The name of an account"
+msgstr "O nome de uma conta"
+
+msgid "The number of digit after the comma for the given currency, for example 2 means we can have cents (0,00)"
+msgstr "O número de dígitos depois da vírgula para a moeda dada, por exemplo, 2 significa que podemos ter centavos (0,00)"
+
+msgid "The number of partner for the person."
+msgstr "Número de parcerias da pessoa."
+
+msgid "The official name of this organisation"
+msgstr "O nome oficial desta organização"
+
+msgid "The organisation for which the currency exchange line is applied for."
+msgstr "A Organização para qual a Linha de Troca de Moeda é aplicada."
+
+msgid "The organisation or person in charge of paying for the client."
+msgstr "A pessoa ou organização encarregada de pagar o cliente."
+
+msgid "The organisation or person in charge of receiving the payment for the supplier."
+msgstr "A pessoa ou organização encarregada de receber o pagamento."
+
+msgid "The organisation or person who sends merchandise or provides the service."
+msgstr "A organização ou pessoa que envia  a mercadoria ou presta o serviço."
+
+msgid "The organisation where the person is affected."
+msgstr "A Organização onde a pessoa é efectuada."
+
+msgid "The original filename of the document"
+msgstr "O nome original do arquivo"
+
+msgid "The percentage of the total price."
+msgstr "A porcentagem do preço todal"
+
+msgid "The person or organisation in charge of handling the sales process or of taking the sales decision."
+msgstr "A pessoa ou organização responsável em tratar os processos de venda ou tomar decisões relacionadas a venda."
+
+msgid "The person or organisation in charge of selecting the supplier or taking the decision to place the order."
+msgstr "A pessoa ou organização encarregada de selecionar o fornecedor ou de tomar a decisão de alocar o pedido."
+
+msgid "The person or organisation in charge of sending the invoice or handling administrative paperwork for the supplier."
+msgstr "A pessoa ou organização responsável pelo envio da fatura ou a manipulaçao da burocracia administrativa para o fornecedor."
+
+msgid "The phone number"
+msgstr "Número do Telefone"
+
+msgid "The preferred date order in which datetime field will be displayed (dd/mm/yyyy, yyyy/mm/dd, ...)"
+msgstr "A ordem preferencial da data em que o campo de data/hora será exibido (dd/mm/yyyy, yyyy/mm/dd, ...)"
+
+msgid ""
+"The prefix for the person's full name.\n"
+"\n"
+"Usually something like Dr. or Mr."
+msgstr "O prefixo para o nome completo da pessoa. Normalmente: Dr. ou Sr."
+
+msgid "The printing format of the invoice."
+msgstr "O formato de impressão da fatura."
+
+msgid "The product or service which is traded"
+msgstr "O produto ou serviço que é comercializado"
+
+msgid "The project for the assignment."
+msgstr "O projeto para a Atribuição."
+
+msgid "The project has been started"
+msgstr "O projeto foi iniciado"
+
+msgid "The project has been stopped"
+msgstr "O projeto foi interrompido"
+
+msgid "The project in which the client is involved in"
+msgstr "O projeto que o cliente está envolvido."
+
+msgid "The reference of the client."
+msgstr "A referência do cliente."
+
+msgid "The reference of the supplier."
+msgstr "A Referência do Fornecedor"
+
+msgid "The request workflow method sets the document validation state to requested."
+msgstr "O método de workflow requerer define o estado de validação do documento como requerido ou solicitado."
+
+msgid "The section Organisation for documents."
+msgstr "A seção Organização para documentos."
+
+msgid ""
+"The suffix for the person full name.\n"
+"\n"
+"Can be something like 'Jr.'"
+msgstr ""
+"O sufixo para o nome completo da pessoa.\n"
+"Por exemplo 'Jr.'"
+
+msgid "The supplier of the invoice"
+msgstr "O Fornecedor da fatura"
+
+msgid ""
+"The symbol used to represent the currency.\n"
+"\n"
+"It is for example $, ¥, €, £..."
+msgstr ""
+"O símbolo usado para representar a moeda.\n"
+"É por exemplo $, ¥, €, R $ ..."
+
+msgid "The telephone area"
+msgstr "A código de área do telefone"
+
+msgid "The telephone country code"
+msgstr "O código telefonico do país."
+
+msgid "The telephone number suffix (extension)"
+msgstr "A extensão / sufixo do telefone"
+
+msgid "The telephone region."
+msgstr "A região do telefone."
+
+msgid "The term (days) allowed to the customer for the payment of the order"
+msgstr "O prazo (dias) permitido para o cliente para o pagamento do pedido."
+
+msgid "The text content of an answer to a query"
+msgstr "O conteúdo do texto de resposta de uma consulta"
+
+msgid "The text editor used by default"
+msgstr "O Editor de texto usado como padrão"
+
+msgid "The text format used by default"
+msgstr "Formato do texto usado por padrão"
+
+msgid "The title of the Invoice."
+msgstr "O título da fatura"
+
+msgid "The title of the resource involved"
+msgstr "Titulo do Recurso envolvido"
+
+msgid "The user name for Subversion"
+msgstr "Nome do usuário do Controle de versão"
+
+msgid "This action invalidates a document in ERP5"
+msgstr "Esta ação invalida um documento no ERP5"
+
+msgid "This is Spam"
+msgstr "Isso é Spam"
+
+msgid "This method is invoked each time a file is uploaded"
+msgstr "Este método é chamado cada vez que um arquivo é enviado."
+
+msgid "This workflow method is called to convert a file to a certain format"
+msgstr "Este método é chamado para converter um arquivo para um determinado formato"
+
+msgid "Time"
+msgstr "Data/Hora"
+
+msgid "TioLive Chat"
+msgstr "TioLive Bate-Papo"
+
+msgid "TioLive Documentation"
+msgstr "Documentação do TioLive"
+
+msgid "TioLive Instances"
+msgstr "TioLive Instâncias"
+
+msgid "TioLive Mail"
+msgstr "TioLive E-mail"
+
+msgid "TioLive Profile"
+msgstr "TioLive Perfil"
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Title of the entity which is responsible of accepting the ticket request"
+msgstr "Título da entidade que é responsável por aceitar um ticket solicitado."
+
+msgid "Title of the entity who is responsible of supervising the project"
+msgstr "Título da entidade que é responsável por supervisionar o projeto."
+
+msgid "Title of the entity who is responsible of supervising the task"
+msgstr "Título da entidade que é responsável por supervisionar a tarefa."
+
+msgid "Title of the party to which the task is paid to"
+msgstr "O Título da equipe para qual a tarefa é paga."
+
+msgid "Title of the task which is at the origin of the task report."
+msgstr "Título da tarefa que está definida na origem do relatório da tarefa."
+
+msgid "To who the task had been assigned"
+msgstr "Aquele que foi designado para a tarefa."
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Total Expense"
+msgstr "Despesas Totais"
+
+msgid "Total Price"
+msgstr "Preço Total"
+
+msgid "Total Quantity"
+msgstr "Quantidade Total"
+
+msgid "Transaction Type"
+msgstr "Tipo de Transação "
+
+msgid "Transformation"
+msgstr "Transformação "
+
+msgid "Transformations"
+msgstr "Transformações "
+
+msgid "Transformed Resource"
+msgstr "Recurso Transformado"
+
+msgid "Transformed Resources"
+msgstr "Recursos Transformados"
+
+msgid "Translation Requested"
+msgstr "Tradução solicitada"
+
+msgid "Translator Mode"
+msgstr "Modo de tradução"
+
+msgid "Tuesday"
+msgstr "Terça"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "Type or Title of the query posted by a user"
+msgstr "Tipo ou Título da consulta enviada por um usuário"
+
+msgid "Uncheck All"
+msgstr "Desmarcar Todos"
+
+msgid "Undo"
+msgstr "Desfazer"
+
+msgid "Ungrouping"
+msgstr "Desagrupar"
+
+msgid "Uninstall Business Template"
+msgstr "Desinstalar Business Template"
+
+msgid "Uninstall Business Template Action [transition in business_template_installation_workflow]"
+msgstr "Desinstalar Business Template"
+
+msgid "Uninstall Business Template [transition in business_template_installation_workflow]"
+msgstr "Desinstalar Business Template"
+
+msgid "Unit"
+msgstr "Unidade"
+
+msgid "Unit Base Price"
+msgstr "Unidade do preço base"
+
+msgid "Unit Price"
+msgstr "Preço Unitário"
+
+msgid "Unknown"
+msgstr "Desconhecido"
+
+msgid "Unpublish"
+msgstr "Despublicar"
+
+msgid "Unpublish Document Action [transition in publication_workflow]"
+msgstr "Despublicar"
+
+msgid "Unpublish Document [transition in publication_workflow]"
+msgstr "Despublicar"
+
+msgid "Unpublishes the document"
+msgstr "Despublicar documento"
+
+msgid "Unsaved Form Warning"
+msgstr "Avisar Mudanças não salvas."
+
+msgid "Unversioned Files"
+msgstr "Arquivos não versionados"
+
+msgid "Update"
+msgstr "Atualizar"
+
+msgid "Update Assignment"
+msgstr "Atualizar Designação"
+
+msgid "Update Assignment Action [transition in assignment_workflow]"
+msgstr "Atualizar Designação"
+
+msgid "Update Assignment [transition in assignment_workflow]"
+msgstr "Atualizar Designação"
+
+msgid "Update Business Template from SVN"
+msgstr "Atualizar Business Template a partir do SVN"
+
+msgid "Update Fields"
+msgstr "Atualizar Campos"
+
+msgid "Update Fields by English Glossary"
+msgstr "Atualizar Campos a partir do Glossário em Inglês"
+
+msgid "Update File Metadata [transition in processing_status_workflow]"
+msgstr "Atualizar Metadados"
+
+msgid "Update my Credentials"
+msgstr "Atualizar Minhas Credências"
+
+msgid "Update Quantity from Container"
+msgstr "Atualizar Quantidade do Contêiner"
+
+msgid "Update Quantity from Container [transition in packing_list_container_workflow]"
+msgstr "Atualizar Quantidade a partir do Contêiner"
+
+msgid "Update Relation"
+msgstr "Atualizar Relação"
+
+msgid "Update Repository Information"
+msgstr "Atualizar Informações do Repositório"
+
+msgid "Update Tools"
+msgstr "Atualizar Ferramentas"
+
+msgid "Update Variations"
+msgstr "Atualizar Variações"
+
+msgid "Update Workflows"
+msgstr "Atualizar Workflows"
+
+msgid "Update Workflows by English Glossary"
+msgstr "Atualizar Workflows a partir do Glossário em Inglês"
+
+msgid "Update quantity"
+msgstr "Atualizar Quantidade"
+
+msgid "Update quantity Action [transition in packing_list_container_workflow]"
+msgstr "Atualizar Quantidade"
+
+msgid "Update quantity [transition in packing_list_container_workflow]"
+msgstr "Atualizar Quantidade"
+
+msgid "Update variations"
+msgstr "Atualizar Variação"
+
+msgid "Updated"
+msgstr "Atualizado"
+
+msgid "Updated Business Templates"
+msgstr "Business Templates Atualizada"
+
+msgid "Updated [state in assignment_workflow]"
+msgstr "Atualizar"
+
+msgid "Upgrade"
+msgstr "Atualizar"
+
+msgid "Upgrade Business Templates from Repositories"
+msgstr "Atualizar Business Templates a partir dos Repositories"
+
+msgid "Upload"
+msgstr "Enviar"
+
+msgid "Upload Business Template"
+msgstr "Enviar Business Template"
+
+msgid "Upload File"
+msgstr "Enviar Arquivo"
+
+msgid "Upload file"
+msgstr "Carregar Arquivo"
+
+msgid "Upload file [transition in processing_status_workflow]"
+msgstr "Enviar arquivoCarregar Arquivo"
+
+msgid "Uploaded"
+msgstr "Carregado"
+
+msgid "Uploaded [state in processing_status_workflow]"
+msgstr "Carregado"
+
+msgid "Url of the document"
+msgstr "URL do documento"
+
+msgid "Use Case"
+msgstr "Caso de Uso"
+
+msgid "Use Case Actor"
+msgstr "Ator do Caso de Uso"
+
+msgid "Use Cases"
+msgstr "Casos de Uso"
+
+msgid "Use Project Line to build project architecture."
+msgstr "Use a Linha de Projeto para construir a arquitetura do projeto."
+
+msgid "Use Task Line to detail the element of a Task. It is useful to create the complete hierarchy of a Project."
+msgstr "Use a Linha de Tarefa para detalhar o elemento de uma tarefa. Ele é interessante para criar uma completa hierarquia de um projeto."
+
+msgid "Use Task Report Line to detail different steps of task operations."
+msgstr "Usa a Linha de Relatório de Tarefa para detalhar diferentes aspectos das operações das tarefas."
+
+msgid "Use Task to define tasks of a project."
+msgstr "Utilize tarefa para definir as tarefas de um projeto."
+
+msgid "Use this action to notify that a task has been validated and can be closed"
+msgstr "Utilize esta ação para comunicar que uma tarefa was validada e pode ser fechada"
+
+msgid "Use this action to notify that task processing has begun"
+msgstr "Utilize esta ação para avisar que a tarefa foi iniciada"
+
+msgid "Use this state to close the account. No transactions can be input on this account after closing."
+msgstr "Utilize este estado para fechar a conta. Nenhuma transação pode ser de inserida nesta conta após o seu fechamento."
+
+msgid "User"
+msgstr "Usuário"
+
+msgid "User ${user} does not exist."
+msgstr "Usuário ${user} não existe."
+
+msgid "User Account Workflow"
+msgstr "Workflow de Contas de Usuários"
+
+msgid "User Interface"
+msgstr "Interface do Usuário"
+
+msgid "User Interface Languages"
+msgstr "Idiomas do Usuário (UI)"
+
+msgid "User Login"
+msgstr "Usuário"
+
+msgid "User Login is not specified."
+msgstr "Usuário não esta especificado."
+
+msgid "User Name"
+msgstr "Usuário"
+
+msgid "User Password"
+msgstr "Senha"
+
+msgid "Usual Name"
+msgstr "Nome Usual"
+
+msgid "Usual name"
+msgstr "Nome Usual"
+
+msgid "Validate"
+msgstr "Validar"
+
+msgid "Validate Account"
+msgstr "Validar Conta"
+
+msgid "Validate Account Action [transition in account_workflow]"
+msgstr "Validar Conta"
+
+msgid "Validate Account [transition in account_workflow]"
+msgstr "Validar Conta"
+
+msgid "Validate Action"
+msgstr "Validar"
+
+msgid "Validate Action [transition in rule_validation_workflow]"
+msgstr "Validar"
+
+msgid "Validate Action [transition in validation_workflow]"
+msgstr "Validar"
+
+msgid "Validate Analysis"
+msgstr "Validar Análise"
+
+msgid "Validate Budget"
+msgstr "Validar Orçamento"
+
+msgid "Validate Budget Action"
+msgstr "Validar Orçamento"
+
+msgid "Validate Installation"
+msgstr "Validar Instalação"
+
+msgid "Validate Inventory"
+msgstr "Validar Inventário "
+
+msgid "Validate Inventory Action [transition in inventory_workflow]"
+msgstr "Validar Inventário"
+
+msgid "Validate Inventory [transition in inventory_workflow]"
+msgstr "Validar Inventário "
+
+msgid "Validate Message Action [transition in notification_message_workflow]"
+msgstr "Validar Mensagem"
+
+msgid "Validate Message [transition in notification_message_workflow]"
+msgstr "Validar Mensagem"
+
+msgid "Validate Transaction"
+msgstr "Validar Transação"
+
+msgid "Validate Workflow Action"
+msgstr "Validar Ação de Workflow"
+
+msgid "Validate [transition in rule_validation_workflow]"
+msgstr "Validar"
+
+msgid "Validate [transition in validation_workflow]"
+msgstr "Validar"
+
+msgid "Validated"
+msgstr "Válido"
+
+msgid "Validates a document in ERP5"
+msgstr "Valida o documento no ERP5"
+
+msgid "Validation Workflow"
+msgstr "Workflow de Validação"
+
+msgid "Validity End Date"
+msgstr "Data de Término de Validade"
+
+msgid "Value"
+msgstr "Valor"
+
+msgid "Variation"
+msgstr "Variação"
+
+msgid "Variation Base"
+msgstr "Base de Variação"
+
+msgid "Vendor"
+msgstr "Vendedor"
+
+msgid "Vendor of the transaction"
+msgstr "Vendedor da transação"
+
+msgid "Version"
+msgstr "Versão"
+
+msgid "Version of the document. It increases each time major modifications are done"
+msgstr "Versão do documento. Incrementa cada de vez que uma modificação é realizada."
+
+msgid "Version of the requirement document."
+msgstr "Versão da documento de requisitos."
+
+msgid "Version of the web page"
+msgstr "Versão da página web"
+
+msgid "Version:"
+msgstr "Versão"
+
+msgid "View"
+msgstr "Geral"
+
+msgid "View Invoice"
+msgstr "Ver Faturas"
+
+msgid "View SVN History"
+msgstr "Visualizar Histórico do SVN"
+
+msgid "View SVN Repository Information"
+msgstr "Visualizar Informações do SVN"
+
+msgid "View SVN Repository Infos"
+msgstr "Visualizar Informações do SVN"
+
+msgid "Visible [state in knowledge_pad_validation_workflow]"
+msgstr "Visível"
+
+msgid "Visible [transition in knowledge_pad_validation_workflow]"
+msgstr "Visível"
+
+msgid "Visit"
+msgstr "Visita"
+
+msgid "Warehouse"
+msgstr "Armazém"
+
+msgid "Web Message"
+msgstr "Mensagem Web"
+
+msgid "Web Page"
+msgstr "Página Web"
+
+msgid "Web Page List"
+msgstr "Lista de Páginas Web"
+
+msgid "Web Page Module"
+msgstr "Módulos de Páginas Web"
+
+msgid "Web Pages"
+msgstr "Páginas Web"
+
+msgid "Wednesday"
+msgstr "Quarta-feira"
+
+msgid "Week"
+msgstr "Semana"
+
+msgid "Weeks"
+msgstr "Semanas"
+
+msgid "Weight (g)"
+msgstr "Peso (g)"
+
+msgid "Weight (g/m2)"
+msgstr "Peso (g/m2)"
+
+msgid "Weight (kg)"
+msgstr "Peso (kg)"
+
+msgid "Welcome to ERP5"
+msgstr "Bem vindo ao ERP5"
+
+msgid "When a user of ERP5 wants to materialize a sale that has been done by his company, he or she should use a sale order. Sale orders contain some general information about the buyer and the seller, and contain sale order lines."
+msgstr "Quando um usuário do ERP5 quer materializar uma venda que foi feita pela sua empresa, ele ou ela deve usar um Pedido de Venda. Pedidos de Venda contém algumas informações gerais sobre o comprador e o vendedor, e possui Linha de Pedido de Venda."
+
+msgid "Width (cm)"
+msgstr "Largura (cm)"
+
+msgid "Width (m)"
+msgstr "Largura (m)"
+
+msgid "Will update the quantity of invoiced products depending upon the quantity of products that have been packed in the container."
+msgstr "Irá atualizar a quantidade de produtos faturados, dependendo da quantidade de produtos que foram acondicionados no pacote."
+
+msgid "With"
+msgstr "Com"
+
+msgid "Without"
+msgstr "Sem"
+
+msgid "Word count:"
+msgstr "Contagem de Palavras:"
+
+msgid "Work Duration"
+msgstr "Duração do Trabalho"
+
+msgid "Work Duration Unit"
+msgstr "Unidade (Duração)"
+
+msgid "Worker"
+msgstr "Trabalhador"
+
+msgid "Worker ID"
+msgstr "ID do Trabalhador"
+
+msgid "Workflow modification in progress."
+msgstr "Modificações do workflow em progresso."
+
+msgid "Year"
+msgstr "Ano"
+
+msgid "Year / Month / Day"
+msgstr "Ano / Mês / Dia"
+
+msgid "You are here:"
+msgstr "Você esta aqui:"
+
+msgid "You are not allowed to add ${portal_type} in this context."
+msgstr "Você não tem permissão para adicionar um ${portal_type} nesse objeto."
+
+msgid "You are not allowed to add new content in this context."
+msgstr "Você não tem permissão para adicionar um novo conteúdo nesse objeto."
+
+msgid "You are not allowed to clone this object."
+msgstr "Você não tem permissão para clonar esse objeto."
+
+msgid "You are not allowed to create this object."
+msgstr "Você não tem permissão para criar esse objeto."
+
+msgid "You can log in with another user name or <a href=\"javascript:history.back();\">go back</a>."
+msgstr "Você pode acessar com outro usuário ou  <a href=\"javascript:history.back();\">voltar</a>."
+
+msgid "You did not enter an email address."
+msgstr "Você não informou um endereço de email."
+
+msgid "You did not enter an integer."
+msgstr "Você não informou um inteiro."
+
+msgid "You do not have permission to add new bug."
+msgstr "Você não tem permissão para criar um novo bug."
+
+msgid "You do not have permission to add new event."
+msgstr "Você não tem permissão para criar um novo evento."
+
+msgid "You don't have enough permissions to access this page"
+msgstr "Você não tem permissão suficiente para acessar essa página."
+
+msgid "You have unsaved changes"
+msgstr "Você tem modificações não salvas."
+
+msgid "You'll be automatically redirected."
+msgstr "Você será redirecionado automaticamente."
+
+msgid "Your tab is empty."
+msgstr "Sua aba esta vazia."
+
+msgid "Zip Code"
+msgstr "CEP"
+
+msgid "action"
+msgstr "Ação"
+
+msgid "action called when editing a document"
+msgstr "Ação chamada para editar um documento"
+
+msgid "answered"
+msgstr "respondido"
+
+msgid "archived"
+msgstr "Arquivado"
+
+msgid "calculating"
+msgstr "Calculando"
+
+msgid "canceled"
+msgstr "cancelado"
+
+msgid "cancelled"
+msgstr "Cancelado"
+
+msgid "closed"
+msgstr "fechado"
+
+msgid "closing"
+msgstr "fechando"
+
+msgid "confirmed"
+msgstr "Confirmado"
+
+msgid "converted"
+msgstr "Convertido"
+
+msgid "default state of the document in the converting process"
+msgstr "Estado padrão do documento quando este está no processo de conversão"
+
+msgid "defines the base url where documentation will be reachable"
+msgstr "Define a url base onde a documentação será obtida."
+
+msgid "deleted"
+msgstr "Apagado"
+
+msgid "delivered"
+msgstr "entregue"
+
+msgid "disabled"
+msgstr "desabilitado"
+
+msgid "diverged"
+msgstr "divergente"
+
+msgid "draft"
+msgstr "Rascunho"
+
+msgid "edit"
+msgstr "editar"
+
+msgid "empty"
+msgstr "Projeto que está suspendido"
+
+msgid "enabled"
+msgstr "habilitado"
+
+msgid "expired"
+msgstr "expirado"
+
+msgid "generated"
+msgstr "gerado"
+
+msgid "installed"
+msgstr "instalado"
+
+msgid "instructions in order to explain how to use the resource"
+msgstr "Instruções no pedido a fim de explicar como usar o recurso"
+
+msgid "invalidated"
+msgstr "inválido"
+
+msgid "marks the container as missing"
+msgstr "Marca o Pacote como faltando."
+
+msgid "marks the container as packed"
+msgstr "Marca o pacote como empacotado."
+
+msgid "marks the document as it has been confirmed to the customer or it has been confirmed by the supplier"
+msgstr "Define o documento como foi confirmado para o cliente ou que foi confirmado pelo fornecedor."
+
+msgid "missing"
+msgstr "Perdido"
+
+msgid "modified"
+msgstr "modificado"
+
+msgid "new"
+msgstr "novo"
+
+msgid "number of line displayed by a listbox when used in view mode (in a document for example)"
+msgstr "Número de linhas exibidas em um listbox quando usada em modo de visão (em um documento por exemplo)"
+
+msgid "offered"
+msgstr "oferecido"
+
+msgid "open"
+msgstr "abrir"
+
+msgid "pending"
+msgstr "Pendente"
+
+msgid "planned"
+msgstr "planejado"
+
+msgid "portal type"
+msgstr "Mensagem de notificação"
+
+msgid "ready"
+msgstr "pronto"
+
+msgid "replaced"
+msgstr "substibuído"
+
+msgid "serial number of the container"
+msgstr "Número serial do pacote."
+
+msgid "solved"
+msgstr "resolvido"
+
+msgid "solving"
+msgstr "resolvendo"
+
+msgid "started"
+msgstr "Iniciado"
+
+msgid "the employee number of a person"
+msgstr "O número do funcionário."
+
+msgid "the heigh in pixel of nano image"
+msgstr "A altura em pixel da Imagem Nano"
+
+msgid "the height in pixel for large image"
+msgstr "A altura em pixel para a largura da imagem Maior"
+
+msgid "the height in pixel of medium image"
+msgstr "A altura em pixel da imagem média"
+
+msgid "the height in pixel of micro image"
+msgstr "a altura em pixel da imagem micro"
+
+msgid "the height in pixel of nano image"
+msgstr "a altura em pixel da imagem nano"
+
+msgid "the number of revision used by the business template. This number increases each time we commit a modification"
+msgstr "O número de revisão utilizado pelo modelo de negócio. Esse número incrementa cada vez que enviamos uma modificação."
+
+msgid "the width in pixel of medium image"
+msgstr "A altura em pixel da imagem média"
+
+msgid "the width in pixel of micro image"
+msgstr "A largura em pixel da imagem micro"
+
+msgid "the width in pixel of nano image"
+msgstr "a largura em pixel da imagem Nano"
+
+msgid "updated"
+msgstr "atualizado"
+
+msgid "validated"
+msgstr "válido"
+
+msgid "will automatically detect when file is completely converted"
+msgstr "detectará automaticamente quando o arquivo é completamente convertido"
+
+msgid "will automatically detect when file is completely uploaded"
+msgstr "Detecta automaticamente quando o arquivo for completamente carregado"

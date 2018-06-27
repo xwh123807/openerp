@@ -1,0 +1,23 @@
+2010-12-13 nicolas.dumazet
+* Migrate Tools to portal type classes
+
+2009-11-13 aurel
+* Proxify forms
+
+2009-10-16 yusei
+* Update for the changes of new portal types of portal types.
+
+2007-06-03 Vincentd
+* Adding security for manager in the archive_workflow (for all states)
+
+2007-11-19 Aurel
+* rewrite workflow script to do more check
+
+2007-11-14 Aurel
+* update workflow to defined h:m:s on archive date, many zsql method and script update to take more cases into account
+
+2007-10-25 romain
+* Move Archive Tool frm erp5_core.
+
+2007-09-06 Aurel
+* initial version

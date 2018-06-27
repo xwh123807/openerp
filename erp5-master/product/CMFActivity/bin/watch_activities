@@ -1,0 +1,44 @@
+#!/bin/sh
+set -e
+# Small watching script based on Sébastien idea.
+
+# ideas:
+#  - more control on what would be displayed
+#  - allow to group by tag instead of method_id
+#    - somehow done, use shell variable text_group
+#  - use python with curses to have runtime control
+
+show_help()
+{
+  script_name=`basename "$0"`
+  echo "
+  Usage:
+    $script_name <mysql_opt> [interval seconds]
+  Interval is default 5.
+  mysql_opt are default mysql command line options.
+  Put them in quotes if more than one option is passed.
+
+  Typical usage:
+    $script_name erp5
+    $script_name \"-h remotehost -u user erp5remote\" 3
+"
+}
+
+MYSQL_OPT=$1
+INTERVAL=$2
+
+[ "$MYSQL_OPT" ] || {
+  show_help
+  exit 1
+}
+
+SELECT=""
+for t in message message_queue ; do
+  SELECT=$SELECT"""
+  SELECT count(*) AS $t, ${text_group:-method_id}, processing, processing_node AS node, min(priority) AS min_pri, max(priority) AS max_pri FROM $t GROUP BY ${text_group:-method_id}, processing, processing_node ORDER BY node;
+  SELECT count(*) AS $t, processing, processing_node, min(priority) AS min_pri, max(priority) AS max_pri FROM $t GROUP BY processing, processing_node;
+  SELECT priority as pri, MIN(timediff(NOW(), date)) AS min, AVG(timediff(NOW() , date)) AS avg, MAX(timediff(NOW() , date)) AS max FROM $t GROUP BY priority;
+  SELECT count(*) AS ${t}_count FROM $t;
+  """
+done
+exec watch -n ${INTERVAL:-5} "${MYSQL:-mysql} $MYSQL_OPT --disable-pager -t -e '$SELECT' "

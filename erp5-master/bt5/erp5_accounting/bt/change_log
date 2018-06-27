@@ -1,0 +1,548 @@
+2015-06-12 arnaud.fontaine
+* Rounding debit/credit only makes sense if there is SIT Line.
+
+2014-08-21 Gabriel Monnerat
+* Improve Delivery_localBuild to call invoice_builder_alarm only if exist, because in some projects this alarm does not exist
+
+2014-02-19 Arnaud Fontaine
+* Move Constraint Property Sheets and Views to their proper bt5s.
+
+2013-09-09 Gabriel Monnerat
+* Refactor ERP5Site_getAccountItemList and AccountingTransactionLine_getProjectItemList to not search for Movements becauses it generate slow queries
+
+2013-04-17 arnaud.fontaine
+* erp5_simulation should not be required as some system do not use simulation.
+
+2011-12-16 arnaud.fontaine
+* Display "Own Section" along "Third Party" in AccountingTransactionModule_viewAccountingTransactionList.
+
+2011-12-12 arnaud.fontaine
+* Display thousand separator of currency fields according to 'Money Quantity Style' user preference.
+
+2011-10-12 tatuya
+* Make it selectable in Accounting Preference how to display bank account.
+
+2011-04-04 Kazuhiko
+* configure searchable text property ids for Accounting Period, Accounting Transaction, Balance Transaction, Internal Invoice Transaction, Payment Transaction, Purchase Invoice Transaction and Sale Invoice Transaction.
+
+2010-09-08 yo
+* Forgot to add .append. Sorry.
+
+2010-09-08 yo
+* Auto-fill mirror accounts, if necessary, before running the accounting transaction constraint.
+
+2010-09-08 yusei
+Revert my change on AccountingTransactionModule_getJournalSectionLineList at 2010-09-02.
+
+2010-09-03 yusei
+* Add Base_getAccountingWorkflowId and Base_getTranslatedAccountingWorkflowStateItemList to make accounting workflow easier to customise.
+
+2010-09-02 yusei
+* Display account title to journal report. Displaying gap id only is not useful at least in Japan.
+
+2010-08-23 yusei
+* Allow users to change section on line level. This is sometimes needed. Use case: expense happens at section A, corresponding payment is done at section B. This is journalized in single transaction document.
+
+2010-07-16 yusei
+* Revert my previous change and remove added parameters.
+
+2010-07-12 yusei
+* Update Node_statAccountingBalance and accept "at_date", "from_date", "to_date" parameters.
+
+2010-05-28 lucas
+* Added quantity into Expandable Properties of the default_accounting_transaction_rule object.
+
+2010-05-28 yo
+* Keep remaining in the same view after adding a new Accounting Transaction Line.
+
+2010-05-24 kazuhiko
+* Call Delivery_updateAppliedRule with activity in accounting_workflow/scripts/buildTradeModelLineList.
+
+2010-05-24 Jérome
+* Allow to select multiple accounts root in General Ledger and Trial Balance
+
+2010-05-24 kazuhiko
+* Improve activity dependencies for Delivery_updateAppliedRule, eg. delivery.activate(tag='(path)_updateAppliedRule', after_tag='(path)_expand').Delivery_updateAppliedRule(activate_kw={'tag':'(path)_expand'})
+
+2010-05-05 Jérome
+* Add an action to add create an initial balance transaction, from an accounting period.
+
+2010-04-09 Jérome
+* Add an action to add multiple accounting lines
+
+2010-04-08 yusuke
+* Reverted previous my change.
+
+2010-04-07 yusei
+* Fix SimulationMovement_testPaymentSimulationRule.id attribute value.
+
+2010-03-10 yusuke
+* Update init scripts of transactions to make reference.
+
+2010-03-08 tatuya
+* Make the quantity divergence tester of payment simulation rule set the decimal alignment as well as trade model rule so that the rule will allow the rounding error when calculation.
+
+2010-03-02 yusei
+* Remove short title.
+
+2010-03-02 yo
+* Add auto-planning into accounting workflow.
+
+2010-02-18 Kazuhiko
+* count number of unique mirror sections only in preparing listbox column list.
+
+2009-12-14 yusei
+* Fix group type on Sale Invoice Transaction.
+
+2009-12-14 yusei
+* Add sales group type to Sale Invoice Transaction.
+* Add purchase group type to Purchase Invoice Transaction.
+
+2009-10-16 yusei
+* Update for the changes of new portal types of portal types.
+
+2009-10-02 yusei
+* Update titles of state and transition of accounting period workflow and fix mixed up of open/close/start/stop. they are unified into a pair of start/stop.
+
+2009-09-07 yusuke
+* Replace ERP5Report to ERP5Form and ReportBox
+
+2009-07-02 romain
+* Revert latest proxy field library simplification, as the design was not finalized.
+
+2009-05-18 yusei
+* Fix some proxy fields. count_method should not be inherited from template field and proxy_listbox_ids had to be copied to new proxified fields but it was not copied.
+
+2009-05-07 yusei
+* Simplify field libraries and proxy fields. Old field libraries are kept for backward compatibility.
+* Update dependencies. Now require erp5_core 5.4.3.
+
+2009-05-06 Jerome
+* Introduce recursive accounting periods, used for example for monthly intermediate periods. They do not create balance transaction, but prevent adding more transaction for this period.
+
+2009-04-18 Kazuhiko
+* Version 5.4.1
+
+2009-02-06 yo
+* Stop raising an exception, even if the credit is not equal to the debit in a built delivery, in the post processing script, because the builder may not blindly adopt prevision when updating existing lines, thus it can be unbalanced.
+
+2008-11-13 yusei
+* Start to develop version 5.4.
+
+2008-10-24 yusei
+* Use translation of payment_mode category in the journal dialog.
+
+2008-10-24 yusei
+* Use translated role name in entity_role field in third party report.
+
+2008-10-14 yusei
+* Start to develop version 5.3.
+
+2008-09-16 Kazuhiko
+* remove payment_transaction_builder because now it is included in erp5_invoicing.
+* use  delivery_causality_workflow instead of invoice_causality_workflow in Purchase Invoice Transaction and Sale Invoice Transaction.
+
+2008-09-07 yusei
+* Replace "+" with " " in translation messages.
+
+2008-09-04 jerome
+* Add profile tab on all accounting transaction types
+
+2008-09-04 yusei
+* Update English messages
+
+2008-09-03 yusei
+* Remove text which is not suitable for translation.
+
+2008-08-29 yusei
+* Replace abbreviation in action title.
+
+2008-08-28 yusei
+* Use translateString or Base_translateString instead of N_ for translation message.
+
+2008-07-02 yusei
+* Update title of Account_view.reference.
+In accounting, reference is "Document Reference", but, in account, reference must be "Reference".
+
+2008-06-27 yusei
+* Start to develop version 5.2.
+
+2008-06-26 yusei
+* Revise version to 5.1.
+
+2008-06-03 vincentd
+* Add all rights for manager in the invoice_causality_workflow(Solving)
+
+2008-06-03 vincentd
+* Change manager security for account_workflow, accounting_period_workflow and accounting_workflow.
+
+2008-05-16 jerome
+* Introduce scripts to help report creation.
+
+2008-05-14 jerome
+* Use absolute_url when necessary to produce URLs compatible with virtual hosting.
+
+2008-04-19 yo
+* Bump to 5.0.
+
+2008-3-4 jerome
+* add a fast input to group accounting lines from invoice and corresponding payment.
+
+2008-2-25 jerome
+* change accounting_period_workflow: Assignee can start / stop accounting periods, but only Assignor can close it definitely. Also make it possible to cancel openned period, and to delete a draft period.
+
+2008-2-14 jerome
+* change permissions on account_module and accounting_module. Auditor role now have Copy or Move (it was missing). Note that the difference with the current version of Base_setDefaultSecurity is that Author role does *not* have View permission. Author creates, Auditor views. For normal cases you should give both roles to thoses users.
+
+2008-2-12 yusei
+* Fixed amount search bug.
+
+2008-2-7 yusei
+* Fixed filtering bug on accounting module list view when jump in from entity.
+
+2008-2-5 yusei
+* Fixed third party column issue and optimize the query.
+
+2008-2-4 yusei
+* Optimize the query of accounting module list view.
+* Fix displayed value of  accounting operation date and make specific_reference column sortable.
+
+2008-1-28 yusei
+* Show translated id in accounting transaction   line listbox.
+
+2008-1-23 yusei
+* proxify the rest of accounting transaction view forms.
+
+2008-1-22 yusei
+* Hide accounting transactions in preference.
+
+2008-1-21 yusei
+* Section drop down list in accounting transactions should always show existing values.(bug #510)
+
+2008-1-18 yusei
+* proxify accounting transaction view forms.
+
+2007-12-6 jerome
+* move invoicing parts in erp5_invoicing
+
+2007-10-30 yo
+* Set pricing_interaction_workflow to Invoice Line.
+
+2007-10-29 jerome
+* Use field libraries for reports and dialogs
+
+2007-10-03 yo
+* Remove start_date and stop_date from invoice_causality_workflow.
+
+2007-09-25 yo
+* Set module group on portal types.
+
+2007-09-09 Kazuhiko
+* rename edit to calculate in invoice_causality_workflow.
+
+2007-08-29 Yusei
+* Added new view action for module.
+
+2007-08-13 Jerome
+* Remove portal type actions that are now defined as global actions
+
+2006-08-29 jerome
+* set resource editable on accounting transaction lines.
+
+2006-08-24 jerome
+* empty default_invoice_transaction_rule. It's part of the configuration and should not be included in this BT.
+
+2006-08-21 jerome
+* filter GAP ID using strict_membership in account module  list.
+
+2006-08-11 jerome
+* remove InvoiceTransactionLine_getDestinationItemList and InvoiceTransactionLine_getSourceItemList in favor of AccountingTransactionLine_getNodeItemList, which fixes source/destination inversion on lines ids for Purchase Invoice Transactions.
+
+2006-07-03 Kevin
+* Move Base_importGapFile script from gap_importer business template.
+
+2006-06-15 Kevin
+* Revert previous commit.
+
+2006-06-14 Kevin
+* Return corporate name if possible when displaying the list of organisations.
+
+2006-06-12 Kevin
+* Add Closing Transaction Line portal type to use in AccountingTransactionModule_createClosingTransaction script.
+
+2006-06-09 Kevin
+* Delete empty accounting lines in roundDebitCredit script.
+
+2006-06-08 Kevin
+* Don't create empty lines when the closing balance is generated.
+* Add direct link to the wrong transaction object when closing the accounting period.
+
+2006-06-07 Kevin
+* Delete aggregation per regional zone (export/local) feature because its not enough flexible (for example, if you fix the region of a third party, you need to regenerate the Closing Balance).
+
+2006-06-06 Kevin
+* Don't copy id when create a reversal transaction.
+* Fix default warning message displaying in Account_getGapItemList.
+* Add Closing Transaction portal type.
+* Update Closing Transaction Creation script to support aggregation per regional zone (export/local) or third party.
+
+2006-06-05 Kevin
+* Move Fiscal Report portal type actions to erp5_accounting_l10n_fr.
+* Add missing Account Type categories.
+* Remove old business_template_include_sub_categories trick.
+
+2006-05-18 jerome
+* fix Purchase 'Details' view (source / destination inverted).
+* Update Transaction views for consistency
+* quick fix Accounting Transaction Module sql method to display third party instead of destination section.
+
+2006-05-18 fab
+* Add
+Account_getFormattedTitle
+* Update
+InvoiceTransactionLine_getDestinationItemList and InvoiceTransactionLine_getSourceItemList
+to use it
+
+2006-05-16 jerome
+* Fix AccountingTransaction_is*CurrencyConvertible
+to return False if resource is not defined on the transaction
+
+2006-05-12 yo
+* Specify maintainers.
+
+2006-05-02 Kevin
+* Add missing Account_getAccountingTransactionList parameter.
+
+2006-04-28 Kevin
+* Correct duplicate row bug in AccountingTransactionModule_zGetAccountingTransactionList.
+* Increase version number.
+
+2006-04-18 Kevin
+* Add a 'FIXME' comment in with details AccountingTransactionModule_zGetAccountingTransactionList.
+* Fix Opening Balance on Trial Balance when no from date set.
+
+2006-04-14 Kevin
+* Delete Section_getCurrencyPrecision.
+* Merge of my recent enhancements with the main branch.
+
+2006-04-12 Kevin
+* Validate transactions in accounting_workflow by only comparing dates to avoid inconsistent time problems.
+
+2006-04-10 Kevin
+* Verify third party state and third party region before validate an Accounting Transaction (its illegal to doesn't know from which region came the third party, and this information help us to do some automatic calculation).
+
+2006-03-31 Kevin
+* Add "Create Closing Transaction" action on Accounting Transaction Module.
+* Add missing parameter list on AccountingTransactionModule_createClosingTransaction.
+* Render AccountingTransactionModule_viewCreateClosingTransactionDialog as dialog.
+* Update AccountingTransaction_createReversalTransaction to use created_by_builder instead of bypass_init_script.
+* Use kw as the unique entry parameter in Entity_getAccountingTransactionList.
+* Remove suffix "transaction_" of query parameters to prepare the full migration of accouting stuff to getInventory API.
+* Show Previous Balance in Account and Bank Account transaction list view.
+
+2006-03-30 Kevin
+* Merge modifications made for Nexedi. -- Sorry to be not precise but the changelog is too big to be easy to summarize. But I will add detailed comments in the changelog of every modified file in the SVN to keep a clear understanding of my intentions.
+
+2006-03-30 Alex
+* modified InvoiceLine_asCellRange to support options
+
+2006-03-27 Seb
+* make purchase invoice transaction working
+
+2006-03-17 Seb
+* changed permissions in invoice_causality_worfklow because it was impossible to add new accounting lines. I'm not very happy with this change, we should find a better solution.
+
+2006-03-17 Kevin
+* Compare date instead of datetime in accounting_workflow/scripts/validateTransaction to avoid problems when we reach accounting period limits.
+
+2006-03-16 Kevin
+* Show the portal type of lines in General Ledger Report.
+
+2006-03-15 Kevin
+* Delete Account_getDestinationSectionList and Account_getSourcePaymentList.
+
+2006-03-09 Kevin
+* Fix Account_getAccountingTransactionList to show right previous balance.
+* Update AccountModule_viewGeneralLedgerReport to let the General Ledger report show good start, stop and period balance.
+* Fix General Ledger Report property transalation.
+
+2006-03-08 Kevin
+* Replace getPreferredDateInputOrder() calls by getPreferredDateOrder()
+* Call Base_translateString() instead of Base_TranslateString()
+
+2006-03-07 Kevin
+* Fix setReferences script of accounting_workflow to let the script generate good IDs.
+
+2006-03-02 jerome
+* Reverse source & destination section in Purchase Invoice Transaction views.
+* Improve asset conversion forms to include stat columns and relation fields for source & destination sections.
+
+2006-03-01 Kevin
+* Fix Delivery_Build workflow script.
+* setReference script of accounting workflow can be recalled multiple times on the same object without any side effect.
+* Call setReference script on balance_action and stop action.
+* Don't let the user edit the "Invoice Number" on Sale Invoice Transactions.
+
+2006-02-28 Kevin
+* Update SaleInvoiceTransaction_zSelectMovement to not include a 'AS movement' statement in SQL query.
+* Move setReferences() call on accounting workflow from stop transition after script to confirm transition before script.
+* Update Delivery_build on accounting workflow to generate pay sheet accounting lines automatticaly when they reach the 'confirm' state.
+
+2006-02-27 Kevin
+* Update Section_getCurrencyPrecision (more generic now).
+* Update Account_getAccountingTransactionList to get the default rounding value. As I understand, Account_getAccountingTransactionList is not only used to generated the General Ledger report but is also involved in all Transaction tabs. This mean that Section_getCurrencyPrecision is not generic enough, because the organisation that hold the currency in which the amount must be displayed is not easy to guess. Perhaps using the one defined on preferences is the way to do... (but this has heavy consequences).
+* Update AccountingTransaction_roundDebitCredit, to round more efficiently.
+
+2006-02-23 Kevin
+* Add AccountingTransaction_roundDebitCredit.
+* Add Section_getCurrencyPrecision (not finished yet, will be used in AccountingTransaction_roundDebitCredit and Account_getAccountingTransactionList to get the precision).
+
+2006-02-22 kevin
+* Add a patch in Account_getAccountingTransactionList to get round values (based on a hack done by vincent for french accounting).
+
+2006-02-17 kevin
+* Add Balance at the start-date and stop-date on General Ledger Report.
+
+2006-02-16 kevin
+* Add the GAP Root and the Account Balance on General Ledger Report.
+
+2006-02-13 kevin
+* Only show draft and validated Person and Organisation in Relation String Fields.
+
+2006-02-08 jerome
+* Check the currency of a payment transaction is the same as the currency of the bank account (if set on the bank account)
+* Display quantities in default curreny for bank account instead of converted values.
+
+2006-02-07 Jerome
+* Display amounts in default currency in every listbox / reports.
+* Many bug fixes when we are at destination section.
+
+2006-02-01 Jerome
+* fix the main Accounting module listbox which didn't display empty transactions.
+* Accounting Period workflow now closes the period in an activity.
+
+2006-01-30 Jerome
+* Accounting Periods are now stored in Organisation are used on a per-Organisation basis.
+* removed Accounting Period Module.
+* bumped version to 1.0rc8
+
+2006-01-19 Kevin
+* Use Localizer instead of Translation Service in: AccountingTransactionModule_journal_pdf_template, AccountModule_getTrialBalanceReportSectionList, AccountModule_viewAccountStatementReport/transaction_simulation_state, AccountModule_viewGeneralLedgerReport/transaction_simulation_state and AccountModule_viewTrialBalanceReport/transaction_simulation_state.
+* Update Copyright year.
+
+2006-01-10 jerome
+* bug fix: use python: TALES expression for actions, for a old CMF bug
+* fix order of account_type category, using asset/cash/bank instead of asset/bank/cash
+
+2006-01-04 jerome
+* search transaction by creation date.
+
+2006-01-03 jerome
+* add skins and actions for multi currency
+
+2005-12-28 jerome
+* fix i18n on journal report dialog
+* move transaction action from erp5_core to here
+* bug fix : remove 1000 Limit in  BankAccount_zGetAccountingTransactionList
+* added missing script AccountingTransactionModule_getTranslatedPortalTypeItemList
+
+2005-12-21 Kevin
+* Add parameter to AccountModule_getAvailableGapList to add an empty item in the generated list.
+* Move default_site_preference to erp5_core.
+
+2005-12-18 jérome
+* added accounting period module and validation workflow.
+* added account validation workflow
+* many improvement to reports
+* (partially) move to Inventory API
+* minor UI clean up
+
+2005-11-13 aurel
+* update path definition to include parents objects
+* remove workflow rule_interaction_workflow, it is in erp5_core
+
+2005-11-12 Jérome
+* Update to use new gap preference and Inventory API instead of  Resource_zGetInventory_old
+
+2005-12-08 yo
+* Fix the LEFT JOIN syntax in PaymentTransaction_zSelectMovement and SaleInvoiceTransaction_zSelectMovemen.
+
+2005-12-06 yo
+* Remove Resource_zGetInventory_old.
+* Fix the LEFT JOIN in Account_zGetAccountingTransactionList.
+
+2005-11-30 yo
+* Use portal_preferences.getPreferredAccountingTransactionGap instead of getGap.
+
+2005-10-22 Jérome
+* check that [source|destination]_section are Person  or Organisation in accounting_workflow/scripts/validateTransaction to prevent validating accounting transaction with Categories
+
+2005-10-17 Jérome
+* remove invoice_edit_workflow from list of installed workflows (not used since a  few commits)
+
+2005-10-16 Jérome
+* integrate budget validation in accounting workflow
+* remove unnecessary related keys from last change
+* fix gap_id related key and add a preferred_gap related key
+* get VAT from simulation before printing invoice
+* support for portal types and simulation_state translation
+
+2005-10-15 Kevin
+* change acquisition setup of financial_section to follow budget module needs
+* add z_related_financial_section_category, z_related_function_category and z_related_group_category catalog methods from erp5_budget.bt5
+* add groupCategory, financialSectionCategory and functionCategory related keys from erp5_budget.bt5
+
+2005-10-05 Jérome
+* added initial invoice causality workflow
+
+2005-10-13 Jérome
+* added an invoice builder
+* update invoice transaction builder and related script to work with the invoice builder
+
+2005-10-04 Jérome
+* introduce a new category account_type to separate bank and cash Accounts. (account_type/asset/cash => account_type/asset/bank & account_type/asset/bank/cash )
+
+2005-10-03 Jérome
+* fix bug with gap in preferences
+
+2005-09-13 Jérome
+* add rule_interaction_workflow
+
+2005-09-07 Jérome
+* move invoice related portal types, scripts and forms from erp5_trade to erp5_accounting
+* fix validation for Balance Transaction
+
+2005-09-05 Jérome
+update for new catalog
+
+2005-08-24 Jérome
+* use preferences (for prefilling newly created transaction and for filtering various lists)
+* improve reports
+* XXX still use RessourcezGetInventory_old , some parts should be rewritten
+
+2005-08-18 Jérome
+* removed all deprecated/not used skins
+* make Organisation jump method optional
+
+2005-08-O2 Jérome
+* removed code duplication in stat scripts
+* removed all references to group/nexedi
+
+2005-22-07 Jérome
+* renamed account in account_module
+* renamed accounting in accounting_module
+
+2005-23-06 Jérome
+* bug fixes
+
+2005-23-06 Jérome
+* removed pcg base category (replaced by gap/france/pcg, which moved in accounting_l10n_fr)
+* Added (initial) support for grouping reference
+* Added standarts accounting reports (General ledger, Trial Balance, Journal)
+Added other reports (Other Parties, Bank Accounts)
+* Various bug fixes
+
+2005-04-06
+* Move base_categories to erp5_core:
+destination_payment
+source_payment

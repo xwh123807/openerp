@@ -1,0 +1,104 @@
+2012-12-14 Kazuhiko
+* Knowledge Pad can have several publication_section relations.
+
+2012-12-10 Kazuhiko
+* support predicate in Knowled Box for more flexibility.
+
+2012-06-25 Kazuhiko
+* add knowledge pad's group in gadget title div class.
+
+2011-09-26 Kazuhiko
+* ERP5Site_getKnowledgePadListForUser should handle Unauthorized exception.
+
+2011-07-01 yusei
+* Set proper title to interaction workflow.
+
+2011-01-14 Ivan
+* Use Jquery
+
+2010-12-13 nicolas.dumazet
+* Migrate Tools to portal type classes
+
+2010-02-15 ivan
+* Use dedicated file system based Gadget class
+
+2009-11-26 Fabien
+* add two more gadgets : google maps and google search. Add title on google calendar
+
+2009-11-06 Herve
+* Update the page template ListBox_asListStyleHTML to make it compatbile with more gadgets.
+
+2009-10-16 yusei
+* Update for the changes of new portal types of portal types.
+
+2009-04-18 Kazuhiko
+* Version 5.4.1
+
+2008-11-13 yusei
+* Start to develop version 5.4.
+
+2008-10-24 yusei
+* Fixed to make messages translatable in Add gadgets form.
+
+2008-10-14 yusei
+* Start to develop version 5.3.
+
+2008-10-10 yusei
+* Set default security to portal_gadgets.
+* Remove default role setting of Knowledge Pad Module. Generic business template should not have any role settings.
+
+2008-10-6 yusei
+* Set version to 5.2.
+
+2008-10-6 yusei
+* Added a script which create default knowledge boxes. By default, this script do nothing.
+
+2008-10-6 yusei
+* Update xml format.
+
+2008-09-08 yusei
+* Use Base_translateString instead of translate.
+
+2008-07-31 thomas
+* Add RSS gadget and Worklist gadget.
+
+2008-07-31 thomas
+* Support password field in preference.
+
+2008-07-01 ivan
+* Remove from Person's workflow chain respective interaction workflow. Still leave it in case an use case requires explicitly creting knowledge pads on Person validation.
+
+2008-06-26 ivan
+* Add gadget_type and enable showing only right gadgets for a context
+
+2008-06-24 ivan
+* Use default knowledge pads from templates.
+* Clean up
+
+2008-06-16 thomas
+* accept more parameters in updater() for asynchronous listbox gadgets.
+
+2008-05-06 thomas
+* support multi fields in gadgets' preferences.
+* support overflow in gadgets.
+
+2008-4-9 yusei
+* Turned off acquire local roles on Knowledge Pad portal type.
+
+2008-03-04 Ivan
+* Add integration for Web Site
+
+2008-02-22 Ivan
+* Add workflows and minimal working security model
+
+2008-02-15 Ivan
+* Replace scriptaculous with MochiKit
+
+2008-02-04 Ivan
+* Rename 'bento' to 'knowledge pad'
+
+2008-01-22 Ivan
+* Update to latest (1.8.1) scriptaculous lib
+
+2007-05-22 Ivan
+* Initial import

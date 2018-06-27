@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<ZopeData>
+  <record id="1" aka="AAAAAAAAAAE=">
+    <pickle>
+      <global name="OOoTemplate" module="Products.ERP5OOo.OOoTemplate"/>
+    </pickle>
+    <pickle>
+      <dictionary>
+        <item>
+            <key> <string>OLE_documents_zipstring</string> </key>
+            <value> <string encoding="base64">UEsDBBQAAAAIAAQRyDSix9RZZwEAAI0HAAAVAAAATUVUQS1JTkYvbWFuaWZlc3QueG1stdXPa8Iw
+FAfw+/6KLvf2qachdoI/BoNtetDDjjF9rYE0CcmL6H+/OFYd7AdzmNtLST/fl5Sko/G+VdkOnZdG
+l6xf9FiGWphK6qZk69VDfsfG9zej29liunpdzrOWa1mjp2FXZMv15OlxmrEcYGFRL+paCiyMawBm
+q1n23M2LNsD8hWWse1RUVLGIfzVjU9qfhiXbEtkhgIm+OfuDXq8P3aQIZWeplgpz1OQOnzrGSvKc
+DhZLxq1VUnCKq4adrgofdBFDC8GVYOdX6qBUbjltSwYMLkr4XpkaXcsmuPdkPwBPnILfcJeG50Kg
+wjg0DkRwLoLHZSbPShJQK8MJE+HW2GBb1CER70zj0Kf70sfWk+FkjEqGy5Y36GEiqeXWJ8240P7p
+kgiyEJ8D/tbDheGEe4LjWf0Wj/n0v8P8u+vpoNBfnW2R+NUuntU2tBvNpfJAXVlY3Vwbv+7GIlH8
+p562dgRn5KO4fwNQSwECFAAUAAAACAAEEcg0osfUWWcBAACNBwAAFQAAAAAAAAAAAAAAAAAAAAAA
+TUVUQS1JTkYvbWFuaWZlc3QueG1sUEsFBgAAAAABAAEAQwAAAJoBAAAAAA==</string> </value>
+        </item>
+        <item>
+            <key> <string>_bind_names</string> </key>
+            <value>
+              <object>
+                <klass>
+                  <global name="NameAssignments" module="Shared.DC.Scripts.Bindings"/>
+                </klass>
+                <tuple/>
+                <state>
+                  <dictionary>
+                    <item>
+                        <key> <string>_asgns</string> </key>
+                        <value>
+                          <dictionary>
+                            <item>
+                                <key> <string>name_subpath</string> </key>
+                                <value> <string>traverse_subpath</string> </value>
+                            </item>
+                          </dictionary>
+                        </value>
+                    </item>
+                  </dictionary>
+                </state>
+              </object>
+            </value>
+        </item>
+        <item>
+            <key> <string>content_type</string> </key>
+            <value> <string>application/vnd.sun.xml.calc</string> </value>
+        </item>
+        <item>
+            <key> <string>expand</string> </key>
+            <value> <int>0</int> </value>
+        </item>
+        <item>
+            <key> <string>id</string> </key>
+            <value> <string>AccountingTransactionModule_viewBalanceSheetAsSxc</string> </value>
+        </item>
+        <item>
+            <key> <string>ooo_stylesheet</string> </key>
+            <value> <string>AccountingTransactionModule_balanceSheetStylesheet</string> </value>
+        </item>
+        <item>
+            <key> <string>output_encoding</string> </key>
+            <value> <string>utf-8</string> </value>
+        </item>
+        <item>
+            <key> <string>title</string> </key>
+            <value> <string></string> </value>
+        </item>
+      </dictionary>
+    </pickle>
+  </record>
+</ZopeData>

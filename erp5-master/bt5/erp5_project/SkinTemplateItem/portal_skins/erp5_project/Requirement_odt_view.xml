@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<ZopeData>
+  <record id="1" aka="AAAAAAAAAAE=">
+    <pickle>
+      <global name="OOoTemplate" module="Products.ERP5OOo.OOoTemplate"/>
+    </pickle>
+    <pickle>
+      <dictionary>
+        <item>
+            <key> <string>OLE_documents_zipstring</string> </key>
+            <value> <string encoding="base64">UEsDBBQAAAAIAMmBmDQBRxQR/gAAAPACAAAVAAAATUVUQS1JTkYvbWFuaWZlc3QueG1srdKxasMw
+EAbgvU+h3m6d06kEO4HEKRTa2oMzdBT2ORHYkrDOafz2VQfHhWQJZJPE3Xe/4JL1uWvFiXqvrUlh
+IWMQZCpba3NIYV++Ra+wXj0lz1m+Lb+LneiU0Q15Xk4HUew3H+9bARFi7sjkTaMrkrY/IGZlJj6n
+umAj7r5AwPQka64h4NdmCGX85ZrCkdktEW3w7ey/xPECp6IAiVlqdEsRGe7Hf4mp1iri0VEKyrlW
+V4rDr/FkaukHI8NQ+dNrph7mpmZo28gpPqaAgHfNuK0UuuKhJ3+vxnRmDBFvq5U1HJr//vBQ1/PY
+kn842xGrx2cl5rC2l7QJXi3W6hdQSwECFAAUAAAACADJgZg0AUcUEf4AAADwAgAAFQAAAAAAAAAA
+AAAAAAAAAAAATUVUQS1JTkYvbWFuaWZlc3QueG1sUEsFBgAAAAABAAEAQwAAADEBAAAAAA==</string> </value>
+        </item>
+        <item>
+            <key> <string>_bind_names</string> </key>
+            <value>
+              <object>
+                <klass>
+                  <global name="NameAssignments" module="Shared.DC.Scripts.Bindings"/>
+                </klass>
+                <tuple/>
+                <state>
+                  <dictionary>
+                    <item>
+                        <key> <string>_asgns</string> </key>
+                        <value>
+                          <dictionary>
+                            <item>
+                                <key> <string>name_subpath</string> </key>
+                                <value> <string>traverse_subpath</string> </value>
+                            </item>
+                          </dictionary>
+                        </value>
+                    </item>
+                  </dictionary>
+                </state>
+              </object>
+            </value>
+        </item>
+        <item>
+            <key> <string>content_type</string> </key>
+            <value> <string>application/vnd.sun.xml.writer</string> </value>
+        </item>
+        <item>
+            <key> <string>id</string> </key>
+            <value> <string>Requirement_odt_view</string> </value>
+        </item>
+        <item>
+            <key> <string>ooo_stylesheet</string> </key>
+            <value> <string>Requirement_odt_style</string> </value>
+        </item>
+        <item>
+            <key> <string>output_encoding</string> </key>
+            <value> <string>utf-8</string> </value>
+        </item>
+        <item>
+            <key> <string>title</string> </key>
+            <value> <string></string> </value>
+        </item>
+      </dictionary>
+    </pickle>
+  </record>
+</ZopeData>

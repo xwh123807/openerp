@@ -1,0 +1,6 @@
+extension.erp5.TioSafeBaseConduit
+extension.erp5.TioSafeBrain
+extension.erp5.TioSafeDoNothingConduit
+extension.erp5.TioSafeResourceConduit
+extension.erp5.TioSafeTool
+extension.erp5.TioSafeNodeConduit

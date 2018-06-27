@@ -1,0 +1,104 @@
+Acknowledgement | view
+Campaign Module | campaign_detailed_report
+Campaign Module | campaign_status
+Campaign Module | view
+Campaign | clone_ticket_and_event_list
+Campaign | create_event_from_event_path
+Campaign | create_new_file
+Campaign | document_list
+Campaign | jump_related_event
+Campaign | mass_emailing_report
+Campaign | new_event
+Campaign | view
+Campaign | view_communication_plan
+Campaign | view_details
+Event Module | event_activity
+Event Module | event_detailed_report
+Event Module | view
+Event Module | workflow_report
+Event Path | view
+Fax Message | assessment
+Fax Message | create_response
+Fax Message | preview
+Fax Message | related_events
+Fax Message | view
+Letter | assessment
+Letter | create_response
+Letter | preview
+Letter | related_events
+Letter | view
+Mail Message | assessment
+Mail Message | copy_document_to_dms
+Mail Message | create_response
+Mail Message | message_source
+Mail Message | preview
+Mail Message | related_events
+Mail Message | view
+Meeting Module | meeting_detailed_report
+Meeting Module | meeting_status
+Meeting Module | view
+Meeting | clone_ticket_and_event_list
+Meeting | create_event_from_event_path
+Meeting | create_new_file
+Meeting | document_list
+Meeting | mass_emailing_report
+Meeting | new_event
+Meeting | view
+Meeting | view_communication_plan
+Note | assessment
+Note | create_response
+Note | preview
+Note | related_events
+Note | view
+Organisation | add_event
+Organisation | view_event_list
+Person Module | create_event_list
+Person | add_event
+Person | add_support_request
+Person | view_event_list
+Phone Call | assessment
+Phone Call | create_response
+Phone Call | preview
+Phone Call | related_events
+Phone Call | view
+Sale Opportunity Module | sale_opportunity_detailed_report
+Sale Opportunity Module | sale_opportunity_status
+Sale Opportunity Module | view
+Sale Opportunity | clone_ticket_and_event_list
+Sale Opportunity | create_new_file
+Sale Opportunity | document_list
+Sale Opportunity | new_event
+Sale Opportunity | view
+Short Message | assessment
+Short Message | create_response
+Short Message | preview
+Short Message | related_events
+Short Message | view
+Site Message | assessment
+Site Message | create_response
+Site Message | preview
+Site Message | related_events
+Site Message | view
+Support Request Module | support_request_detailed_report
+Support Request Module | support_request_status
+Support Request Module | view
+Support Request | clone_ticket_and_event_list
+Support Request | create_new_file
+Support Request | document_list
+Support Request | jump_related_bug
+Support Request | new_bug
+Support Request | new_event
+Support Request | view
+System Preference | crm_preference
+Visit | assessment
+Visit | create_response
+Visit | preview
+Visit | related_events
+Visit | view
+Web Message | assessment
+Web Message | create_response
+Web Message | create_sender_person
+Web Message | preview
+Web Message | related_events
+Web Message | view
+Web Message | web_form_information

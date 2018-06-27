@@ -1,0 +1,14 @@
+2010-12-19 gabriel
+* Remove external link to get the JQuery Stylesheet Switcher Plugin. This plugin is not used more.
+
+2010-12-16 gabriel
+* Added default theme to Spreadsheet
+
+2010-11-21 gabriel
+* Clear the text_content field to use Spreadsheet Editor from EditorField
+
+2010-11-10 gabriel
+* Added svg_editor_support page template. This page template will be used to integrate svg editor with EditorField.
+
+2010-11-08 gabriel
+* The initial commit

@@ -1,0 +1,262 @@
+Business Link | predicate_view
+Business Link | view
+Business Process Module | view
+Business Process | trade_model_path_view
+Business Process | view
+Component Module | jump_to_related_sale_packing_list
+Container Line | view
+Container Line | view_quantity
+Container | fast_input
+Container | view
+Delivery Cell | view
+Delivery Node Module | view
+Delivery Node | view
+Delivery Root Simulation Rule | view
+Delivery Simulation Rule | view
+Duplicate Inventory Constraint | view
+First Causality Movement Group | view
+Internal Order Cell | view
+Internal Order Line | price_view
+Internal Order Line | profile_view
+Internal Order Line | quantity_view
+Internal Order Line | view
+Internal Order Module | view
+Internal Order | apply_trade_condition
+Internal Order | fast_input
+Internal Order | fast_input_update
+Internal Order | jump_to_related_internal_packing_list
+Internal Order | order_print
+Internal Order | profile_view
+Internal Order | view
+Internal Order | view_stock
+Internal Packing List Cell | view
+Internal Packing List Line | profile_view
+Internal Packing List Line | quantity_view
+Internal Packing List Line | view
+Internal Packing List Line | view_price
+Internal Packing List Module | delivery_line_report
+Internal Packing List Module | view
+Internal Packing List Module | workflow_report
+Internal Packing List | details
+Internal Packing List | fast_input
+Internal Packing List | fast_input_update
+Internal Packing List | packing_list_print
+Internal Packing List | payment_condition
+Internal Packing List | profile_view
+Internal Packing List | view
+Internal Packing List | view_stock
+Internal Trade Condition Module | view
+Internal Trade Condition | view
+Internal Trade Condition | view_payment
+Internal Trade Condition | view_profile
+Internal Trade Condition | view_trade_model_line_list
+Inventory Cell | view
+Inventory Line | inventory_view
+Inventory Line | price_view
+Inventory Line | view
+Inventory Module | view
+Inventory Module | view_stock_export
+Inventory Module | view_stock_report
+Inventory | fast_input
+Inventory | fast_input_update
+Inventory | view
+Order Root Simulation Rule | view
+Organisation | jump_to_internal_trade_condition
+Organisation | jump_to_purchase_order
+Organisation | jump_to_purchase_packing_list
+Organisation | jump_to_purchase_trade_condition
+Organisation | jump_to_sale_order
+Organisation | jump_to_sale_packing_list
+Organisation | jump_to_sale_trade_condition
+Payment Condition | view
+Person | jump_to_purchase_order
+Person | jump_to_purchase_packing_list
+Person | jump_to_sale_order
+Person | jump_to_sale_packing_list
+Product Module | jump_to_related_sale_packing_list
+Purchase Order Cell | view
+Purchase Order Line | price_view
+Purchase Order Line | profile_view
+Purchase Order Line | quantity_view
+Purchase Order Line | view
+Purchase Order Line | view_trade_model
+Purchase Order Module | delivery_line_report
+Purchase Order Module | order_export
+Purchase Order Module | order_report
+Purchase Order Module | view
+Purchase Order | apply_trade_condition
+Purchase Order | fast_input
+Purchase Order | fast_input_update
+Purchase Order | jump_to_related_purchase_packing_list
+Purchase Order | order_print
+Purchase Order | payment_condition
+Purchase Order | profile_view
+Purchase Order | reset_movement_price_list
+Purchase Order | view
+Purchase Order | view_stock
+Purchase Order | view_trade_model
+Purchase Packing List Cell | view
+Purchase Packing List Line | profile_view
+Purchase Packing List Line | quantity_view
+Purchase Packing List Line | view
+Purchase Packing List Line | view_price
+Purchase Packing List Module | delivery_line_report
+Purchase Packing List Module | packing_list_export
+Purchase Packing List Module | packing_list_report
+Purchase Packing List Module | view
+Purchase Packing List | details
+Purchase Packing List | fast_input
+Purchase Packing List | fast_input_update
+Purchase Packing List | jump_related_order
+Purchase Packing List | jump_related_purchase_invoice
+Purchase Packing List | packing_list_print
+Purchase Packing List | payment_condition
+Purchase Packing List | profile_view
+Purchase Packing List | reset_movement_price_list
+Purchase Packing List | view
+Purchase Packing List | view_stock
+Purchase Trade Condition Module | view
+Purchase Trade Condition | view
+Purchase Trade Condition | view_payment
+Purchase Trade Condition | view_profile
+Purchase Trade Condition | view_trade_model_line_list
+Returned Purchase Order Cell | view
+Returned Purchase Order Line | price_view
+Returned Purchase Order Line | profile_view
+Returned Purchase Order Line | quantity_view
+Returned Purchase Order Line | view
+Returned Purchase Order Line | view_trade_model
+Returned Purchase Order Module | delivery_line_report
+Returned Purchase Order Module | order_export
+Returned Purchase Order Module | order_report
+Returned Purchase Order Module | view
+Returned Purchase Order | apply_trade_condition
+Returned Purchase Order | fast_input
+Returned Purchase Order | fast_input_update
+Returned Purchase Order | jump_to_related_returned_purchase_packing_list
+Returned Purchase Order | order_print
+Returned Purchase Order | payment_condition
+Returned Purchase Order | profile_view
+Returned Purchase Order | reset_movement_price_list
+Returned Purchase Order | view
+Returned Purchase Order | view_stock
+Returned Purchase Order | view_trade_model
+Returned Purchase Packing List Cell | view
+Returned Purchase Packing List Line | price_view
+Returned Purchase Packing List Line | profile_view
+Returned Purchase Packing List Line | quantity_view
+Returned Purchase Packing List Line | view
+Returned Purchase Packing List Module | delivery_line_report
+Returned Purchase Packing List Module | view
+Returned Purchase Packing List Module | workflow_report
+Returned Purchase Packing List | details
+Returned Purchase Packing List | jump_related_purchase_invoice
+Returned Purchase Packing List | payment_condition
+Returned Purchase Packing List | profile_view
+Returned Purchase Packing List | view
+Returned Purchase Packing List | view_stock
+Returned Sale Order Cell | view
+Returned Sale Order Line | price_view
+Returned Sale Order Line | profile_view
+Returned Sale Order Line | quantity_view
+Returned Sale Order Line | view
+Returned Sale Order Line | view_trade_model
+Returned Sale Order Module | delivery_line_report
+Returned Sale Order Module | order_export
+Returned Sale Order Module | order_report
+Returned Sale Order Module | view
+Returned Sale Order Module | workflow_report
+Returned Sale Order | apply_trade_condition
+Returned Sale Order | fast_input
+Returned Sale Order | fast_input_update
+Returned Sale Order | jump_to_related_returned_sale_packing_list
+Returned Sale Order | order_print
+Returned Sale Order | order_summary
+Returned Sale Order | payment_condition
+Returned Sale Order | profile_view
+Returned Sale Order | reference_generate
+Returned Sale Order | reset_movement_price_list
+Returned Sale Order | sale_order_planning
+Returned Sale Order | view
+Returned Sale Order | view_stock
+Returned Sale Order | view_trade_model
+Returned Sale Packing List Cell | view
+Returned Sale Packing List Line | price_view
+Returned Sale Packing List Line | profile_view
+Returned Sale Packing List Line | quantity_view
+Returned Sale Packing List Line | view
+Returned Sale Packing List Module | delivery_line_report
+Returned Sale Packing List Module | view
+Returned Sale Packing List Module | workflow_report
+Returned Sale Packing List | details
+Returned Sale Packing List | jump_related_sale_invoice
+Returned Sale Packing List | payment_condition
+Returned Sale Packing List | profile_view
+Returned Sale Packing List | reset_movement_price_list
+Returned Sale Packing List | view
+Returned Sale Packing List | view_stock
+Sale Order Cell | view
+Sale Order Line | price_view
+Sale Order Line | profile_view
+Sale Order Line | quantity_view
+Sale Order Line | view
+Sale Order Line | view_trade_model
+Sale Order Module | delivery_line_report
+Sale Order Module | order_export
+Sale Order Module | order_report
+Sale Order Module | view
+Sale Order Module | workflow_report
+Sale Order | apply_trade_condition
+Sale Order | fast_input
+Sale Order | fast_input_update
+Sale Order | jump_to_related_sale_packing_list
+Sale Order | order_print
+Sale Order | order_summary
+Sale Order | payment_condition
+Sale Order | planning_view
+Sale Order | profile_view
+Sale Order | reference_generate
+Sale Order | reset_movement_price_list
+Sale Order | sale_order_planning
+Sale Order | view
+Sale Order | view_stock
+Sale Order | view_trade_model
+Sale Packing List Cell | view
+Sale Packing List Line | price_view
+Sale Packing List Line | profile_view
+Sale Packing List Line | quantity_view
+Sale Packing List Line | view
+Sale Packing List Module | delivery_line_report
+Sale Packing List Module | packing_list_export
+Sale Packing List Module | packing_list_report
+Sale Packing List Module | shipment_report
+Sale Packing List Module | view
+Sale Packing List Module | workflow_report
+Sale Packing List | container_fast_input
+Sale Packing List | details
+Sale Packing List | fast_input
+Sale Packing List | fast_input_update
+Sale Packing List | jump_related_order
+Sale Packing List | jump_related_sale_invoice
+Sale Packing List | packing_list_print
+Sale Packing List | payment_condition
+Sale Packing List | profile_view
+Sale Packing List | reset_movement_price_list
+Sale Packing List | view
+Sale Packing List | view_container_list
+Sale Packing List | view_stock
+Sale Trade Condition Module | view
+Sale Trade Condition | view
+Sale Trade Condition | view_payment
+Sale Trade Condition | view_profile
+Sale Trade Condition | view_trade_model_line_list
+Service Module | jump_to_related_sale_packing_list
+System Preference | pricing_preference
+System Preference | trade_preference
+Trade Model Line Cell Consistency Constraint | predicate
+Trade Model Line Cell Consistency Constraint | view
+Trade Model Line | predicate_view
+Trade Model Line | view
+Trade Model Path | predicate_view
+Trade Model Path | profile
+Trade Model Path | view

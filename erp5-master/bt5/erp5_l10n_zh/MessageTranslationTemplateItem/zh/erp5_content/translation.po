@@ -1,0 +1,136 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ERP5 Contents\n"
+"POT-Creation-Date: 2016-11-23 12:11+UTC\n"
+"PO-Revision-Date: 2016-11-23 12:11+UTC\n"
+"Last-Translator:  <>\n"
+"Language-Team: zh <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Accounting"
+msgstr "会计"
+
+msgid "Administration"
+msgstr "行政机构"
+
+msgid "By Air"
+msgstr "空运"
+
+msgid "By Mail"
+msgstr "邮寄"
+
+msgid "By Road"
+msgstr "路运"
+
+msgid "By Sea"
+msgstr "水运"
+
+msgid "Cheque"
+msgstr "支票"
+
+msgid "Client"
+msgstr "客户"
+
+msgid "Credit Card"
+msgstr "信用卡"
+
+msgid "Custom"
+msgstr "惯例"
+
+msgid "Discounted"
+msgstr "打折"
+
+msgid "Doctor"
+msgstr "博士"
+
+msgid "Female"
+msgstr "女"
+
+msgid "Home"
+msgstr "网站主页"
+
+msgid "Hour"
+msgstr "小时"
+
+msgid "In Cash"
+msgstr "现金"
+
+msgid "Internal"
+msgstr "内部人员"
+
+msgid "Invoice"
+msgstr "发票"
+
+msgid "Lessons"
+msgstr "课程"
+
+msgid "Low Priority"
+msgstr "低优先性"
+
+msgid "Madam"
+msgstr "女士"
+
+msgid "Main site"
+msgstr "主要站点"
+
+msgid "Male"
+msgstr "男"
+
+msgid "Media"
+msgstr "组织"
+
+msgid "Miss"
+msgstr "小姐"
+
+msgid "Mister"
+msgstr "先生"
+
+msgid "Nexedi Values"
+msgstr "Nexedi价值观"
+
+msgid "Normal"
+msgstr "普通"
+
+msgid "Order"
+msgstr "订单"
+
+msgid "Packing List"
+msgstr "装箱单"
+
+msgid "Piece"
+msgstr "件"
+
+msgid "Press"
+msgstr "热点新闻"
+
+msgid "Product"
+msgstr "产品"
+
+msgid "Sales Lead"
+msgstr "销售线索"
+
+msgid "Sales Prospect"
+msgstr "潜在客户"
+
+msgid "Service"
+msgstr "服务"
+
+msgid "Sitemap"
+msgstr "站点地图"
+
+msgid "Solutions"
+msgstr "解决方案"
+
+msgid "Supplier"
+msgstr "供应商"
+
+msgid "Taxable"
+msgstr "应税"
+
+msgid "Urgent"
+msgstr "紧急"
+
+msgid "Wire Transfer"
+msgstr "电汇"

@@ -1,0 +1,37 @@
+Document Analysis Document Decision Item | view
+Document Analysis Document Item | view
+Document Analysis Document | document_decision_items_fast_input
+Document Analysis Document | document_items_fast_input
+Document Analysis Document | view
+Document Analysis Document | view_decision_items
+Document Analysis Lexicon Item | view
+Document Analysis Lexicon | lexicon_items_fast_input
+Document Analysis Lexicon | view
+Document Analysis Module | view
+Document Analysis | documents_fast_input
+Document Analysis | lexicons_fast_input
+Document Analysis | view
+Document Analysis | view_lexicons
+Test Case Actor | view
+Test Case Module | view
+Test Case Step | view
+Test Case | actor_fast_input
+Test Case | actors
+Test Case | instanciate_test_report
+Test Case | step_fast_input
+Test Case | view
+Test Report Actor | view
+Test Report Module | view
+Test Report Step | view
+Test Report | actors
+Test Report | view
+Use Case Actor | view
+Use Case Module | use_case_report
+Use Case Module | view
+Use Case Scenario Step | view
+Use Case Scenario | view
+Use Case | actor_fast_input
+Use Case | actors
+Use Case | scenarii_fast_input
+Use Case | use_case_report
+Use Case | view

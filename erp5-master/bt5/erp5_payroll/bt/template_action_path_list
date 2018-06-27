@@ -1,0 +1,40 @@
+Accounting Transaction Module | net_salary_export
+Accounting Transaction Module | net_salary_report
+Accounting Transaction Module | payroll_tax_export
+Accounting Transaction Module | payroll_tax_report
+Accounting Transaction Module | payslip_list_print
+Annotation Line | view
+Employment Contract Module | view
+Employment Contract | view
+Pay Sheet Cell | view
+Pay Sheet Line | quantity
+Pay Sheet Line | view
+Pay Sheet Model Line | view
+Pay Sheet Model Line | view_predicate
+Pay Sheet Model Module | view
+Pay Sheet Model Ratio Line | view
+Pay Sheet Model Slice | view
+Pay Sheet Model | view
+Pay Sheet Model | view_annotation_lines
+Pay Sheet Model | view_payment
+Pay Sheet Model | view_profile
+Pay Sheet Model | view_ratio_settings
+Pay Sheet Model | view_slice_settings
+Pay Sheet Transaction Line | view
+Pay Sheet Transaction | accounting_lines
+Pay Sheet Transaction | annotation_lines
+Pay Sheet Transaction | apply_model
+Pay Sheet Transaction | calcul
+Pay Sheet Transaction | pay_sheet_print
+Pay Sheet Transaction | view
+Pay Sheet Transaction | view_payment
+Pay Sheet Transaction | view_profile
+Pay Sheet Transaction | view_ratio_settings
+Pay Sheet Transaction | view_social_declaration
+Payment Transaction | view_social_declaration
+Payroll Disenrollment Record Module | view
+Payroll Disenrollment Record | view
+Payroll Enrollment Record Module | view
+Payroll Enrollment Record | view
+Social Declaration Report Module | view
+Social Declaration Report | view

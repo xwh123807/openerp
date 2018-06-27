@@ -1,0 +1,285 @@
+2014-02-19 Arnaud Fontaine
+* ZODB Components: Remove ClassTool and DocumentationHelper relying on it.
+
+2014-02-19 Arnaud Fontaine
+* Migrate Glossary Extension to ZODB Property Sheets and Portal Types as classes.
+
+2013-09-03 arnaud.fontaine
+* ZODB Components: Workflow History must always be kept, so avoid an extra step for developers.
+
+2013-08-28 arnaud.fontaine
+* ZODB Components: Migrate Documents, Extensions and Tests.
+
+2012-10-04 arnaud.fontaine
+* getPreferredSubversionWorkingCopyList() cannot be set properly.
+
+2012-04-19 Kazuhiko
+* add TypesTool_viewRoleInformationList that lists all Role Informations.
+
+2011-08-08 yusei
+* Extract messages from constraints in ZODB property sheets for POT.
+
+2011-04-14 yusei
+* Remove old unnecessary tales expression from relation string field.
+
+2011-04-04 Kazuhiko
+* configure searchable text property ids and method ids for Bug.
+
+2010-10-19 Kazuhiko
+* When checking duplicated selection names, we should use get_recursive_orig_value('selection_name') instead of getRecursiveTemplateField().get_value('selection_name'), because delegation for selection_name can end at any intermediate proxy field. And skip an empty selection name that is now valid for a listbox where we don't want to store a selection.
+
+2010-10-19 yo
+* When checking duplicated selection names, skip field libraries, as they don't matter.
+
+2010-10-11 lucas
+* Now portal_type_group_list is an optional param for the script BaseType_copyRoleList.
+
+2010-03-02 yusei
+* Remove short title.
+
+2010-02-24 yusei
+* Move Software Release and Software Publication to erp5_forge_release to remove dependencies to crm and dms.
+
+2010-02 jps
+* added Software Release portal type
+* added Software Publication portal type
+* removed upload module
+* added optional dependency to DMS (Software Release) and CRM (Software Publication)
+
+2010-02-18 tatuya
+* Fix a issue that Bug document can not cancel the bug, because it can not add a content when cancelled state and the transition try to create an event.
+
+2009-11-18 yusei
+* Fix wrong python script parameter.
+
+2009-10-16 yusei
+* Update for the changes of new portal types of portal types.
+
+2009-09-11 Kazuhiko
+* use existing 'language' property instead of 'language' category for Glossary Terms.
+* to migrate existing Glossary Terms, please use GlossaryTerm_migrateLanguageProperty script.
+
+2009-08-05 tatuya
+* Fix 'Generate POT File' function when there is a PageTemplate which is using nested i18n block and using tal:repeat in the block
+
+2009-06-30 romain
+* Revert latest proxy field library simplification, as the design was not finalized.
+
+2009-05-18 yusei
+* Fix some proxy fields. count_method should not be inherited from template field.
+
+2009-05-15 yusei
+* Remove my_text_content from generic field dict in SkinsTool_makeFieldLibraryAndProxifyAllField. It was not generic enough for many editor fields.
+* Add my_editor_field to Base_viewForgeFieldLibrary.
+
+2009-05-08 yusei
+* Remove SkinsTool_findDeadProxyFieldList. There was already SkinsTool_getDeadProxyFieldList which do the same thing.
+* Add a little bit user-friendly output to SkinsTool_makeFieldLibraryAndProxifyAllField.
+
+2009-05-08 yusei
+* Simplify field libraries and proxy fields. Old field libraries are kept for backward compatibility.
+* Update dependencies.
+
+2009-05-07 yusei
+* Add SkinsTool_makeFieldLibraryAndProxifyAllField. This is a helper script to make a field library and proxify existing fields. But you still need to adjust by hand...
+* Add a utility script to find dead proxy fields.
+
+2009-04-24 jerome
+* Add a utility script to check that all relation field defines proxy listbox id or columns
+
+2009-02-20 yusei
+* Add a utility script to associate files in skin folder to cache manager.
+
+2008-12-26 kazuhiko
+* add a listbox to see duplicate entries in Glossary view.
+* add Portal Type -> Glossary importer.
+
+2008-11-25 fabien
+* add more columns in bug_module view to be able to sort by project, ...
+
+2008-10-6 yusei
+* Set original English term to a new term when create a new term from English ones.
+
+2008-10-2 yusei
+* Added a causality field to Glossary Term to specify a original English term.
+
+2008-10-01 yusei
+* Fixed UnboundLocalError in Bug_sendNotification.
+
+2008-10-01 yusei
+* Update xml format.
+
+2008-10-01 yusei
+* Fixed a bug in Bug_sendNotification in bug_workflow. Workflow history's action may be None.
+
+2008-09-04 yusei
+* Update English messages.
+
+2008-09-03 yusei
+* Don't extract title from field if tales expression was used.
+
+2008-09-02 yusei
+* Don't extract title from field libraries.
+
+2008-09-02 nicolas
+* add new transition to display Re Assign in workflow action
+* Bug Notification can be send later to change recipient list
+* Add File dialog require missing mandatory fields
+* New worklist on bug_evnt_worklow to display planned Bug Line
+
+2008-08-29 yusei
+* Improve domain tree mode of glossary term list.
+
+2008-08-29 yusei
+* Correct message text.
+
+2008-08-28 yusei
+* Extract translation message from tal:dfeine expression.
+* Use Base_translateString or translateString instead of N_ for translation message.
+
+2008-08-27 yusei
+* Improve pot file export.
+
+2008-06-16 Nicolas
+Add external Method to see Security for arbitrary user
+
+2008-06-04 yusei
+* Add comment column in the glossary module listbox.
+
+2008-06-03
+* Add seurity to manager in the bug_workflow for Cancelled, Draft, Open and Closed state.
+
+2008-05-28 yusei
+* Add comment field in GlossaryTerm_view and original location where correspnding field  or workflow id was found will be stored in the comment field.
+
+2008-05-15 yo
+* Clean up BusinessTemplate_doSvnUpdate, since it redirected to a strange URL.
+
+2008-2-11 Jerome
+* Add utility skin to check for dead proxyfields.
+
+2008-2-2 Yusei
+* Prevent  adding duplicate term.
+* Support updating fields by english glossary. This is useful when improve original english title and description of field.
+
+2008-2-1 Yusei
+* Fixed wrong name of scripts of  erp5_glossary. Use proxy-roled script to find terms.
+
+2007-10-22 Jerome
+* Added two utility scripts SkinsTool_checkDuplicateSelectionName and SkinsTool_getNotAssignedFieldList in erp5_toolbox
+
+2007-08-14 Yusei
+* Add utility scripts to collect translation messages.
+
+2007-08-14 Yusei
+* Add glossary module.
+
+2007-02-13 Kevin
+* Auto-update Bug's Closed Date on cancel.
+* More verbose description.
+* Increase version number.
+* Update copyright notice.
+
+2006-10-13 yo
+* to_address defaults to from_address instead of my address in the notification script.
+* fix bad english
+
+2006-09-15 jerome
+* Add an alarm to send a summary of all open bugs.
+
+2006-08-29 jerome
+* Remove related keys, they are automatically generated.
+
+2006-07-25 chris
+* Added function to update business template, without reverting the changes
+
+2006-07-19 chris
+* Renamed or moved some files/folders to avoid conflicts with other business templates.
+
+2006-07-11 chris
+* Now possible to filter files to commit from diff view
+
+2006-07-05 chris
+* ERP5Subversion now detects outdated files so that user know if he needs to update his working copy or not.
+
+2006-06-26 chris
+* Update according to last XHTML style update
+
+2006-06-22 chris
+* erp5Subversion is now XHTML Strict compliant
+* erp5Subversion works with erp5_xhtml_style
+
+2006-06-12 chris
+* added Shorted/Taller buttons to adjust tree height
+
+2006-06-07 Kevin
+* Check tested box if tested property is equal to 'True'.
+
+2006-05-30 chris
+* Added legend in diff page
+* Improved buttons in diff page
+
+2006-05-24 chris
+* XHTML compliant
+
+2006-05-23 chris
+* do not extract business template anymore when going back from diff
+
+2006-05-22 chris
+* display reminder when committing
+
+2006-05-18 chris
+* fixed some bugs in sslTrust / login (x2)
+* added action to update local working copy
+* get current zope username if preferred username is not set
+* propose last changelog as commit text.
+
+2006-05-17 chris
+* added search engine for orphan objects : Base_viewOrphanObjects
+
+2006-05-17 yo
+* Bugs must be tested before closing now. If you need to get rid of invalid bugs, use cancel instead.
+
+2006-05-10 chris
+* some bug fixes / optimizations
+* can now show unmodified files
+
+2006-05-10 chris
+* Lot of bug fixes
+
+2006-04-25 chris
+* Added update business from SVN repository function
+
+2006-04-24 chris
+* Subversion should be stable
+
+2006-04-21 chris
+* added subversion support for several
+working copies
+
+2006-04-10 chris
+* added Subversion Tool integration
+
+2006-05-12 yo
+* Define maintainers.
+* Add "Tested?" into Bug_view.
+
+2006-03-15 Seb
+* added workflow chaing for bug
+
+2006-01-27
+* display "difficulty" column in bug tracker
+* correct title of "status" column in "more collumns" and "searchable"
+
+2006-01-17 yo
+* add upload stuff
+* update properties of portal types according to the new way
+
+2005-10-14 Jérome
+* add related keys and sql methods
+
+2005-09-16 Alex
+* Added missing Category : bug_difficulty
+
+2005-08-22 Kevin
+* Add a "my_id" field on Bug_view form

@@ -1,0 +1,101 @@
+Business Process Module | Business Process
+Business Process | Business Link
+Business Process | Trade Model Path
+Container Line | Container Cell
+Container | Container
+Container | Container Line
+Delivery Builder | First Causality Movement Group
+Delivery Node Module | Delivery Node
+Delivery Node | Address
+Delivery Node | Email
+Delivery Node | Fax
+Delivery Node | Telephone
+Delivery Root Simulation Rule | Category Membership Divergence Tester
+Delivery Root Simulation Rule | DateTime Divergence Tester
+Delivery Root Simulation Rule | Float Divergence Tester
+Delivery Root Simulation Rule | Net Converted Quantity Divergence Tester
+Delivery Root Simulation Rule | Specialise Divergence Tester
+Delivery Root Simulation Rule | String Divergence Tester
+Delivery Root Simulation Rule | Variation Divergence Tester
+Delivery Simulation Rule | Category Membership Divergence Tester
+Delivery Simulation Rule | DateTime Divergence Tester
+Delivery Simulation Rule | Float Divergence Tester
+Delivery Simulation Rule | Net Converted Quantity Divergence Tester
+Delivery Simulation Rule | Specialise Divergence Tester
+Delivery Simulation Rule | String Divergence Tester
+Delivery Simulation Rule | Variation Divergence Tester
+Internal Order Line | Internal Order Cell
+Internal Order Line | Internal Order Line
+Internal Order Module | Internal Order
+Internal Order | Internal Order Line
+Internal Order | Payment Condition
+Internal Packing List Line | Internal Packing List Cell
+Internal Packing List Module | Internal Packing List
+Internal Packing List | Internal Packing List Line
+Internal Packing List | Payment Condition
+Internal Trade Condition Module | Internal Trade Condition
+Internal Trade Condition | Internal Supply Line
+Internal Trade Condition | Payment Condition
+Internal Trade Condition | Trade Model Line
+Inventory Line | Inventory Cell
+Inventory Module | Inventory
+Inventory | Inventory Line
+Order Root Simulation Rule | Category Membership Divergence Tester
+Order Root Simulation Rule | DateTime Divergence Tester
+Order Root Simulation Rule | Float Divergence Tester
+Order Root Simulation Rule | Net Converted Quantity Divergence Tester
+Order Root Simulation Rule | Specialise Divergence Tester
+Order Root Simulation Rule | String Divergence Tester
+Order Root Simulation Rule | Variation Divergence Tester
+Preference | Purchase Order
+Preference | Sale Order
+Property Sheet | Trade Model Line Cell Consistency Constraint
+Purchase Order Line | Purchase Order Cell
+Purchase Order Line | Purchase Order Line
+Purchase Order Module | Purchase Order
+Purchase Order | Payment Condition
+Purchase Order | Purchase Order Line
+Purchase Packing List Line | Purchase Packing List Cell
+Purchase Packing List Module | Purchase Packing List
+Purchase Packing List | Payment Condition
+Purchase Packing List | Purchase Packing List Line
+Purchase Trade Condition Module | Purchase Trade Condition
+Purchase Trade Condition | Payment Condition
+Purchase Trade Condition | Purchase Supply Line
+Purchase Trade Condition | Trade Model Line
+Returned Purchase Order Line | Returned Purchase Order Cell
+Returned Purchase Order Line | Returned Purchase Order Line
+Returned Purchase Order Module | Returned Purchase Order
+Returned Purchase Order | Payment Condition
+Returned Purchase Order | Returned Purchase Order Line
+Returned Purchase Packing List Line | Returned Purchase Packing List Cell
+Returned Purchase Packing List Module | Returned Purchase Packing List
+Returned Purchase Packing List | Payment Condition
+Returned Purchase Packing List | Returned Purchase Packing List Line
+Returned Sale Order Line | Returned Sale Order Cell
+Returned Sale Order Line | Returned Sale Order Line
+Returned Sale Order Module | Returned Sale Order
+Returned Sale Order | Payment Condition
+Returned Sale Order | Returned Sale Order Line
+Returned Sale Packing List Line | Returned Sale Packing List Cell
+Returned Sale Packing List Module | Returned Sale Packing List
+Returned Sale Packing List | Payment Condition
+Returned Sale Packing List | Returned Sale Packing List Line
+Rule Tool | Delivery Root Simulation Rule
+Rule Tool | Delivery Simulation Rule
+Rule Tool | Order Root Simulation Rule
+Sale Order Line | Sale Order Cell
+Sale Order Line | Sale Order Line
+Sale Order Module | Sale Order
+Sale Order | Payment Condition
+Sale Order | Sale Order Line
+Sale Packing List Line | Sale Packing List Cell
+Sale Packing List Module | Sale Packing List
+Sale Packing List | Container
+Sale Packing List | Payment Condition
+Sale Packing List | Sale Packing List Line
+Sale Trade Condition Module | Sale Trade Condition
+Sale Trade Condition | Payment Condition
+Sale Trade Condition | Sale Supply Line
+Sale Trade Condition | Trade Model Line
+Trade Model Line | Trade Model Cell

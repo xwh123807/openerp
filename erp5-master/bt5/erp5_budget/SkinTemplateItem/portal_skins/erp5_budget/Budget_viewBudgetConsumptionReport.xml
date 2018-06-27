@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<ZopeData>
+  <record id="1" aka="AAAAAAAAAAE=">
+    <pickle>
+      <global name="OOoTemplate" module="Products.ERP5OOo.OOoTemplate"/>
+    </pickle>
+    <pickle>
+      <dictionary>
+        <item>
+            <key> <string>OLE_documents_zipstring</string> </key>
+            <value> <string encoding="base64">UEsDBBQAAAAIALt0ajpE1YD/SgEAAGgHAAAVAAAATUVUQS1JTkYvbWFuaWZlc3QueG1stZVNbsIw
+EIX3nCLyPnHLqooIlVqpJ6AHGJxJsOQ/ecYIbt8EFUhbFgXFO9saf++N7RmvXg/WFHuMpL1rxHP1
+JAp0yrfa9Y343HyUL+J1vVhZcLpD4vo8KIZ9ji7TRqToag+kqXZgkWpWtQ/oWq+SRcf1z/h6VFov
+iiu40wbLITAei6sYthpKPgZsBIRgtAIefMq9a6uTVjWVqChEhJZ2iCyukElyy8lyl4wpA/CuEVLI
+u6wwHlgO+dymKe94dDMGzMklPhqk2bEWGR6A3oZtdsluHWhDks/DKrh+bvgsvHfvOt2neHpTtJSg
+FBocpj5KlWJ87BLv18oiEKLvIxJtIZNAZzww5nLvQwpDTac8+JGc7WDYe5MNri30SPJNs4WQqQ6+
+NbKwiYHTI4/yd/un5MbirJKu1FTjfzbmbczIPHyXl9a8kn9+y/UXUEsBAhQAFAAAAAgAu3RqOkTV
+gP9KAQAAaAcAABUAAAAAAAAAAAAAAAAAAAAAAE1FVEEtSU5GL21hbmlmZXN0LnhtbFBLBQYAAAAA
+AQABAEMAAAB9AQAAAAA=</string> </value>
+        </item>
+        <item>
+            <key> <string>_Cacheable__manager_id</string> </key>
+            <value>
+              <none/>
+            </value>
+        </item>
+        <item>
+            <key> <string>_bind_names</string> </key>
+            <value>
+              <object>
+                <klass>
+                  <global name="NameAssignments" module="Shared.DC.Scripts.Bindings"/>
+                </klass>
+                <tuple/>
+                <state>
+                  <dictionary>
+                    <item>
+                        <key> <string>_asgns</string> </key>
+                        <value>
+                          <dictionary>
+                            <item>
+                                <key> <string>name_subpath</string> </key>
+                                <value> <string>traverse_subpath</string> </value>
+                            </item>
+                          </dictionary>
+                        </value>
+                    </item>
+                  </dictionary>
+                </state>
+              </object>
+            </value>
+        </item>
+        <item>
+            <key> <string>content_type</string> </key>
+            <value> <string>application/vnd.oasis.opendocument.spreadsheet</string> </value>
+        </item>
+        <item>
+            <key> <string>expand</string> </key>
+            <value> <int>0</int> </value>
+        </item>
+        <item>
+            <key> <string>id</string> </key>
+            <value> <string>Budget_viewBudgetConsumptionReport</string> </value>
+        </item>
+        <item>
+            <key> <string>ooo_script_name</string> </key>
+            <value> <string></string> </value>
+        </item>
+        <item>
+            <key> <string>ooo_stylesheet</string> </key>
+            <value> <string>Budget_viewBudgetConsumptionReportTemplate</string> </value>
+        </item>
+        <item>
+            <key> <string>ooo_xml_file_id</string> </key>
+            <value> <string>content.xml</string> </value>
+        </item>
+        <item>
+            <key> <string>output_encoding</string> </key>
+            <value> <string>utf-8</string> </value>
+        </item>
+        <item>
+            <key> <string>title</string> </key>
+            <value> <unicode>Budget Consumption</unicode> </value>
+        </item>
+      </dictionary>
+    </pickle>
+  </record>
+</ZopeData>

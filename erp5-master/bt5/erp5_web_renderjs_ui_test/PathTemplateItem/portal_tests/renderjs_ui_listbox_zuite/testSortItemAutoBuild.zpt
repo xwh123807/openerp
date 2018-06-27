@@ -1,0 +1,143 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Test RenderJS UI</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test RenderJS UI</td></tr>
+</thead><tbody>
+<tal:block metal:use-macro="here/Zuite_CommonTemplate/macros/init" />
+
+<!-- Clean Up -->
+<tr>
+  <td>open</td>
+  <td>${base_url}/bar_module/ListBoxZuite_reset</td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>assertTextPresent</td>
+  <td>Reset Successfully.</td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>open</td>
+  <td>${base_url}/foo_module/FooModule_createObjects</td>
+  <td></td>
+</tr>
+<tr>
+  <td>assertTextPresent</td>
+  <td>Created Successfully.</td>
+  <td></td>
+</tr>
+
+<tal:block metal:use-macro="here/Zuite_CommonTemplate/macros/wait_for_activities" />
+
+
+<!-- Initialize -->
+<tr>
+  <td>open</td>
+  <td>${base_url}/web_site_module/renderjs_runner/#/foo_module</td>
+  <td></td>
+</tr>
+
+<tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/clear_query" />
+
+<tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/triggle_sort" />
+
+
+
+
+<tr>
+  <td>click</td>
+  <td>//button[@class='plus ui-btn-c ui-override-theme ui-btn ui-icon-plus ui-btn-icon-left ui-corner-all']</td>
+  <td></td>
+</tr>
+
+<!-- Wait for the Add Sort button because no default sort is correctly specified -->
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//button[@class='plus ui-btn-c ui-override-theme ui-btn ui-icon-plus ui-btn-icon-left ui-corner-all']</td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>click</td>
+  <td>//button[@class='plus ui-btn-c ui-override-theme ui-btn ui-icon-plus ui-btn-icon-left ui-corner-all']</td>
+  <td></td>
+</tr>
+
+
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//div[@class='sort_item_container ui-controlgroup ui-corner_all']/div[2]</td>
+  <td></td>
+</tr>
+
+<!-- Every new Sort Editor Item is by default (ID, ascending) because those are
+     the first values in both selects. -->
+
+<tr>
+  <td>select</td>
+  <td>//div[@class='sort_item_container ui-controlgroup ui-corner_all']/div[2]//select[1]</td>
+  <td>index=1</td><!-- select Title in the second Sort Item -->
+</tr>
+
+
+<tr>
+  <td>select</td>
+  <td>//div[@class='sort_item_container ui-controlgroup ui-corner_all']/div[2]//select[2]</td>
+  <td>index=1</td><!-- select descending in the second Sort Item -->
+</tr>
+
+<tr>
+  <td>click</td>
+  <td>//button[@class="submit responsive ui-last-child ui-btn ui-btn-icon-left ui-icon-check"]</td>
+  <td></td>
+</tr>
+
+<!-- Wait for the Filters to be applied -->
+<tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/wait_for_content_loaded" />
+
+<tal:block metal:use-macro="here/Zuite_CommonTemplateForRenderjsUi/macros/triggle_sort" />
+
+
+<tr>
+  <td>waitForElementPresent</td>
+  <td>//div[@class='sort_item_container ui-controlgroup ui-corner_all']//select</td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>verifyValue</td>
+  <td>//div[@class='sort_item_container ui-controlgroup ui-corner_all']/div[1]//select[1]</td>
+  <td>id</td>
+</tr>
+
+<tr>
+  <td>verifyValue</td>
+  <td>//div[@class='sort_item_container ui-controlgroup ui-corner_all']/div[1]//select[2]</td>
+  <td>ascending</td>
+</tr>
+
+
+<tr>
+  <td>verifyValue</td>
+  <td>//div[@class='sort_item_container ui-controlgroup ui-corner_all']/div[2]//select[1]</td>
+  <td>title</td>
+</tr>
+
+<tr>
+  <td>verifyValue</td>
+  <td>//div[@class='sort_item_container ui-controlgroup ui-corner_all']/div[2]//select[2]</td>
+  <td>descending</td>
+</tr>
+
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<base_category_list>
+ <portal_type id="Bar Module">
+  <item>business_application</item>
+ </portal_type>
+ <portal_type id="Foo">
+  <item>bar_category</item>
+  <item>foo_big_category</item>
+  <item>foo_category</item>
+  <item>successor</item>
+ </portal_type>
+ <portal_type id="Foo Bar Module">
+  <item>business_application</item>
+ </portal_type>
+ <portal_type id="Foo Line">
+  <item>foo_category</item>
+ </portal_type>
+ <portal_type id="Foo Module">
+  <item>business_application</item>
+ </portal_type>
+</base_category_list>

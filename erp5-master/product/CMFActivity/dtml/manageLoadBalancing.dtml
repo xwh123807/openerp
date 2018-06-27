@@ -1,0 +1,250 @@
+<dtml-comment>
+Copyright (c) 2002 Nexedi SARL and Contributors. All Rights Reserved.
+                    Jean-Paul Smets <jp@nexedi.com>
+
+WARNING: This program as such is intended to be used by professional
+programmers who take the whole responsibility of assessing all potential
+consequences resulting from its eventual inadequacies and bugs
+
+This program as such is not intended to be used by end users. End
+users who are looking for a ready-to-use solution with commercial
+guarantees and support are strongly advised to contract a Free Software
+Service Company
+
+This program is Free Software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+</dtml-comment>
+
+<dtml-var manage_page_header>
+<dtml-var manage_tabs>
+
+<p class="form-help">
+  This tab defines the Load Balancing of Activities.
+  To provide high performance, the activities are distributed over several ZEO clients, called <i>nodes</i>,
+  so that they can be processed in parallel. Nodes can either run on different machines or on one machine
+  with different Port Numbers.
+  The format to address a node in this configuration is therefore
+  <code>IP-Address</code>:<code>Port-Number</code>.
+</p>
+
+<p class="form-help">
+  The interval of distribution and activation of the activities is per default 5 seconds. This can be
+  changed by altering the value of <i>interval</i> in the section <i>time-server</i> in the
+  Zope Configuration File <i>zope.conf</i>.
+</p>
+
+<form action="&dtml-URL1;">
+
+<table cellspacing="0" cellpadding="2" border="0" width="100%">
+  <dtml-if expr="_.len(getNodeList()) == 0">
+    <tr class="list-header">
+      <td align="left" valign="top" colspan=2>
+        <div class="form-label" style="color: #F00">Warning: No node has been found yet.</div>
+      </td>
+    </tr>
+    <tr>
+      <td align="left" valign="top" colspan=2>
+        <p>
+        This can be the sign of a missconfigured zope.
+        Please make sure you have enabled timerserver in your zope.conf:
+        </p>
+<pre>%import timerserver
+&lt;timer-server&gt;
+  interval 5
+&lt;/timer-server&gt;</pre>
+        <b>CMFActivity will not work until at least one node is known.</b>
+        <p>
+        If it is already configured properly, then chances are you accessed
+        this page before timeserver had the chance to trigger, or you just
+        deleted the last known nodes.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </dtml-if>
+  <tr class="list-header">
+    <td align="left" valign="top" colspan=2>
+      <div class="form-label">This node</div>
+    </td>
+  </tr>
+  <tr>
+    <td>Current node is <b><dtml-var getCurrentNode></b></td>
+    <dtml-if expr="getCurrentNode() not in getNodeList()">
+      <td align="left" valign="top" colspan=2>
+        <p style="color: #F00"><b>Warning: Current node is not known to distribution system.</b></p>
+        <p>
+          The current node is not registered as an available node on current instance.
+          This can be normal if this node is part of a cluster, but it can also happen
+          if its hostname and/or IP address changed.
+          I the latter case, you must reconfigure this page accordingly, and can safely delete
+          the old IP address if it's still listed on this page.
+        </p>
+      </td>
+    <dtml-else>
+      <td>&nbsp;</td>
+    </dtml-if>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  </tr>
+  <tr class="list-header">
+    <td align="left" valign="top" colspan=2>
+      <div class="form-label">Distributing Node</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <select name="distributingNode">
+        <option value="">(disabled)</option>
+        <dtml-in getNodeList prefix="node">
+          <dtml-if expr="node_item == getDistributingNode()">
+            <option selected="selected" value="<dtml-var sequence-item>">
+              <dtml-var sequence-item>
+            </option>
+          <dtml-else>
+            <option value="<dtml-var sequence-item>">
+              <dtml-var sequence-item>
+            </option>
+          </dtml-if>
+        </dtml-in>
+      </select>
+      <input type="submit" class="form-element" name="manage_setDistributingNode:method" value=" Change ">
+    </td>
+    <td>
+      <p class="form-help">
+        The <i>Distributing node</i> is responsible for the Load Distribution.
+        Only one node can be <i>Distributing node</i> at any given time.
+        It is also possible to interrupt activity distribution by selecting the
+        <i>(disabled)</i> value. Activity nodes will receive no more activity
+        when <i>Distributing node</i> is disabled.
+      </p>
+ 
+      <dtml-if expr="(_.len(getProcessingNodeList()) > 1) and (getDistributingNode() in getProcessingNodeList())">
+        <div class="form-label" style="color: #F00">Warning: Distributing node is a processing node.</div>
+        <p class="form-help">
+         For better performances it is recommended to not process activities on
+         the distributing node. Otherwise, it may distribute activities too
+         slowly and starve the other processing nodes.
+        </p>
+      </dtml-if>
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr class="list-header">
+    <td align="left" valign="top" colspan=2>
+      <div class="form-label">Existing Nodes</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td rowspan="2">
+            <div class="form-label">Idle&nbsp;nodes</div>
+            <select name="unused_node_list:list" size="10" multiple="multiple" style="min-width:100%">
+              <dtml-in getIdleNodeList>
+                <option value="<dtml-var sequence-item>"><dtml-var sequence-item></option>
+              </dtml-in>
+            </select>
+          </td>
+          <td>
+            <input type="submit" name="manage_addToProcessingList:method" value="&gt;"/>
+          </td>
+          <td rowspan="2">
+            <div class="form-label">Processing&nbsp;nodes</div>
+            <select name="processing_node_list:list" size="10" multiple="multiple" style="min-width:100%">
+              <dtml-in getProcessingNodeList prefix="node">
+                <option value="<dtml-var node_item>"><dtml-var node_item> (#<dtml-var expr="node_index + 1">)</option>
+              </dtml-in>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" name="manage_removeFromProcessingList:method" value="&lt;"/>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" colspan="2">
+            <div class="form-element">
+              <input type="submit" class="form-element" name="manage_delNode:method" value=" Delete " />
+           </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <p class="form-help">
+        Every node sharing the same ZODB will register itself to the idle
+        node list - except the first one which will be automatically declared
+        both <i>Processing node</i> and <i>Distributing node</i>. Registered
+        nodes can then be made <i>Processing nodes</i> or <i>Idle nodes</i>.
+      </p>
+      <p class="form-help">
+       <b>Important note:</b> Nodes can register themselves, but can not
+       unregister themselves (for example, a node which IP has changed will
+       be present twice in the list). It is up to the user to manually prune
+       obsolete nodes. If non-existent nodes are present in the
+       <i>Processing node</i> list, activities will get balanced to those
+       nodes and never be executed.
+      </p>
+      <p class="form-help">
+       <b>Important note:</b>Adding or removing processing nodes while
+       activities are processed causes undefined behaviour.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+     <td>&nbsp;</td>
+  </tr>
+  <tr class="list-header">
+    <td align="left" valign="top" colspan=2>
+      <div class="form-label">Subscribe/Unsubscribe from Timer Service</div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan=2>
+      <div class="form-label">
+        Status:
+        <dtml-if isSubscribed>
+          Subscribed
+        <dtml-else>
+          Not Subscribed
+        </dtml-if>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+      <div class="form-element">
+        <dtml-if isSubscribed>
+          <input type="submit" class="form-element" name="unsubscribe:method" value=" Unsubscribe ">
+        <dtml-else>
+          <input type="submit" class="form-element" name="subscribe:method" value=" Subscribe ">
+        </dtml-if>
+     </div>
+    </td>
+  </tr>
+</table>
+</form>
+<dtml-var manage_page_footer>

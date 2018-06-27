@@ -1,0 +1,10 @@
+Computer Model | edit_workflow
+Computer Model | validation_workflow
+Computer Network | edit_workflow
+Computer Network | validation_workflow
+Computer Partition | edit_workflow
+Computer Partition | validation_workflow
+Computer | edit_workflow
+Computer | validation_workflow
+Internet Protocol Address | edit_workflow
+Tcp Port Number | edit_workflow

@@ -1,0 +1,18 @@
+Pay Sheet Cell | contribution_share
+Pay Sheet Cell | product_line
+Pay Sheet Cell | salary_range
+Pay Sheet Line | base_amount
+Pay Sheet Line | contribution_share
+Pay Sheet Line | salary_range
+Pay Sheet Model Cell | contribution_share
+Pay Sheet Model Cell | product_line
+Pay Sheet Model Cell | salary_range
+Pay Sheet Model Module | business_application
+Pay Sheet Model Slice | contribution_share
+Pay Sheet Model Slice | product_line
+Pay Sheet Model Slice | salary_range
+Pay Sheet Transaction | quantity_unit
+Pay Sheet Transaction | specialise
+Payroll Enrollment Record Module | business_application
+Service | base_amount
+Social Declaration Report Module | business_application

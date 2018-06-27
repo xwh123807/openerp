@@ -1,0 +1,16 @@
+Invoice Cell | delivery_movement_causality_interaction_workflow
+Invoice Cell | delivery_movement_simulation_interaction_workflow
+Invoice Cell | edit_workflow
+Invoice Cell | pricing_interaction_workflow
+Invoice Line | delivery_movement_causality_interaction_workflow
+Invoice Line | delivery_movement_simulation_interaction_workflow
+Invoice Line | edit_workflow
+Invoice Line | movement_resource_interaction_workflow
+Invoice Line | pricing_interaction_workflow
+Invoice Line | trade_matrix_workflow
+Invoice Simulation Rule | edit_workflow
+Invoice Simulation Rule | rule_validation_workflow
+Invoice Transaction Simulation Rule | edit_workflow
+Invoice Transaction Simulation Rule | rule_validation_workflow
+Trade Model Simulation Rule | edit_workflow
+Trade Model Simulation Rule | rule_validation_workflow

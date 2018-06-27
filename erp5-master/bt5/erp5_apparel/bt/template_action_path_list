@@ -1,0 +1,155 @@
+Apparel Assortment Colour Variation | download
+Apparel Assortment Colour Variation | image_view
+Apparel Assortment Colour Variation | view
+Apparel Assortment Module | csv_export
+Apparel Assortment Module | csv_import
+Apparel Assortment Module | list_ui
+Apparel Assortment Module | search
+Apparel Assortment Module | sort_on
+Apparel Assortment Module | view
+Apparel Assortment Module | workflow_report
+Apparel Assortment | jump_to_related_transformation
+Apparel Assortment | view
+Apparel Bath Module | csv_export
+Apparel Bath Module | import_csv
+Apparel Bath Module | list_ui
+Apparel Bath Module | search
+Apparel Bath Module | sort_on
+Apparel Bath Module | view
+Apparel Bath | view
+Apparel Cloth Module | csv_export
+Apparel Cloth Module | csv_import
+Apparel Cloth Module | list_ui
+Apparel Cloth Module | search
+Apparel Cloth Module | sort_on
+Apparel Cloth Module | view
+Apparel Cloth Module | workflow_report
+Apparel Cloth | apparel_measure
+Apparel Cloth | development
+Apparel Cloth | jump_to_related_apparel_model
+Apparel Cloth | jump_to_related_apparel_model_morphology_variation
+Apparel Cloth | view
+Apparel Colour Range Module | csv_import
+Apparel Colour Range Module | cvs_export
+Apparel Colour Range Module | list_ui
+Apparel Colour Range Module | search
+Apparel Colour Range Module | sort_on
+Apparel Colour Range Module | view
+Apparel Colour Range Variation Line | view
+Apparel Colour Range Variation | view
+Apparel Colour Range | jump_to_related_apparel_model
+Apparel Colour Range | view
+Apparel Component Module | csv_export
+Apparel Component Module | csv_import
+Apparel Component Module | list_ui
+Apparel Component Module | search
+Apparel Component Module | sort_on
+Apparel Component Module | view
+Apparel Component Module | workflow_report
+Apparel Component Variation | download
+Apparel Component Variation | image_view
+Apparel Component Variation | view
+Apparel Component | instruction_view
+Apparel Component | jump_to_related_transformation
+Apparel Component | purchase_price_view
+Apparel Component | sale_price_view
+Apparel Component | view
+Apparel Component | view_composition
+Apparel Component | view_measure
+Apparel Consumption Module | csv_export
+Apparel Consumption Module | csv_import
+Apparel Consumption Module | list_ui
+Apparel Consumption Module | search
+Apparel Consumption Module | sort_on
+Apparel Consumption Module | view
+Apparel Consumption | print_matrix
+Apparel Consumption | view
+Apparel Consumption | view_quantity
+Apparel Fabric Colour Variation | download
+Apparel Fabric Colour Variation | image
+Apparel Fabric Colour Variation | jump_to_related_apparel_colour_range_variation
+Apparel Fabric Colour Variation | view
+Apparel Fabric Item Module | csv_export
+Apparel Fabric Item Module | import_csv
+Apparel Fabric Item Module | list_ui
+Apparel Fabric Item Module | search
+Apparel Fabric Item Module | sort_on
+Apparel Fabric Item Module | view
+Apparel Fabric Item | view
+Apparel Fabric Module | csv_export
+Apparel Fabric Module | import_csv
+Apparel Fabric Module | list_ui
+Apparel Fabric Module | search
+Apparel Fabric Module | sort_on
+Apparel Fabric Module | view
+Apparel Fabric Module | workflow_report
+Apparel Fabric | instruction_view
+Apparel Fabric | jump_to_related_transformation
+Apparel Fabric | purchase_price_view
+Apparel Fabric | sale_price_view
+Apparel Fabric | view
+Apparel Fabric | view_composition
+Apparel Fabric | view_measure
+Apparel Measurement Module | csv_export
+Apparel Measurement Module | csv_import
+Apparel Measurement Module | list_ui
+Apparel Measurement Module | search
+Apparel Measurement Module | sort_on
+Apparel Measurement Module | view
+Apparel Measurement | customer_measure
+Apparel Measurement | download
+Apparel Measurement | image
+Apparel Measurement | jump_to_related_apparel_cloth
+Apparel Measurement | jump_to_related_apparel_model
+Apparel Measurement | view
+Apparel Model Colour Variation | download
+Apparel Model Colour Variation | image_view
+Apparel Model Colour Variation | view
+Apparel Model Module | csv_export
+Apparel Model Module | csv_import
+Apparel Model Module | list_ui
+Apparel Model Module | search
+Apparel Model Module | sort_on
+Apparel Model Module | view
+Apparel Model Module | workflow_report
+Apparel Model Morphology Variation | view
+Apparel Model | apparel_model_print
+Apparel Model | copy_colour_range_variation
+Apparel Model | copy_composition
+Apparel Model | development
+Apparel Model | inventory_view
+Apparel Model | jump_to_related_apparel_model
+Apparel Model | jump_to_related_transformation
+Apparel Model | morphology_variation
+Apparel Model | purchase_price_view
+Apparel Model | sale_price_view
+Apparel Model | view
+Apparel Model | view_composition
+Apparel Shape Module | csv_export
+Apparel Shape Module | csv_import
+Apparel Shape Module | list_ui
+Apparel Shape Module | search
+Apparel Shape Module | sort_on
+Apparel Shape Module | view
+Apparel Shape Module | workflow_report
+Apparel Shape | development
+Apparel Shape | jump_to_related_apparel_cloth
+Apparel Shape | jump_to_related_apparel_model
+Apparel Shape | jump_to_related_apparel_shape
+Apparel Shape | jump_to_related_transformation
+Apparel Shape | view
+Apparel Size Module | csv_export
+Apparel Size Module | csv_import
+Apparel Size Module | list_ui
+Apparel Size Module | search
+Apparel Size Module | sort_on
+Apparel Size Module | view
+Apparel Size | customer_size
+Apparel Size | jump_to_related_apparel_model
+Apparel Size | view
+Apparel Technical Drawing | download
+Apparel Technical Drawing | image_view
+Apparel Technical Drawing | view
+Purchase Packing List Cell | apparel_fabric_item_fast_input
+Purchase Packing List Line | apparel_fabric_item_fast_input
+System Preference | apparel_preference

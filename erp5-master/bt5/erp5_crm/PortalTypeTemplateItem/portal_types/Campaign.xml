@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<ZopeData>
+  <record id="1" aka="AAAAAAAAAAE=">
+    <pickle>
+      <global name="Base Type" module="erp5.portal_type"/>
+    </pickle>
+    <pickle>
+      <dictionary>
+        <item>
+            <key> <string>acquire_local_roles</string> </key>
+            <value> <int>0</int> </value>
+        </item>
+        <item>
+            <key> <string>content_icon</string> </key>
+            <value> <string>document.gif</string> </value>
+        </item>
+        <item>
+            <key> <string>content_meta_type</string> </key>
+            <value> <string>ERP5 Ticket</string> </value>
+        </item>
+        <item>
+            <key> <string>description</string> </key>
+            <value> <string>A Campaign is a marketing mini-project which keeps track of all events associated to a given marketing action. Use it for example to manage press relation campaigns, assessment campaigns, product presentation campaigns which involve contacting many customers through email, phone, etc.</string> </value>
+        </item>
+        <item>
+            <key> <string>factory</string> </key>
+            <value> <string>addTicket</string> </value>
+        </item>
+        <item>
+            <key> <string>filter_content_types</string> </key>
+            <value> <int>1</int> </value>
+        </item>
+        <item>
+            <key> <string>group_list</string> </key>
+            <value>
+              <tuple>
+                <string>ticket</string>
+                <string>project</string>
+              </tuple>
+            </value>
+        </item>
+        <item>
+            <key> <string>id</string> </key>
+            <value> <string>Campaign</string> </value>
+        </item>
+        <item>
+            <key> <string>init_script</string> </key>
+            <value> <string>Ticket_init</string> </value>
+        </item>
+        <item>
+            <key> <string>permission</string> </key>
+            <value> <string></string> </value>
+        </item>
+        <item>
+            <key> <string>title</string> </key>
+            <value> <string></string> </value>
+        </item>
+        <item>
+            <key> <string>type_class</string> </key>
+            <value> <string>Ticket</string> </value>
+        </item>
+      </dictionary>
+    </pickle>
+  </record>
+</ZopeData>

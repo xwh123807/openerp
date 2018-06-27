@@ -1,0 +1,731 @@
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/lib/codemirror.js"></script>
+<link rel="stylesheet" href="&dtml-portal_url;/codemirror/lib/codemirror.css">
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/mode/&dtml-mode;/&dtml-mode;.js"></script>
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/addon/cm_edit/matchbrackets.js"></script>
+
+<!-- Trailing spaces -->
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/addon/cm_edit/trailingspace.js"></script>
+<style type="text/css">
+  .cm-trailingspace {
+    background-color: gray;
+  }
+</style>
+
+<!-- Search addons -->
+<link rel="stylesheet" href="&dtml-portal_url;/codemirror/addon/dialog/dialog.css">
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/addon/dialog/dialog.js"></script>
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/addon/search/searchcursor.js"></script>
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/addon/search/search.js"></script>
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/addon/search/jump-to-line.js"></script>
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/addon/selection/active-line.js"></script>
+
+<!-- Python autocomplete (Ctrl-Space, see below)
+     TODO-arnau: Add ERP5 autocompletion?
+ -->
+<link rel="stylesheet" href="&dtml-portal_url;/codemirror/addon/hint/show-hint.css">
+<script src="&dtml-portal_url;/codemirror/addon/hint/show-hint.js"></script>
+<script src="&dtml-portal_url;/codemirror/addon/hint/anyword-hint.js"></script>
+
+<!-- Code folding -->
+<link rel="stylesheet" href="&dtml-portal_url;/codemirror/addon/fold/foldgutter.css">
+<script src="&dtml-portal_url;/codemirror/addon/fold/foldcode.js"></script>
+<script src="&dtml-portal_url;/codemirror/addon/fold/foldgutter.js"></script>
+<script src="&dtml-portal_url;/codemirror/addon/fold/indent-fold.js"></script>
+<script src="&dtml-portal_url;/codemirror/addon/fold/comment-fold.js"></script>
+
+<!-- Merge -->
+<link rel="stylesheet" href="&dtml-portal_url;/codemirror/addon/merge/merge.css">
+<script type="text/javascript" src="&dtml-portal_url;/diff_match_patch/javascript/diff_match_patch_uncompressed.js"></script>
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/addon/merge/merge.js"></script>
+
+<!-- Keymaps -->
+<dtml-if expr="keymap == 'emacs'">
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/keymap/emacs.js"></script>
+<dtml-elif expr="keymap == 'vim'">
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/keymap/vim.js"></script>
+</dtml-if>
+
+<!-- Linter -->
+<link rel="stylesheet" href="&dtml-portal_url;/codemirror/addon/lint/lint.css">
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/addon/lint/lint.js"></script>
+
+<dtml-if expr="mode == 'javascript'">
+<script type="text/javascript" src="&dtml-portal_url;/jshint.js"></script>
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/addon/lint/javascript-lint.js"></script>
+<dtml-elif expr="mode == 'css'">
+<script type="text/javascript" src="&dtml-portal_url;/csslint.js"></script>
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/addon/lint/css-lint.js"></script>
+<dtml-elif expr="mode == 'htmlmixed'">
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/addon/fold/xml-fold.js"></script>
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/addon/cm_edit/matchtags.js"></script>
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/mode/xml/xml.js"></script>
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/mode/javascript/javascript.js"></script>
+<script type="text/javascript" src="&dtml-portal_url;/codemirror/mode/css/css.js"></script>
+</dtml-if>
+
+<style type="text/css">
+ .maximize_fullscreen_message {
+   display: table;
+   position: absolute;
+   bottom: 0;
+   right: 20px;
+   max-width: 40%;
+   z-index: 424242;
+   padding: 10px;
+   background-color: #DAE6F6;
+   border: 1px solid #97B0D1;
+   opacity: 0.3;
+   cursor: pointer;
+   font-weight: bold;
+ }
+
+ .maximize_fullscreen_error_message {
+   background-color: red;
+ }
+
+ .maximize_fullscreen_message > div {
+   font-size: 14px;
+   display: table-cell;
+   vertical-align: middle;
+ }
+
+ #maximize_message {
+   display: block !important;
+   position: absolute !important;
+   bottom: 0 !important;
+   right: 0px !important;
+   z-index: 4243 !important;
+   padding: 10px;
+   font-size: 16px;
+   font-weight: bold;
+   background-color: black;
+   color: white;
+ }
+
+ .maximize {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   top: 0 !important;
+   left: 0 !important;
+   z-index: 2 !important;
+   overflow: hidden !important;
+ }
+
+ .CodeMirror pre, .CodeMirror span {
+   font-family: monospace !important;
+ }
+
+ /* Workaround for lint icons "multiple" icons hiding "warning/errors" icons
+    because of "background-color: inherit" defined by erp5, and also to fix
+    background color of the gutter (cosmetic) */
+ .CodeMirror-lint-marker-multiple,
+ .CodeMirror-lint-marker-error,
+ .CodeMirror-lint-marker-warning,
+ .CodeMirror-gutters,
+ .CodeMirror-gutter-elt,
+ .CodeMirror-sizer {
+   background-color: transparent !important;
+ }
+</style>
+
+<!-- TODO: Only supported for ZODB Components -->
+<dtml-unless bound_names>
+<input type="button" value="Maximize" onclick="maximize()"
+       class="editor_action_button" />
+<input type="button" value="Fullscreen" onclick="switchToFullScreen(cm)"
+       class="editor_action_button" />
+
+<div id="merge" style="height: 100%; width: 100%">
+  <div id="view" style="display: none;"></div>
+
+<dtml-if field_id>
+<textarea id="&dtml-field_id;" name="&dtml-field_id;" style="display: none;"><dtml-var content html_quote></textarea>
+</dtml-if>
+
+</div>
+</dtml-unless>
+
+<script type="text/javascript">
+ error_element = $('div.input > .error');
+ error_arr = [];
+ warning_element = $('div.input > .warning');
+ warning_arr = [];
+ merge_mode_elem = null;
+
+ maximize_mode_message = $('<span id="maximize_message">Press ESC to leave maximize mode</span>');
+
+ // Improve python completer
+ CodeMirror.registerHelper(
+   "hint", "python",
+   function (mirror, options) {
+     // return merged default python completions from keywords + completions from anyword
+     var python_completion_result = CodeMirror.hint.fromList(cm, {words: cm.getHelper(cm.getCursor(), "hintWords")}),
+       anyword_completion_result = CodeMirror.hint.anyword(mirror, {range: Infinity});
+     if ( python_completion_result ) {
+       python_completion_result.list.concat(anyword_completion_result.list || []);
+       return python_completion_result;
+     }
+   return anyword_completion_result;
+   }
+ );
+
+ function getTextareaField() {
+   // When the textarea does not exist yet (eg ERP5Form EditorField)
+<dtml-if field_id>
+   textarea = $('#&dtml-field_id;');
+<dtml-elif textarea_selector>
+   textarea = $('<dtml-var name="textarea_selector">');
+<dtml-else>
+   <dtml-raise NameError>
+     Either 'textarea_selector' or 'field_id' (ID of the textarea field to be
+     created) must be passed.
+   </dtml-raise>
+</dtml-if>
+  return textarea;
+ }
+
+ function maximizeFullscreenRemoveSaveMessage() {
+   $('.maximize_fullscreen_message').remove();
+ }
+
+ function updateErrorWarningMessageDivWithJump() {
+   if(!error_element.length && !warning_element.length)
+     return;
+
+   function getErrorWarningMessageDictHandler(data) {
+     error_warning_dict = $.parseJSON(data);
+
+     function fillMessageElementAndArray(list, elem, arr) {
+       $.each(list, function(i, dict) {
+         line = dict['line'];
+         column = dict['column'];
+         if(line != null && column != null)
+         arr.push('<a href="#" ' +
+                  '   onclick="cm.setCursor(' + (line - 1) + ', ' + column + ');' +
+                                                 'cm.focus(); event.stopPropagation(); event.preventDefault();">' +
+                                                 dict['message'] +
+                                                 '</a>');
+         else
+         arr.push(dict['message']);
+       });
+
+       elem.html(arr.join('<br />'));
+     }
+
+     if(error_element.length) {
+       error_arr.length = 0;
+       fillMessageElementAndArray(error_warning_dict['error_list'],
+                                  error_element, error_arr);
+     }
+
+     if(warning_element.length) {
+       warning_arr.length = 0;
+       fillMessageElementAndArray(error_warning_dict['warning_list'],
+                                  warning_element, warning_arr);
+     }
+   }
+
+   $.ajax({type: 'GET',
+           async: false,
+           url: 'Component_getErrorWarningMessageDictAsJson',
+           success: getErrorWarningMessageDictHandler});
+ }
+
+  // Save source code only through an AJAX request
+ function saveComponentDocument(cm, event) {
+   event.stopPropagation();
+   event.preventDefault();
+
+   clickSaveButton('Base_edit');
+
+   /* If the save is successful, then update validation state field (requires
+    *  validation_state CSS class to be set on the field) and error
+    * message (requires error CSS class to be set on the field) on the main
+    * page. If inside maximize/fullscreen mode, display an box with the
+    * result as well
+    */
+   function successHandler(data) {
+     generateHistorySelectElement();
+
+     transition_message = $('#transition_message');
+     transition_message.css('opacity', 0.0);
+     transition_message.html(data);
+     transition_message.animate({opacity: 1.0},
+                                {duration: 3000, queue: false});
+
+     var maximize_fullscreen_message = data;
+
+     var validation_state_span = $('div.input > .editor_validation_state');
+     if(validation_state_span.length) {
+       // Animate field to emphasize the change
+       function getTranslatedValidationStateTitleHandler(data) {
+         validation_state_span.css('opacity', 0.0);
+         validation_state_span.html(data);
+         validation_state_span.animate({opacity: 1.0},
+                                       {duration: 3000, queue: false});
+       }
+
+       $.ajax({type: 'GET',
+               url: 'getTranslatedValidationStateTitle',
+               success: getTranslatedValidationStateTitleHandler});
+     }
+
+     updateErrorWarningMessageDivWithJump();
+
+     // Animate fields to emphasize the change
+     if(error_element.length) {
+       error_element.css('opacity', 0.0);
+       error_element.animate({opacity: 1.0}, {duration: 3000, queue: false});
+     }
+
+     if(warning_element.length) {
+       warning_element.css('opacity', 0.0);
+       warning_element.animate({opacity: 1.0}, {duration: 3000, queue: false});
+     }
+
+     if(is_maximized ||
+        cm.getOption("fullScreen") ||
+        (document.fullScreenElement && document.fullScreenElement !== null) ||
+        document.mozFullScreen || document.webkitIsFullScreen) {
+       var msg_elem_classes = 'maximize_fullscreen_message';
+       if(error_arr.length || warning_arr.length) {
+         maximize_fullscreen_message = (error_arr.join('<br />') + '<br />' +
+                                                       warning_arr.join('<br />'));
+
+         msg_elem_classes += ' maximize_fullscreen_error_message';
+       }
+
+       // Clear previous saving message if any
+       maximizeFullscreenRemoveSaveMessage();
+
+       msg_elem = $('<div class="' + msg_elem_classes + '"' +
+                    '<div>' + maximize_fullscreen_message + '</div></div>');
+
+       $('body').prepend(msg_elem);
+
+       function animateMessageComplete() {
+         if(!error_arr.length && !warning_arr.length)
+           $(this).remove();
+         else
+           $(this).bind('click', function() { $(this).remove() });
+       }
+       msg_elem.animate({opacity: 1.0}, 3000, animateMessageComplete);
+     }
+   }
+
+   function errorHandler(data, textStatus) {
+     alert('Saving failed: ' + textStatus);
+   }
+
+   if(merge_mode_elem)
+     // TODO: Hack, 'cm' should work!
+     getTextareaField().val(merge_mode_elem.edit.getValue());
+   else
+     cm.save();
+
+   var edit_data = $('form#main_form').serialize();
+   edit_data += '&message_only:int=1';
+   $.ajax({type: 'POST',
+            url: 'Base_edit',
+            data: edit_data,
+            success: successHandler,
+            error: errorHandler});
+
+   return false;
+ }
+
+ function saveZMIDocument(cm, event) {
+   $('input[value="Save Changes"]').click();
+   return false;
+ }
+
+ if($('input[value="Save Changes"]').length)
+   saveDocument = saveZMIDocument;
+ else
+   saveDocument = saveComponentDocument;
+
+ function switchToFullScreen(cm) {
+   element = $('#merge')[0];
+   $(cm.getWrapperElement()).css('height', '100%');
+   if((document.fullScreenElement &&
+       document.fullScreenElement !== null) ||
+      (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+     if (element.requestFullScreen) {
+       element.requestFullScreen();
+     }
+     else if(element.mozRequestFullScreen) {
+       element.mozRequestFullScreen();
+     }
+     else if(element.webkitRequestFullScreen) {
+       element.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+     }
+
+     cm.refresh();
+    }
+  }
+
+ is_maximized = false;
+ function maximize() {
+   document.documentElement.style.overflow = "hidden";
+   $("#merge").addClass('maximize');
+
+   if(merge_mode_elem) {
+     $("#view").height("100%");
+
+     cm_merge_height = $('.CodeMirror-merge').height();
+     $('.CodeMirror-merge').height("100%");
+
+     cm_merge_pane_height = $('.CodeMirror-merge-pane').height();
+     $('.CodeMirror-merge-pane').height("100%");
+
+     cm_height = merge_mode_elem.edit.getWrapperElement().style.height;
+     merge_mode_elem.edit.getWrapperElement().style.height = "100%";
+     merge_mode_elem.right.orig.getWrapperElement().style.height = "100%";
+
+//     $("#view").height("100%")
+
+     merge_mode_elem.edit.refresh();
+     merge_mode_elem.right.orig.refresh();
+     merge_mode_elem.edit.focus();
+   }
+   else {
+     wrap = cm.getWrapperElement();
+     cm_height = wrap.style.height;
+     wrap.style.height = "100%";
+     cm.refresh();
+     cm.focus();
+   }
+
+   $("body").keyup(
+     function(event) {
+       if(is_maximized && event.keyCode == 27) {
+         event.stopPropagation();
+         event.preventDefault();
+
+         document.documentElement.style.overflow = "";
+         $("#merge").removeClass('maximize');
+
+         if(merge_mode_elem) {
+           $('.CodeMirror-merge').height(cm_merge_height);
+           $('.CodeMirror-merge-pane').height(cm_merge_pane_height);
+           $("#view").height("auto");
+
+           merge_mode_elem.edit.getWrapperElement().style.height = cm_height;
+           merge_mode_elem.right.orig.getWrapperElement().style.height = cm_height;
+
+           merge_mode_elem.edit.refresh();
+           merge_mode_elem.right.orig.refresh();
+
+           merge_mode_elem.edit.focus();
+         }
+         else {
+           cm.getWrapperElement().style.height = cm_height;
+           cm.refresh();
+           cm.focus();
+         }
+
+         is_maximized = false;
+         maximizeFullscreenRemoveSaveMessage();
+         return false;
+       }
+     });
+
+   $('body').prepend(maximize_mode_message);
+   maximize_mode_message.css('opacity', 1.0);
+   maximize_mode_message.animate({opacity: 0.25}, 1500,
+                                 function() { $(this).remove(); });
+
+   is_maximized = true;
+ }
+
+ var update_check_text = undefined,
+     update_check_running = false;
+ function checkPythonSourceCode(text, updateLinting, options, cm) {
+   update_check_text = text;
+   checker_parameters = {code: text};
+<dtml-if bound_names>
+   checker_parameters['bound_names'] = <dtml-var name="bound_names">;
+   checker_parameters['params'] = $('input[name="params"]').val();
+</dtml-if>
+   if (update_check_running === false) {
+     update_check_running = true;
+     $.post(
+       '&dtml-portal_url;/ERP5Site_checkPythonSourceCodeAsJSON',
+       {'data': JSON.stringify(checker_parameters)},
+        function(data){
+          var messages = data.annotations;
+          var found = [];
+          update_check_running = false;
+          for(var i = 0; i < messages.length; i++) {
+            message = messages[i];
+            found.push({
+              from: CodeMirror.Pos(message.row, message.column - 1),
+              to: CodeMirror.Pos(message.row, message.column),
+              message: message.text,
+              severity: message.type
+            });
+          }
+
+          updateLinting(cm, found);
+          if (update_check_text !== text) {
+            checkPythonSourceCode(update_check_text, updateLinting, options, cm);
+          }
+     });
+   }
+ }
+
+ var mode = "&dtml-mode;";
+ if ( mode === "sql" ) {
+   mode = "text/x-mariadb";
+ }
+
+<dtml-if expr="mode == 'python'">
+ lint_option = {"getAnnotations": checkPythonSourceCode,
+                "async": true};
+<dtml-elif expr="mode in ('css', 'javascript')">
+ lint_option = true;
+<dtml-else>
+ lint_option = false;
+</dtml-if>
+
+ var extra_keys = {
+   "Ctrl-Q": function(cm){cm.foldCode(cm.getCursor());},
+   "Tab": function(cm) {
+     // We want to insert spaces, not tab, and we also want to keep the behaviour of indenting selection.
+     if (cm.getSelection()) {
+       return cm.execCommand("defaultTab");
+     }
+     var spaces = Array(cm.getOption("indentUnit") + 1).join(" ");
+     cm.replaceSelection(spaces);
+     },
+   "Ctrl-I": "indentAuto",
+   "Shift-Tab": "indentLess"};
+
+ var save_shortcut = function(cm){saveDocument(cm, $.Event('click'))};
+<dtml-if expr="keymap == 'emacs'">
+ extra_keys["Ctrl-X Ctrl-S"] = save_shortcut;
+ // autocomplete: Alt-/
+<dtml-else>
+ extra_keys["Ctrl-S"] = save_shortcut;
+ extra_keys["Ctrl-Space"] = "autocomplete";
+ // Ctrl-Space used in some OS (such as Chrome OS) to switch input method
+ extra_keys["Alt-Space"] = "autocomplete";
+</dtml-if>
+
+ // CodeMirror expects a DOM element, not a JQuery Object
+ var cm = CodeMirror.fromTextArea(
+   getTextareaField()[0],
+   {mode: mode,
+    keyMap: "&dtml-keymap;",
+    lineNumbers: true,
+    styleActiveLine: true,
+    showTrailingSpace: true,
+    tabSize: 2,
+    indentWithTabs: false,
+    matchBrackets: true,
+    matchTags: {bothTags: true},
+    extraKeys: extra_keys,
+    foldGutter: true,
+    lineWrapping: true,
+    gutters: ["CodeMirror-lint-markers",
+              "CodeMirror-linenumbers",
+              "CodeMirror-foldgutter"],
+    lint: lint_option
+    });
+ //cm.foldCode(CodeMirror.Pos(8, 0));
+ var parent_height = getTextareaField()[0].parentNode.clientHeight
+ if(parent_height !== undefined && parent_height > (300 * 0.8)) {
+   cm.setSize(undefined, parent_height);
+ }
+
+ updateErrorWarningMessageDivWithJump();
+
+ // When hovering editor element with the mouse, seeing the title of the field is annoying...
+ $(cm.getWrapperElement()).parents('.field').removeAttr('title');
+
+ if(typeof document.cancelFullScreen != 'undefined' ||
+    (typeof document.mozFullScreenEnabled != 'undefined' &&
+     document.mozFullScreenEnabled) ||
+    typeof document.webkitCancelFullScreen != 'undefined') {
+   $(document).bind('webkitfullscreenchange mozfullscreenchange fullscreenchange',
+                    maximizeFullscreenRemoveSaveMessage);
+ }
+
+ function displayLoadSourceCodeMessage() {
+   // TODO: Improve message
+   message = $('<span id="maximize_message">Loaded source code</span>');
+   $('body').prepend(message);
+   message.css('opacity', 1.0);
+   message.animate({opacity: 0.25}, 1500,
+                   function() { $(this).remove(); });
+ }
+
+ function enterMerge(data) {
+   $("#view").show();
+   target = $("#view")[0];
+   target.innerHTML = "";
+   merge_mode_elem = CodeMirror.MergeView(
+     target,
+     {value: cm.getValue(),
+      orig: data,
+      highlightDifferences: true,
+      mode: mode,
+      lineNumbers: true,
+      showTrailingSpace: true,
+      matchBrackets: true,
+      extraKeys: {"Ctrl-Space": "autocomplete",
+                  "Ctrl-Q": function(cm){cm.foldCode(cm.getCursor());},
+                  "Ctrl-S": function(cm){saveDocument(merge_mode_elem.edit, $.Event('click'))}},
+      foldGutter: true,
+      lineWrapping: true,
+      gutters: ["CodeMirror-lint-markers",
+                "CodeMirror-linenumbers",
+                "CodeMirror-foldgutter"],
+      lint: lint_option});
+
+   $("#merge").keyup(
+     function(event) {
+       if(!is_maximized && event.keyCode == 27) {
+         event.stopPropagation();
+         event.preventDefault();
+
+         $('#history_select_right').find('option[value=""]').attr("selected", true);
+         leaveMerge();
+       }
+     });
+
+   $(cm.getWrapperElement()).hide();
+   if(is_maximized)
+     maximize();
+ }
+
+ function leaveMerge() {
+   $("#view").hide();
+   $(cm.getWrapperElement()).show();
+   cm.refresh();
+   cm.setValue(merge_mode_elem.edit.getValue());
+   cm.save();
+   cm.focus();
+
+   target = $("#view")[0];
+   target.innerHTML = "";
+
+   merge_mode_elem = null;
+
+   if(is_maximized)
+     maximize();
+ }
+
+ function generateHistorySelectElement() {
+   function successHandler(data) {
+     container_elem = $('#history_select_container');
+     if(container_elem.length == 0)
+       {
+         right_selected_value = null;
+         container_elem = $('<p style="margin: 0; padding: 0;" id="history_select_container"></p>');
+       }
+     else
+       {
+         right_selected_value = $('#history_select_right').val();
+         container_elem.empty();
+       }
+
+     for(var i = 0; i < 2; i++)
+     {
+       var is_right = (i == 1);
+       if(is_right)
+         attrs = 'id="history_select_right" style="float: right"'
+       else
+         attrs = 'id="history_select_left" style="float: left"'
+
+       select_revision_element = $(
+         "<select class='editor_action_button' " + attrs + "></select>");
+
+       if(is_right)
+         select_revision_element.append($("<option value=''></option>"));
+
+       $.each(
+         data,
+         function(j, d) {
+           select_revision_element.append(
+             $("<option value='" + d['key'] + "' " +
+               (is_right && d['key'] == right_selected_value ? "selected='selected'" : "")
+               + ">" + j + ": " +
+               new Date(d['time'] * 1000).toString() + " (" + d['user_name'] + ")" +
+               "</option>"));
+         });
+
+       function selectHistoryTextContent(event) {
+         function loadTextContent(data) {
+           cm.setValue(data);
+           cm.save();
+
+           if(merge_mode_elem) {
+             merge_mode_elem.edit.setValue(data);
+             merge_mode_elem.edit.refresh();
+             merge_mode_elem.right.orig.refresh();
+           }
+
+           displayLoadSourceCodeMessage();
+         }
+
+         // TODO: failure
+         $.ajax({type: 'GET',
+                 async: true,
+                 dataType: 'text',
+                 data: {key: this.value},
+                 url: 'getTextContentHistory',
+                 success: loadTextContent});
+       }
+
+       function selectHistoryTextContentMerge(event) {
+         function loadTextContent(data) {
+           if(merge_mode_elem) {
+             merge_mode_elem.right.orig.setValue(data);
+             merge_mode_elem.edit.refresh();
+             merge_mode_elem.right.orig.refresh();
+           }
+           else
+             enterMerge(data);
+
+           displayLoadSourceCodeMessage();
+         }
+
+         if(!this.value)
+           leaveMerge();
+         else
+           // TODO: failure
+           $.ajax({type: 'GET',
+                   async: true,
+                   dataType: 'text',
+                   data: {key: this.value},
+                   url: 'getTextContentHistory',
+                   success: loadTextContent});
+       }
+
+       if(!is_right)
+         select_revision_element.bind('change', selectHistoryTextContent);
+       else
+         select_revision_element.bind('change', selectHistoryTextContentMerge);
+
+       select_revision_element.appendTo(container_elem);
+     }
+
+     container_elem.append($('<div style="clear: both;"></div>'));
+     container_elem.prependTo($('#merge'));
+   }
+
+  $.ajax({type: 'GET',
+         async: true,
+         dataType: 'json',
+         url: 'Component_getTextContentHistoryRevisionDictListAsJSON',
+         success: successHandler});
+ }
+
+<dtml-unless bound_names>
+ <!-- TODO: Not supported for Python Scripts yet -->
+ generateHistorySelectElement();
+</dtml-unless>
+</script>
+

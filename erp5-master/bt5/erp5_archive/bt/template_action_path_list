@@ -1,0 +1,11 @@
+Archive Inventory Cell | view
+Archive Inventory Line | inventory_view
+Archive Inventory Line | price_view
+Archive Inventory Line | view
+Archive Inventory Module | view
+Archive Inventory | view
+Archive Tool | create_archive
+Archive Tool | view
+Archive | view
+Preference | view_archive
+portal_actions | manage_archive

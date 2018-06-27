@@ -1,0 +1,41 @@
+2014-02-07 arnaud.fontaine
+* Add JS ERP5Autocomplete() parameter to transform text before sending AJAX request.
+
+2014-02-07 arnaud.fontaine
+* Autocompletion property value set to the field should be the one queried from the Catalog.
+
+2014-02-07 arnaud.fontaine
+* Consider that description may not be needed, thus only one line, the label, is displayed.
+
+2014-02-07 arnaud.fontaine
+* Rename ERP5Site_getCompletionList for naming consistency sake.
+
+2014-02-07 arnaud.fontaine
+* Allow customisation of object property being showed with autocompletion.
+
+2014-02-07 arnaud.fontaine
+* Move away generic JS code from RelationField as it should be reusable anywhere.
+
+2014-02-06 arnaud.fontaine
+* Limit the number of results to 15 instead of 20 as it seems to be enough (taken from an existing customer project).
+
+2014-02-06 arnaud.fontaine
+* Support properly Input Method Editor for autocompletion.
+
+2014-01-27 arnaud.fontaine
+* RelationField: Implement autocompletion and use it by default once erp5_autocompletion_ui is installed.
+
+2014-01-27 arnaud.fontaine
+* Clean up and make parameters names consistent with ERP5.
+
+2014-01-27 arnaud.fontaine
+* Increase delay before searching from 300ms (default) to 600ms, this should be enough...
+
+2014-01-27 arnaud.fontaine
+* Serialization of array was broken with ERP5.
+
+2014-01-21 arnaud.fontaine
+* Use json instead of deprecated Products.ERP5Type.JSON.
+
+2010-08-04 nicolas.dumazet
+* Initial import.

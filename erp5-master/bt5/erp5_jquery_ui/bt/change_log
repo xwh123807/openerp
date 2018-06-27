@@ -1,0 +1,42 @@
+2014-01-20 arnaud.fontaine
+* As jquery-ui is imported straightaway, license should have always been jquery-ui one.
+
+2014-01-20 arnaud.fontaine
+* Update to 1.10.4.
+
+2013-01-15 Kazuhiko
+* jquery-ui 1.9.2.
+
+2012-07-30 Kazuhiko
+* jquery-ui 1.8.22.
+
+2012-03-08 Kazuhiko
+* jquery-ui 1.8.18.
+
+2012-01-16 Kazuhiko
+* jquery-ui 1.8.17.
+
+2011-09-07 Kazuhiko
+* jquery-ui 1.8.16.
+
+2011-06-23 Kazuhiko
+* jquery-ui 1.8.13.
+
+2011-04-05 Kazuhiko
+* jquery-ui 1.8.11.
+
+2011-02-04 Kazuhiko
+* jquery-ui 1.8.9.
+
+2011-01-18 Kazuhiko
+* jquery-ui 1.8.8.
+
+2010-12-17 Kazuhiko
+* jquery-ui 1.8.7.
+
+2010-11-03 nicolas.dumazet
+* regenerate and add erp5-theme using the same settings as old legacy theme
+* 1.8.6
+
+2010-11-01 gabriel
+* The initial commit

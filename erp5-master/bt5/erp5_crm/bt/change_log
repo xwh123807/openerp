@@ -1,0 +1,296 @@
+2013-09-03 arnaud.fontaine
+* ZODB Components: Workflow History must always be kept, so avoid an extra step for developers.
+
+2013-08-28 arnaud.fontaine
+* ZODB Components: Migrate Documents, Extensions and Tests.
+
+2013-04-25 Gabriel
+* Initial implementation of Event Path and extension of Campaign to create massive events. Event Path is a subobject of Campaign to store all information related to creation of events
+
+2012-10-30 Kazuhiko
+* add destination_decision_language related key.
+
+2011-12-13 Kazuhiko
+* use event_simulation_workflow instead of event_workflow for Event-type portal types. use portal_alarms/upgrader_migrate_event_workflow_history for migration.
+
+2010-11-05 yusei
+* Simplify Event_init.
+
+2010-10-14 lucas
+* Generate reference automatically for Support Request.
+
+2010-08-19 lucas
+* Added Codification Property Sheet on Support Request portal type, to avoid setCodification error during clone.
+
+2009-11-13 romain
+* Apply new field library convention
+
+2009-10-16 rafael
+* Update for the changes of new portal types of portal types.
+
+2009-09-07 yusuke
+* Replace ERP5Report to ERP5Form and ReportBox
+
+2009-08-19 tatuya
+* Fix listbox source_title column name for Ticket  from 'Handler' to 'Operations Manager'. In ticket, the word 'Handler ' is not used already.
+
+2009-07-02 romain
+* Revert latest proxy field library simplification, as the design was not finalized.
+
+2009-05-27 Seb
+* Add Site Message and Acknowledgements
+
+2009-05-23 JPS
+* Tickets can specialise a Trade Condition
+
+2009-05-18 yusei
+* Fix some proxy fields. count_method should not be inherited from template field and proxy_listbox_ids had to be copied to new proxified fields but it was not copied.
+
+2009-05-13 yusei
+* Fix Event_view.my_text_content due to the core field library issue.
+* Add a template field for Editor Field to Base_viewCRMFieldLibrary.
+
+2009-05-08 yusei
+* Simplify field libraries and proxy fields. Old field libraries are kept for backward compatibility.
+* Update dependencies.
+
+2009-04-18 Kazuhiko
+* Version 5.4.1
+
+2009-04-17 nicolas
+* Extend Entity_viewEventList to support displaying of Suport Requests
+
+2009-03-02 yusei
+* Bug fixed. Recipients of ingested email should be set to destination category on event.
+
+2008-11-13 yusei
+* Start to develop version 5.4.
+
+2008-10-30 rafael
+* Added Marked Posted transition for new messages.
+
+2008-10-24 yusei
+* Fixed EventModule_getEventDetailedReportSectionList. Since All messages will be translated in a template, no need to translate in this script.
+
+2008-10-14 yusei
+* Start to develop version 5.3.
+
+2008-10-7 yusei
+* Update some field titles for translation.
+
+2008-10-1 yusei
+* Added comment to Event_createRespondEvent.
+* Changed label message on acknowledge action dialog.
+* Changed action box name title of validate_action transition on sale_opportunity_workflow.
+* Description field on Ticket_viewNewEventDialog is not required now.
+* Assignee can see the new incoming event worklist.
+
+2008-09-26 yusei
+* Fixed unauthorized error bug if deleted events exists.
+
+2008-9-25 yusei
+* Update xml format.
+
+2008-09-07 yusei
+* Update English messages.
+
+2008-09-04 yusei
+* Update English messages.
+
+2008-08-29 yusei
+* Correct message text.
+
+2008-08-28 yusei
+* Use Base_translateString or translateString instead of N_ for translation message.
+
+2008-07-17 jerome
+Remove portal transforms, they are also in core
+
+2008-07-17 nicolas
+Get Forwarded data from attachments if required
+
+2008-07-17 nicolas
+Quote url_string parameter
+
+2008-07-15 yo
+* Preserve whitespace in the text content of an event.
+
+2008-07-15 rafael
+* Added Event_afterClone to make cloned Events editable.
+
+2008-07-07 yusei
+* Added an action to ticket portal types which clone ticket and related events.
+
+2008-07-02 yusei
+* when ingest email message, find sender from person document first and organisation later.
+
+2008-06-27 yusei
+* Start to develop version 5.2.
+
+2008-06-26 yusei
+* Revise version to 5.1.
+
+2008-06-25 rafael
+* Added Document Tabs at Tickets.
+
+2008-06-10 yusei
+* Move Event_send and mail templates to erp5_core.
+
+2008-06-10 yusei
+* Don't escape html markup in Event_viewMimeMessage.
+
+2008-06-09 yusei
+* Added Event_send proxy role (Manager).
+
+2008-06-06 yusei
+* In Event_send, invoke transition only when portal type is available (it means crm portal types are installed).
+
+2008-06-04
+* Add rights for manager in :
+sale_opportunity_workflow  :  Contacted, Cancelled
+ticket_workflow  :  Closed, Cancelled
+
+2008-5-31 yusei
+* Invoke workflow method only when event worklfow is used.
+
+2008-5-29 yusei
+* Add type based method for Event.send and use MailTemplate to build mail message.
+* Add a minimum support of html mail.
+
+2008-5-29 yusei
+* Modifiy response transition in event_workflow, now it create a new event and send it to recepient immediately.
+* Add quotation option in acknowledge dialog.
+
+2008-5-27 yusei
+* Replace "Create Related Event" action with a equivalent workflow method.
+* Fixed appearance of content in view and preview.
+
+2008-5-26 yusei
+* Added a new content column in event list in ticket view and fixed to display correct title in the list.
+
+2008-5-26 yusei
+* Added An option which create new event in acknowledge workflow dialog.
+* In event_workflow, variables named follow_up_ticket_title and follow_up_ticket_type are updated only when transition or new  state specify a new value.
+
+2008-4-17 yusei
+* Revise version to 5.0.
+
+2008-4-1 yusei
+* When receive forwarded mail, update recipient and sender automatically.
+
+2008-03-31 yusei
+* Add a type based method for rewriting mail message.
+
+2008-03-17 yusei
+* Add source_project and destination_project fields for Ticket_view.
+
+2008-03-14 yusei
+* Add dependency to erp5_ingestion.
+
+2008-02-22 Jérome
+* Export new portal_transforms using ERP5Type's html_to_text. Requires recent products: ERP5Type r19462 and ERP5 r19470
+
+2008-02-20 Jérome
+* Allow sending email from Mail Message.
+* New sale opportunity workflow.
+
+2008-02-19 Jérome
+* Add reports
+
+2008-1-30 Yusei
+* *_getResourceItemList script should
+return values only which user can access.
+
+2008-1-11 Yusei
+* Added mimetypes_registry, portal_transforms in Tools. Please use revision 18669 or newer of ERP5Type.
+
+2007-10-30 yo
+* Set pricing_interaction_workflow to Campaign, Fax Message, Letter, Mail Message, Meeting, Note, Phone Call, Sale Opportunity, Support Request, Visit and Web Message.
+
+2007-10-01 Yusei
+* Removed my_reference from Ticket_view.
+
+2007-09-28 Yusei
+* Add Web Message portal type for representing online forum posting or instant message.
+
+2007-09-14 Yusei
+* Fix to use activity for updating related event local roles.
+
+2007-09-14 Thierry
+* Add missing portal type actions
+
+2007-09-11 Yusei
+* Add two interaction workflows for ticket and event to update local roles after editing.
+
+2007-09-11 Romain
+* Add Visit portal type
+* Remove hardcoded values
+
+2007-09-11 Thierry
+* Improve Ticket workflow (add worklists)
+
+2007-09-10 Thierry
+* Improve Event workflow
+* Add causality relations between Events
+
+2007-08-22 JPS
+* Slight refactoring
+
+2007-08-13 Jerome
+* Remove portal type actions that are now defined as global actions
+
+2007-02-15 Rafael
+* Added Internal Request.
+
+2006-05-18 Romain
+* Fix naming conventions.
+
+2006-04-25 Romain
+* Remove News Item
+* Again, change state variable to simulation_state for event_workflow and sale_opportunity_workflow.
+* Add subcategories in portal_categories/resource.
+* Modify all forms.
+* Event and Ticket are now subclasses of Movement.
+
+2006-05-17 Romain
+* Remove catalog method z_related_translated_event_state
+* Remove related key translated_event_state_title | translation/translated_message/z_related_translated_event_state
+
+2006-05-15 Alex
+* Update maintainers.
+
+2006-03-27 kevin
+* Don't encode MailMessage_view body, it's done automatticaly now.
+
+2006-03-03 kevin
+* Display an encoded UTF-8 body for Mail Message.
+
+2006-02-22 kevin
+* Fix bad default lisbox parameters.
+
+2006-06-02 Jerome
+* add missing 'follow_up' base category.
+* improve 'Respond' feature in event workflow
+* make filtering work in Event Module + other small UI fixes.
+
+2005-11-11 Romain
+* Correct naming convention.
+
+2005-11-05 Romain
+* Correct naming convention.
+
+2005-10-20 Romain
+* Correct naming convention.
+
+2005-09-05 Romain (1.0rc5)
+* Change state variable to simulation_state for event_workflow and sale_opportunity_workflow.
+
+2005-09-02 Romain (1.0rc4)
+* Added all _action transitions in workflows.
+
+2005-08-29 Romain (1.0rc3)
+* Added missing forms.
+* Clean portal type definition.
+* Change module id (event->event_module, etc)
+* Move Project* skins to folder erp5_project (included in business template erp5_project).
+* Correct python script (where module ids are hardcoded).

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<ZopeData>
+  <record id="1" aka="AAAAAAAAAAE=">
+    <pickle>
+      <global name="Category" module="erp5.portal_type"/>
+    </pickle>
+    <pickle>
+      <dictionary>
+        <item>
+            <key> <string>categories</string> </key>
+            <value>
+              <tuple>
+                <string>budget_section/section_expl/globalise_recette/013</string>
+              </tuple>
+            </value>
+        </item>
+        <item>
+            <key> <string>description</string> </key>
+            <value> <string>(regroupement des comptes 60119, 60129, 60189, 609, 619, 629, 6419, 6459, 6989, 699, 6032 et 6037 en recettes)</string> </value>
+        </item>
+        <item>
+            <key> <string>id</string> </key>
+            <value> <string>013</string> </value>
+        </item>
+        <item>
+            <key> <string>int_index</string> </key>
+            <value> <int>1</int> </value>
+        </item>
+        <item>
+            <key> <string>portal_type</string> </key>
+            <value> <string>Category</string> </value>
+        </item>
+        <item>
+            <key> <string>short_title</string> </key>
+            <value> <string>Atténuations de charges</string> </value>
+        </item>
+        <item>
+            <key> <string>title</string> </key>
+            <value> <string>013 - Atténuations de charges</string> </value>
+        </item>
+      </dictionary>
+    </pickle>
+  </record>
+</ZopeData>

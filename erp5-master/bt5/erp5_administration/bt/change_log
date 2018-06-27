@@ -1,0 +1,47 @@
+2014-02-24 arnaud.fontaine
+* Cosmetic: Fix Pylint warnings.
+
+2014-02-24 arnaud.fontaine
+* Use Pylint to check source code to unify ZODB Components and Python Script source code checking.
+
+2013-09-03 arnaud.fontaine
+* ZODB Components: Workflow History must always be kept, so avoid an extra step for developers.
+
+2013-08-28 arnaud.fontaine
+* ZODB Components: Migrate Documents, Extensions and Tests.
+
+2010-04-06 yusuke
+* Updated Base_viewSecurity to see what a user has any local roles on an object in context.
+
+2010-03-31 yusei
+* Add Security.py extension to this business template. It was moved from erp5_forge before, but this business template did not recognize the change.
+
+2010-03-02 yusei
+* Remove short title.
+
+2010-01-05 nicolas
+* Add alarm to check Conversion Tool availability (oood)
+
+2009-10-16 rafael
+* Update for the changes of new portal types of portal types.
+
+2009-03-10 Luke
+* add preview of consistency messages
+* add configurable views for Simulation Tool, Simulation Movement and Applied Rule
+
+2009-02-02 Kazuhiko
+* add TemplateTool_deleteObsoleteTemplateList that removes all obsolete business templates.
+
+2009-01-19 Seb
+* moved script to check catalog from erp5_core to here
+* merge code of checking stock and checking catalog
+
+2008-11-20 Kazuhiko
+* Add ERP5Site_dumpSkinProperty
+* Add ERP5Site_dumpWorkflowChain
+
+2008-10-30 Vincent Pelletier
+* Add a ZSQLMethod to recreate roles_and_users from ZODB security cache. Requires ZSQLCatalog r24410 or later.
+
+2008-10-01 thibaut
+* Add an alarm. It checks which object in catalog table is into ZODB.

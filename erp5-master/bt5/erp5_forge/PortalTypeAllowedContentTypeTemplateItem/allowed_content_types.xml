@@ -1,0 +1,16 @@
+<allowed_content_type_list>
+ <portal_type id="Bug">
+  <item>Bug Line</item>
+  <item>File</item>
+ </portal_type>
+ <portal_type id="Bug Line">
+  <item>File</item>
+  <item>Image</item>
+ </portal_type>
+ <portal_type id="Bug Module">
+  <item>Bug</item>
+ </portal_type>
+ <portal_type id="Glossary Module">
+  <item>Glossary Term</item>
+ </portal_type>
+</allowed_content_type_list>
